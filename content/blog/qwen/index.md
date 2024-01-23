@@ -46,6 +46,14 @@ show_word_count: true
 
 Additionally, we have WeChat groups for chatting and we invite you to join the groups through the provided link in our GitHub readme.
 
+
+<iframe
+	src="https://qwen-qwen-72b-chat-demo.hf.space"
+	frameborder="0"
+	width="850"
+	height="1000"
+></iframe>
+
 ## Overview
 
 In general, Qwen is more than a language model but a project towards AGI which for now consists of LLM and LMM. The following figure shows the main components of Qwen:

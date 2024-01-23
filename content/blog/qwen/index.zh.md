@@ -47,6 +47,13 @@ show_word_count: true
 
 Additionally, we have WeChat groups for chatting and we invite you to join the groups through the provided link in our GitHub readme.
 
+<iframe
+	src="https://qwen-qwen-72b-chat-demo.hf.space"
+	frameborder="0"
+	width="850"
+	height="1000"
+></iframe>
+
 ## 总览
 
 整体上，Qwen不仅仅是一个语言模型，而是一个致力于实现通用人工智能（AGI）的项目，目前包含了大型语言模型（LLM）和大型多模态模型（LMM）。下图展示了Qwen的主要组成部分:
