@@ -4,6 +4,16 @@
   <url>
     <loc>http://qwenlm.github.io/blog/qwen/</loc>
     <lastmod>2024-01-23T22:13:29+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/blog/qwen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/blog/qwen/"
+                />
   </url><url>
     <loc>http://qwenlm.github.io/blog/ofa/</loc>
     <lastmod>2022-11-14T16:01:41+08:00</lastmod>

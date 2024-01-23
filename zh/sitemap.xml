@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://qwenlm.github.io/zh/blog/qwen/</loc>
+    <lastmod>2024-01-23T22:13:29+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/blog/qwen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/blog/qwen/"
+                />
+  </url><url>
     <loc>http://qwenlm.github.io/zh/blog/ofa/</loc>
     <lastmod>2022-11-14T16:01:41+08:00</lastmod>
     <xhtml:link
@@ -16,7 +29,7 @@
                 />
   </url><url>
     <loc>http://qwenlm.github.io/zh/blog/</loc>
-    <lastmod>2022-12-28T18:01:21+08:00</lastmod>
+    <lastmod>2024-01-23T22:13:29+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -26,6 +39,19 @@
                 rel="alternate"
                 hreflang="zh"
                 href="http://qwenlm.github.io/zh/blog/"
+                />
+  </url><url>
+    <loc>http://qwenlm.github.io/zh/</loc>
+    <lastmod>2024-01-23T22:13:29+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/"
                 />
   </url><url>
     <loc>http://qwenlm.github.io/zh/blog/ofasys/</loc>
@@ -39,19 +65,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="http://qwenlm.github.io/zh/blog/ofasys/"
-                />
-  </url><url>
-    <loc>http://qwenlm.github.io/zh/</loc>
-    <lastmod>2022-12-28T18:01:21+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://qwenlm.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://qwenlm.github.io/zh/"
                 />
   </url><url>
     <loc>http://qwenlm.github.io/zh/blog/chinese-clip/</loc>
