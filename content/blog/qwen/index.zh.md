@@ -4,7 +4,7 @@ date: 2024-01-23T22:13:29+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
-author: ["Junyang Lin", "Binyuan Hui"]
+# author: ["Junyang Lin", "Binyuan Hui"]
 draft: false
 # comments: false
 # description: "Desc Text."
