@@ -1,5 +1,5 @@
 ---
-title: "API"
+title: "Resources"
 search_hidden: true
 show_bread_crumbs: false
 show_code_copy_buttons: true
