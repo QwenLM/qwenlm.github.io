@@ -108,8 +108,6 @@
   </url><url>
     <loc>http://qwenlm.github.io/about/</loc>
   </url><url>
-    <loc>http://qwenlm.github.io/resources/</loc>
-  </url><url>
     <loc>http://qwenlm.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -123,6 +121,8 @@
                 />
   </url><url>
     <loc>http://qwenlm.github.io/publication/</loc>
+  </url><url>
+    <loc>http://qwenlm.github.io/resources/</loc>
   </url><url>
     <loc>http://qwenlm.github.io/search/</loc>
   </url><url>
