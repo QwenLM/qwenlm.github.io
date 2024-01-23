@@ -2,7 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://qwenlm.github.io/zh/blog/ofa/</loc>
+    <lastmod>2022-11-14T16:01:41+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/blog/ofa/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/blog/ofa/"
+                />
+  </url><url>
     <loc>http://qwenlm.github.io/zh/blog/</loc>
+    <lastmod>2022-12-28T18:01:21+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -12,6 +26,71 @@
                 rel="alternate"
                 hreflang="zh"
                 href="http://qwenlm.github.io/zh/blog/"
+                />
+  </url><url>
+    <loc>http://qwenlm.github.io/zh/blog/ofasys/</loc>
+    <lastmod>2022-12-28T18:01:21+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/blog/ofasys/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/blog/ofasys/"
+                />
+  </url><url>
+    <loc>http://qwenlm.github.io/zh/</loc>
+    <lastmod>2022-12-28T18:01:21+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/"
+                />
+  </url><url>
+    <loc>http://qwenlm.github.io/zh/blog/chinese-clip/</loc>
+    <lastmod>2022-12-24T14:54:19+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/blog/chinese-clip/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/blog/chinese-clip/"
+                />
+  </url><url>
+    <loc>http://qwenlm.github.io/zh/tags/research/</loc>
+    <lastmod>2022-12-24T14:54:19+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/tags/research/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/tags/research/"
+                />
+  </url><url>
+    <loc>http://qwenlm.github.io/zh/tags/</loc>
+    <lastmod>2022-12-24T14:54:19+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/tags/"
                 />
   </url><url>
     <loc>http://qwenlm.github.io/zh/categories/</loc>
@@ -24,30 +103,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="http://qwenlm.github.io/zh/categories/"
-                />
-  </url><url>
-    <loc>http://qwenlm.github.io/zh/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://qwenlm.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://qwenlm.github.io/zh/"
-                />
-  </url><url>
-    <loc>http://qwenlm.github.io/zh/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://qwenlm.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://qwenlm.github.io/zh/tags/"
                 />
   </url>
 </urlset>
