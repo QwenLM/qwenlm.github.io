@@ -4,8 +4,8 @@ date: 2024-01-23T22:13:29+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
-author: "Junyang Lin, Binyuan Hui"
-draft: true
+author: ["Junyang Lin", "Binyuan Hui"]
+draft: false
 # comments: false
 # description: "Desc Text."
 # disable_share: false
@@ -37,7 +37,6 @@ show_word_count: true
 #   gradient: false
 #   blur: false
 ---
-
 四个月前，我们首次发布Qwen-7B大型语言模型（LLM），正式开启了我们的开源之旅。今天，我们介绍Qwen开源家族，更全面的展示我们的工作和目标。下面是开源项目和社区的重要链接。
 
 {{< button href="https://arxiv.org/abs/2309.16609" label="PAPER" external=true >}}
@@ -57,15 +56,15 @@ Additionally, we have WeChat groups for chatting and we invite you to join the g
 在这里，“Qwen” 指的是基础语言模型，而 “Qwen-Chat” 则指的是通过后训练技术如SFT（有监督微调）和RLHF（强化学习人类反馈）训练的聊天模型。我们还有提供了专门针对特定领域和任务的模型，例如用于编程的 “Code-Qwen” 和用于数学的 “Math-Qwen”。大型语言模型（LLM）可以通过模态对齐扩展到多模态，因此我们有视觉-语言模型 “Qwen-VL” 以及音频-语言模型 “Qwen-Audio” 。值得注意的是，本篇博客仅介绍语言模型，至于多模态模型（LMM），例如Qwen-VL和Qwen-Audio，请参阅其各自的博客。
 
 ## 基础模型：对齐的良好起点
+
 构建助手模型的一般流程包括预训练和后训练，后者主要由SFT（有监督微调）和RLHF（强化学习人类反馈）组成。至于预训练，与之前的大语言模型GPT-3、Llama类似，Qwen是一个基于Transformer的语言模型，通过预测下一个词的任务进行预训练。为了简化和稳定性，我们没有为语言模型引入更多的任务，而是专注于模型规模的扩展和数据的扩展。目前，我们已经开发了5种不同大小的模型，其中4种已开源，包括 1.8B、Qwen-7B、Qwen-14B和Qwen-72B。
 
-| Model | Release Date | Max Length | System Prompt Enhancement | # of Pretrained Tokens | Minimum GPU Memory Usage of Finetuning (Q-Lora) | Minimum GPU Usage of Generating 2048 Tokens (Int4) | Tool Usage |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Qwen-1.8B | 23.11.30 | 32K | ✔ | 2.2T | 5.8GB | 2.9GB | ✔ |
-| Qwen-7B | 23.08.03 | 32K | ✘ | 2.4T | 11.5GB | 8.2GB | ✔ |
-| Qwen-14B | 23.09.25 | 8K | ✘ | 3.0T | 18.7GB | 13.0GB | ✔ |
-| Qwen-72B | 23.11.30 | 32K | ✔ | 3.0T | 61.4GB | 48.9GB | ✔ |
-
+| Model     | Release Date | Max Length | System Prompt Enhancement | # of Pretrained Tokens | Minimum GPU Memory Usage of Finetuning (Q-Lora) | Minimum GPU Usage of Generating 2048 Tokens (Int4) | Tool Usage |
+| --------- | ------------ | ---------- | ------------------------- | ---------------------- | ----------------------------------------------- | -------------------------------------------------- | ---------- |
+| Qwen-1.8B | 23.11.30     | 32K        | ✔                        | 2.2T                   | 5.8GB                                           | 2.9GB                                              | ✔         |
+| Qwen-7B   | 23.08.03     | 32K        | ✘                        | 2.4T                   | 11.5GB                                          | 8.2GB                                              | ✔         |
+| Qwen-14B  | 23.09.25     | 8K         | ✘                        | 3.0T                   | 18.7GB                                          | 13.0GB                                             | ✔         |
+| Qwen-72B  | 23.11.30     | 32K        | ✔                        | 3.0T                   | 61.4GB                                          | 48.9GB                                             | ✔         |
 
 模型经过2-3T tokens进行了充分的训练。由于预训练数据是多语言的，Qwen本质上是一个多语言模型，而不是单一语言或双语模型。由于我们预训练数据的限制，该模型在英语和中文方面具有很强的能力，同时也能处理其他语言，如西班牙语、法语和日语。为了扩展其多语种能力，我们采用了一种在编码不同语言信息方面具有高效率的分词器。与其他分词器相比，我们的分词器在一系列语言中展示了高压缩率。
 
@@ -73,9 +72,8 @@ Additionally, we have WeChat groups for chatting and we invite you to join the g
 
 预训练的另一个重点是扩展上下文长度。我们直接应用了具有更长上下文长度和更大基数值的RoPE（旋转位置编码）的持续预训练。此外，我们发现这种方法在外推方面也是有效的。目前开源的 Qwen 模型大多支持32K词标记的上下文长度，并且通过L-Eval和“大海捞针”进行了评估，验证了其有效性。
 
-
-| Model           | Input Length | Average | Coursera | GSM | QuALITY | TOEFL | CodeU | SFcition |
-|-----------------|--------------|---------|----------|-----|---------|-------|-------|----------|
+| Model           | Input Length | Average | Coursera | GSM   | QuALITY | TOEFL | CodeU | SFcition |
+| --------------- | ------------ | ------- | -------- | ----- | ------- | ----- | ----- | -------- |
 | ChatGPT-3.5-16k | 16K          | 60.73   | 63.51    | 84.00 | 61.38   | 78.43 | 12.22 | 64.84    |
 | Qwen-72B-Chat   | 32K          | 62.30   | 58.13    | 76.00 | 77.22   | 86.24 | 6.66  | 69.53    |
 
@@ -100,4 +98,3 @@ Additionally, we have WeChat groups for chatting and we invite you to join the g
 ## 总结
 
 我们发布了Qwen系列，在这篇博客中，我们对Qwen语言模型进行了简单的介绍。目前，我们仍在遵循预训练、SFT和RLHF的方法，正在探索扩展模型和数据的新路径。希望我们的开源工作能够对研究和应用社区做出贡献。
-
