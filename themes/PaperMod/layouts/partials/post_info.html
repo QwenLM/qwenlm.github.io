@@ -1,0 +1,31 @@
+{{- $hasHeaderImage := false }}
+{{- if and .Params.header .Params.header.image -}}
+{{- $hasHeaderImage = true }}
+{{- end -}}
+
+<div class="hero-container"
+{{- if $hasHeaderImage -}}
+style="background: url('{{ .Params.header.image | safeURL }}') 50% 50% / cover no-repeat fixed; box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.65);"
+{{- end -}}
+>
+    <div class="hero">
+        {{ partial "breadcrumbs.html" . }}
+        <h1 class="post-title">
+            {{ .Title }}
+            {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+        </h1>
+        {{- if .Description }}
+        <div class="post-description">
+            {{ .Description }}
+        </div>
+        {{- end }}
+        {{- if not (.Param "hide_meta") }}
+        <div class="post-meta">
+            {{- partial "post_meta.html" . -}}
+            {{- partial "translation_list.html" . -}}
+            {{- partial "edit_post.html" . -}}
+            {{- partial "post_canonical.html" . -}}
+        </div>
+        {{- end }}
+    </div>
+</div>

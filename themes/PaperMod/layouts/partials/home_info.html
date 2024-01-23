@@ -1,0 +1,30 @@
+{{- with .Params -}}
+<div class="hero-container">
+    {{- with .header -}}
+    {{- if or .background .backgroud_image -}}
+        {{- if .background -}}
+        <div>{{ .background }}</div>
+<div class="hero-background" style="background: {{ .background }}"></div>
+        {{- else if .backgroud_image -}}
+<div class="hero-background" style="background: url('{{ .background_image | safeURL }}') 50% 50% / cover no-repeat fixed; box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.65);"></div>
+        {{- end -}}
+        {{- if .gradient -}}
+<div class="hero-gradient"></div>
+        {{- end -}}
+    {{- end -}}
+    {{- end -}}
+    <div class="hero">
+        <div class="hero-header">
+            <h1>{{ .title | markdownify }}</h1>
+        </div>
+        {{- with .content }}
+            <div class="hero-content">
+                {{ .content | markdownify }}
+            </div>
+        {{ end }}
+        <div class="hero-footer">
+            {{ partial "social_icons.html" .social_icons }}
+        </div>
+    </div>
+</div>
+{{- end -}}

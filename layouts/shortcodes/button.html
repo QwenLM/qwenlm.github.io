@@ -1,0 +1,4 @@
+{{- $src := .Get "href" | default (.Get 0) -}}
+<a href="{{- $src -}}" class="btn {{ with .Get "external" }}external{{ end }}" target="_blank">
+    {{- with .Get "label" -}}{{- . -}}{{- end -}}
+</a>

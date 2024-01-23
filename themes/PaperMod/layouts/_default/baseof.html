@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
+
+<head>
+    {{- partial "head.html" . }}
+</head>
+
+<body class="
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- print "list" -}}
+{{- end -}}
+{{- if eq site.Params.default_theme `dark` -}}
+{{- print " dark" }}
+{{- end -}}
+" id="top">
+    {{- partial "header.html" . -}}
+    {{- partial "hero.html" . -}}
+    <main class="main {{ if  eq .Layout `search` }} {{ "search" | safeCSS }} {{ end }} {{ if .IsHome }} {{ "home" | safeCSS }} {{ end }}">
+        {{- block "main" . }}{{ end }}
+    </main>
+    {{ partialCached "footer.html" . .Layout .Kind (.Param "hide_footer") (.Param "show_code_copy_buttons") -}}
+</body>
+
+</html>

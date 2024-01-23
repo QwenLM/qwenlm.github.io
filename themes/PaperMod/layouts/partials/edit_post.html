@@ -1,0 +1,8 @@
+{{- if or .Params.edit_post.url site.Params.edit_post.url -}}
+{{- $fileUrlPath := path.Join .File.Path }}
+
+{{- if or .Params.author site.Params.author (.Param "show_reading_time") (not .Date.IsZero) .IsTranslated }}&nbsp;|&nbsp;{{- end -}}
+<a href="{{ .Params.edit_post.url | default site.Params.edit_post.url }}{{ if .Params.edit_post.append_file_path | default ( site.Params.edit_post.append_file_path | default false ) }}/{{ $fileUrlPath }}{{ end }}" rel="noopener noreferrer" target="_blank">
+    {{- .Params.edit_post.text | default (site.Params.edit_post.text | default (i18n "edit_post" | default "Edit")) -}}
+</a>
+{{- end }}

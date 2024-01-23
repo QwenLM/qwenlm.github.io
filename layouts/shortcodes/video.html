@@ -1,0 +1,16 @@
+{{- $src := .Get "src" | default (.Get 0) -}}
+<figure {{ with .Get "class" }}class="{{- . | safeHTMLAttr -}}"{{ end }}>
+    <video
+    {{ with .Get "controls" }}controls{{ end }}
+    {{ with .Get "loop" }}loop{{ end }}
+    src="{{- $src -}}"
+    {{ with .Get "poster" }}poster="{{- . -}}"{{ end }}
+    {{ with .Get "autoplay" }}autoplay{{ end }}
+    >
+    </video>
+    {{- with .Get "title" -}}
+    <figcaption>
+        <h4>{{- . -}}</h4>
+    </figcaption>
+    {{- end -}}
+</figure>

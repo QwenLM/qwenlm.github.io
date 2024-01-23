@@ -1,0 +1,121 @@
+:root {
+    --gap: 24px;
+    --content-gap: 20px;
+    --modal-gap: 4.2rem;
+    /* --nav-width: 1024px; */
+    --main-width: 900px;
+    --hero-height: 320px;
+    --header-height: 60px;
+    --footer-height: 60px;
+    --radius: 8px;
+    --theme: rgb(255, 255, 255);
+    --entry: rgb(255, 255, 255);
+    --primary: rgb(30, 30, 30);
+    --secondary: rgb(108, 108, 108);
+    --tertiary: rgb(214, 214, 214);
+    --content: rgb(31, 31, 31);
+    --hljs-bg: rgb(28, 29, 33);
+    --code-bg: rgb(245, 245, 245);
+    --border: rgb(238, 238, 238);
+    --hero1: #7d1fa5;
+    --hero2: #6d19fc;
+    --text-light: #f8f9fa;
+    --wide-width: 1490px;
+    --min-width: 390px;
+    --gradient-height: 400px;
+    --card: rgb(246, 246, 244);
+    --font-size: 18px;
+}
+
+.dark {
+    --theme: rgb(29, 30, 32);
+    --entry: rgb(46, 46, 51);
+    --primary: rgb(218, 218, 219);
+    --secondary: rgb(155, 156, 157);
+    --tertiary: rgb(65, 66, 68);
+    --content: rgb(196, 196, 197);
+    --hljs-bg: rgb(46, 46, 51);
+    --code-bg: rgb(55, 56, 62);
+    --border: rgb(51, 51, 51);
+}
+
+/* .list {
+    background: var(--code-bg);
+} */
+
+.dark.list {
+    background: var(--theme);
+}
+
+
+.text-light a, .text-light button, .text-light h1, .text-light h2, .text-light h3, .text-light h4, .text-light h5, .text-light h6, .text-light div, .text-light p, .text-light span {
+    color: var(--text-light);
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/font/Roboto-Regular.ttf")format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/font/Roboto-Bold.ttf")format('truetype');
+    font-weight: Bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/font/Roboto-Italic.ttf")format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/font/Roboto-BoldItalic.ttf")format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Prata";
+    src: url("/font/Prata-Regular.ttf")format('truetype');
+}
+
+@font-face {
+    font-family: 'Bodoni Moda';
+    src: url("/font/BodoniModa-VariableFont_opsz,wght.ttf")format('truetype-variations');
+}
+
+@font-face {
+    font-family: "Bodoni Moda";
+    src: url("/font/BodoniModa_18pt-Regular.ttf")format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bodoni Moda";
+    src: url("/font/BodoniModa_18pt-Bold.ttf")format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bodoni Moda";
+    src: url("/font/BodoniModa_18pt-Italic.ttf")format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Bodoni Moda";
+    src: url("/font/BodoniModa_18pt-BoldItalic.ttf")format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}

@@ -1,0 +1,282 @@
+.nav-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    transition: all 0.3s ease 0s;
+    background: white;
+}
+
+.nav-container.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.nav-container.nav-background {
+    background: none;
+}
+
+.nav-container.nav-background a, .nav-container.nav-background button, .nav-container.nav-background li {
+    color: var(--text-light)!important;
+}
+
+/* .nav svg {
+    height: 30px;
+    width: 30px;
+    filter: drop-shadow(0px 0px 0px var(--theme));
+} */
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* max-width: calc(var(--nav-width) + var(--gap) * 2); */
+    max-width: var(--wide-width);
+    min-width: var(--min-width);
+    width: 93.3333333333%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    line-height: var(--header-height);
+}
+
+
+
+.logo,
+#menu {
+    display: flex;
+    margin: auto var(--gap);
+}
+
+.logo {
+    flex-wrap: inherit;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo a img, .logo a svg {
+    height: 30px;
+    width: 30px;
+    filter: drop-shadow(0px 0px 0px var(--theme));
+    display: inline;
+    vertical-align: middle;
+    pointer-events: none;
+    transform: translate(0, -10%);
+    border-radius: 6px;
+    margin-inline-end: 8px;
+    /* animation: loading 20s linear infinite; */
+}
+
+
+/*通过@keyframes规则,能够创建动画 , que 定义动画的名称 可自己定义*/
+@keyframes loading {
+    /*以百分比来规定改变发生的时间 也可以通过"from"和"to",等价于0% 和 100%*/
+    0% {
+        /*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+.hero-container {
+    position: relative;
+    padding-top: var(--header-height);
+    transition: all 0.1s ease 0s;
+}
+
+.hero-background {
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-gradient {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 80%);
+    position: absolute;
+    height: var(--gradient-height);
+    width: 100%;
+    left:0;
+    bottom:0;
+}
+
+
+.hero-blur {
+    -webkit-backdrop-filter: blur(48px);
+    backdrop-filter: blur(48px);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left:0;
+    bottom:0;
+}
+
+.hero {
+    position: relative;
+    max-width: var(--wide-width);
+    min-width: var(--min-width);
+    width: calc(var(--main-width) + var(--gap)*2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 320px;
+    margin: auto;
+    padding: 0 var(--gap);
+}
+
+@media screen and (max-width:948px) {
+    .hero {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:496px) {
+    .hero-container {
+        padding-top: calc(var(--header-height) *2);
+    }
+
+    .nav {
+        justify-content: center;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+
+}
+
+.hero .hero-header {
+    /* overflow: hidden; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.hero .hero-header h1 {
+    font-family: "futura", "Prata", serif;
+    font-style: italic;
+    font-size: 6rem;
+    line-height: 1.2;
+    /* text-shadow: 0 0 12px black; */
+    /* text-shadow: 0 0 32px rgb(97, 53, 218); */
+    text-shadow: 0 0 32px rgb(79, 45, 218);
+}
+
+@media screen and (max-width: 496px) {
+    .hero .hero-header h1 {
+        font-size: 3rem;
+        line-height: 1.3;
+        text-shadow: 0 0 8px black;
+    }
+}
+
+.hero .hero-content {
+    font-family: "Palatino", serif;
+    margin: 14px 0;
+    font-size: 32px;
+    -webkit-line-clamp: 3;
+}
+
+.hero .hero-footer {
+    font-size: 14px;
+}
+
+
+.hero .breadcrumbs {
+    margin-bottom: 1rem;
+}
+
+.hero .post-meta {
+    margin-top: 1rem;
+}
+
+button#theme-toggle {
+    font-size: 26px;
+    margin: auto 4px;
+}
+
+body.dark #moon {
+    vertical-align: middle;
+    display: none;
+}
+
+body:not(.dark) #sun {
+    display: none;
+}
+
+#menu {
+    list-style: none;
+    word-break: keep-all;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#menu li + li {
+    margin-inline-start: var(--gap);
+}
+
+#menu a {
+    font-family: "-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif";
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+
+
+#menu .active {
+    font-weight: 600;
+    border-bottom: 2px solid currentColor;
+}
+
+.lang-switch li,
+.lang-switch ul,
+.logo-switches {
+    display: inline-flex;
+    margin: auto 4px;
+}
+
+.lang-switch {
+    display: flex;
+    flex-wrap: inherit;
+}
+
+.lang-switch a {
+    margin: auto 3px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.logo-switches {
+    flex-wrap: inherit;
+}
+
+.title-translation {
+    font-size: 14px;
+    /* color: var(--secondary); */
+    color: rgba(255,255,255,.67);
+    display: inline-flex;
+}
+
+
+.title-translation .i18n_list li {
+    font-size: 14px;
+    color: white;
+    /* color: var(--secondary); */
+    display: inline-flex;
+    list-style: none;
+    margin: auto 3px;
+    /* box-shadow: 0 1px 0 var(--secondary); */
+    box-shadow: 0 1px 0 rgba(255,255,255,.67);
+}
+
+.title-translation .i18n_list a {
+    font-size: 14px;
+    color: rgba(255,255,255,.67);
+    /* color: var(--secondary); */
+}

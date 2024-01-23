@@ -1,0 +1,77 @@
+{{- $isHome := .IsHome -}}
+{{- $isMinimal := or (eq .Title "404 Page not found") (eq .Layout "search") }}
+
+{{- if not $isMinimal }}
+<div class="hero-container" {{- if $isHome }} style="min-height: 100vh; display: flex; justify-content: center;" {{- end }}>
+    {{- $hasHeaderBg := and (isset .Params "header") (or (isset .Params.header "background") (isset .Params.header "background_image")) (ne .Layout "search") }}
+    {{- with .Params.header -}}
+        {{- if $hasHeaderBg -}}
+            {{- if .background -}}
+    <div class="hero-background" style="background: {{ .background | safeCSS }}"></div>
+            {{- else if .background_image -}}
+    <div class="hero-background" style="background: url('{{ .background_image | safeURL }}') 50% 50% / cover no-repeat fixed;"></div>
+            {{- end -}}
+            {{- if .gradient -}}
+    <div class="hero-gradient"></div>
+            {{- end -}}
+            {{- if .blur }}
+    <div class="hero-blur"></div>
+            {{- end }}
+        {{- end -}}
+    {{- end -}}
+    {{/*  {{- if $isHome }}
+    {{- partial "mouse_wheel.html" . }}
+    {{- end }}  */}}
+    <div class="hero {{ if $hasHeaderBg }}text-light{{ end }}">
+        {{- if $isHome }} {{/* home page  */}}
+            <div class="hero-header">
+                <h1>{{ .Title | markdownify }}</h1>
+            </div>
+            {{- with .Description }}
+                <div class="hero-content">
+                    {{ . | markdownify }}
+                </div>
+            {{ end }}
+            <div class="hero-footer">
+                {{ partial "social_icons.html" .Params.social_icons }}
+            </div>
+        {{- else if eq .Layout "search" }}
+        {{- else if eq .Kind "page" }} {{/* single pages  */}}
+            {{/*  {{ partial "breadcrumbs.html" . }}  */}}
+            <h1 class="post-title">
+                {{ .Title }}
+                {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+            </h1>
+            {{- if .Description }}
+            <div class="post-description">
+                {{ .Description }}
+            </div>
+            {{- end }}
+            {{- if not (.Param "hide_meta") }}
+            <div class="post-meta">
+                {{- partial "post_meta.html" . -}}
+                {{- partial "translation_list.html" . -}}
+                {{- partial "edit_post.html" . -}}
+                {{- partial "post_canonical.html" . -}}
+            </div>
+            {{- end }}
+        {{- else }} {{/* sections or taximonies  */}}
+        <h1 class="post-title">
+            {{ .Title }}
+            {{- partial "translation_title.html" . }}
+        </h1>
+        {{- if .Description }}
+        <div class="post-description">
+            {{ .Description }}
+        </div>
+        {{- end }}
+        {{/*  <div class="post-meta">
+            {{- partial "translation_list.html" . -}}
+        </div>  */}}
+        {{- end }}
+    </div>
+</div>
+{{- else }}
+<div class="hero-container"></div>
+{{- end }}
+

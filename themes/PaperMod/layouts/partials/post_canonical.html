@@ -1,0 +1,9 @@
+{{ if and (.Params.canonical_url) (.Params.ShowCanonicalLink ) -}}
+{{ $url := urls.Parse .Params.canonical_url }}
+
+{{- if or .Params.author site.Params.author (.Param "show_reading_time") (not .Date.IsZero) .IsTranslated (or .Params.edit_post.url site.Params.edit_post.url) }}&nbsp;|&nbsp;{{- end -}}
+<span>
+    {{- (site.Params.CanonicalLinkText | default .Params.CanonicalLinkText) | default "Originally published at" -}}
+    &nbsp;<a href="{{ trim .Params.canonical_url " " }}" title="{{ trim .Params.canonical_url " " }}" target="_blank" rel="noopener noreferrer">{{ $url.Host }}</a>
+</span>
+{{- end }}

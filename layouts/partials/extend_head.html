@@ -1,0 +1,10 @@
+{{- $js := resources.Get "js/custom.js" }}
+{{- if not site.Params.assets.disable_fingerprinting }}
+{{- $js := $js | fingerprint }}
+<script defer crossorigin="anonymous" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+{{- else }}
+<script defer crossorigin="anonymous" src="{{ $js.RelPermalink }}"></script>
+{{- end }}
+{{ if or .Params.math .Site.Params.math }}
+{{ partial "math.html" . }}
+{{ end }}
