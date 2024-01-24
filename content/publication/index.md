@@ -32,6 +32,8 @@ header:
 
 - Bai, S., Zhou, H., Li, Z., Zhou, C., & Yang, H. (2022). _Single Stage Virtual Try-on via Deformable Attention Flows_. **ECCV**.
 
+- Cui, Z., Ma, J., Zhou, C., Zhou, J., Yang, H. (2022). _M6-Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems_. arXiv, abs/2205.08084.
+
 - Zhang, Z., Ma, J., Zhou, C., Men, R., Li, Z., Ding, M., Tang, J., Zhou, J., & Yang, H. (2021). _UFC-BERT: Unifying Multi-Modal Controls for Conditional Image Synthesis._ **NeurIPS**.
 
 - Lin, J., Yang, A., Bai, J., Zhou, C., Jiang, L., Jia, X., Wang, A., Zhang, J., Li, Y., Lin, W., Zhou, J., & Yang, H. (2021). _M6-10T: A Sharing-Delinking Paradigm for Efficient Multi-Trillion Parameter Pretraining._ arXiv, abs/2110.03888.
