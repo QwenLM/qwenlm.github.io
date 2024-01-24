@@ -28,8 +28,8 @@ It is simple to use Qwen through Hugging Face Transformers. Below is a demo usag
 from transformers import AutoModelForCausalLM, AutoTokenizer
 device = "cuda" # the device to load the model onto
 
-model = AutoModelForCausalLM.from_pretrained("Qwen2/Qwen2-7B-Chat-beta", device_map="auto")
-tokenizer = AutoTokenizer.from_pretrained("Qwen2/Qwen2-7B-Chat-beta")
+model = AutoModelForCausalLM.from_pretrained("Qwen2/Qwen2-beta-7B-Chat", device_map="auto")
+tokenizer = AutoTokenizer.from_pretrained("Qwen2/Qwen2-beta-7B-Chat")
 
 prompt = "Give me a short introduction to large language model."
 messages = [{"role": "user", "content": prompt}]

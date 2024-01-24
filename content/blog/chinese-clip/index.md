@@ -86,7 +86,7 @@ We also try Chinese CLIP on zero-shot image classification, and we participate i
 
 For the ablation, it can be found that in comparison with training from scratch, the two-stage pretraining method demonstrates much better performance, and the second-stage pretraining can further level up the model performance in cross-modal retrieval.
 
-{{< figure src="ablation.jpg" title="Ablation studies." >}}
+{{< figure src="https://ofasys-beijing.oss-accelerate.aliyuncs.com/images/ablation.jpg" title="Ablation studies." >}}
 
 ## Limitations and Future Work
 
