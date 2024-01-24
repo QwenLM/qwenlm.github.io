@@ -58,7 +58,7 @@ Additionally, we have WeChat groups for chatting and we invite you to join the g
 
 In general, Qwen is more than a language model but a project towards AGI which for now consists of LLM and LMM. The following figure shows the main components of Qwen:
 
-{{< figure src="family.png#center" width="80%">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen/family.png#center" width="80%">}}
 
 where Qwen refers to the base language model, while Qwen-Chat refers to the chat model trained with techniques like SFT and RLHF. We also have models specialized for domains and tasks, such as Code-Qwen for coding and Math-Qwen for mathematics. LLM can be extended to multimodality with modality alignment, and thus we have vision-language model Qwen-VL as well as audio-language model Qwen-Audio. Note that this blog mainly serves for introducing the language model. As to the large multimodal models (LMM), such as Qwen-VL and Qwen-Audio, please refer to the respective blog.
 
@@ -75,7 +75,7 @@ The general procedure of building an assistant model includes pretraining and po
 
 Models are sufficiently trained with 2-3 trillion tokens. The pretraining data are multilingual, and thus Qwen is essentially a multilingual model instead of a model of a single language or bilingual. Note that due to the limitations of our pretraining data, the model is strongly capable of English and Chinese and also capable of other languages, such as Spanish, French, and Japanese. To extend its multilingual capabilities, we applied a tokenizer with high efficiency in encoding information from different languages. In comparison with other tokenizers, ours demonstrates high compression rate in a series of languages.
 
-{{< figure src="tokenizer.png#center" width="80%">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen/tokenizer.png#center" width="80%">}}
 
 Another focus of our pretraining is the extension of context length. We directly apply continual pretraining with longer context length and larger base value for RoPE. Additionally, we find that.this method is also effective in extrapolation. Now our opensourced models mostly support a context length of 32K tokens, and they were evaluated through L-Eval and “Needle in a Haystack”.
 
@@ -84,11 +84,11 @@ Another focus of our pretraining is the extension of context length. We directly
 | ChatGPT-3.5-16k | 16K          | 60.73   | 63.51    | 84.00 | 61.38   | 78.43 | 12.22 | 64.84    |
 | Qwen-72B-Chat   | 32K          | 62.30   | 58.13    | 76.00 | 77.22   | 86.24 | 6.66  | 69.53    |
 
-{{< figure src="haystack.png#center" width="80%" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen/haystack.png#center" width="80%" >}}
 
 Benchmark evaluation shows that our largest opensourced model Qwen-72B as well as the largest proprietary shows competitive performance against Llama 2, GPT-3.5 and GPT-4.
 
-{{< figure src="result.png#center" width="80%">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen/result.png#center" width="80%">}}
 
 Note that this is an evaluation of base language model. This only reflects that we might have a good starting point for post-training, i.e., SFT and RLHF.
 
@@ -98,7 +98,7 @@ We refer both techniques to the word “alignment” in post-training. Currently
 
 Based on a good SFT model, we can then explore the effects of RLHF. It is difficult to train RLHF, specifically PPO-based method, Besides the training instabilities of PPO, another key to the final performance is the quality of reward model. Therefore, we have spent efforts in building a reliable reward model by reward model pretraining on large-scale comparison data and finetuning on carefully labeled comparison data of high quality. In comparison with the SFT model, we find that the RLHF model is more creative and follows the instructions better, and thus its generated responses are more preferred by human annotators.
 
-{{< figure src="rlhf.png#center"  width="80%" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen/rlhf.png#center"  width="80%" >}}
 
 ## Tool Use and Agent
 

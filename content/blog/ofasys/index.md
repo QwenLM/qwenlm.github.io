@@ -1,25 +1,26 @@
 ---
 title: "OFASys: Enabling Multitask Learning with One Line of Code! "
 date: 2022-12-28T18:01:21+08:00
-# weight: 1
+# weight: 2
 # aliases: ["/first"]
-tags: ["Research"]
-# author: "Junyang Lin"
-draft: false
-hide_meta: false
-comments: false
-# description: "Desc Text. "
-disable_hljs: false # to disable highlightjs
-disable_share: true
-hide_summary: false
-search_hidden: false
+# tags: ["Research"]
+# author: ["Junyang Lin", "Binyuan Hui"]
+# comments: false
+# description: "Desc Text."
+# disable_share: false
+# hide_meta: false
+# hide_summary: false # to hide summary in list
+# hide_footer: false
+# math: false
+# search_hidden: false # to hide from search page
 show_reading_time: true
 show_bread_crumbs: true
-show_post_nav_links: false
+show_post_nav_links: false # the prev/next after the content
+show_code_copy_buttons: true
 show_word_count: true
-use_hugo_toc: true
-show_toc: true
-toc_open: true
+# use_hugo_toc: true
+# show_toc: true
+# toc_open: true # default expand all
 # cover:
 #     image: "ofa_banner.jpg"
 #     # can also paste direct link from external site
@@ -40,7 +41,7 @@ Generalist Models are hot! We all see an opportunity towards a real generalist m
 {{< button href="https://arxiv.org/abs/2212.04408" label="Paper" external=true >}}
 {{< button href="https://github.com/OFA-Sys/OFASys" label="GitHub" external=true >}}
 
-{{< figure src="demo.jpg" title="Demo of OFASys." >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofasys/demo.jpg#center" width="80%" >}}
 
 ## Background
 
@@ -50,13 +51,13 @@ Thanks to Transformer and pretraining, we have witnessed an unprecedented opport
 
 Before introducing the system design, we first move into the world of OFASys to see how we can build a multitask learning model with a single line of code. To be more specific, what you need to do is composing a proper _Instruction_. Here are several examples of _Instruction_ for different tasks:
 
-{{< figure src="caption_instruction.jpg" title="Instruction for image captioning." >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofasys/caption_instruction.jpg#center" width="80%" >}}
 
 The two sentences separated by “->” describe the task input and its desired output, respectively. In this case, “`<tt>`[IMAGE:img]`</tt>`” specifies that there is an image input bound to a data column named `<tt>`img`</tt>` in the dataset. The plain texts in the _Instruction_ indicate the task is about captioning an image. The output of the task is a text sequence, which is the `<tt>`cap`</tt>` column in the dataset.
 
 Another example is for an NLI task:
 
-{{< figure src="mnli_instruction.jpg" title="Instruction for MNLI." >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofasys/mnli_instruction.jpg#center" width="80%" >}}
 
 Similar to the previous one, we use a template and indicators for inputs to build an _Instruction_. Differently, there are two inputs for the encoder. Besides, as we find repeating the input in the decoder is helpful for the downstream performance, we use a signal `<tt>`no_loss`</tt>` to avoid loss computation. As the label set is closed for NLI, we use a signal `<tt>`closed_set`</tt>` for the indication.
 
@@ -66,7 +67,7 @@ To sum up, things can be much easier if you use OFASys. What you need might only
 
 A neat system design is what lies behind an easy-to-use interface. An overview is demonstrated below.
 
-{{< figure src="overview.jpg" title="Overview of the system design." class="wide" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofasys/overview.jpg#center" width="80%" >}}
 
 OFASys accesses the task definition and task data through _Instruction_ by parsing _Instructions_ into task plans. In each plan, there is a model hierarchy, consisting of modality-specific preprocessors/postprocessors and adapters, as well as a modality-agnostic computation model. The universal model is namely a general module for fusing multimodal inputs and generating outputs. As the inputs and the outputs are consistently being representation sequences, the implementation of the universal model is highly versatile, regardless of the modality intricacies. The outputs of the universal model is finally postprocessed by the adapters and postprocessors, in order to generate content consistent with the input formats. Stage-wise components, including criteria and generators, provide support in training and inference, which have a variety of out-of-the-box implementations. In this way, different multi-modal data can go through the system with consistent inner interfaces to improve development efficiency.
 
@@ -76,7 +77,7 @@ In multitask learning, there are multiple such plans parsed from the _Instructio
 
 To validate its effectiveness, we train a generalist model based on OFA, OFA+, which can handle text, image, speech, video and motion data all-in-one for the first time. Specifically, we have trained a OFA-based OFA+ (Generalist) and an improved version with modality-level MoE, OFA+ (Generalist MoE). For comparison, we use the original OFA (OFA+ (Specialist)) which is finetuned on each specific task.
 
-{{< figure src="results.jpg" title="Experimental results on multimodal and unimodal tasks. " >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofasys/results.jpg#center" width="80%" >}}
 
 In general, OFA+ is able to preserve 95+% of the performance of the specialist model while scaling to 23 diverse tasks over 7 modalities. This shows that multitask learning not only endows the generalist model with multiple capabilities but also helps it achieve top-level performance on specific tasks.
 

@@ -58,7 +58,7 @@ Additionally, we have WeChat groups for chatting and we invite you to join the g
 
 整体上，Qwen不仅仅是一个语言模型，而是一个致力于实现通用人工智能（AGI）的项目，目前包含了大型语言模型（LLM）和大型多模态模型（LMM）。下图展示了Qwen的主要组成部分:
 
-{{< figure src="family.png#center" width="80%">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen/family.png#center" width="80%">}}
 
 在这里，“Qwen” 指的是基础语言模型，而 “Qwen-Chat” 则指的是通过后训练技术如SFT（有监督微调）和RLHF（强化学习人类反馈）训练的聊天模型。我们还有提供了专门针对特定领域和任务的模型，例如用于编程的 “Code-Qwen” 和用于数学的 “Math-Qwen”。大型语言模型（LLM）可以通过模态对齐扩展到多模态，因此我们有视觉-语言模型 “Qwen-VL” 以及音频-语言模型 “Qwen-Audio” 。值得注意的是，本篇博客仅介绍语言模型，至于多模态模型（LMM），例如Qwen-VL和Qwen-Audio，请参阅其各自的博客。
 
@@ -75,7 +75,7 @@ Additionally, we have WeChat groups for chatting and we invite you to join the g
 
 模型经过2-3T tokens进行了充分的训练。由于预训练数据是多语言的，Qwen本质上是一个多语言模型，而不是单一语言或双语模型。由于我们预训练数据的限制，该模型在英语和中文方面具有很强的能力，同时也能处理其他语言，如西班牙语、法语和日语。为了扩展其多语种能力，我们采用了一种在编码不同语言信息方面具有高效率的分词器。与其他分词器相比，我们的分词器在一系列语言中展示了高压缩率。
 
-{{< figure src="tokenizer.png#center" width="80%">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen/tokenizer.png#center" width="80%">}}
 
 预训练的另一个重点是扩展上下文长度。我们直接应用了具有更长上下文长度和更大基数值的RoPE（旋转位置编码）的持续预训练。此外，我们发现这种方法在外推方面也是有效的。目前开源的 Qwen 模型大多支持32K词标记的上下文长度，并且通过L-Eval和“大海捞针”进行了评估，验证了其有效性。
 
@@ -84,11 +84,11 @@ Additionally, we have WeChat groups for chatting and we invite you to join the g
 | ChatGPT-3.5-16k | 16K          | 60.73   | 63.51    | 84.00 | 61.38   | 78.43 | 12.22 | 64.84    |
 | Qwen-72B-Chat   | 32K          | 62.30   | 58.13    | 76.00 | 77.22   | 86.24 | 6.66  | 69.53    |
 
-{{< figure src="haystack.png#center" width="80%" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen/haystack.png#center" width="80%" >}}
 
 评估基准显示，我们最大的开源模型Qwen-72B以及最大的私有模型在性能上与Llama 2、GPT-3.5和GPT-4具有竞争力。
 
-{{< figure src="result.png#center" width="80%">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen/result.png#center" width="80%">}}
 
 请注意，这是对基础语言模型的评估。这仅表明我们有了一个良好的后续训练起点，为后续SFT（有监督微调）和RLHF（强化学习人类反馈）做好了准备。
 
@@ -96,7 +96,7 @@ Additionally, we have WeChat groups for chatting and we invite you to join the g
 
 我们将后训练涉及的两种技术（SFT,RLHF）统称为“对齐”。目前的共识是可以通过相对较少量的微调数据获得一个聊天模型。我们专注于提高SFT数据的多样性和复杂性（如instag和tulu 2），并通过人工检查和自动评估严格控制质量。 基于一个良好的SFT模型，我们可以进一步探索RLHF的效果。特别是基于PPO（近端策略优化）的方法，但训练RLHF是困难的。除了PPO训练的不稳定性之外，另一个关键是奖励模型的质量。因此，我们在构建可靠的奖励模型上进行了大量努力，通过在大规模偏好数据上进行奖励模型预训练，以及在精心标记的高质量偏好数据上进行微调。与SFT模型相比，我们发现经过RLHF的模型更具创造性，更好地遵循指令，因此其生成的回复更受人类评注者的青睐。
 
-{{< figure src="rlhf.png#center"  width="80%" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen/rlhf.png#center"  width="80%" >}}
 
 ## 工具使用和 Agent
 

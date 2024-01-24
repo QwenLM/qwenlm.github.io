@@ -3,22 +3,21 @@ title: "Chinese CLIP: 中文图文对比学习预训练"
 date: 2022-12-24T14:54:19+08:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["Research"]
-# author: "Junyang Lin"
-draft: false
-hide_meta: false
-comments: false
-# description: "Desc Text. "
-disable_share: false
-hide_summary: false
-search_hidden: false
-show_reading_time: false
+# tags: ["Research"]
+# author: ["Junyang Lin", "Binyuan Hui"]
+# comments: false
+# description: "Desc Text."
+# disable_share: false
+# hide_meta: false
+# hide_summary: false # to hide summary in list
+# hide_footer: false
+# math: false
+# search_hidden: false # to hide from search page
+show_reading_time: true
 show_bread_crumbs: true
-show_post_nav_links: false
-show_word_count: false
-use_hugo_toc: true
-show_toc: true
-toc_open: true
+show_post_nav_links: false # the prev/next after the content
+show_code_copy_buttons: true
+show_word_count: true
 # use_hugo_toc: true
 # show_toc: true
 # toc_open: true # default expand all
@@ -51,7 +50,7 @@ CLIP[^1]是多模态表示学习领域一个现象级的模型。它不仅扮演
 
 下面是一个多语言CLIP[^2]检索的例子。不难看出，模型难以理解一些中文概念，甚至只能召回一些西方文化类似的概念的图片。
 
-{{< figure src="search.jpg" title="mCLIP中文搜索示例" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/search.jpg#center" width="80%" >}}
 
 并且，我们还做了相关实验，对比原始CLIP配合翻译文本和中文CLIP在跨模态检索任务上的表现。原始CLIP的效果远低于中文CLIP，这也一定程度反映语言特定的CLIP模型的必要性。
 
@@ -59,7 +58,7 @@ CLIP[^1]是多模态表示学习领域一个现象级的模型。它不仅扮演
 
 我们尽可能采用和原始CLIP一致的设定，不去增加模块或者设计复杂化的训练方法。而为了更加高效的训练，包括训练效率和最终迁移效果的提升，我们没有选择从头开始预训练，而是提出一个两阶段预训练的方法。
 
-{{< figure src="chinese-clip-model-v3.jpg" title="两阶段预训练方法示意图" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/chinese-clip-model-v3.jpg#center" width="80%" >}}
 
 在第一阶段中，我们将CLIP的双塔用已有的预训练模型进行初始化，分别是CLIP的视觉侧（如ViT-B、ResNet等）以及中文RoBERTa RoBERTA-wwm-Chinese。我们冻结图像塔，通过对比学习让文本塔的输出表示和图像塔的一致。在第二阶段中，我们解冻图像塔，进行对比学习继续训练，从而图像塔也能学习建模中文领域的图像数据分布。
 
@@ -67,25 +66,25 @@ CLIP[^1]是多模态表示学习领域一个现象级的模型。它不仅扮演
 
 我们推出了5个规模的中文CLIP模型，其中包括ResNet-50、ViT-B/16、ViT-L/14、ViT-L/14@336px和ViT-H/14。具体数据详见下表。
 
-{{< figure src="model_variants.jpg" title="不同规模的开源模型的具体数据" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/model_variants.jpg#center" width="80%" >}}
 
 ## 实验
 
 我们做了3个跨模态检索的实验，其中包括中文原生的[MUGE](https://tianchi.aliyun.com/muge)和英文原生的Flickr30K-CN和COCO-CN。在所有数据集上，中文CLIP都取得了最好的效果，而尤其在MUGE上中文CLIP相比此前模型的优势最为巨大。这也反映中文CLIP在中文原生数据集上能够取得更好的表现。
 
-{{< figure src="muge.jpg" title="MUGE图文检索实验结果" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/muge.jpg#center" width="80%" >}}
 
-{{< figure src="flickr.jpg" title="Flickr30K-CN图文检索实验结果" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/flickr.jpg#center" width="80%" >}}
 
-{{< figure src="coco.jpg" title="COCO-CN图文检索实验结果" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/coco.jpg#center" width="80%" >}}
 
 我们也尝试了中文CLIP的零样本分类能力，并在ELEVATER[^5]上做了测试，具体实现包括翻译标签和提示词。实验结果也反映中文CLIP在英文原生的基准上同样能取得有竞争力的表现。
 
-{{< figure src="elevater.jpg" title="ELEVATER零样本图像分类实验结果" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/elevater.jpg#center" width="80%" >}}
 
 我们补充了实验说明两阶段训练方法的有效性。对比从头训练，不管是收敛效率还是最终迁移效果上，两阶段的方法都取得更好的效果，并且对比单纯的一阶段联合训练，第二阶段预训练的加入还能进一步提升效果。这也意味着当我们打造一个语言特定的中文CLIP其实不需要从头来，可以在已有模型的基础上站得更高。
 
-{{< figure src="ablation.jpg" title="消融实验" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/ablation.jpg#center" title="Ablation studies." >}}
 
 ## 局限性及未来工作
 

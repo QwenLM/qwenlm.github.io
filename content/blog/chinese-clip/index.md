@@ -49,7 +49,7 @@ In real-world vision-language applications, e.g., cross-modal retrieval, the lan
 
 Here is an example of the search with mCLIP[^2]. We find that it is really hard for the model to understand some concepts in Chinese, and it can only retrieve relevant items that belong to western culture.
 
-{{< figure src="https://ofasys-beijing.oss-accelerate.aliyuncs.com/images/search.jpg#center" width="80%" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/search.jpg#center" width="80%" >}}
 
 Also, we have conducted experiments on cross-modal retrieval with the original CLIP plus machine translation. The performance significantly degrades and falls far back behind our Chinese CLIP. This is also an evidence to support why we need a language-specific CLIP.
 
@@ -57,7 +57,7 @@ Also, we have conducted experiments on cross-modal retrieval with the original C
 
 In general, we follow the setups of the original CLIP, and we propose a two-stage pretraining method that shows better performance than training from scratch. We believe this is a more cost-effective way to transfer CLIP to another language.
 
-{{< figure src="https://ofasys-beijing.oss-accelerate.aliyuncs.com/images/chinese-clip-model-v3.jpg#center" width="80%" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/chinese-clip-model-v3.jpg#center" width="80%" >}}
 
 In the first stage, we initialize the two towers with pretrained models, which are the vision encoder of [CLIP](https://github.com/ymcui/Chinese-BERT-wwm), e.g., ViT-B, ResNet, etc., and Chinese RoBERTa [RoBERTA-wwm-Chinese](https://github.com/ymcui/Chinese-BERT-wwm). We freeze the image encoder and contrastively tune the language encoder that maps its representation to the output space of CLIP vision encoder. In the second stage, we unlock the vision encoder and contrastively tune the two towers so that the vision encoder can learn to model the distribution of the images of Chinese data.
 
@@ -66,25 +66,25 @@ To make this research reproducible, we mostly use the public datasets for pretra
 We released 5 versions of Chinese CLIP, including ResNet-50, ViT-B/16, ViT-L/14, ViT-L/14
 @336px, and ViT-H/14. The statistics are listed below.
 
-{{< figure src="https://ofasys-beijing.oss-accelerate.aliyuncs.com/images/model_variants.jpg#center" width="80%" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/model_variants.jpg#center" width="80%" >}}
 
 ## Experiments
 
 The experiments are conducted on 3 cross-modal retrieval datasets, including the Chinese native dataset [MUGE](https://tianchi.aliyun.com/muge), and the English-native datasets (which means the images and texts are not from the Chinese websites) Flickr30K-CN and COCO-CN. On all datasets, Chinese CLIP performs the best, and its gap with the previous best models in MUGE is much larger than those in the other datasets. This demonstrates that our method is contributive to building a language specific CLIP model that can perform much better on native datasets.
 
-{{< figure src="https://ofasys-beijing.oss-accelerate.aliyuncs.com/images/muge.jpg#center" width="80%" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/muge.jpg#center" width="80%" >}}
 
-{{< figure src="https://ofasys-beijing.oss-accelerate.aliyuncs.com/images/flickr.jpg#center" width="80%" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/flickr.jpg#center" width="80%" >}}
 
-{{< figure src="https://ofasys-beijing.oss-accelerate.aliyuncs.com/images/coco.jpg#center" width="80%" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/coco.jpg#center" width="80%" >}}
 
 We also try Chinese CLIP on zero-shot image classification, and we participate in the ELEVATER benchmark[^5] by translating all labels and prompts to Chinese manually. Results show that Chinese CLIP can also achieve a competitive performance in the English-native benchmark.
 
-{{< figure src="https://ofasys-beijing.oss-accelerate.aliyuncs.com/images/elevater.jpg#center" width="80%" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/elevater.jpg#center" width="80%" >}}
 
 For the ablation, it can be found that in comparison with training from scratch, the two-stage pretraining method demonstrates much better performance, and the second-stage pretraining can further level up the model performance in cross-modal retrieval.
 
-{{< figure src="https://ofasys-beijing.oss-accelerate.aliyuncs.com/images/ablation.jpg#center" title="Ablation studies." >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/cnclip/ablation.jpg#center" title="Ablation studies." >}}
 
 ## Limitations and Future Work
 

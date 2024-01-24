@@ -3,23 +3,24 @@ title: "OFA：走向通用统一模型"
 date: 2022-11-14T16:01:41+08:00
 weight: 2
 # aliases: ["/first"]
-tags: ["Research"]
-# author: "Junyang Lin"
-draft: false
-hide_meta: false
-comments: false
-# description: "Desc Text. "
-disable_hljs: false # to disable highlightjs
-disable_share: false
-hide_summary: false
-search_hidden: false
-show_reading_time: false
+# tags: ["Research"]
+# author: ["Junyang Lin", "Binyuan Hui"]
+# comments: false
+# description: "Desc Text."
+# disable_share: false
+# hide_meta: false
+# hide_summary: false # to hide summary in list
+# hide_footer: false
+# math: false
+# search_hidden: false # to hide from search page
+show_reading_time: true
 show_bread_crumbs: true
-show_post_nav_links: false
-show_word_count: false
-use_hugo_toc: true
-show_toc: true
-toc_open: true
+show_post_nav_links: false # the prev/next after the content
+show_code_copy_buttons: true
+show_word_count: true
+# use_hugo_toc: true
+# show_toc: true
+# toc_open: true # default expand all
 lang: zh-CN
 # cover:
 #     image: "ofa_banner.jpg"
@@ -34,7 +35,7 @@ lang: zh-CN
 #     text: "Suggest Changes" # edit text
 #     append_file_path: true # to append file path to Edit link
 ---
-{{< video src="demo.mp4" autoplay=true loop=true title="OFA将多种任务统一到一个模型中" class="gallery" >}}
+{{< video src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofa/demo.mp4" autoplay=true loop=true class="gallery" >}}
 
 2022年可以说是属于通用模型的一年！随着多模态预训练的蓬勃发展，尤其是通用模型，我们看到实现一个具有处理多种模态的多种任务的能力的通用模型的机会。因此我们提出OFA[^1]，即One-For-All。它是一个统一的多模态预训练模型，以统一的模型架构和任务形式兼容多模态和单模态的理解与生成任务。我们使用多模态多任务的方式预训练OFA，使其成为一个接近全能的模型。我们将OFA的模型和代码全部开源到社区，希望能推动通用模型的发展。
 
@@ -45,7 +46,7 @@ lang: zh-CN
 
 ## 背景
 
-{{< figure src="uniter.jpg" title="BERT迁移至多模态表示学习领域" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofa/uniter.jpg#center" width="80%" >}}
 
 自BERT[^bert]成功迁移到多模态领域，多模态预训练蓬勃发展，代表性的工作包括UNITER[^2]、VilBERT[^3]等。这些工作将基于Transformer的BERT[^bert]结合到单流或双流的架构中，并将图像处理成物体特征接入Transformer中。而到了2021年，随着ViT[^5]的兴起，越来越多放弃物体特征的工作出现，不再依赖复杂的如Faster-RCNN[^6]的流程，比如最简单的使用patch映射ViLT[^7]、使用CLIP[^8]的CLIP-ViL[^9]，等等。而SimVLM[^10]作为这个领域一个代表工作，利用了T5/BART的特性将理解和生成任务兼容并实现多项最优表现。这些进展都奠定了通用统一模型的发展基础，2022年涌现了一批工作，包括我们的OFA、Unified-IO[^11]、Flamingo[^12]、BeiT-3[^13]等。
 
@@ -55,47 +56,47 @@ OFA希望实现的是任务、模态和架构的统一。我们提出统一模�
 
 统一模态最大的难题是不同模态的离散化表示，不然我们就需要使用diffusion模型[^14]来解决问题。文本表示无需改动，主要的变化在于图像和物体框。得益于近年来vector quantization的快速发展[^15][^16]以及基于Transformer的文本生成图像模型[^17][^18]，图像可以用VQ token来进行表示。而针对物体框，则可以采用分桶的方式对连续的坐标值实现离散化。
 
-{{< figure src="io.jpg" title="OFA中的离散化表示" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofa/io.jpg#center" width="80%" >}}
 
 模型架构上我们选择的是基于Transformer的编码-解码器。它已经在NLP领域取得巨大成功，如T5[^20]。而对于图像输入，我们使用ResNet的前3个stage。而对于Transformer，我们加入Normformer[^21]的方法提升模型训练稳定性和最终迁移效果。
 
-{{< figure src="arc.jpg" title="OFA的模型架构" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofa/arc.jpg#center" width="80%" >}}
 
 多任务学习是OFA的一大特点。我们使用了8个任务做预训练，其中包括5个图文任务、2个视觉任务和1个自然语言任务。图文任务包括视觉定位、定位物体描述、视觉问答、图文匹配和图像描述，视觉任务包括目标检测和图像还原，语言任务则是文本还原。为了让模型识别不同任务，我们为每个任务增加相应的文本提示，说明任务的内容。我们希望模型遇到新的提示能实现零样本学习。
 
-{{< figure src="task.jpg" title="OFA的任务定义" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofa/task.jpg#center" width="80%" >}}
 
 我们使用了公开数据集进行预训练。我们希望研究人员能够利用我们的开源复现相应的结果。
 
 我们一共开源了5个规模的模型，分别是OFA-Tiny (33M)，OFA-Medium (93M)，OFA-Base (180M)，OFA-Large(470M)和OFA-Huge (930M)。具体数据查看下表。
 
-{{< figure src="variants.jpg" title="OFA模型系列" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofa/variants.jpg#center" width="80%" >}}
 
 ## 实验
 
 我们在多模态和单模态任务上都做了实验。在视觉-语言理解上，我们在视觉问答和视觉推理上做了实验。在VQA上，OFA的效果和800亿参数的Flamingo以及基于50亿图文数据训练的20亿参数的CoCa效果相当，并且在视觉推理上取得最优成绩。而在视觉-语言生成上，OFA在两个阶段的图像描述评测均取得最优效果。而在视觉定位任务上，base规模的模型就可以超出此前最好的模型，也反映了生成式的方法和多任务训练的有效性，并且随着规模的增加，模型效果也能实现稳定增长。
 
-{{< figure src="vqa.jpg#center" width="500px" title="VQA和SNLI-VE的实验结果" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofa/vqa.jpg#center" width="60%" >}}
 
-{{< figure src="caption.jpg" title="COCO图像描述的实验结果" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofa/caption.jpg#center" width="80%" >}}
 
-{{< figure src="vg.jpg" title="RefCOCO系列数据集上的实验结果" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofa/vg.jpg#center" width="80%" >}}
 
 此外，我们还在文本图像生成任务上做了测试，因为预训练中我们设计了图像还原任务，模型应当具备一定的图像生成能力。可以看到OFA可以达到非常低的FID分数，并且在更大的数据上微调能明显提升它的生成效果。
 
-{{< figure src="t2i.jpg" title="基于文本的图像生成实验结果" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofa/t2i.jpg#center" width="80%" >}}
 
-{{< figure src="t2i_cases.jpg" title="基于文本的图像生成的更多例子" class="wide gallery" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofa/t2i_cases.jpg#center" width="80%" >}}
 
 单模态方面，我们在GLUE上验证OFA的自然语言理解能力，Gigaword上验证自然语言生成能力，以及ImageNet上验证视觉理解能力。可以看到OFA在GLUE上可以取得匹敌RoBERTa和DeBERTa的效果，而此前的多模态模型距离最优的自然语言模型差距都很大。在摘要生成上，OFA也取得最优效果。而视觉分类上，OFA也能取得匹敌BeiT[^22]和MAE[^23]的效果。
 
 另外，我们观察到OFA具备一定的新任务和新领域的迁移能力。如下图所示。
 
-{{< figure src="unseen_task.jpg" title="迁移至未学习过的任务" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofa/unseen_task.jpg#center" width="80%" >}}
 
 这个例子说明OFA对提示的理解和组合多项技能的能力。我们设计了一个基于定位的视觉问答的任务，相当于视觉问答和定位描述的组合。具体实现方式就是修改任务的提示。包含了问题和定位信息的提示引导模型做出了正确的回答。
 
-{{< figure src="unseen_domain.jpg" title="迁移至未学习过的领域" class="wide gallery" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofa/unseen_domain.jpg#center" width="80%" >}}
 
 另外，OFA迁移到新领域的能力也比较不错。在动画领域数据的定位上，模型能实现较为精准的物体定位。这是因为模型学过这个任务而预训练又见过该领域数据。这也体现了模型的组合能力。
 

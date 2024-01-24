@@ -1,25 +1,26 @@
 ---
 title: "OFASys：一行代码带你搞定多任务学习！"
 date: 2022-12-28T18:01:21+08:00
-# weight: 1
+# weight: 2
 # aliases: ["/first"]
 # tags: ["Research"]
-# author: "Junyang Lin"
-draft: false
-hide_meta: false
-comments: false
-# description: "Desc Text. "
-disable_hljs: false # to disable highlightjs
-disable_share: true
-hide_summary: false
-search_hidden: false
-show_reading_time: false
+# author: ["Junyang Lin", "Binyuan Hui"]
+# comments: false
+# description: "Desc Text."
+# disable_share: false
+# hide_meta: false
+# hide_summary: false # to hide summary in list
+# hide_footer: false
+# math: false
+# search_hidden: false # to hide from search page
+show_reading_time: true
 show_bread_crumbs: true
-show_post_nav_links: false
-show_word_count: false
-use_hugo_toc: true
-show_toc: false
-toc_open: true
+show_post_nav_links: false # the prev/next after the content
+show_code_copy_buttons: true
+show_word_count: true
+# use_hugo_toc: true
+# show_toc: true
+# toc_open: true # default expand all
 lang: zh-CN
 # cover:
 #     image: "ofa_banner.jpg"
@@ -41,7 +42,7 @@ lang: zh-CN
 {{< button href="https://arxiv.org/abs/2212.04408" label="论文" external=true >}}
 {{< button href="https://github.com/OFA-Sys/OFASys" label="GitHub" external=true >}}
 
-{{< figure src="demo.jpg" title="OFASys任务示例" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofasys/demo.jpg#center" width="80%" >}}
 
 ## 背景
 
@@ -51,13 +52,13 @@ Transformer和预训练技术的蓬勃发展让我们看到了实现通用AI的�
 
 介绍系统设计前，我们先看看如何在OFASys中使用1行代码实现一个多任务学习模型。具体而言，你需要写一个合适的 _Instruction_ 。下面是一些例子。
 
-{{< figure src="caption_instruction.jpg" title="图像描述提示" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofasys/caption_instruction.jpg#center" width="80%" >}}
 
 以上例子中，两个句子用“->”分隔，表示输入和期望输出。“`<tt>`[IMAGE:img]`</tt>`”表示有一个图像输入和 数据集中的`<tt>`img`</tt>`字段关联。_Instruction_ 中的文本则表示这个任务是图像描述。任务输出是文本序列，即对应数据集中的`<tt>`cap`</tt>`字段.
 
 另一个例子是自然语言推理的例子，我们以MNLI为例：
 
-{{< figure src="mnli_instruction.jpg" title="自然语言推理提示" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofasys/mnli_instruction.jpg#center" width="80%" >}}
 
 和上述例子类似，我们用模板和指示词来构建 _Instruction_ 。不同的是，输入侧包含2个输入。此外，由于我们发现在解码器重复输入有助于效果提升，我们在输出端用一个`<tt>`no_loss`</tt>`的信号表示不计算这段序列对应的损失函数。而由于标签是一个封闭集，我们用`<tt>`closed_set`</tt>`来表示。
 
@@ -67,7 +68,7 @@ Transformer和预训练技术的蓬勃发展让我们看到了实现通用AI的�
 
 一个良好的系统实现是一个易用接口的基础。系统实现的整体架构如下所示。
 
-{{< figure src="overview.jpg" title="系统设计总览" class="wide" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofasys/overview.jpg#center" width="80%" >}}
 
 OFASys通过解析 _Instruction_ 来将任务定义和任务数据传入任务计划中。每个计划有一个模型的层次结构，其中包括模态特定的前处理和后处理模块以及模态无关的计算引擎。通用模型在这里负责融合多模态输入以及获得输出。由于输入输出都是表示序列，因此通用模型是非常灵活的。通用模型的输出最终传入后处理模块得到最终输出。而诸如损失函数计算以及生成器等都有大量实现方式。
 
@@ -77,7 +78,7 @@ OFASys通过解析 _Instruction_ 来将任务定义和任务数据传入任务�
 
 我们训练了一个基于OFA的通用模型OFA+，它首次实现同时处理文本、图像、语音、视频和动作多种模态。具体包括一个通用的OFA+ (Generalist)以及一个基于多模态MoE的升级版本OFA+ (Generalist MoE)。对比对象则为我们此前的OFA，它需要针对每个任务单独微调，我们称之为OFA+ (Specialist)。
 
-{{< figure src="results.jpg" title="多模态及单模态实验结果" >}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/ofasys/results.jpg#center" width="80%" >}}
 
 从上述结果可以看出，OFA+整体能保留接近95%的OFA+ (Specialist)在各个下游任务的效果，其中涵盖7种模态的23个任务。这也能看出来多任务学习不仅赋予模型实现多任务的基础能力，同时能让它在各项任务上都能达到顶级的表现。
 
