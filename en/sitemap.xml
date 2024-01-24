@@ -67,32 +67,6 @@
                 href="http://qwenlm.github.io/blog/ofasys/"
                 />
   </url><url>
-    <loc>http://qwenlm.github.io/tags/research/</loc>
-    <lastmod>2022-12-28T18:01:21+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://qwenlm.github.io/zh/tags/research/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://qwenlm.github.io/tags/research/"
-                />
-  </url><url>
-    <loc>http://qwenlm.github.io/tags/</loc>
-    <lastmod>2022-12-28T18:01:21+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://qwenlm.github.io/zh/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://qwenlm.github.io/tags/"
-                />
-  </url><url>
     <loc>http://qwenlm.github.io/blog/chinese-clip/</loc>
     <lastmod>2022-12-24T14:54:19+08:00</lastmod>
     <xhtml:link
@@ -125,6 +99,18 @@
     <loc>http://qwenlm.github.io/resources/</loc>
   </url><url>
     <loc>http://qwenlm.github.io/search/</loc>
+  </url><url>
+    <loc>http://qwenlm.github.io/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/tags/"
+                />
   </url><url>
     <loc>http://qwenlm.github.io/tags/usage/</loc>
   </url>

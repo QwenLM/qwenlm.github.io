@@ -27,7 +27,7 @@ Additionally, we have WeChat groups for chatting and we invite you to join the g
       <pubDate>Mon, 14 Nov 2022 16:01:41 +0800</pubDate>
       
       <guid>http://qwenlm.github.io/blog/ofa/</guid>
-      <description>OFA conducts multimodal tasks in a unified way.2022 is a year of generalist models! With the bloom of multimodal pretraining, especially the unified model, we have witnessed the opportunity to building a generalist model that is capable of processing tasks of different modalities or multi-modalities! Thus, we propose OFA1, namely One-For-All, a unified multimodal pretrained model that unifies understanding and generation tasks concerning modalities into a single framework, and we pretrain OFA with the instruction-based multitask-pretraining that endows it with multiple capabilities.</description>
+      <description>2022 is a year of generalist models! With the bloom of multimodal pretraining, especially the unified model, we have witnessed the opportunity to building a generalist model that is capable of processing tasks of different modalities or multi-modalities! Thus, we propose OFA1, namely One-For-All, a unified multimodal pretrained model that unifies understanding and generation tasks concerning modalities into a single framework, and we pretrain OFA with the instruction-based multitask-pretraining that endows it with multiple capabilities.</description>
     </item>
     
     <item>
