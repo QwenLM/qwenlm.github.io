@@ -8,7 +8,7 @@ header:
     background_image: "https://cdn.jsdelivr.net/gh/qwenlm/qwenlm.github.io@master/static/img/background.webp"
     gradient: true
     blur: true
-description: Qwickly forging AGI, enhancing intelligence.
+description: Quickly forging AGI, enhancing intelligence.
 # social_icons:
     # - name: twitter
     #   url: "https://twitter.com/"
