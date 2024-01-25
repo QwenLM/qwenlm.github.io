@@ -35,7 +35,11 @@
     <div class="hero {{ if $hasHeaderBg }}text-light{{ end }} {{ if $isHome }}text-fade-in{{ end }}">
         {{- if $isHome }} {{/* home page */}}
         <div class="hero-header">
+            {{ with .Params.title_svg }}
+            {{ . | safeHTML }}
+            {{ else }}
             <h1>{{ .Title | markdownify }}</h1>
+            {{ end }}
         </div>
         {{- with .Description }}
         <div class="hero-content">
