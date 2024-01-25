@@ -55,14 +55,14 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url("/font/Roboto-Regular.ttf")format('truetype');
+    src: url("https://cdn.jsdelivr.net/gh/qwenlm/qwenlm.github.io@master/static/font/Roboto-Regular.ttf")format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("/font/Roboto-Bold.ttf")format('truetype');
+    src: url("https://cdn.jsdelivr.net/gh/qwenlm/qwenlm.github.io@master/static/font/Roboto-Bold.ttf")format('truetype');
     font-weight: Bold;
     font-style: normal;
 }
@@ -70,52 +70,52 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url("/font/Roboto-Italic.ttf")format('truetype');
+    src: url("https://cdn.jsdelivr.net/gh/qwenlm/qwenlm.github.io@master/static/font/Roboto-Italic.ttf")format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("/font/Roboto-BoldItalic.ttf")format('truetype');
+    src: url("https://cdn.jsdelivr.net/gh/qwenlm/qwenlm.github.io@master/static/font/Roboto-BoldItalic.ttf")format('truetype');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Prata";
-    src: url("/font/Prata-Regular.ttf")format('truetype');
+    src: url("https://cdn.jsdelivr.net/gh/qwenlm/qwenlm.github.io@master/static/font/Prata-Regular.ttf")format('truetype');
 }
 
 @font-face {
     font-family: 'Bodoni Moda';
-    src: url("/font/BodoniModa-VariableFont_opsz,wght.ttf")format('truetype-variations');
+    src: url("https://cdn.jsdelivr.net/gh/qwenlm/qwenlm.github.io@master/static/font/BodoniModa-VariableFont_opsz,wght.ttf")format('truetype-variations');
 }
 
 @font-face {
     font-family: "Bodoni Moda";
-    src: url("/font/BodoniModa_18pt-Regular.ttf")format('truetype');
+    src: url("https://cdn.jsdelivr.net/gh/qwenlm/qwenlm.github.io@master/static/font/BodoniModa_18pt-Regular.ttf")format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Bodoni Moda";
-    src: url("/font/BodoniModa_18pt-Bold.ttf")format('truetype');
+    src: url("https://cdn.jsdelivr.net/gh/qwenlm/qwenlm.github.io@master/static/font/BodoniModa_18pt-Bold.ttf")format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Bodoni Moda";
-    src: url("/font/BodoniModa_18pt-Italic.ttf")format('truetype');
+    src: url("https://cdn.jsdelivr.net/gh/qwenlm/qwenlm.github.io@master/static/font/BodoniModa_18pt-Italic.ttf")format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Bodoni Moda";
-    src: url("/font/BodoniModa_18pt-BoldItalic.ttf")format('truetype');
+    src: url("https://cdn.jsdelivr.net/gh/qwenlm/qwenlm.github.io@master/static/font/BodoniModa_18pt-BoldItalic.ttf")format('truetype');
     font-weight: bold;
     font-style: italic;
 }
