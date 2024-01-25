@@ -33,7 +33,7 @@ params:
   title: Qwen
   description: "Qwen"
   keywords: ["multi-modal", "machine learning", "blog"]
-  author: Qwen
+  author: Qwen Team
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
 
