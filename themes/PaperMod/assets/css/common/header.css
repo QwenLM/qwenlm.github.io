@@ -86,7 +86,6 @@
     position: relative;
     padding-top: var(--header-height);
     transition: all 0.1s ease 0s;
-    background: black;
 }
 
 .hero-background {
