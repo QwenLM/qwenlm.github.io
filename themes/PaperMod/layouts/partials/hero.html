@@ -9,7 +9,7 @@
             {{- if .background -}}
     <div class="hero-background" style="background: {{ .background | safeCSS }}"></div>
             {{- else if .background_image -}}
-    <div class="hero-background" style="background: url('{{ .background_image | safeURL }}') 50% 50% / cover no-repeat fixed;"></div>
+    <div class="hero-background" style="background: {{- if $isHome}} black {{- end }} url('{{ .background_image | safeURL }}') 50% 50% / cover no-repeat fixed;"></div>
             {{- end -}}
             {{- if .gradient -}}
     <div class="hero-gradient"></div>
@@ -19,9 +19,9 @@
             {{- end }}
         {{- end -}}
     {{- end -}}
-    {{/*  {{- if $isHome }}
+    {{- if $isHome }}
     {{- partial "mouse_wheel.html" . }}
-    {{- end }}  */}}
+    {{- end }}  
     <div class="hero {{ if $hasHeaderBg }}text-light{{ end }}">
         {{- if $isHome }} {{/* home page  */}}
             <div class="hero-header">
