@@ -77,7 +77,7 @@ params:
     safari_pinned_tab:  "https://acd-assets.alicdn.com/acd_work/tongyi/assets/logo.svg"
 
   label:
-    text: "OFA-Sys"
+    text: "Qwen"
     # icon: /image/logo.svg
     icon_svg: '<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
