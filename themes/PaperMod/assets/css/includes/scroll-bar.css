@@ -31,8 +31,8 @@
 }
 
 .post-content :not(table) ::-webkit-scrollbar-thumb {
-    border: 2px solid var(--hljs-bg);
-    background: var(--tertiary);;
+    border: 2px solid var(--theme);    
+    background: var(--tertiary);
 }
 
 .post-content :not(table) ::-webkit-scrollbar-thumb:hover {
