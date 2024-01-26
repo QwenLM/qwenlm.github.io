@@ -1,0 +1,13 @@
+{
+  "title": "Example: Autonomous Driving",
+  "messages": [
+    {
+      "role": "User",
+      "content": "The current vehicle speed is 150km/h. According to the picture, how should the vehicle operate?\nA. To accelerate\nB. Slow down\nC. Maintain the original speed\nD. Parking\nChoose an answer and give reasons.\n![image](http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/2_drive.jpeg)"
+    },
+    {
+      "role": "Qwen-VL",
+      "content": "B. Slow down\n\nAccording to the traffic sign in the picture, the maximum speed limit for the current lane is 100 km/h. If the current vehicle speed is 150 km/h, it exceeds the speed limit and should slow down to comply with the traffic regulations."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Example: Text Information Recognition & Processing",
+  "messages": [
+    {
+      "role": "User",
+      "content": "A brief summary of the blog\n{{< figure src=\"http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/4_text_information_2.jpeg\" width=\"8%\">}}"
+    },
+    {
+      "role": "Qwen-VL",
+      "content": "The blog post announces several new updates and improvements to OpenAI's platform, including:\n\n* GPT-4 Turbo with a 128K context window, which is more capable and supports a 128K context window.\n* New Assistants API that makes it easier for developers to build their own assistive AI apps and tools.\n* New multimodal capabilities in the platform, including text-to-speech (TTS).\n* Improved instruction following and JSON mode.\n* Reproducible outputs and log probabilities.\n* Updated GPT-3.5 Turbo with a 16K context window by default.\n\nThe post also mentions that these updates will be rolled out to all paying customers starting at 10am PT today."
+    }
+  ]
+}

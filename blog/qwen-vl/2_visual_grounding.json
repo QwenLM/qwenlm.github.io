@@ -1,0 +1,13 @@
+{
+  "title": "Example: Locate Whatever You Desire",
+  "messages": [
+    {
+      "role": "User",
+      "content": "Locate the red car\n![image](http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/2_car_input.jpeg)"
+    },
+    {
+      "role": "Qwen-VL",
+      "content": "The red car is located in the bottom right corner of the image.\n![image](http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/2_car_output.png)"
+    }
+  ]
+}

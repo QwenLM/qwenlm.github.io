@@ -1,0 +1,13 @@
+{
+    "title": "Example: Code",
+    "messages": [
+        {
+            "role": "User",
+            "content": "convert the process into a python code program\n![image](https://ofasys-wlcb.oss-cn-wulanchabu.aliyuncs.com/QwenVL/blog/3_2_python_code.jpeg)"
+        },
+        {
+            "role": "Qwen-VL",
+            "content": "The image shows a Scratch programming block, which can be converted into Python code as follows:\n```python\nimport random\n\n# Set up the variables\na = random.randint(1, 50)\nb = random.randint(1, 50)\nanswer = a + b\n\n# Ask the user for their input\nresponse = int(input(f\"What is {a} + {b}? \"))\n\n# Check if the response matches the answer\nif response == answer:\n    print(\"Correct!\")\nelse:\n    print(\"Incorrect!\")\n```\n\nThis Python code generates two random numbers between 1 and 50, adds them together to get the answer, and then asks the user for their response. It then checks if the response matches the answer, and prints out a message accordingly."
+        }
+    ]
+}

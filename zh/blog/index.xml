@@ -9,7 +9,33 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 23 Jan 2024 22:13:29 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Jan 2024 13:33:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen-VL全新升级！</title>
+      <link>http://qwenlm.github.io/zh/blog/qwen-vl/</link>
+      <pubDate>Thu, 25 Jan 2024 13:33:00 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/zh/blog/qwen-vl/</guid>
+      <description>我们在Qwen语言模型的基础上，结合此前我们提出的多模态多任务训练，以解决多模态模型在泛化能力上的局限性，并于2023年9月开源了多模态模型Qwen-VL。最近，Qwen-VL系列有了重大升级，推出了两个增强版本：Qwen-VL-Plus和Qwen-VL-Max。这两个版本的关键提升包括：
+显著提升与图像相关的推理能力； 在识别、提取和分析图像及其内含文本中的细节方面有明显增强； 支持百万像素以上的高清晰度图像以及各种宽高比的图像。 Model Name 模型描述 qwen-vl-plus Qwen的增强型大规模视觉语言模型。该模型针对细节识别能力和文本识别能力进行了显著升级，支持高达数百万像素的超高清分辨率及任意图像输入的宽高比。它在各类视觉任务上都展现出卓越的性能表现。 qwen-vl-max Qwen的最强大视觉语言模型。相较于增强版本，该模型在视觉推理和指令执行能力上做出了进一步提升，提供了更高级别的视觉感知与认知理解力,在更广泛复杂的任务上都能实现最优性能。 相比于开源版本的Qwen-VL，这两个模型在多个文本-图像多模态任务中与Gemini Ultra和GPT-4V的表现相当，显著超越了之前开源模型的最佳结果。值得一提的是，Qwen-VL-Max在中文问题回答和中文文本理解任务上超越了OpenAI的GPT-4V以及谷歌的Gemini。下文展示了实验结果及真实用例。
+Model DocVQA
+Document understanding ChartQA
+Chart understanding AI2D
+Science diagrams TextVQA
+Text reading MMMU
+College-level problems MathVista
+Mathematical reasoning MM-Bench-CN
+Natural image QA in Chinese Other Best
+Open-source LVLM 81.6%
+(CogAgent) 68.4%
+(CogAgent) 73.7%
+(Fuyu-Medium) 76.1%
+(CogAgent) 45.9%
+(Yi-VL-34B) 36.7%
+(SPHINX-V2) 72.4%
+(InternLM-XComposer-VL) Gemini Pro 88.1% 74.1% 73.9% 74.6% 47.9% 45.2% 74.3% Gemini Ultra 90.9% 80.8% 1 79.</description>
+    </item>
+    
     <item>
       <title>Qwen介绍</title>
       <link>http://qwenlm.github.io/zh/blog/qwen/</link>

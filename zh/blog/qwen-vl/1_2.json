@@ -1,0 +1,13 @@
+{
+    "title": "Example: landmark recognition",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Where is it in the picture? How did you recognize it?\n![image](http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/Image_Case_1_2.jpeg)"
+        },
+        {
+            "role": "Qwen-VL",
+            "content": "The picture shows a busy street at night in New York City, USA. The Empire State Building can be seen in the background, which is a distinctive landmark of New York City. Therefore, I recognized it as New York City."
+        }
+    ]
+}

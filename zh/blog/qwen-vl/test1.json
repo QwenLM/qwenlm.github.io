@@ -1,0 +1,21 @@
+{
+  "title": "test",
+  "messages": [
+    {
+      "role": "User",
+      "content": "This is bad\n- first\n- second\n![20240123120135.jpg](https://intranetproxy.alipay.com/skylark/lark/0/2024/jpeg/47937/1705982580660-9c9a8836-001c-41ca-b481-20c0847c4069.jpeg) "
+    },
+    {
+      "role": "GPT",
+      "content": "No it isn't"
+    },
+    {
+      "role": "User",
+      "content": "This is bad\n- first\n- second\n![20240123120135.jpg](https://intranetproxy.alipay.com/skylark/lark/0/2024/jpeg/47937/1705982580660-9c9a8836-001c-41ca-b481-20c0847c4069.jpeg) "
+    },
+    {
+      "role": "GPT",
+      "content": "No it isn't"
+    }
+  ]
+}

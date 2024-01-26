@@ -1,0 +1,13 @@
+{
+    "title": "Example: mobile app screenshot understanding",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Describe the image.\n{{< figure src=\"http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/Image_Case_1_4.png\" width=\"40%\">}}"
+        },
+        {
+            "role": "Qwen-VL",
+            "content": "The image is a screenshot of an app displaying a map of Beijing, China. The map is centered on the Summer Palace and Yuyuantan Park. The app provides directions for driving from Yuyuantan Park to the Summer Palace. It offers two options: one takes 22 minutes and the other takes 25 minutes. The app also indicates that there are local plate restrictions on the route."
+        }
+    ]
+}
