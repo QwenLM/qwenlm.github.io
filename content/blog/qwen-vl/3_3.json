@@ -1,0 +1,13 @@
+{
+    "title": "Example: Table",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Spot a data point that stands out in these charts and what that implicates. Then produce a detailed markdown table for all the data shown.\n![image](https://ofasys-wlcb.oss-cn-wulanchabu.aliyuncs.com/QwenVL/blog/3_3_data_chart.jpeg)"
+        },
+        {
+            "role": "Qwen-VL",
+            "content": "The most striking data point in these charts is the high percentage of plastic waste that is mismanaged in the United States, which stands at 4%. This implies that a significant portion of plastic waste in the US is not being properly disposed of or recycled, leading to environmental pollution and potential harm to ecosystems and human health.\n\nHere's a detailed markdown table for all the data shown:\n\n| Region | Landfilled (2019) | Mismanaged (2019) | Incinerated (2019) | Recycled (2019) |\n|---|---|---|---|---|\n| World | 49% | 22% | 19% | 9% |\n| United States | 73% | 4% | 19% | 4% |\n| Europe | 44% | 6% | 38% | 12% |\n| Asia (excluding China and India) | 39% | 34% | 19% | 8% |\n\nNote: The data source for this information is the OECD (Organisation for Economic Co-operation and Development), and the percentages represent the share of plastic waste that is recycled, landfilled, incinerated, and mismanaged in each region in 2019."
+        }
+    ]
+}

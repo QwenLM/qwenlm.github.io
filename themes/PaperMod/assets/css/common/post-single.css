@@ -127,10 +127,14 @@
     margin-bottom: var(--content-gap);
 }
 
-.post-content dl,
+/*.post-content dl,
 .post-content ol,
 .post-content figure,
 .post-content ul {
+    margin-top: var(--modal-gap);
+    margin-bottom: var(--modal-gap);
+}*/
+.post-content figure {
     margin-top: var(--modal-gap);
     margin-bottom: var(--modal-gap);
 }
@@ -183,8 +187,8 @@
 }
 
 .post-content table th {
-    font-size: 14px;
-    text-align: start;
+    font-size: 18px;
+    text-align: center;
 }
 
 .post-content table:not(.highlighttable) td code:only-child {
@@ -519,3 +523,64 @@ div.footnotes{
     color: var(--secondary);
     font-size: .6666666667em;
 }
+
+.full-width-container {
+    position: relative;
+    background-color: var(--code-bg);
+    width: calc(100vw - 19px);
+    margin-left: calc(50% - 50vw + 9.5px);
+    margin-top: var(--modal-gap);
+    margin-bottom: var(--modal-gap);
+}
+.example-content {
+    padding: calc(2*var(--content-gap));
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    margin: auto;
+    font-size: 0.8em;
+    transition: all 0.5s;
+}
+.example-content .title {
+    margin-bottom: var(--content-gap);
+    font-size: 1.2em;
+    display: flex;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.example-content p {
+    margin-bottom: calc(0.6*var(--content-gap));
+}
+.example-content img, .example-content figure {
+    margin-top: calc(0.2*var(--modal-gap));
+    margin-bottom: calc(0.2*var(--modal-gap));
+}
+.example-content ul, .example-content ol, .example-content dl {
+    margin-top: calc(0.6*var(--content-gap));
+    margin-bottom: calc(0.6*var(--content-gap));
+}
+.example-content .title .next-button {
+    margin-left: auto;
+    padding: 0px 6px;
+    color: var(--primary) !important;
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-backdrop-filter: blur(1.5rem);
+    backdrop-filter: blur(1.5rem);
+    margin-right: .8333333333em;
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    box-shadow: none;
+}
+.example-content .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    row-gap: var(--content-gap);
+}
+.example-content .grid-layout .role {
+    text-align: right;
+    margin-right: var(--content-gap);
+    color: var(--secondary);

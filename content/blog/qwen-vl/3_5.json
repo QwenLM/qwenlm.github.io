@@ -1,0 +1,13 @@
+{
+    "title": "Example: Model Flow",
+    "messages": [
+        {
+            "role": "User",
+            "content": "explain the picture\n![image](https://ofasys-wlcb.oss-cn-wulanchabu.aliyuncs.com/QwenVL/blog/3_5_model_flow.jpeg)"
+        },
+        {
+            "role": "Qwen-VL",
+            "content": "The image presents a three-stage training pipeline for the Qwen-VL series, a visual language model. Each stage is represented by a box labeled \"QwenLM\" and is accompanied by a smaller box indicating the type of data used in that stage.\n\nIn Stage 1, the model is pre-trained using image-text pairs. This stage involves learning from a large dataset of images and their corresponding text descriptions to understand the relationship between visual and linguistic information.\n\nStage 2 is multi-task pre-training with multi-task and interleaved VL data. Here, the model is trained on multiple tasks simultaneously, such as image captioning, visual question answering, and referring expression comprehension. The use of interleaved data helps the model learn to switch between tasks efficiently.\n\nFinally, in Stage 3, the model undergoes supervised finetuning with chat-interleaved VL data. This stage involves refining the model's performance on specific tasks using labeled data. The chat-interleaved data provides a more conversational context for the model to learn from, enhancing its ability to understand and respond to natural language queries.\n\nOverall, this three-stage training pipeline aims to develop a robust visual language model capable of understanding and generating human-like responses to visual and linguistic inputs."
+        }
+    ]
+}

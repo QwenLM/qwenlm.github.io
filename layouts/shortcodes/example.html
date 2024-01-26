@@ -1,0 +1,39 @@
+{{ if .IsNamedParams }}
+{{ $hide := false }}
+{{ with .Get "hide" }}
+{{ $hide = . }}
+{{ end }}
+{{ $next := false }}
+{{ with .Get "next" }}
+{{ $next = . }}
+{{ end }}
+{{ with $.Page.Resources.GetMatch (.Get "data") }}
+  {{ $data := . | transform.Unmarshal }}
+  {{ with $data }}
+  <div class="example-content" {{- if $hide }}style="display: none;"{{- end }}>
+  {{ $title := "Example" }}
+  {{ with .title }}
+  {{ $title = . }}
+  <div class="title">
+    <span>{{- $title }}</span>
+    {{ if $next }}
+       <a class="next-button">Next</a>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ with .messages }}
+  <div class="grid-layout">
+    {{ range . }}
+    <div class="role">{{ .role }}</div>
+    <div class="content">{{ .content | $.Page.RenderString }}</div>
+    {{ end }}
+  </div>
+  {{ end }}
+  </div>
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get resource %q" $.Params.data }}
+{{ end }}
+
+{{ end }}
+

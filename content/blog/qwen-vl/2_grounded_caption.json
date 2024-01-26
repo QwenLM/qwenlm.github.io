@@ -1,0 +1,13 @@
+{
+  "title": "Example: Contextually Anchored Image Description Generation",
+  "messages": [
+    {
+      "role": "User",
+      "content": "What does the pointed news talk about?\n![image](http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/2_news.jpeg)"
+    },
+    {
+      "role": "Qwen-VL",
+      "content": "The pointed news is about OpenAI's chatbot ChatGPT having personalized instructions to store your preferences."
+    }
+  ]
+}

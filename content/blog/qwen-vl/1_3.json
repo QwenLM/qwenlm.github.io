@@ -1,0 +1,13 @@
+{
+    "title": "Example: poem writing",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Look at pictures and write a poem.\n![image](http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/Image_Case_1_3.png)"
+        },
+        {
+            "role": "Qwen-VL",
+            "content": "A rocky crag by the sea,\nA place of solitude and mystery.\nThe water calm and blue,\nReflecting the sky above, anew.\n\nThe mountain stands tall and proud,\nIts peak reaching towards the clouds.\nA symbol of strength and resilience,\nEnduring through time's relentless persistence.\n\nThe world around may change and shift,\nBut this mountain remains steadfast and uplifted.\nA reminder to us all,\nTo stand firm in our own personal call.\n\nSo let us take a moment to pause,\nAnd appreciate this natural cause.\nFor in its beauty and grandeur,\nWe find inspiration and renewal, forever."
+        }
+    ]
+}

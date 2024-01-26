@@ -1,0 +1,22 @@
+
+{
+  "title": "Example: celebrity recognition",
+  "messages": [
+    {
+      "role": "User",
+      "content": "who are they?\n![image](http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/1_celebrity.jpeg)"
+    },
+    {
+      "role": "Qwen-VL",
+      "content": "These are some of the most famous and highest-paid celebrities in the world. From left to right, top to bottom:\n\n  * Justin Bieber (Canadian singer)\n  * Lionel Messi (Argentine soccer player)\n  * Cristiano Ronaldo (Portuguese soccer player)\n  * Elon Musk (South African-born American entrepreneur and businessman)\n  * Kylie Jenner (American media personality and socialite)\n  * Taylor Swift (American singer-songwriter)\n  * Robert Downey Jr. (American actor)\n  * Scarlett Johansson (American actress)\n\nIt's worth noting that this is just a small sample of the many talented and successful celebrities out there, and that fame and wealth are not the only measures of success or importance."
+    },
+    {
+      "role": "User",
+      "content": "their chinese name?"
+    },
+    {
+      "role": "Qwen-VL",
+      "content": "Here are the Chinese names of the celebrities mentioned:\n\n  * Justin Bieber: 贾斯汀·比伯\n  * Lionel Messi: 莱昂内尔·梅西\n  * Cristiano Ronaldo: 克里斯蒂亚诺·罗纳尔多\n  * Elon Musk: 埃隆·马斯克\n  * Kylie Jenner: 凯莉·詹娜\n  * Taylor Swift: 泰勒·斯威夫特\n  * Robert Downey Jr.: 小罗伯特·唐尼\n  * Scarlett Johansson: 斯嘉丽·约翰逊\n\nNote that these are just one possible translation of their names into Chinese, and there may be other variations used in different contexts or regions."
+    }
+  ]
+}
