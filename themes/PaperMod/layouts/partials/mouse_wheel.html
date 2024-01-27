@@ -1,49 +1,71 @@
-<div class="mouse-hint"><div class="mouse-point"></div></div>
+<div class="mouse-hint">
+    <div class="mouse-point"></div>
+</div>
 <style>
-body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-body::-webkit-scrollbar { 
-    display: none;
-}
-.mouse-hint {
-    position: absolute;
-    height: 36px;
-    width: 21px;
-    border: 1px solid white;
-    border-radius: 12px;
-    bottom: 6%;
-    left: 50%;
-    transform-origin: 50% 100%;
-    transform: translate(-50%);
-    opacity: 1;
-    transition: opacity .3s;
-}
-.mouse-hint .mouse-point {
-    height: 4px;
-    width: 4px;
-    background-color: white;
-    position: absolute;
-    left: 50%;
-    bottom: 40%;
-    border-radius: 4px;
-    transform-origin: 50% 100%;
-    transform: translate(-50%);
-    animation: 2.2s ease-in-out infinite jump;
-    will-change: transform;
-}
-@keyframes jump {
-    0%,20%,60%,to {
-        transform: translate(-50%) translateY(0);
-        height: 4px;
-        animation-timing-function: ease-in
+    body {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
-    40%,80% {
-        transform: translate(-50%) translateY(8px);
-        height: 8px;
-        animation-timing-function: ease-out
+    body::-webkit-scrollbar {
+        display: none;
     }
-}
+
+    .mouse-hint {
+        position: absolute;
+        height: 36px;
+        width: 24px;
+        border: 1px solid white;
+        border-radius: 12px;
+        bottom: 20%;
+        left: 50% - calc(12px);
+        opacity: 1;
+        transition: opacity .3s;
+        animation: 1s ease-out 0s 1 slideBelow;
+    }
+
+    .mouse-hint .mouse-point {
+        height: 4px;
+        width: 4px;
+        background-color: white;
+        position: absolute;
+        left: 50%;
+        bottom: 40%;
+        border-radius: 4px;
+        transform-origin: 50% 100%;
+        transform: translate(-50%);
+        animation: 2.2s ease-in-out infinite jump;
+        will-change: transform;
+    }
+
+    @keyframes slideBelow {
+        0% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes jump {
+
+        0%,
+        20%,
+        60%,
+        to {
+            transform: translate(-50%) translateY(0);
+            height: 4px;
+            animation-timing-function: ease-in
+        }
+
+        40%,
+        80% {
+            transform: translate(-50%) translateY(8px);
+            height: 8px;
+            animation-timing-function: ease-out
+        }
+    }
 </style>

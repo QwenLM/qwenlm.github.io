@@ -14,21 +14,27 @@
 
 {{- if (not site.Params.disable_scroll_to_top) }}
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
+    </svg> -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 8" fill="currentColor">
+        <path d="M 12 8 H 0 l 6 -8 z" />
     </svg>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+        <path d="m 1.65 5.65 l 0.71 0.71 L 5.5 3.21 V 10 h 1 V 3.21 l 3.15 3.15 l 0.71 -0.71 L 6 1.29 l -4.35 4.35 z" />
+    </svg> -->
 </a>
 {{- end }}
 
 {{- partial "extend_footer.html" . }}
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
         menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        };
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

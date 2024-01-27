@@ -32,53 +32,47 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* max-width: calc(var(--nav-width) + var(--gap) * 2); */
-    max-width: var(--wide-width);
+    flex-direction: row;
+    align-content: flex-start;
+    /* max-width: var(--wide-width); */
+    max-width: calc(100vh - var(--gap) * 2);
     min-width: var(--min-width);
-    width: 93.3333333333%;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
     line-height: var(--header-height);
 }
 
 
 
-.logo,
+/* .logo,
 #menu {
     display: flex;
     margin: auto var(--gap);
-}
+} */
 
 .logo {
-    flex-wrap: inherit;
+    /* flex-wrap: inherit; */
+    display: block;
 }
 
 .logo a {
-    font-size: 24px;
-    font-weight: 700;
+    position: relative;
+    margin: 0 auto;
 }
 
 .logo a img,
 .logo a svg {
     height: 30px;
     width: 30px;
-    filter: drop-shadow(0px 0px 0px var(--theme));
-    display: inline;
     vertical-align: middle;
     pointer-events: none;
-    transform: translate(0, -10%);
-    border-radius: 6px;
-    margin-inline-end: 8px;
     /* animation: loading 20s linear infinite; */
 }
 
 
-/*通过@keyframes规则,能够创建动画 , que 定义动画的名称 可自己定义*/
 @keyframes loading {
-
-    /*以百分比来规定改变发生的时间 也可以通过"from"和"to",等价于0% 和 100%*/
     0% {
-        /*rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转)*/
         transform: rotate(0deg);
     }
 
@@ -150,15 +144,15 @@
 }
 
 @media screen and (max-width:496px) {
-    .hero-container {
+    /* .hero-container {
         padding-top: calc(var(--header-height) *2);
-    }
+    } */
 
-    .nav {
+    /* .nav {
         justify-content: center;
         margin-inline-start: 0;
         margin-inline-end: 0;
-    }
+    } */
 
 }
 
@@ -169,13 +163,13 @@
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
 .text-fade-in {
-    animation: 1s ease-out 0s 1 slideBelow;
+    animation: slideBelow 1s ease-out 0s 1;
 }
 
 .hero .hero-header {
@@ -238,6 +232,7 @@ body:not(.dark) #sun {
 }
 
 #menu {
+    display: flex;
     list-style: none;
     word-break: keep-all;
     overflow-x: auto;
@@ -249,8 +244,8 @@ body:not(.dark) #sun {
 }
 
 #menu a {
-    font-family: "-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif";
-    font-weight: 500;
+    /* font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; */
+    font-weight: bold;
     font-size: 0.8rem;
 }
 
