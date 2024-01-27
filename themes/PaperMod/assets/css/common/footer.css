@@ -36,12 +36,16 @@
     bottom: 60px;
     right: 30px;
     z-index: 99;
-    background: var(--tertiary);
+    /* background: var(--tertiary); */
     width: 42px;
     height: 42px;
     padding: 12px;
-    border-radius: 64px;
-    transition: visibility 0.5s, opacity 0.8s linear;
+    border-radius: 42px;
+    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    line-height: 14px;
+    border: 2px solid var(--secondary);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
 }
 
 .top-link,
