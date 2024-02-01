@@ -35,7 +35,7 @@
     flex-direction: row;
     align-content: flex-start;
     /* max-width: var(--wide-width); */
-    max-width: calc(100vh - var(--gap) * 2);
+    max-width: calc(100vw - var(--gap) * 2);
     min-width: var(--min-width);
     width: 100%;
     margin: 0 auto;
