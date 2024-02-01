@@ -3,7 +3,7 @@
     "messages": [
         {
             "role": "User",
-            "content": "Where is it in the picture? How did you recognize it?\n![image](http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/Image_Case_1_2.jpeg)"
+            "content": "Where is it in the picture? How did you recognize it?\n![image](http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/Image_Case_1_2.jpeg)"
         },
         {
             "role": "Qwen-VL",

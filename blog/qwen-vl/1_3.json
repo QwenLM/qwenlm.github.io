@@ -3,7 +3,7 @@
     "messages": [
         {
             "role": "User",
-            "content": "Look at pictures and write a poem.\n![image](http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/Image_Case_1_3.png)"
+            "content": "Look at pictures and write a poem.\n![image](http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/Image_Case_1_3.png)"
         },
         {
             "role": "Qwen-VL",

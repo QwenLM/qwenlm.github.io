@@ -3,7 +3,7 @@
     "messages": [
         {
             "role": "User",
-            "content": "Spot a data point that stands out in these charts and what that implicates. Then produce a detailed markdown table for all the data shown.\n![image](https://ofasys-wlcb.oss-cn-wulanchabu.aliyuncs.com/QwenVL/blog/3_3_data_chart.jpeg)"
+            "content": "Spot a data point that stands out in these charts and what that implicates. Then produce a detailed markdown table for all the data shown.\n![image](http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/3_3_data_chart.jpeg)"
         },
         {
             "role": "Qwen-VL",

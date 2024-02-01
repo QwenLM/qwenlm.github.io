@@ -3,7 +3,7 @@
     "messages": [
         {
             "role": "User",
-            "content": "Look at this sequence of three shapes. What shape should come as the fourth shape? Explain your reasoning with detailed descriptions of the first shapes.\n![image](https://ofasys-wlcb.oss-cn-wulanchabu.aliyuncs.com/QwenVL/blog/3_4_polygon_reasoning.jpeg)"
+            "content": "Look at this sequence of three shapes. What shape should come as the fourth shape? Explain your reasoning with detailed descriptions of the first shapes.\n![image](http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/3_4_polygon_reasoning.jpeg)"
         },
         {
             "role": "Qwen-VL",

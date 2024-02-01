@@ -4,7 +4,7 @@
   "messages": [
     {
       "role": "User",
-      "content": "who are they?\n![image](http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/1_celebrity.jpeg)"
+      "content": "who are they?\n![image](http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/1_celebrity.jpeg)"
     },
     {
       "role": "Qwen-VL",

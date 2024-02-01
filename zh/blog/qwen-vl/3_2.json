@@ -3,7 +3,7 @@
     "messages": [
         {
             "role": "User",
-            "content": "convert the process into a python code program\n![image](https://ofasys-wlcb.oss-cn-wulanchabu.aliyuncs.com/QwenVL/blog/3_2_python_code.jpeg)"
+            "content": "convert the process into a python code program\n![image](http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/3_2_python_code.jpeg)"
         },
         {
             "role": "Qwen-VL",

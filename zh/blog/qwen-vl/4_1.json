@@ -3,7 +3,7 @@
   "messages": [
     {
       "role": "User",
-      "content": "规范格式输出图中所有文字\n{{< figure src=\"http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/4_text_information_1.jpeg\" width=\"60%\">}}"
+      "content": "规范格式输出图中所有文字\n{{< figure src=\"http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/4_text_information_1.jpeg\" width=\"60%\">}}"
     },
     {
       "role": "Qwen-VL",
