@@ -3,7 +3,7 @@
   "messages": [
     {
       "role": "User",
-      "content": "What does the pointed news talk about?\n![image](http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/2_news.jpeg)"
+      "content": "What does the pointed news talk about?\n![image](http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/2_news.jpeg)"
     },
     {
       "role": "Qwen-VL",

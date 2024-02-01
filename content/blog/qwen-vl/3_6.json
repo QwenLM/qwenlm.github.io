@@ -3,7 +3,7 @@
     "messages": [
         {
             "role": "User",
-            "content": "Please read the text in this image and return the information in the following JSON format (note xxx is placeholder, if the information is not available in the image, put \"N/A\" instead).\n{\"class\": xxx, \"DLN\": xxx, \"DOB\": xxx, \"Name\": xxx, \"Address\": xxx, \"EXP\": xxx, \"ISS\": xxX, \"SEX\": xxx, \"HGT\": xxx, \"WGT\": xxx, \"EYES\": xxx, \"HAIR\": xxX, \"DONOR\": xxx}\n![image](https://ofasys-wlcb.oss-cn-wulanchabu.aliyuncs.com/QwenVL/blog/3_6_drive_license.jpg)"
+            "content": "Please read the text in this image and return the information in the following JSON format (note xxx is placeholder, if the information is not available in the image, put \"N/A\" instead).\n{\"class\": xxx, \"DLN\": xxx, \"DOB\": xxx, \"Name\": xxx, \"Address\": xxx, \"EXP\": xxx, \"ISS\": xxX, \"SEX\": xxx, \"HGT\": xxx, \"WGT\": xxx, \"EYES\": xxx, \"HAIR\": xxX, \"DONOR\": xxx}\n![image](http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/3_6_drive_license.jpg)"
         },
         {
             "role": "Qwen-VL",

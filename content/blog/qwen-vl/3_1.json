@@ -3,7 +3,7 @@
     "messages": [
         {
             "role": "User",
-            "content": "read the image and solve it step by step\n![image](https://ofasys-wlcb.oss-cn-wulanchabu.aliyuncs.com/QwenVL/blog/3_1_math_cube.jpeg)"
+            "content": "read the image and solve it step by step\n![image](http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/3_1_math_cube.jpeg)"
         },
         {
             "role": "Qwen-VL",

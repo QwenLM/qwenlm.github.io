@@ -3,7 +3,7 @@
     "messages": [
         {
             "role": "User",
-            "content": "Describe the image.\n{{< figure src=\"http://ofasys-wlcb.oss-accelerate-overseas.aliyuncs.com/QwenVL/blog/Image_Case_1_4.png\" width=\"40%\">}}"
+            "content": "Describe the image.\n{{< figure src=\"http://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen-VL/blog/Image_Case_1_4.png\" width=\"40%\">}}"
         },
         {
             "role": "Qwen-VL",
