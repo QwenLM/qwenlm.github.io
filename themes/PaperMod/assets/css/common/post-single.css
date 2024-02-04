@@ -135,8 +135,10 @@
     margin-bottom: var(--modal-gap);
 }*/
 .post-content figure {
-    margin-top: var(--modal-gap);
-    margin-bottom: var(--modal-gap);
+    /* margin-top: var(--modal-gap);
+    margin-bottom: var(--modal-gap); */
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .post-content ol,
