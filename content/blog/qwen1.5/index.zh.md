@@ -46,7 +46,7 @@ show_word_count: true
 
 # 简介
 
-最近几个月，我们专注探索如何构建一个真正「卓越」的模型，并在此过程中不断提升开发者的使用体验。在农历新年即将到来之际，我们满怀欣喜地与大家分享新一代通义千问模型: <b>Qwen1.5</b>。
+最近几个月，我们专注探索如何构建一个真正「卓越」的模型，并在此过程中不断提升开发者的使用体验。在农历新年即将到来之际，我们满怀欣喜地与大家分享新一代通义千问模型: **Qwen1.5**。
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/intro.jpg#center" width="80%">}}
 
