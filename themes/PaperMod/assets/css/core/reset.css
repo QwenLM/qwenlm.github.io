@@ -102,6 +102,7 @@ ul {
 
 table {
     /* width: 100%; */
+    max-width: 100%;
     display: block;
     margin: 0 auto;
     width: fit-content !important;
