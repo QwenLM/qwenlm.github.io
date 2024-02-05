@@ -44,7 +44,7 @@ show_word_count: true
 
 # Introduction
 
-In recent months, our focus has been on developing a "good" model while optimizing the developer experience. As we progress towards `<b>`Qwen1.5`</b>`, the next iteration in our Qwen series, this update arrives just before the Chinese New Year.
+In recent months, our focus has been on developing a "good" model while optimizing the developer experience. As we progress towards **Qwen1.5**, the next iteration in our Qwen series, this update arrives just before the Chinese New Year.
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/intro.jpg#center" width="80%">}}
 
