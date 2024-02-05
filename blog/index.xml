@@ -9,7 +9,18 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 25 Jan 2024 13:33:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Feb 2024 13:33:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing Qwen1.5</title>
+      <link>http://qwenlm.github.io/blog/qwen1.5/</link>
+      <pubDate>Sun, 04 Feb 2024 13:33:00 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/blog/qwen1.5/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
+Introduction In recent months, our focus has been on developing a &amp;ldquo;good&amp;rdquo; model while optimizing the developer experience. As we progress towards Qwen1.5, the next iteration in our Qwen series, this update arrives just before the Chinese New Year.
+With Qwen1.5, we are open-sourcing base and chat models across six sizes: 0.5B, 1.8B, 4B, 7B, 14B, and 72B. In line with tradition, we&amp;rsquo;re also providing quantized models, including Int4 and Int8 GPTQ models, as well as AWQ and GGUF quantized models.</description>
+    </item>
+    
     <item>
       <title>Introducing Qwen-VL</title>
       <link>http://qwenlm.github.io/blog/qwen-vl/</link>
