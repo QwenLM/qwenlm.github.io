@@ -80,7 +80,7 @@ show_word_count: true
 | Qwen1.5-14B    |   67.6   |   78.7   |   70.1   |  29.2    |   37.8    |   44.0   |   53.7   |   77.6   |
 | Qwen1.5-72B    |   77.5   |   84.1   |   79.5   |  34.1    |   41.5    |   53.4   |   65.5   |   83.5   |
 
-在不同模型尺寸下，Qwen1.5 都在评估基准中表现出强劲的性能。特别是，Qwen1.5-72B 在所有基准测试中都获得了最高分，展示了其在语言理解、推理和数学方面的卓越能力。
+在不同模型尺寸下，Qwen1.5 都在评估基准中表现出强劲的性能。特别是，Qwen1.5-72B 在所有基准测试中都远远超越了Llama2-70B，展示了其在语言理解、推理和数学方面的卓越能力。
 
 最近小型模型的构建也成为了热点之一，我们将模型参数小于 70 亿的 Qwen1.5 模型与社区中最杰出的小型模型进行了比较。结果如下：
 
@@ -138,7 +138,7 @@ show_word_count: true
 
 尽管落后于 GPT-4-Turbo，但最大的 Qwen1.5 模型 Qwen1.5-72B-Chat 在 MT-Bench 和 Alpaca-Eval v2 上都表现出不俗的效果，超过了 Claude-2.1、GPT-3.5-Turbo-0613、Mixtral-8x7b-instruct 和 TULU 2 DPO 70B，与 Mistral Medium 不相上下。
 
-此外，虽然大模型裁判的评分似乎与回答的长度有关，但我们的观察结果表明 Qwen1.5 并没有产生过长的回答来操纵大模型裁判的偏差。AlpacaEval 2.0 上 Qwen1.5-Chat 的平均长度仅为 1618，与 GPT-4 的长度一致，比 GPT-4-Turbo 短。从通义千问网页端和APP的反馈看，用户对于新版本模型的回复具有更加喜爱。
+此外，虽然大模型裁判的评分似乎与回答的长度有关，但我们的观察结果表明 Qwen1.5 并没有产生过长的回答来操纵大模型裁判的偏差。AlpacaEval 2.0 上 Qwen1.5-Chat 的平均长度仅为 1618，与 GPT-4 的长度一致，比 GPT-4-Turbo 短。从通义千问网页端和APP的反馈看，用户更加喜爱新版本模型的回复。
 
 <!-- <iframe
 	src="https://qwen-qwen1-5-72b-chat.hf.space"
@@ -739,4 +739,4 @@ ollama run qwen1.5
 
 ## Conclusion
 
-我们很高兴介绍 Qwen1.5，Qwen 系列的下一个版本。在这次发布中，我们开源了包括 0.5B、1.8B、4B、7B、14B 和 72B 在内的 6 种大小的 Base 和 Chat 模型，并且我们还提供了量化模型。我们已将 Qwen1.5 的代码合并到 Hugging Face transformers 中，您现在可以直接使用  `transformers>=4.37.0`  而无需指定  `trust_remote_code`。此外，我们支持了例如vLLM、SGLang、AutoGPTQ等框架支持Qwen1.5。从现在开始，我们的模型将会更加易用。我们相信这次发布虽然在模型质量上是一小步，但在开发者体验上却是一大步。欢迎加入我们的 [Discord](https://discord.gg/z3GAxXZ9Ce) 或 [微信](https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png) 分享您的体验、评论或任何您喜欢的内容，向我们提出宝贵的意见和建议！
+我们发布了 Qwen1.5 —— Qwen 系列的新一代版本。在这次发布中，我们开源了包括 0.5B、1.8B、4B、7B、14B 和 72B 在内的 6 种大小的 Base 和 Chat 模型，并且我们还提供了量化模型。我们已将 Qwen1.5 的代码合并到 Hugging Face transformers 中，您现在可以直接使用  `transformers>=4.37.0`  而无需指定  `trust_remote_code`。此外，我们支持了例如vLLM、SGLang、AutoGPTQ等框架支持Qwen1.5。从现在开始，我们的模型将会更加易用。我们相信这次发布虽然在模型质量上是一小步，但在开发者体验上却是一大步。欢迎加入我们的 [Discord](https://discord.gg/z3GAxXZ9Ce) 或 [微信](https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png) 分享您的体验、评论或任何您喜欢的内容，向我们提出宝贵的意见和建议！
