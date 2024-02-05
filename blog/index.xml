@@ -17,7 +17,7 @@
       
       <guid>http://qwenlm.github.io/blog/qwen1.5/</guid>
       <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
-Introduction In recent months, our focus has been on developing a &amp;ldquo;good&amp;rdquo; model while optimizing the developer experience. As we progress towards &amp;lt;b&amp;gt;Qwen1.5&amp;lt;/b&amp;gt;, the next iteration in our Qwen series, this update arrives just before the Chinese New Year.
+Introduction In recent months, our focus has been on developing a &amp;ldquo;good&amp;rdquo; model while optimizing the developer experience. As we progress towards Qwen1.5, the next iteration in our Qwen series, this update arrives just before the Chinese New Year.
 With Qwen1.5, we are open-sourcing base and chat models across six sizes: 0.5B, 1.8B, 4B, 7B, 14B, and 72B. In line with tradition, we&amp;rsquo;re also providing quantized models, including Int4 and Int8 GPTQ models, as well as AWQ and GGUF quantized models.</description>
     </item>
     
