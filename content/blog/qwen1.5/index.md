@@ -36,16 +36,15 @@ show_word_count: true
 #   gradient: false
 #   blur: false
 ---
-
 {{< button href="https://github.com/QwenLM/Qwen1.5" label="GITHUB" external=true >}}
 {{< button href="https://huggingface.co/Qwen" label="HUGGING FACE" external=true >}}
 {{< button href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external=true >}}
 {{< button href="https://huggingface.co/spaces/Qwen/Qwen1.5-72B-Chat" label="DEMO" external=true >}}
-{{< button href="https://discord.gg/z3GAxXZ9C" label="DISCORD" external=true >}}
+{{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 # Introduction
 
-In recent months, our focus has been on developing a "good" model while optimizing the developer experience. As we progress towards <b>Qwen1.5</b>, the next iteration in our Qwen series, this update arrives just before the Chinese New Year.
+In recent months, our focus has been on developing a "good" model while optimizing the developer experience. As we progress towards `<b>`Qwen1.5`</b>`, the next iteration in our Qwen series, this update arrives just before the Chinese New Year.
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/intro.jpg#center" width="80%">}}
 
@@ -58,47 +57,48 @@ We've collaborated with frameworks like [vLLM](https://vllm.readthedocs.io/), [S
 This release brings substantial improvements to the alignment of chat models with human preferences and enhanced multilingual capabilities. All models now uniformly support a context length of up to 32768 tokens. There have also been minor improvements in the quality of base language models that may benefit your finetuning endeavors. This step represents a small stride toward our objective of creating a truly "good" model.
 
 # Performance
-To provide a better understanding of the performance of Qwen1.5, we have conducted a comprehensive evaluation of both base and chat models on different capabilities, including basic capabilities such as language understanding, coding, reasoning, multilingual capabilities, human preference, agent, retrieval-augmented generation (RAG), etc. 
+
+To provide a better understanding of the performance of Qwen1.5, we have conducted a comprehensive evaluation of both base and chat models on different capabilities, including basic capabilities such as language understanding, coding, reasoning, multilingual capabilities, human preference, agent, retrieval-augmented generation (RAG), etc.
 
 ## Basic Capabilities
 
-To assess the basic capabilities of language models, we have conducted evaluations on traditional benchmarks, including MMLU (5-shot), C-Eval, Humaneval, GS8K, BBH, etc. 
+To assess the basic capabilities of language models, we have conducted evaluations on traditional benchmarks, including MMLU (5-shot), C-Eval, Humaneval, GS8K, BBH, etc.
 
-| Model             |   MMLU   |  C-Eval  |  GSM8K   |   MATH   | HumanEval |   MBPP   |   BBH    |  CMMLU   |
-|:------------------|:--------:|:--------:|:--------:|:--------:|:---------:|:--------:|:--------:|:--------:|
-| GPT-4             |   86.4   |   69.9   |   92.0   |  45.8    |   67.0    |   61.8   |   86.7   |   71.0   |
-| Llama2-7B         |   46.8   |   32.5   |   16.7   |   3.3    |   12.8    |   20.8   |   38.2   |   31.8   |
-| Llama2-13B        |   55.0   |   41.4   |   29.6   |   5.0    |   18.9    |   30.3   |   45.6   |   38.4   |
-| Llama2-34B        |   62.6   |    -     |   42.2   |   6.2    |   22.6    |   33.0   |   44.1   |    -     |
-| Llama2-70B        |   69.8   |   50.1   |   54.4   |  10.6    |   23.7    |   37.7   |   58.4   |   53.6   |
-| Mistral-7B        |   64.1   |   47.4   |   47.5   |  11.3    |   27.4    |   38.6   |   56.7   |   44.7   |
-| Mixtral-8x7B      |   70.6   |    -     |   74.4   |  28.4    |   40.2    |   60.7   |   -      |    -     |
-| Qwen1.5-7B     |   61.0   |   74.1   |   62.5   |  20.3    |   36.0    |   37.4   |   40.2   |   73.1   |
-| Qwen1.5-14B    |   67.6   |   78.7   |   70.1   |  29.2    |   37.8    |   44.0   |   53.7   |   77.6   |
-| Qwen1.5-72B    |   77.5   |   84.1   |   79.5   |  34.1    |   41.5    |   53.4   |   65.5   |   83.5   |
-
+| Model        | MMLU | C-Eval | GSM8K | MATH | HumanEval | MBPP | BBH | CMMLU |
+| :----------- | :--: | :----: | :---: | :--: | :-------: | :--: | :--: | :---: |
+| GPT-4        | 86.4 |  69.9  | 92.0 | 45.8 |   67.0   | 61.8 | 86.7 | 71.0 |
+| Llama2-7B    | 46.8 |  32.5  | 16.7 | 3.3 |   12.8   | 20.8 | 38.2 | 31.8 |
+| Llama2-13B   | 55.0 |  41.4  | 29.6 | 5.0 |   18.9   | 30.3 | 45.6 | 38.4 |
+| Llama2-34B   | 62.6 |   -   | 42.2 | 6.2 |   22.6   | 33.0 | 44.1 |   -   |
+| Llama2-70B   | 69.8 |  50.1  | 54.4 | 10.6 |   23.7   | 37.7 | 58.4 | 53.6 |
+| Mistral-7B   | 64.1 |  47.4  | 47.5 | 11.3 |   27.4   | 38.6 | 56.7 | 44.7 |
+| Mixtral-8x7B | 70.6 |   -   | 74.4 | 28.4 |   40.2   | 60.7 |  -  |   -   |
+| Qwen1.5-7B   | 61.0 |  74.1  | 62.5 | 20.3 |   36.0   | 37.4 | 40.2 | 73.1 |
+| Qwen1.5-14B  | 67.6 |  78.7  | 70.1 | 29.2 |   37.8   | 44.0 | 53.7 | 77.6 |
+| Qwen1.5-72B  | 77.5 |  84.1  | 79.5 | 34.1 |   41.5   | 53.4 | 65.5 | 83.5 |
 
 At every model size, Qwen1.5 demonstrates strong performance across the diverse evaluation benchmarks. In particular, Qwen1.5-72B outperforms Llama2-70B across all benchmarks, showcasing its exceptional capabilities in language understanding, reasoning, and math.
 
 In light of the recent surge in interest for small language models, we have compared Qwen1.5 with sizes smaller than 7 billion parameters, against the most outstanding small-scale models within the community. The results are shown below:
 
-| Model                | Non-Emb Params | MMLU | C-Eval | GSM8K | MATH | HumanEval | MBPP | BBH | CMMLU |
-|:---------------------|:--------------:|:----:|:------:|:-----:|:----:|:---------:|:----:|:---:|:-----:|
-| Tinyllama-1.1B       |      1.1B      | 24.3 |  25.0  |   2.3 |  0.7 |     6.7   | 19.9 | 28.8|  24.0 |
-| Gemini-Nano-3B       |       -        |  -   |   -    |  22.8 |   -  |      -    | 27.2 | 42.4|   -   |
-| StableLM-Zephyr-3B   |      2.7B      | 45.9 |  30.3  |  52.5 | 12.5 |    35.4   | 31.9 | 37.7|  30.9 |
-| Phi-2                |      2.5B      | 52.7 |  23.4  |  57.2 |  3.5 |    47.6   | 55.0 | 43.4|  24.2 |
-| MiniCPM-2B           |      2.4B      | 53.5 |  51.1  |  53.8 | 10.2 |    50.0   | 47.3 | 36.9|  51.1 |
-| Qwen1.5-0.5B      |      0.3B      | 39.2 |  50.5  |  22.0 |  3.1 |    12.2   |  6.8 | 18.3|  46.6 |
-| Qwen1.5-1.8B      |      1.2B      | 46.8 |  59.7  |  38.4 | 10.1 |    20.1   | 18.0 | 24.2|  57.8 |
-| Qwen1.5-4B        |      3.1B      | 56.1 |  67.6  |  57.0 | 10.0 |    25.6   | 29.2 | 32.5|  66.7 |
+| Model              | Non-Emb Params | MMLU | C-Eval | GSM8K | MATH | HumanEval | MBPP | BBH | CMMLU |
+| :----------------- | :------------: | :--: | :----: | :---: | :--: | :-------: | :--: | :--: | :---: |
+| Tinyllama-1.1B     |      1.1B      | 24.3 |  25.0  |  2.3  | 0.7 |    6.7    | 19.9 | 28.8 | 24.0 |
+| Gemini-Nano-3B     |       -       |  -  |   -   | 22.8 |  -  |     -     | 27.2 | 42.4 |   -   |
+| StableLM-Zephyr-3B |      2.7B      | 45.9 |  30.3  | 52.5 | 12.5 |   35.4   | 31.9 | 37.7 | 30.9 |
+| Phi-2              |      2.5B      | 52.7 |  23.4  | 57.2 | 3.5 |   47.6   | 55.0 | 43.4 | 24.2 |
+| MiniCPM-2B         |      2.4B      | 53.5 |  51.1  | 53.8 | 10.2 |   50.0   | 47.3 | 36.9 | 51.1 |
+| Qwen1.5-0.5B       |      0.3B      | 39.2 |  50.5  | 22.0 | 3.1 |   12.2   | 6.8 | 18.3 | 46.6 |
+| Qwen1.5-1.8B       |      1.2B      | 46.8 |  59.7  | 38.4 | 10.1 |   20.1   | 18.0 | 24.2 | 57.8 |
+| Qwen1.5-4B         |      3.1B      | 56.1 |  67.6  | 57.0 | 10.0 |   25.6   | 29.2 | 32.5 | 66.7 |
 
 We can confidently assert that Qwen1.5 base models under 7 billion parameters are highly competitive with the leading small-scale models in the community. In the future, we will continue to improve the quality of small models and exploring methods for effectively transferring the advanced capabilities inherent in larger models into the smaller ones.
 
 ## Aligning with Human Preference
+
 Alignment aims to enhance instruction-following capabilities of LLMs and help provide responses that are closely aligned with human preferences. Recognizing the significance of integrating human preferences into the learning process, we effectively employed techniques such as Direct Policy Optimization (DPO) and Proximal Policy Optimization (PPO) in aligning the latest Qwen series.
 
-However, assessing the quality of such chat models poses a significant challenge. 
+However, assessing the quality of such chat models poses a significant challenge.
 Admittedly, while comprehensive human evaluation is the optimal approach, it faces significant challenges pertaining to scalability and reproducibility.
 Therefore, we initially evaluate our models on two widely-used benchmarks, utilizing advanced LLMs as judges: MT-Bench and Alpaca-Eval. The results are presented below:
 
@@ -146,67 +146,62 @@ Furthermore, although the scoring of LLM Judges may seemingly correlate with the
 	height="1000"
 ></iframe> -->
 
-
 ## Multilingual Understanding of Base Models
 
 We have carefully selected a diverse set of 12 languages from Europe, East Asia, and Southeast Asia to thoroughly evaluate the multilingual capabilities of our foundational model. In order to accomplish this, we have curated test sets from the community's open-source repositories, covering four distinct dimensions: Exams, Understanding, Translation, and Math. The table below provides detailed information about each test set, including evaluation settings, metrics, and the languages they encompass:
 
-| Dataset       | Category       | Method/Metric | Languages                            |
-|:--------------|:--------------:|:-------------:|:------------------------------------:|
-| MMLU-multi    |     Exams      |   5-shot/Acc  | ar, es, fr, pt, de, it, ru, ja, ko, id |
-| M3Exams       |     Exams      |   5-shot/Acc  |       pt, it, vi, th                  |
-| BELEBELE      | Understanding  |   5-shot/Acc  | ar, es, fr, pt, de, it, ru, ja, ko, vi, th, id |
-| XWinograd     | Understanding  |   5-shot/Acc  |       fr, pt, ru, ja                  |
-| XCOPA         | Understanding  |   5-shot/Acc  |           vi, id, th                  |
-| PAWS-X        | Understanding  |   5-shot/Acc  |       es, fr, de, ja, ko              |
-| XStoryCloze   | Understanding  |   0-shot/Acc  |           ar, es, ru, id              |
-| Flores(zh/en↔xx) | Translation    |  5-shot/BLEU  | ar, es, fr, pt, de, it, ru, ja, ko, vi, th, id |
-| MGSM          |     Math       |   8-shot/Acc  |       es, fr, ru, de, ja, th          |
-
+| Dataset           |   Category   | Method/Metric |                   Languages                   |
+| :---------------- | :-----------: | :-----------: | :--------------------------------------------: |
+| MMLU-multi        |     Exams     |  5-shot/Acc  |     ar, es, fr, pt, de, it, ru, ja, ko, id     |
+| M3Exams           |     Exams     |  5-shot/Acc  |                 pt, it, vi, th                 |
+| BELEBELE          | Understanding |  5-shot/Acc  | ar, es, fr, pt, de, it, ru, ja, ko, vi, th, id |
+| XWinograd         | Understanding |  5-shot/Acc  |                 fr, pt, ru, ja                 |
+| XCOPA             | Understanding |  5-shot/Acc  |                   vi, id, th                   |
+| PAWS-X            | Understanding |  5-shot/Acc  |               es, fr, de, ja, ko               |
+| XStoryCloze       | Understanding |  0-shot/Acc  |                 ar, es, ru, id                 |
+| Flores(zh/en↔xx) |  Translation  |  5-shot/BLEU  | ar, es, fr, pt, de, it, ru, ja, ko, vi, th, id |
+| MGSM              |     Math     |  8-shot/Acc  |             es, fr, ru, de, ja, th             |
 
 The detailed results are demonstrated below:
 
-
-| Models            | Exams | Understanding |  Math  | Translation |
-|:----------------- |:-----:|:-------------:|:------:|:-----------:|
-| Llama2-7B         | 34.03 |     50.13     |  9.40  |    22.19    |
-| Llama2-13B        | 39.55 |     57.26     | 16.80  |    25.89    |
-| Llama2-70B        | 55.88 |     73.19     | 40.20  |    31.56    |
-| Mistral-7B        | 47.12 |     63.30     | 26.33  |    23.33    |
-| Mixtral-8x7B      | 56.08 |     70.70     | 45.00  |    29.78    |
-| Qwen1.5-0.5B   | 26.98 |     44.08     |  3.13  |    9.17     |
-| Qwen1.5-1.8B   | 33.57 |     48.37     |  6.47  |    16.19    |
-| Qwen1.5-4B     | 41.43 |     59.76     | 21.33  |    23.34    |
-| Qwen1.5-7B     | 47.70 |     67.63     | 37.27  |    28.36    |
-| Qwen1.5-14B    | 55.72 |     74.10     | 49.93  |    31.69    |
-| Qwen1.5-72B    | 66.35 |     78.16     | 61.67  |    35.57    |
-
+| Models       | Exams | Understanding | Math | Translation |
+| :----------- | :---: | :-----------: | :---: | :---------: |
+| Llama2-7B    | 34.03 |     50.13     | 9.40 |    22.19    |
+| Llama2-13B   | 39.55 |     57.26     | 16.80 |    25.89    |
+| Llama2-70B   | 55.88 |     73.19     | 40.20 |    31.56    |
+| Mistral-7B   | 47.12 |     63.30     | 26.33 |    23.33    |
+| Mixtral-8x7B | 56.08 |     70.70     | 45.00 |    29.78    |
+| Qwen1.5-0.5B | 26.98 |     44.08     | 3.13 |    9.17    |
+| Qwen1.5-1.8B | 33.57 |     48.37     | 6.47 |    16.19    |
+| Qwen1.5-4B   | 41.43 |     59.76     | 21.33 |    23.34    |
+| Qwen1.5-7B   | 47.70 |     67.63     | 37.27 |    28.36    |
+| Qwen1.5-14B  | 55.72 |     74.10     | 49.93 |    31.69    |
+| Qwen1.5-72B  | 66.35 |     78.16     | 61.67 |    35.57    |
 
 The base models of Qwen1.5 showcase impressive multilingual capabilities, as demonstrated by its performance across a diverse set of 12 languages. In evaluations covering various dimensions such as exams, understanding, translation, and math, Qwen1.5 consistently delivers strong results. From languages like Arabic, Spanish, and French to Japanese, Korean, and Thai, Qwen1.5 demonstrates its ability to comprehend and generate high-quality content across different linguistic contexts. To take a step further, we evaluate the multilingual capabilities of chat models in a number of languages by calculating the win-tie rate against GPT-4. Results are shown below:
-
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/lang.png#center" width="100%">}}
 
 These results demonstrate the strong multilingual capabilities of Qwen1.5 chat models, which can serve downstream applications, such as translation, language understanding, and multilingual chat. Also, we believe that the improvements in multilingual capabilities can also level up the general capabilities.
 
 ## Support of Long Context
+
 With the increasing demand for long-context understanding, we have expanded the capability of all models to support contexts up to 32K tokens. We have evaluated the performance of Qwen1.5 models on the [L-Eval benchmark](https://github.com/OpenLMLab/LEval), which measures the ability of models to generate responses based on long context. The results are shown below:
 
-| Models                | Coursera |  GSM  | QuALITY | TOEFL | SFiction |  Avg.  |
-|:---------------------|:-------:|:-----:|:-------:|:-----:|:-------:|:------:|
-| GPT3.5-turbo-16k     |  63.51  | 84.00 |  61.38  | 78.43 |  64.84  | 70.43  |
-| Claude1.3-100k       |  60.03  | 88.00 |  73.76  | 83.64 |  72.65  | 75.62  |
-| GPT4-32k             |  75.58  | 96.00 |  82.17  | 84.38 |  74.99  | 82.62  |
-| Qwen-72B-Chat        |  58.13  | 76.00 |  77.22  | 86.24 |  69.53  | 73.42  |
-| Qwen1.5-0.5B-Chat |  30.81  |  6.00 |  34.16  | 40.52 |  49.22  | 32.14  |
-| Qwen1.5-1.8B-Chat |  39.24  | 37.00 |  42.08  | 55.76 |  44.53  | 43.72  |
-| Qwen1.5-4B-Chat   |  54.94  | 47.00 |  57.92  | 69.15 |  56.25  | 57.05  |
-| Qwen1.5-7B-Chat   |  59.74  | 60.00 |  64.36  | 79.18 |  62.50  | 65.16  |
-| Qwen1.5-14B-Chat  |  69.04  | 79.00 |  74.75  | 83.64 |  75.78  | 76.44  |
-| Qwen1.5-72B-Chat  |  71.95  | 82.00 |  77.72  | 85.50 |  73.44  | 78.12  |
+| Models            | Coursera |  GSM  | QuALITY | TOEFL | SFiction | Avg. |
+| :---------------- | :------: | :---: | :-----: | :---: | :------: | :---: |
+| GPT3.5-turbo-16k  |  63.51  | 84.00 |  61.38  | 78.43 |  64.84  | 70.43 |
+| Claude1.3-100k    |  60.03  | 88.00 |  73.76  | 83.64 |  72.65  | 75.62 |
+| GPT4-32k          |  75.58  | 96.00 |  82.17  | 84.38 |  74.99  | 82.62 |
+| Qwen-72B-Chat     |  58.13  | 76.00 |  77.22  | 86.24 |  69.53  | 73.42 |
+| Qwen1.5-0.5B-Chat |  30.81  | 6.00 |  34.16  | 40.52 |  49.22  | 32.14 |
+| Qwen1.5-1.8B-Chat |  39.24  | 37.00 |  42.08  | 55.76 |  44.53  | 43.72 |
+| Qwen1.5-4B-Chat   |  54.94  | 47.00 |  57.92  | 69.15 |  56.25  | 57.05 |
+| Qwen1.5-7B-Chat   |  59.74  | 60.00 |  64.36  | 79.18 |  62.50  | 65.16 |
+| Qwen1.5-14B-Chat  |  69.04  | 79.00 |  74.75  | 83.64 |  75.78  | 76.44 |
+| Qwen1.5-72B-Chat  |  71.95  | 82.00 |  77.72  | 85.50 |  73.44  | 78.12 |
 
-In terms of the performance, even a small model like Qwen1.5-7B-Chat demonstrates competitive performance against GPT-3.5 on 4 out of 5 tasks. Our best model, Qwen1.5-72B-Chat, significantly outperforms GPT3.5-turbo-16k and only slightly falls behind GPT4-32k. These results highlight our outstanding performance within 32K tokens, yet they do not imply that our models are limited to supporting only 32K tokens. You can modify `max_position_embedding` in `config.json` to a larger value to see if the model performance is still satisfactory for your tasks. 
-
+In terms of the performance, even a small model like Qwen1.5-7B-Chat demonstrates competitive performance against GPT-3.5 on 4 out of 5 tasks. Our best model, Qwen1.5-72B-Chat, significantly outperforms GPT3.5-turbo-16k and only slightly falls behind GPT4-32k. These results highlight our outstanding performance within 32K tokens, yet they do not imply that our models are limited to supporting only 32K tokens. You can modify `max_position_embedding` in `config.json` to a larger value to see if the model performance is still satisfactory for your tasks.
 
 ## Capabilities to Connect with External Systems
 
@@ -647,8 +642,9 @@ Finally, since the Python code interpreter has emerged as an increasingly powerf
 Larger Qwen1.5-Chat models generally outperform smaller ones, nearing GPT-4's tool-use performance. However, in code interpreter tasks like math problem-solving and visualization, even the largest Qwen1.5-72B-Chat model lags significantly behind GPT-4 due to coding capabilities. We aim in future versions to enhance the coding capabilities of all Qwen models during both pre-training and alignment.
 
 ## Develop with Qwen1.5
+
 The biggest difference in Qwen1.5 is the integration of Qwen1.5 to Hugging Face transformers. Since 4.37.0, you can use Qwen1.5 without our custom code, which means that you can load the model like the following:
-    
+
 ```python
 from transformers import AutoModelForCausalLM
 # This is what we previously used
@@ -692,11 +688,12 @@ generated_ids = [
 response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 ```
 
-For chat models, we no longer use a specific `model.chat()` method, but instead we use `model.generate()` with the chat template written in `tokenizer_config.json` so that we can use `tokenizer.apply_chat_template()` to generate the input, and we use `eos_token` to control when to stop the generation. 
+For chat models, we no longer use a specific `model.chat()` method, but instead we use `model.generate()` with the chat template written in `tokenizer_config.json` so that we can use `tokenizer.apply_chat_template()` to generate the input, and we use `eos_token` to control when to stop the generation.
 
 We also provide AWQ models and GPTQ models (including Int4 and Int8 models) for you to use Qwen1.5 in low-resource or deployment scenarios. As Huggingface transformers supports [AWQ](https://github.com/casper-hansen/AutoAWQ) and [GPTQ](https://github.com/AutoGPTQ/AutoGPTQ), you can use them in the same way above only with the corresponding model names.
 
 Furthermore, we have integrated our code to popular inference frameworks so that you can deploy your model easily. Now `vLLM>=0.3.0` and `SGLang>=0.1.11` officially support Qwen1.5. Check their official github repos and docs to learn about the detailed usage. Here we demonstrate an example to show how to use vLLM to build an OpenAI-API compatible interface for our model:
+
 ```shell
 python -m vllm.entrypoints.openai.api_server --model Qwen/Qwen1.5-7B-Chat
 ```
@@ -727,14 +724,14 @@ ollama run qwen1.5
 
 Or you can use the GGUF file to play with [llamafile](https://github.com/Mozilla-Ocho/llamafile) to run our models with a single file.
 
-To make a web demo locally, we advise you to use [Text generation web UI](https://github.com/oobabooga/text-generation-webui) which is very easy to use. 
+To make a web demo locally, we advise you to use [Text generation web UI](https://github.com/oobabooga/text-generation-webui) which is very easy to use.
 
 For advanced developers that hope to train better or more suitable models for themselves, such as post-training, Qwen1.5 is supported by Hugging face `trainer` and Peft. Also, there are easy-to-use frameworks that support both supervised finetuning (SFT) and alignment (PPO, DPO, etc.). Now, both [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) and [Axolotl](https://github.com/OpenAccess-AI-Collective/axolotl) have supported the training of Qwen1.5. We advise you to turn to their official github repos and docs for more advanced usages.
 
 If you would like to use Qwen1.5 for downstream applications, such as RAG, tool use, agent, you can now build OpenAI-API compatible API or run local models for famous frameworks, e.g., [LlamaIndex](https://www.llamaindex.ai/), [LangChain](https://www.langchain.com/), [CrewAI](https://www.crewai.io/).
 
-
 Overall, as we care about your developing experience, we not only have tried our best to provide good models to the community but also have made efforts to make things easier for all of you. We hope that you can enjoy using Qwen1.5 and that it can help you with your tasks of either research or applications.
 
 ## Conclusion
-We are excited to introduce Qwen1.5, the next version of our Qwen series. In this release, we have opensourced both base and chat models of 6 sizes, including 0.5B, 1.8B, 4B, 7B, 14B, and 72B, and we have also provided quantized models. We have merged our code of Qwen1.5 to Hugging face transformers, and you can directly use it with `transformers>=4.37.0` without `trust_remote_code`. Additionally, we have had frameworks, e.g., vLLM, SGLang, AutoGPTQ, etc., supported Qwen1.5. We believe from now on, using our models will be much easier. We believe that this release is though a small step towards model quality, but it is a big step towards developer experience. Hope you like it and enjoy using it. Join our [Discord](https://discord.gg/z3GAxXZ9Ce) or [WeChat](https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png) to share your experience, comments, or whatever you like with us. We are looking forward to hearing from you.
+
+We are excited to introduce Qwen1.5, the next version of our Qwen series. In this release, we have opensourced both base and chat models of 6 sizes, including 0.5B, 1.8B, 4B, 7B, 14B, and 72B, and we have also provided quantized models. We have merged our code of Qwen1.5 to Hugging face transformers, and you can directly use it with `transformers>=4.37.0` without `trust_remote_code`. Additionally, we have had frameworks, e.g., vLLM, SGLang, AutoGPTQ, etc., supported Qwen1.5. We believe from now on, using our models will be much easier. We believe that this release is though a small step towards model quality, but it is a big step towards developer experience. Hope you like it and enjoy using it. Join our [Discord](https://discord.gg/yPEP2vHTu4) or [WeChat](https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png) to share your experience, comments, or whatever you like with us. We are looking forward to hearing from you.

@@ -739,4 +739,4 @@ ollama run qwen1.5
 
 ## Conclusion
 
-我们发布了 Qwen1.5 —— Qwen 系列的新一代版本。在这次发布中，我们开源了包括 0.5B、1.8B、4B、7B、14B 和 72B 在内的 6 种大小的 Base 和 Chat 模型，并且我们还提供了量化模型。我们已将 Qwen1.5 的代码合并到 Hugging Face transformers 中，您现在可以直接使用  `transformers>=4.37.0`  而无需指定  `trust_remote_code`。此外，我们支持了例如vLLM、SGLang、AutoGPTQ等框架支持Qwen1.5。从现在开始，我们的模型将会更加易用。我们相信这次发布虽然在模型质量上是一小步，但在开发者体验上却是一大步。欢迎加入我们的 [Discord](https://discord.gg/z3GAxXZ9Ce) 或 [微信](https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png) 分享您的体验、评论或任何您喜欢的内容，向我们提出宝贵的意见和建议！
+我们发布了 Qwen1.5 —— Qwen 系列的新一代版本。在这次发布中，我们开源了包括 0.5B、1.8B、4B、7B、14B 和 72B 在内的 6 种大小的 Base 和 Chat 模型，并且我们还提供了量化模型。我们已将 Qwen1.5 的代码合并到 Hugging Face transformers 中，您现在可以直接使用  `transformers>=4.37.0`  而无需指定  `trust_remote_code`。此外，我们支持了例如vLLM、SGLang、AutoGPTQ等框架支持Qwen1.5。从现在开始，我们的模型将会更加易用。我们相信这次发布虽然在模型质量上是一小步，但在开发者体验上却是一大步。欢迎加入我们的 [Discord](https://discord.gg/yPEP2vHTu4e) 或 [微信](https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png) 分享您的体验、评论或任何您喜欢的内容，向我们提出宝贵的意见和建议！
