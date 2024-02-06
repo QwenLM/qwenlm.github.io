@@ -201,7 +201,7 @@ With the increasing demand for long-context understanding, we have expanded the 
 | Qwen1.5-14B-Chat  |  69.04  | 79.00 |  74.75  | 83.64 |  75.78  | 76.44 |
 | Qwen1.5-72B-Chat  |  71.95  | 82.00 |  77.72  | 85.50 |  73.44  | 78.12 |
 
-In terms of the performance, even a small model like Qwen1.5-7B-Chat demonstrates competitive performance against GPT-3.5 on 4 out of 5 tasks. Our best model, Qwen1.5-72B-Chat, significantly outperforms GPT3.5-turbo-16k and only slightly falls behind GPT4-32k. These results highlight our outstanding performance within 32K tokens, yet they do not imply that our models are limited to supporting only 32K tokens. You can modify `max_position_embedding` in `config.json` to a larger value to see if the model performance is still satisfactory for your tasks.
+In terms of the performance, even a small model like Qwen1.5-7B-Chat demonstrates competitive performance against GPT-3.5 on 4 out of 5 tasks. Our best model, Qwen1.5-72B-Chat, significantly outperforms GPT3.5-turbo-16k and only slightly falls behind GPT4-32k. These results highlight our outstanding performance within 32K tokens, yet they do not imply that our models are limited to supporting only 32K tokens. You can modify `max_position_embedding` and `sliding_window` in `config.json` to a larger value to see if the model performance is still satisfactory for your tasks.
 
 ## Capabilities to Connect with External Systems
 
