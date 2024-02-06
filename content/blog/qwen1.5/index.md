@@ -178,7 +178,8 @@ The detailed results are demonstrated below:
 | Qwen1.5-14B  | 55.72 |     74.10     | 49.93 |    31.69    |
 | Qwen1.5-72B  | 66.35 |     78.16     | 61.67 |    35.57    |
 
-The base models of Qwen1.5 showcase impressive multilingual capabilities, as demonstrated by its performance across a diverse set of 12 languages. In evaluations covering various dimensions such as exams, understanding, translation, and math, Qwen1.5 consistently delivers strong results. From languages like Arabic, Spanish, and French to Japanese, Korean, and Thai, Qwen1.5 demonstrates its ability to comprehend and generate high-quality content across different linguistic contexts. To take a step further, we evaluate the multilingual capabilities of chat models in a number of languages by calculating the win-tie rate against GPT-4. Results are shown below:
+The base models of Qwen1.5 showcase impressive multilingual capabilities, as demonstrated by its performance across a diverse set of 12 languages. In evaluations covering various dimensions such as exams, understanding, translation, and math, Qwen1.5 consistently delivers strong results. From languages like Arabic, Spanish, and French to Japanese, Korean, and Thai, Qwen1.5 demonstrates its ability to comprehend and generate high-quality content across different linguistic contexts. 
+We compared Qwen1.5-72B-Chat with GPT-3.5, and the results are shown below:
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/lang.png#center" width="100%">}}
 
