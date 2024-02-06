@@ -724,7 +724,7 @@ curl http://localhost:8000/v1/chat/completions \
 此外，您也可以将GGUF模型与Ollama一起使用。基于 [Ollama](https://ollama.ai/)的支持，现在可以直接使用一行命令：
 
 ```shell
-ollama run qwen1.5
+ollama run qwen
 ```
 
 或者您可以将 GGUF 模型与 [llamafile](https://github.com/Mozilla-Ocho/llamafile) 一起使用，以单个文件运行我们的模型。

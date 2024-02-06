@@ -719,7 +719,7 @@ For users to run LLM locally, llama.cpp also provides support to Qwen1.5, and we
 Besides, you can use the GGUF file with Ollama. Thanks to the support of [Ollama](https://ollama.ai/), you can now directly use one line of command:
 
 ```shell
-ollama run qwen1.5
+ollama run qwen
 ```
 
 Or you can use the GGUF file to play with [llamafile](https://github.com/Mozilla-Ocho/llamafile) to run our models with a single file.
