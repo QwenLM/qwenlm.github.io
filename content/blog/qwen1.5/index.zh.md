@@ -191,7 +191,7 @@ show_word_count: true
 
 ## 长序列
 
-随着长序列理解的需求不断增加，全系列 Qwen1.5 模型支持 32K tokens 的上下文。我们在[L-Eval 基准](https://github.com/OpenLMLab/LEval)上评估了 Qwen1.5 模型的性能，该基准衡量了模型根据长上下文生成响应的能力。结果如下：
+随着长序列理解的需求不断增加，我们这次推出的 Qwen1.5 模型全系列支持 32K tokens 的上下文。我们在[L-Eval 基准](https://github.com/OpenLMLab/LEval)上评估了 Qwen1.5 模型的性能，该基准衡量了模型根据长输入生成答案的能力。结果如下：
 
 | Models                | Coursera |  GSM  | QuALITY | TOEFL | SFiction |  Avg.  |
 |:---------------------|:-------:|:-----:|:-------:|:-----:|:-------:|:------:|
@@ -206,7 +206,7 @@ show_word_count: true
 | Qwen1.5-14B-Chat  |  69.04  | 79.00 |  74.75  | 83.64 |  75.78  | 76.44  |
 | Qwen1.5-72B-Chat  |  71.95  | 82.00 |  77.72  | 85.50 |  73.44  | 78.12  |
 
-从结果来看，即使像 Qwen1.5-7B-Chat 这样的小规模模型，也表现出与 GPT-3.5 可比的性能，而我们最好的模型 Qwen1.5-72B-Chat，仅略微落后于 GPT4-32k。请注意，以上结果仅展示了我们在 32K tokens 长度下的强大效果，但并不代表模型最大只能支持 32K 长度。您可以在 `config.json` 中，将 `max_position_embedding` 尝试修改为更大的值，观察模型在更长上下文理解场景下，是否可以达到您满意的效果。
+从结果来看，即使像 Qwen1.5-7B-Chat 这样的小规模模型，在上面大5个任务中的4个表现出与 GPT3.5-turbo-16k 类似的性能。而我们最好的模型 Qwen1.5-72B-Chat，仅略微落后于 GPT4-32k。尽管上述结果仅突显了我们在处理 32K tokens 长度时所展现的卓越性能，但这并不代表模型的最大支持长度仅限于 32K。您可以在 `config.json` 中，将 `max_position_embedding` 和 `sliding_window` 尝试修改为更大的值，观察模型在更长上下文理解场景下，是否可以达到您满意的效果。
 
 
 ## 链接外部系统
