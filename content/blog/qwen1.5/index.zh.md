@@ -46,11 +46,11 @@ show_word_count: true
 
 # 简介
 
-最近几个月，我们专注探索如何构建一个真正「卓越」的模型，并在此过程中不断提升开发者的使用体验。在农历新年即将到来之际，我们满怀欣喜地与大家分享新一代通义千问模型: **Qwen1.5**。
+最近几个月，我们专注探索如何构建一个真正「卓越」的模型，并在此过程中不断提升开发者的使用体验。农历新年到来之际，我们推出通义千问开源模型1.5版本: **Qwen1.5**。我们开源了包括0.5B、1.8B、4B、7B、14B和72B共计6个不同规模的Base和Chat模型，并同步放出了各尺寸模型对应的量化模型。
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/intro.jpg#center" width="80%">}}
 
-在此次Qwen1.5版本中，我们开源了包括0.5B、1.8B、4B、7B、14B和72B在内的6个不同规模的Base和Chat模型，并一如既往地放出了各规模对应的量化模型。此次更新中，我们不仅像之前一样提供Int4和Int8的GPTQ模型，还提供了AWQ以及GGUF量化模型。为了提升开发者体验，我们将Qwen1.5的代码正式合并到Hugging Face transformers代码库中，所以现在可以直接使用 `transformers>=4.37.0` 原生代码，而无需指定 `trust_remote_code` 选项即可进行开发。
+此次更新中，我们不仅像之前一样提供Int4和Int8的GPTQ模型，还提供了AWQ以及GGUF量化模型。为了提升开发者体验，我们将Qwen1.5的代码正式合并到HuggingFace transformers代码库中，所以现在可以直接使用 `transformers>=4.37.0` 原生代码，而无需指定 `trust_remote_code` 选项即可进行开发。
 
 我们已经与[vLLM](https://vllm.readthedocs.io/)、[SGLang](https://github.com/sgl-project/sglang)（用于部署）、[AutoAWQ](https://github.com/casper-hansen/AutoAWQ)、[AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ)（用于量化）、[Axolotl](https://github.com/OpenAccess-AI-Collective/axolotl)、[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)（用于微调）以及[llama.cpp](https://github.com/ggerganov/llama.cpp)（用于本地 LLM 推理）等框架合作，所有这些框架现在都支持 Qwen1.5。Qwen1.5 系列可在 [Ollama](https://ollama.ai/) 和 [LMStudio](https://lmstudio.ai/) 等平台上使用。此外，API 服务不仅在 DashScope 上提供，还在 [together.ai](https://together.ai/) 上提供，全球都可访问。请访问[here](https://api.together.ai/)开始使用，我们建议您试用[Qwen1.5-72B-chat](https://api.together.xyz/playground/chat/Qwen/Qwen1.5-72B-Chat)。
 
@@ -737,6 +737,6 @@ ollama run qwen
 
 总之，我们始终将关注点放在优化您的开发体验上，不仅致力于为社区打造卓越的模型，还力求让一切操作更为简单易用。希望您在使用 Qwen1.5 的过程中能满意，也希望模型能在您的研究或应用项目中发挥作用。
 
-## Conclusion
+## 小结
 
 我们发布了 Qwen1.5 —— Qwen 系列的新一代版本。在这次发布中，我们开源了包括 0.5B、1.8B、4B、7B、14B 和 72B 在内的 6 种大小的 Base 和 Chat 模型，并且我们还提供了量化模型。我们已将 Qwen1.5 的代码合并到 Hugging Face transformers 中，您现在可以直接使用  `transformers>=4.37.0`  而无需指定  `trust_remote_code`。此外，我们支持了例如vLLM、SGLang、AutoGPTQ等框架支持Qwen1.5。从现在开始，我们的模型将会更加易用。我们相信这次发布虽然在模型质量上是一小步，但在开发者体验上却是一大步。欢迎加入我们的 [Discord](https://discord.gg/yPEP2vHTu4e) 或 [微信](https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png) 分享您的体验、评论或任何您喜欢的内容，向我们提出宝贵的意见和建议！
