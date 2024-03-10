@@ -222,4 +222,4 @@ While there is still a long way to go, we are confident that Qwen-VL will evolve
 * Huggingface: [http://huggingface.co/Qwen/Qwen-VL-Chat](http://huggingface.co/Qwen/Qwen-VL-Chat)
 * ModelScope: [https://modelscope.cn/studios/qwen/Qwen-VL-Chat-Demo](https://modelscope.cn/studios/qwen/Qwen-VL-Chat-Demo)
 * API: [https://help.aliyun.com/zh/dashscope/developer-reference/tongyi-qianwen-vl-plus-api](https://help.aliyun.com/zh/dashscope/developer-reference/tongyi-qianwen-vl-plus-api)
-* Discord: [https://discord.gg/z3GAxXZ9C](https://discord.gg/z3GAxXZ9C)
+* Discord: [https://discord.gg/CV4E9rpNSD](https://discord.gg/CV4E9rpNSD)

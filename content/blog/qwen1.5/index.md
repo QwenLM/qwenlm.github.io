@@ -40,7 +40,7 @@ show_word_count: true
 {{< button href="https://huggingface.co/Qwen" label="HUGGING FACE" external=true >}}
 {{< button href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external=true >}}
 {{< button href="https://huggingface.co/spaces/Qwen/Qwen1.5-72B-Chat" label="DEMO" external=true >}}
-{{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
+{{< button href="https://discord.gg/CV4E9rpNSD" label="DISCORD" external=true >}}
 
 # Introduction
 

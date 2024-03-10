@@ -43,7 +43,7 @@ show_word_count: true
 {{< button href="https://github.com/QwenLM/Qwen" label="GITHUB" external=true >}}
 {{< button href="https://huggingface.co/Qwen" label="HUGGING FACE" external=true >}}
 {{< button href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external=true >}}
-{{< button href="https://discord.gg/z3GAxXZ9C" label="DISCORD" external=true >}}
+{{< button href="https://discord.gg/CV4E9rpNSD" label="DISCORD" external=true >}}
 
 Additionally, we have WeChat groups for chatting and we invite you to join the groups through the provided link in our GitHub readme.
 
