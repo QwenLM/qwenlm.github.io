@@ -9,7 +9,17 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 04 Feb 2024 13:33:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Feb 2024 11:31:44 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen1.5-MoE: Matching 7B Model Performance with 1/3 Activated Parameters</title>
+      <link>http://qwenlm.github.io/blog/qwen-moe/</link>
+      <pubDate>Wed, 28 Feb 2024 11:31:44 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/blog/qwen-moe/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
+Introduction Since the surge in interest sparked by Mixtral, research on mixture-of-expert (MoE) models has gained significant momentum. Both researchers and practitioners are keenly interested in understanding how to effectively train such models and assessing their efficiency and effectiveness. Today, we introduce Qwen1.5-MoE-A2.7B, a small MoE model with only 2.7 billion activated parameters yet matching the performance of state-of-the-art 7B models like Mistral 7B and Qwen1.</description>
+    </item>
+    
     <item>
       <title>Introducing Qwen1.5</title>
       <link>http://qwenlm.github.io/blog/qwen1.5/</link>
