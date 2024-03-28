@@ -145,7 +145,7 @@ response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 要使用vLLM模型，请从源代码安装vLLM：
 
 ```bash
-git clone https://github.com/wenyujin333/vllm.git
+git clone https://github.com/vllm-project/vllm.git
 cd vllm
 git checkout add_qwen_moe
 pip install -e .
