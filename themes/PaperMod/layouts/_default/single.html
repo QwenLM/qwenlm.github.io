@@ -35,7 +35,7 @@
   </div>
   {{- end }}
 
-  <footer class="post-footer">
+  <!-- <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
       {{- range ($.GetTerms $tags) }}
@@ -48,7 +48,7 @@
     {{- if (and site.Params.show_share_buttons (ne .Params.disable_share true)) }}
     {{- partial "share_icons.html" . -}}
     {{- end }}
-  </footer>
+  </footer> -->
 
   {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}
