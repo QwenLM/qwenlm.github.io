@@ -149,7 +149,7 @@ response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 To use the model with vLLM, follow our fork first and then install vLLM from source as well:
 
 ```bash
-git clone https://github.com/wenyujin333/vllm.git
+git clone https://github.com/vllm-project/vllm.git
 cd vllm
 git checkout add_qwen_moe
 pip install -e .
