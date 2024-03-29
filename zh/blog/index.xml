@@ -36,13 +36,13 @@ Model #Parameters #(Activated) Parameters #(Activated) Non-embedding parameters 
       
       <guid>http://qwenlm.github.io/zh/blog/qwen1.5/</guid>
       <description>GITHUB HUGGING FACE MODELSCOPE DEMO WeChat
-简介 最近几个月，我们专注探索如何构建一个真正「卓越」的模型，并在此过程中不断提升开发者的使用体验。农历新年到来之际，我们推出通义千问开源模型1.5版本: Qwen1.5。我们开源了包括0.5B、1.8B、4B、7B、14B和72B共计6个不同规模的Base和Chat模型，并同步放出了各尺寸模型对应的量化模型。
+简介 最近几个月，我们专注探索如何构建一个真正「卓越」的模型，并在此过程中不断提升开发者的使用体验。农历新年到来之际，我们推出通义千问开源模型1.5版本: Qwen1.5。我们开源了包括0.5B、1.8B、4B、7B、14B和72B共计6个不同规模的Base和Chat模型，, 以及一个MoE模型（点击博客 了解详情），并同步放出了各尺寸模型对应的量化模型。
 此次更新中，我们不仅像之前一样提供Int4和Int8的GPTQ模型，还提供了AWQ以及GGUF量化模型。为了提升开发者体验，我们将Qwen1.5的代码正式合并到HuggingFace transformers代码库中，所以现在可以直接使用 transformers&amp;gt;=4.37.0 原生代码，而无需指定 trust_remote_code 选项即可进行开发。
 我们已经与vLLM、SGLang（用于部署）、AutoAWQ、AutoGPTQ（用于量化）、Axolotl、LLaMA-Factory（用于微调）以及llama.cpp（用于本地 LLM 推理）等框架合作，所有这些框架现在都支持 Qwen1.5。Qwen1.5 系列可在 Ollama 和 LMStudio 等平台上使用。此外，API 服务不仅在 DashScope 上提供，还在 together.ai 上提供，全球都可访问。请访问here开始使用，我们建议您试用Qwen1.5-72B-chat。
 相较于以往版本，本次更新我们着重提升Chat模型与人类偏好的对齐程度，并且显著增强了模型的多语言处理能力。在序列长度方面，所有规模模型均已实现 32768 个 tokens 的上下文长度范围支持。同时，预训练 Base 模型的质量也有关键优化，有望在微调过程中为您带来更佳体验。这次迭代是我们朝向「卓越」模型目标所迈进一个坚实的步伐。
 模型效果 为了全面洞悉 Qwen1.5 的效果表现，我们对 Base 和 Chat 模型在一系列基础及扩展能力上进行了详尽评估，包括如语言理解、代码、推理等在内的基础能力，多语言能力，人类偏好对齐能力，智能体能力，检索增强生成能力（RAG）等。
 基础能力 关于模型基础能力的评测，我们在 MMLU（5-shot）、C-Eval、Humaneval、GS8K、BBH 等基准数据集上对 Qwen1.5 进行了评估。
-Model MMLU C-Eval GSM8K MATH HumanEval MBPP BBH CMMLU GPT-4 86.4 69.9 92.0 45.8 67.0 61.8 86.7 71.0 Llama2-7B 46.8 32.</description>
+Model MMLU C-Eval GSM8K MATH HumanEval MBPP BBH CMMLU GPT-4 86.4 69.9 92.0 45.8 67.0 61.8 86.7 71.0 Llama2-7B 46.</description>
     </item>
     
     <item>
