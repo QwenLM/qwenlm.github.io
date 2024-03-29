@@ -17,7 +17,7 @@
       
       <guid>http://qwenlm.github.io/zh/blog/qwen-moe/</guid>
       <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
-介绍 今天，我们推出Qwen系列的首个MoE模型，Qwen1.5-MoE-A2.7B。它仅拥有27亿个激活参数，但其性能却能与当前最先进的70亿参数模型，如Mistral 7B和Qwen1.5-7B相媲美。相较于包含65亿个Non-Embedding参数的Qwen1.5-7B，Qwen1.5-MoE-A2.7B只有20亿个Non-Embedding参数，约为原模型大小的三分之一。此外，相比Qwen1.5-7B，Qwen1.5-MoE-A2.7B的训练成本降低了75%，推理速度则提升了1.74倍。
+介绍 今天，我们推出Qwen系列的首个MoE模型，Qwen1.5-MoE-A2.7B。它仅拥有27亿个激活参数，但其性能却能与当前最先进的70亿参数模型，如Mistral 7B和Qwen1.5-7B相媲美。相较于包含65亿个Non-Embedding参数的Qwen1.5-7B，Qwen1.5-MoE-A2.7B只有20亿个Non-Embedding参数，约为原模型大小的三分之一。此外，相比Qwen1.5-7B，Qwen1.5-MoE-A2.7B的训练成本降低了75%，推理速度则提升至1.74倍。
 模型结构 我们在Qwen1.5-MoE模型中采用了特别设计的MoE架构。通常情况下，如Mixtral等方法所示，每个transformer block中的MoE层会配备8个expert，并采用top-2门控策略进行routing。这种配置还存在很大的优化空间。我们对这一架构进行了多项改进：
 Finegrained experts 初始化 新的routing机制 DeepSeek-MoE和DBRX已经证明了finegrained experts的有效性。从FFN层过渡到MoE层时，我们一般只是简单地复制多次FFN来实现多个expert。而finegrained experts的目标是在不增加参数数量的前提下生成更多expert。为了实现这一点，我们将单个FFN分割成几个部分，每个部分作为一个独立的expert。我们设计了具有总共64个expert的的MoE，对比其他配置，我们认为这个实现能达到效果和效率的最优。
 模型初始化阶段至关重要。初步实验表明，从零开始训练MoE模型可能效率低下，且难以提升至预期的最优性能水平。因此，我们首先利用已有的Qwen-1.8B，将其改造为Qwen1.5-MoE-A2.7B。此外，在初始化阶段引入随机性可以显著加快收敛速度，并在整个预训练过程中带来更好的整体性能表现。
