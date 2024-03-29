@@ -98,7 +98,7 @@ We have deployed both Qwen1.5-7B and Qwen1.5-MoE-A2.7B models with vLLM and cond
 
 |Model   | Throughput    | TPS     |
 |:------------|:--------------|---------|
-|Qwen2-7B-Chat| 1.15 | 2298.89 |
+|Qwen1.5-7B-Chat| 1.15 | 2298.89 |
 |Qwen1.5-MoE-A2.7B-Chat| 2.01| 4010.27 |
 
 The Qwen1.5-MoE-A2.7B model exhibits an impressive improvement in speed, being approximately 1.74 times faster compared to the Qwen1.5-7B model. This acceleration is primarily attributed to the fact that the MoE architecture activates a notably smaller portion of its total parameters, thereby reducing computational demands. Moreover, the integration of shared experts contributes substantially to enhancing the model's inference efficiency. Consequently, despite the increased memory requirements associated with MoE models, they demonstrate clear advantages in terms of both throughput and inference speed.
