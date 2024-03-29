@@ -151,7 +151,6 @@ To use the model with vLLM, follow our fork first and then install vLLM from sou
 ```bash
 git clone https://github.com/vllm-project/vllm.git
 cd vllm
-git checkout add_qwen_moe
 pip install -e .
 ```
 
