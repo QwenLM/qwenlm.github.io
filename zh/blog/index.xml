@@ -9,11 +9,11 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 28 Feb 2024 11:31:44 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Mar 2024 11:31:44 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Qwen1.5-MoE: 1/3的激活参数量达到7B模型的性能</title>
       <link>http://qwenlm.github.io/zh/blog/qwen-moe/</link>
-      <pubDate>Wed, 28 Feb 2024 11:31:44 +0800</pubDate>
+      <pubDate>Thu, 28 Mar 2024 11:31:44 +0800</pubDate>
       
       <guid>http://qwenlm.github.io/zh/blog/qwen-moe/</guid>
       <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
