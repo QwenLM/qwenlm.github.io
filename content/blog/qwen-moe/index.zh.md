@@ -94,7 +94,7 @@ MoE模型的训练成本与dense模型存在显著差异。尽管MoE模型通常
 
 |Model   | Throughput    | TPS     |
 |:------------|:--------------|---------|
-|Qwen1.5-7B-Chat| 1.15 | 2298.89 |
+|Qwen-7B-Chat| 1.15 | 2298.89 |
 |Qwen1.5-MoE-A2.7B-Chat| 2.01| 4010.27 |
 
 Qwen1.5-MoE-A2.7B与Qwen1.5-7B相比，速度提高了约1.74倍。这种加速主要归因于MoE在前向过程中仅激活了其总参数的一小部分，从而降低了计算需求。此外，共享expert也提升了模型的推理效率。因此，尽管MoE模型增加了内存需求，但它们在吞吐性能和推理速度方面都表现出明显的优势。
@@ -147,7 +147,6 @@ response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 ```bash
 git clone https://github.com/vllm-project/vllm.git
 cd vllm
-git checkout add_qwen_moe
 pip install -e .
 ```
 
