@@ -1,6 +1,6 @@
 ---
 title: "Qwen1.5-MoE: Matching 7B Model Performance with 1/3 Activated Parameters"
-date: 2024-02-28T11:31:44+08:00
+date: 2024-03-28T11:31:44+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]

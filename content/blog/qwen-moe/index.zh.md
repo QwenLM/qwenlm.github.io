@@ -1,6 +1,6 @@
 ---
 title: "Qwen1.5-MoE: 1/3的激活参数量达到7B模型的性能"
-date: 2024-02-28T11:31:44+08:00
+date: 2024-03-28T11:31:44+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
