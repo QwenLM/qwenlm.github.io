@@ -9,7 +9,18 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 28 Mar 2024 11:31:44 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Apr 2024 13:33:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen1.5-32B: Fitting the Capstone of the Qwen1.5 Language Model Series</title>
+      <link>http://qwenlm.github.io/blog/qwen1.5-32b/</link>
+      <pubDate>Tue, 02 Apr 2024 13:33:00 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/blog/qwen1.5-32b/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
+Introduction The open-source community has long sought a model that strikes an ideal balance between performance, efficiency, and memory footprint. Despite the emergence of cutting-edge models like Qwen1.5-72B and DBRX, the models have faced persistent challenges such as large memory consumption, slow inference speed, and substantial finetuning costs.
+A growing consensus within the field now points to a model with approximately 30 billion parameters as the optimal &amp;ldquo;sweet spot&amp;rdquo; for achieving both strong performance and manageable resource requirements.</description>
+    </item>
+    
     <item>
       <title>Qwen1.5-MoE: Matching 7B Model Performance with 1/3 Activated Parameters</title>
       <link>http://qwenlm.github.io/blog/qwen-moe/</link>
