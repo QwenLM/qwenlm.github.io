@@ -75,6 +75,7 @@ To assess the basic capabilities of language models, we have conducted evaluatio
 | Mixtral-8x7B | 70.6 |   -   | 74.4 | 28.4 |   40.2   | 60.7 |  -  |   -   |
 | Qwen1.5-7B   | 61.0 |  74.1  | 62.5 | 20.3 |   36.0   | 37.4 | 40.2 | 73.1 |
 | Qwen1.5-14B  | 67.6 |  78.7  | 70.1 | 29.2 |   37.8   | 44.0 | 53.7 | 77.6 |
+| Qwen1.5-32B  | 73.4 |  83.5  | 77.4 | 36.1 |   37.2   | 49.4 | 66.8 | 82.3 |
 | Qwen1.5-72B  | 77.5 |  84.1  | 79.5 | 34.1 |   41.5   | 53.4 | 65.5 | 83.5 |
 
 At every model size, Qwen1.5 demonstrates strong performance across the diverse evaluation benchmarks. In particular, Qwen1.5-72B outperforms Llama2-70B across all benchmarks, showcasing its exceptional capabilities in language understanding, reasoning, and math.
