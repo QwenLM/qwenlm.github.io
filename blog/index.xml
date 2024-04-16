@@ -9,7 +9,17 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 02 Apr 2024 13:33:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Apr 2024 13:33:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code with CodeQwen1.5</title>
+      <link>http://qwenlm.github.io/blog/codeqwen1.5/</link>
+      <pubDate>Tue, 16 Apr 2024 13:33:00 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/blog/codeqwen1.5/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
+Introduction The advent of advanced programming tools, which harnesses the power of large language models (LLMs), has significantly enhanced programmer productivity and accuracy. Notwithstanding these advancements, dominant coding assistants like Github Copilot, built upon proprietary LLMs, pose notable challenges in terms of cost, privacy, security, and potential copyright infringement. Recognizing the imperative for a more transparent and accessible alternative, the open-source community has embarked on a concerted endeavor to develop open codeLLMs.</description>
+    </item>
+    
     <item>
       <title>Qwen1.5-32B: Fitting the Capstone of the Qwen1.5 Language Model Series</title>
       <link>http://qwenlm.github.io/blog/qwen1.5-32b/</link>

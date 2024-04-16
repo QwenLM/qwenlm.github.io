@@ -9,7 +9,20 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 02 Apr 2024 13:33:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Apr 2024 13:33:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>与 CodeQwen1.5 结对编程</title>
+      <link>http://qwenlm.github.io/zh/blog/codeqwen1.5/</link>
+      <pubDate>Tue, 16 Apr 2024 13:33:00 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/zh/blog/codeqwen1.5/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
+简介 代码助手，是一种基于 LLMs 的智能化的编程工具，它可以帮助程序员更高效、更准确的编写代码，使得整个软件开发过程更加流畅和高效。然而流行的代码助手，比如 Github Copilot，依赖于闭源的商业模型，不仅昂贵还会引起如隐私、安全、版权等方面的担忧。幸运的是，开源社区正在致力于打造开放代码模型来实现开放的代码助手。近期涌现出了一批优秀的 Open CodeLLMs，比如 StarCoder2、CodeLlama、DeepSeek-Coder 等，提供了一条新的路径，但仍然值得探索。
+今天，我们非常激动地和大家介绍来自 Qwen1.5 开源家族的新成员，一个代码专家模型 CodeQwen1.5! CodeQwen1.5 基于 Qwen 语言模型初始化，拥有 7B 参数的模型，其拥有 GQA 架构，经过了 ~3T tokens 代码相关的数据进行预训练，共计支持 92 种编程语言、且最长支持 64K 的上下文输入。效果方面，CodeQwen1.5 展现出了非凡的代码生成、长序列建模、代码修改、SQL 能力等,该模型可以大大提高开发人员的工作效率，并在不同的技术环境中简化软件开发工作流程。
+CodeQwen 是基础的 Coder 代码生成是大语言模型的关键能力之一，期待模型将自然语言指令转换为具有精确的、可执行的代码。仅拥有 70 亿参数的 CodeQwen1.5 在基础代码生成能力上已经超过了更尺寸的模型，进一步缩小了开源 CodeLLM 和 GPT-4 之间编码能力的差距。我们对 HumanEval 和 MBPP 进行了评估，下面是具体的比较。
+Model Size HumanEval 0-shot HumanEval+ 0-shot MBPP 0-shot MBPP+ 0-shot MBPP 3-shot Base Model CodeLlama-Base 7B 33.5 25.</description>
+    </item>
+    
     <item>
       <title>Qwen1.5-32B：Qwen1.5语言模型系列的最后一块拼图</title>
       <link>http://qwenlm.github.io/zh/blog/qwen1.5-32b/</link>
