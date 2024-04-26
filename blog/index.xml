@@ -9,7 +9,17 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 16 Apr 2024 13:33:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Apr 2024 13:33:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen1.5-110B: The First 100B&#43; Model of the Qwen1.5 Series</title>
+      <link>http://qwenlm.github.io/blog/qwen1.5-110b/</link>
+      <pubDate>Thu, 25 Apr 2024 13:33:00 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/blog/qwen1.5-110b/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
+Introduction Recently we have witnessed a burst of large-scale models with over 100 billion parameters in the opensource community. These models have demonstrated remarkable performance in both benchmark evaluation and chatbot arena. Today, we release the first 100B+ model of the Qwen1.5 series, Qwen1.5-110B, which achieves comparable performance with Meta-Llama3-70B in the base model evaluation, and outstanding performance in the chat evaluation, including MT-Bench and AlpacaEval 2.</description>
+    </item>
+    
     <item>
       <title>Code with CodeQwen1.5</title>
       <link>http://qwenlm.github.io/blog/codeqwen1.5/</link>
