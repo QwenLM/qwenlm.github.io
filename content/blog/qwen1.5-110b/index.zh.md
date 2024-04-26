@@ -105,7 +105,7 @@ Qwen1.5-110B与其他Qwen1.5模型相似，采用了相同的Transformer解码�
 
 ## 使用Qwen1.5-110B
 
-我们建议您阅读Qwen1.5的[博客](https://qwenlm.github.io/blog/qwen1.5/)了解更多关于在transformers、llama.cpp、vLLM、Ollama等框架上使用的方法。
+我们建议您阅读Qwen1.5的[博客](https://qwenlm.github.io/blog/qwen1.5/)了解更多关于在transformers、llama.cpp、vLLM、Ollama、LMStudio、SkyPilot、Axolotl、LLaMA-Factory等框架上使用的方法。
 
 ## 结语
 
