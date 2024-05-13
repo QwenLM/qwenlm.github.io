@@ -9,7 +9,20 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 25 Apr 2024 13:33:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 May 2024 18:10:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen-Max-0428模型介绍</title>
+      <link>http://qwenlm.github.io/zh/blog/qwen-max-0428/</link>
+      <pubDate>Sat, 11 May 2024 18:10:00 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/zh/blog/qwen-max-0428/</guid>
+      <description>API DEMO DISCORD
+此前，我们开源了Qwen1.5系列的模型，参数规模最小至5亿，最大至1100亿。这一次，我们推出更大规模模型Qwen-Max-0428（通义千问网页端及APP产品版本从2.1升级至2.5）。Qwen-Max-0428是经过指令微调的Chat模型。近期该模型登陆了Chatbot Arena，并登榜前十。此外，我们在MT-Bench的评测上也观察到该模型的表现显著优于Qwen1.5-110B-Chat。
+Models MT-Bench Arena Qwen1.5-110B-Chat 8.88 1172 Qwen-Max-0428 8.96 1186 我们也在Hugging Face上提供了Demo服务（链接）：
+同时我们也提供了DashScope API服务（链接）。目前API服务已经支持OpenAI API格式，示例如下所示：
+from openai import OpenAI client = OpenAI( api_key=&amp;#34;$your-dashscope-api-key&amp;#34;, base_url=&amp;#34;https://dashscope.aliyuncs.com/compatible-mode/v1&amp;#34; ) completion = client.chat.completions.create( model=&amp;#34;qwen-max&amp;#34;, messages=[{&amp;#39;role&amp;#39;: &amp;#39;system&amp;#39;, &amp;#39;content&amp;#39;: &amp;#39;You are a helpful assistant.&amp;#39;}, {&amp;#39;role&amp;#39;: &amp;#39;user&amp;#39;, &amp;#39;content&amp;#39;: &amp;#39;Tell me something about large language models.&amp;#39;}] ) print(completion.choices[0].message) 此外，Qwen-Max-0428已上线通义千问网页端及APP。欢迎体验！</description>
+    </item>
+    
     <item>
       <title>Qwen1.5-110B：Qwen1.5系列的首个千亿参数开源模型</title>
       <link>http://qwenlm.github.io/zh/blog/qwen1.5-110b/</link>

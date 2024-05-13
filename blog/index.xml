@@ -9,7 +9,18 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 25 Apr 2024 13:33:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 May 2024 18:10:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes on Qwen-Max-0428</title>
+      <link>http://qwenlm.github.io/blog/qwen-max-0428/</link>
+      <pubDate>Sat, 11 May 2024 18:10:00 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/blog/qwen-max-0428/</guid>
+      <description>API DEMO DISCORD
+Previously, we opensourced a series of Qwen1.5 model ranging from 0.5 to 110 billion parameters. Now, we release a larger model, Qwen-Max-0428. Qwen-Max-0428 is an instruction-tuned model for chat service. Very recently, it is available via Chatbot Arena and it has now become the top-10 in the leaderboard. Furthermore, our evaluation of MT-Bench also demonstrates that the new model outperforms our previous largest model Qwen1.5-110B-Chat.
+Models MT-Bench Arena Qwen1.</description>
+    </item>
+    
     <item>
       <title>Qwen1.5-110B: The First 100B&#43; Model of the Qwen1.5 Series</title>
       <link>http://qwenlm.github.io/blog/qwen1.5-110b/</link>
