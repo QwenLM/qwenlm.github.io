@@ -101,13 +101,24 @@ We also test the chat models on MT-Bench and AlpacaEval 2.0.
 Compared with the previously released 72B model, on the two benchmark evaluation for chat models the 110B performs significantly better. The consistent improvement in the evaluation indicates that stronger and larger base language models can lead to better chat models even without changing the post-training recipes much.
 
 
-## Develop with Qwen1.5-110B
+# Develop with Qwen1.5-110B
 
 We advise you to read our blog for [Qwen1.5](https://qwenlm.github.io/blog/qwen1.5/) to figure out the usages with Transformers, vLLM, llama.cpp, Ollama, LMStudio, SkyPilot, Axolotl, LLaMA-Factory, etc. 
 
 
-## Conclusion
+# Conclusion
 
 The Qwen1.5-110B is the largest model in the Qwen1.5 series, and it is also the first one with over 100 billion parameters in the series. It demonstrates competitive performance against the very recently released SOTA model Llama-3-70B and it is significantly better than the 72B model. This tells us that there is still a lot of room in model size scaling for better performance. While the releease of Llama-3 indicates the significance of data scaling to an extremely large scale, we believe we can get the best of both worlds by scaling both data and model size in our future release. Stay tuned for Qwen2! 
 
 
+# Citation
+
+```
+@misc{qwen1.5,
+    title = {Introducing Qwen1.5},
+    url = {https://qwenlm.github.io/blog/qwen1.5/},
+    author = {Qwen Team},
+    month = {February},
+    year = {2024}
+}
+```

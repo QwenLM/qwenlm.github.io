@@ -39,7 +39,7 @@ show_word_count: true
 {{< button href="https://github.com/QwenLM/Qwen1.5" label="GITHUB" external=true >}}
 {{< button href="https://huggingface.co/Qwen" label="HUGGING FACE" external=true >}}
 {{< button href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external=true >}}
-{{< button href="https://huggingface.co/spaces/Qwen/Qwen1.5MoE-A2.7B-Chat" label="DEMO" external=true >}}
+{{< button href="https://huggingface.co/spaces/Qwen/qwen1.5-MoE-A2.7B-Chat-demo" label="DEMO" external=true >}}
 {{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 # 介绍
@@ -173,3 +173,15 @@ curl http://localhost:8000/v1/chat/completions \
 
 # 总结
 我们非常高兴地介绍我们的首个MoE模型Qwen1.5-MoE-A2.7B，它对比当前最好的7B参数模型取得了相当的性能。此外，与传统的7B模型相比，MoE模型在训练成本和推理时间上都取得了显著的降低。我们将持续研究MoE相关技术，未来将推出更强大的MoE模型。
+
+# 引用
+
+```
+@misc{qwen_moe,
+    title = {Qwen1.5-MoE: Matching 7B Model Performance with 1/3 Activated Parameters"},
+    url = {https://qwenlm.github.io/blog/qwen-moe/},
+    author = {Qwen Team},
+    month = {February},
+    year = {2024}
+}
+```

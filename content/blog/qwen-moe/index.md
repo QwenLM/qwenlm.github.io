@@ -39,7 +39,7 @@ show_word_count: true
 {{< button href="https://github.com/QwenLM/Qwen1.5" label="GITHUB" external=true >}}
 {{< button href="https://huggingface.co/Qwen" label="HUGGING FACE" external=true >}}
 {{< button href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external=true >}}
-{{< button href="https://huggingface.co/spaces/Qwen/Qwen1.5MoE-A2.7B-Chat" label="DEMO" external=true >}}
+{{< button href="https://huggingface.co/spaces/Qwen/qwen1.5-MoE-A2.7B-Chat-demo" label="DEMO" external=true >}}
 {{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 # Introduction
@@ -177,3 +177,15 @@ There remains an extensive array of tasks on our agenda, including the support o
 
 # Conclusion
 We are thrilled to introduce our pioneering MoE model, Qwen1.5-MoE-A2.7B, which achieves parity with contemporary 7B parameter models. Furthermore, we have shown substantial reductions in both training costs and inference time when compared to conventional 7B models. Our model developments underscore the vast potential of MoE models. In light of these encouraging outcomes, we remain steadfast in our commitment to advancing this technology further.
+
+# Citation
+
+```
+@misc{qwen_moe,
+    title = {Qwen1.5-MoE: Matching 7B Model Performance with 1/3 Activated Parameters"},
+    url = {https://qwenlm.github.io/blog/qwen-moe/},
+    author = {Qwen Team},
+    month = {February},
+    year = {2024}
+}
+```

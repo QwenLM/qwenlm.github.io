@@ -91,3 +91,15 @@ print(completion.choices[0].message)
 ```
 
 此外，Qwen-Max-0428已上线通义千问网页端及APP。欢迎体验！
+
+# 引用
+
+```
+@misc{qwen1.5,
+    title = {Introducing Qwen1.5},
+    url = {https://qwenlm.github.io/blog/qwen1.5/},
+    author = {Qwen Team},
+    month = {February},
+    year = {2024}
+}
+```

@@ -57,7 +57,7 @@ show_word_count: true
 
 # CodeQwen 是基础的 Coder
 
-代码生成是大语言模型的关键能力之一，期待模型将自然语言指令转换为具有精确的、可执行的代码。仅拥有 70 亿参数的 CodeQwen1.5 在基础代码生成能力上已经超过了更尺寸的模型，进一步缩小了开源 CodeLLM 和 GPT-4 之间编码能力的差距。我们对 HumanEval 和 MBPP 进行了评估，下面是具体的比较。
+代码生成是大语言模型的关键能力之一，期待模型将自然语言指令转换为具有精确的、可执行的代码。仅拥有 70 亿参数的 CodeQwen1.5 在基础代码生成能力上已经超过了更尺寸的模型，进一步缩小了开源代码 LLM 和 GPT-4 之间的编码能力差距。我们对 HumanEval 和 MBPP 进行了评估，下面是具体的比较。
 
 <style>
 .cell-aux {
@@ -181,7 +181,7 @@ show_word_count: true
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/codeqwen1.5/radar-vertical.png#center" width="40%">}}
 
-## CodeQwen 是长序列 Coder
+# CodeQwen 是长序列 Coder
 
 长序列能力对于代码模型来说至关重要，是理解仓库级别代码、成为 Code Agent 的核心能力。而当前的代码模型对于长度的支持仍然非常有限，阻碍了其实际应用的潜力。CodeQwen1.5 希望进一步推进开源代码模型在长序列建模上的进展，我们收集并构造了仓库级别的长序列代码数据进行预训练，通过精细的数据配比和组织方式，使其最终可以最长支持 64K 的输入长度。
 
@@ -201,22 +201,34 @@ show_word_count: true
 
 目前 SWEBench 竞技场上的玩家都依赖闭源模型，我们让 CodeQwen1.5 首次入局，尽管仅有 0.89 的分数但仍强于 ChatGPT3.5，这展示了开源代码模型与专有模型的竞争力尽管尚处于初期，但具有潜力。
 
-## CodeQwen 是优秀的代码修改者
+# CodeQwen 是优秀的代码修改者
 一个好的代码助手不仅可以根据指令生成代码，还能够针对已有代码或者新的需求进行修改或错误修复。为此，我们评估了 CodeQwen1.5 在代码修改方面的能力。我们首先在关注 CodeEditorBench，涉及到 Debug、Translate、Switch、Polish 等四个方面的代码修改能力，结果表明 CodeQwen1.5 在 7B 规模上达到了最好的效果。
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/codeqwen1.5/codeedit.jpeg#center" width="90%">}}
 
 
-## CodeQwen 是出色的 SQL 专家
+# CodeQwen 是出色的 SQL 专家
 CodeQwen1.5 可以作为一个智能的 SQL 专家，弥合了非编程专业人士与高效数据交互之间的差距。它通过自然语言使无编程专业知识的用户能够查询数据库，从而缓解了与SQL相关的陡峭学习曲线。我们在两个流行的文本到SQL基准测试Spider和Bird上评估了CodeQwen1.5-Chat的性能。实验结果显示，CodeQwen1.5在接近GPT-4的位置排名第二（结果来自DIN-SQL，一种 SOTA 的提示方法）。这一出色的表现得益于在预训练和微调阶段均广泛利用了合成数据。合成数据具有可扩展性、可验证性和多样性的特点，在增强CodeQwen1.5的SQL能力方面已被证明是一项具有吸引力的未来研究领域。
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/codeqwen1.5/sql-score.png#center" width="90%">}}
 
 
-## 部署 CodeQwen1.5
+# 部署 CodeQwen1.5
 
 CodeQwen1.5 隶属 Qwen1.5 开源家族，我们推荐您阅读我们的 [Qwen1.5](https://qwenlm.github.io/blog/qwen1.5/) 文档来了解具体的使用方式，目前已支持  Transformers, vLLM, llama.cpp, Ollama, 等等。
 
-## 结论
+# 结论
 
 我们发布了 CodeQwen1.5-7B 及 CodeQwen1.5-7B-Chat，一个开放的、多面体的 Code LLM，我们希望这个模型能在 Code 助手、Code Agent 等方面为社区贡献。未来我们仍然会积极的投入代码智能建设，实现真正的 AI 程序员。
+
+# 引用
+
+```
+@misc{codeqwen1.5,
+    title = {Code with CodeQwen1.5},
+    url = {https://qwenlm.github.io/blog/codeqwen1.5/},
+    author = {Qwen Team},
+    month = {April},
+    year = {2024}
+}
+```

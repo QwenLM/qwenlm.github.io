@@ -111,13 +111,23 @@ Finally we come to take a look at its performance in the long-context evaluation
 {{< figure src="https://qianwen-res.oss-accelerate.aliyuncs.com/assets/blog/qwen1.5-32b/needle-qwen1.5-32b-chat.jpg#center" width="100%">}}
 
 
-## Develop with Qwen1.5-32B
+# Develop with Qwen1.5-32B
 
 We advise you to read our blog for [Qwen1.5](https://qwenlm.github.io/blog/qwen1.5/) to figure out the usages with Transformers, vLLM, llama.cpp, Ollama, etc. 
 
 
-## Conclusion
+# Conclusion
 
 We release the medium-size model Qwen1.5-32B as well as its chat counterpart. The models require much less memory footprint and run significantly faster than the 72B model. We hope that this release can help our users to figure out a better solution for their downstream application to tackle the problems of weak capabilities of 14B models (especially in agent playing scenarios) and high inference costs of 72B models. 
 
+# Citation
 
+```
+@misc{qwen1.5,
+    title = {Introducing Qwen1.5},
+    url = {https://qwenlm.github.io/blog/qwen1.5/},
+    author = {Qwen Team},
+    month = {February},
+    year = {2024}
+}
+```

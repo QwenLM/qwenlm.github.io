@@ -91,3 +91,16 @@ print(completion.choices[0].message)
 ```
 
 This model is available in our web service and APP ([link](https://tongyi.aliyun.com/qianwen/), only accessible in mainland China). Enjoy!
+
+
+# Citation
+
+```
+@misc{qwen1.5,
+    title = {Introducing Qwen1.5},
+    url = {https://qwenlm.github.io/blog/qwen1.5/},
+    author = {Qwen Team},
+    month = {February},
+    year = {2024}
+}
+```

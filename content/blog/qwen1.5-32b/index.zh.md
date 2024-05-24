@@ -109,10 +109,24 @@ Qwen1.5-32B 是 Qwen1.5 语言模型系列的最新成员，除了模型大小�
 {{< figure src="https://qianwen-res.oss-accelerate.aliyuncs.com/assets/blog/qwen1.5-32b/needle-qwen1.5-32b-chat.jpg#center" width="100%">}}
 
 
-## 使用Qwen1.5-32B
+# 使用Qwen1.5-32B
 
 我们建议您阅读Qwen1.5的[博客](https://qwenlm.github.io/blog/qwen1.5/)了解更多关于在transformers、llama.cpp、vLLM、Ollama等框架上使用的方法。
 
-## 结语
+
+
+# 结语
 
 我们发布了中等规模模型Qwen1.5-32B及其Chat模型。相较于72B模型，这些模型的内存占用大幅减少，运行速度显著提升。我们期望此次发布能帮助用户为其下游应用找到更优解决方案，以应对14B模型尤其在智能体场景下能力偏弱以及72B模型推理成本过高的问题。
+
+# 引用
+
+```
+@misc{qwen1.5,
+    title = {Introducing Qwen1.5},
+    url = {https://qwenlm.github.io/blog/qwen1.5/},
+    author = {Qwen Team},
+    month = {February},
+    year = {2024}
+}
+```
