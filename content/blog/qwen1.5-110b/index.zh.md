@@ -40,7 +40,7 @@ show_word_count: true
 {{< button href="https://github.com/QwenLM/Qwen1.5" label="GITHUB" external=true >}}
 {{< button href="https://huggingface.co/Qwen" label="HUGGING FACE" external=true >}}
 {{< button href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external=true >}}
-{{< button href="https://huggingface.co/spaces/Qwen/Qwen1.5-110B-Chat" label="DEMO" external=true >}}
+{{< button href="https://huggingface.co/spaces/Qwen/Qwen1.5-110B-Chat-Demo" label="DEMO" external=true >}}
 {{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 
@@ -100,12 +100,12 @@ Qwen1.5-110B与其他Qwen1.5模型相似，采用了相同的Transformer解码�
     </tr>
 </table>
 
-与之前发布的72B模型相比，在两个聊天模型的基准评估中，110B表现显著更好。评估结果的持续改善表明，即使在没有大幅改变后训练方法的情况下，更强大、更大规模的基础语言模型也可以带来更好的Chat模型。
+与之前发布的72B模型相比，在两个Chat模型的基准评估中，110B表现显著更好。评估结果的持续改善表明，即使在没有大幅改变后训练方法的情况下，更强大、更大规模的基础语言模型也可以带来更好的Chat模型。
 
 
 # 使用Qwen1.5-110B
 
-我们建议您阅读Qwen1.5的[博客](https://qwenlm.github.io/blog/qwen1.5/)了解更多关于在transformers、llama.cpp、vLLM、Ollama等框架上使用的方法。
+我们建议您阅读Qwen1.5的[博客](https://qwenlm.github.io/blog/qwen1.5/)了解更多关于在transformers、llama.cpp、vLLM、Ollama、LMStudio、SkyPilot、Axolotl、LLaMA-Factory等框架上使用的方法。
 
 
 # 结语

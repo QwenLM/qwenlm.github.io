@@ -48,7 +48,7 @@ In recent months, our focus has been on developing a "good" model while optimizi
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/intro.jpg#center" width="80%">}}
 
-With Qwen1.5, we are open-sourcing base and chat models across six sizes: 0.5B, 1.8B, 4B, 7B, 14B, and 72B. In line with tradition, we're also providing quantized models, including Int4 and Int8 GPTQ models, as well as AWQ and GGUF quantized models. To enhance the developer experience, we've merged Qwen1.5's code into Hugging Face transformers, making it accessible with `transformers>=4.37.0` without needing `trust_remote_code`.
+With Qwen1.5, we are open-sourcing base and chat models across six sizes: 0.5B, 1.8B, 4B, 7B, 14B, 32B, 72B, and 110B, and also an MoE model (see [blog](https://qwenlm.github.io/blog/qwen-moe/) for more information). In line with tradition, we're also providing quantized models, including Int4 and Int8 GPTQ models, as well as AWQ and GGUF quantized models. To enhance the developer experience, we've merged Qwen1.5's code into Hugging Face transformers, making it accessible with `transformers>=4.37.0` without needing `trust_remote_code`.
 
 We've collaborated with frameworks like [vLLM](https://vllm.readthedocs.io/), [SGLang](https://github.com/sgl-project/sglang) for deployment, [AutoAWQ](https://github.com/casper-hansen/AutoAWQ), [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) for quantization, [Axolotl](https://github.com/OpenAccess-AI-Collective/axolotl), [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) for finetuning, and [llama.cpp](https://github.com/ggerganov/llama.cpp) for local LLM inference, all of which now support Qwen1.5. The Qwen1.5 series is available on platforms such as [Ollama](https://ollama.ai/) and [LMStudio](https://lmstudio.ai/). Additionally, API services are offered not only on DashScope but also on [together.ai](https://together.ai/), with global accessibility. Visit [here](https://api.together.ai/) to get started, and we recommend trying out [Qwen1.5-72B-chat](https://api.together.xyz/playground/chat/Qwen/Qwen1.5-72B-Chat).
 
@@ -75,6 +75,7 @@ To assess the basic capabilities of language models, we have conducted evaluatio
 | Mixtral-8x7B | 70.6 |   -   | 74.4 | 28.4 |   40.2   | 60.7 |  -  |   -   |
 | Qwen1.5-7B   | 61.0 |  74.1  | 62.5 | 20.3 |   36.0   | 37.4 | 40.2 | 73.1 |
 | Qwen1.5-14B  | 67.6 |  78.7  | 70.1 | 29.2 |   37.8   | 44.0 | 53.7 | 77.6 |
+| Qwen1.5-32B  | 73.4 |  83.5  | 77.4 | 36.1 |   37.2   | 49.4 | 66.8 | 82.3 |
 | Qwen1.5-72B  | 77.5 |  84.1  | 79.5 | 34.1 |   41.5   | 53.4 | 65.5 | 83.5 |
 
 At every model size, Qwen1.5 demonstrates strong performance across the diverse evaluation benchmarks. In particular, Qwen1.5-72B outperforms Llama2-70B across all benchmarks, showcasing its exceptional capabilities in language understanding, reasoning, and math.
@@ -92,6 +93,7 @@ In light of the recent surge in interest for small language models, we have comp
 | Qwen1.5-0.5B       |      0.3B      | 39.2 |  50.5  | 22.0 | 3.1 |   12.2   | 6.8 | 18.3 | 46.6 |
 | Qwen1.5-1.8B       |      1.2B      | 46.8 |  59.7  | 38.4 | 10.1 |   20.1   | 18.0 | 24.2 | 57.8 |
 | Qwen1.5-4B         |      3.1B      | 56.1 |  67.6  | 57.0 | 10.0 |   25.6   | 29.2 | 32.5 | 66.7 |
+| Qwen1.5-MoE-A2.7B  |      2.0B      | 62.5 |  79.2  | 61.5 | 21.9 |  34.2   | 36.6 | 39.1 | 79.2 |
 
 We can confidently assert that Qwen1.5 base models under 7 billion parameters are highly competitive with the leading small-scale models in the community. In the future, we will continue to improve the quality of small models and exploring methods for effectively transferring the advanced capabilities inherent in larger models into the smaller ones.
 
@@ -177,6 +179,7 @@ The detailed results are demonstrated below:
 | Qwen1.5-0.5B | 26.98 |     44.08     | 3.13 |    9.17    |
 | Qwen1.5-1.8B | 33.57 |     48.37     | 6.47 |    16.19    |
 | Qwen1.5-4B   | 41.43 |     59.76     | 21.33 |    23.34    |
+| Qwen1.5-MoE-A2.7B   | 44.54 |	61.08|	30.20 |	27.35 |
 | Qwen1.5-7B   | 47.70 |     67.63     | 37.27 |    28.36    |
 | Qwen1.5-14B  | 55.72 |     74.10     | 49.93 |    31.69    |
 | Qwen1.5-72B  | 66.35 |     78.16     | 61.67 |    35.57    |

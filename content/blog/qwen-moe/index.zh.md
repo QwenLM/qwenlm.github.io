@@ -1,6 +1,6 @@
 ---
 title: "Qwen1.5-MoE: 1/3的激活参数量达到7B模型的性能"
-date: 2024-02-28T11:31:44+08:00
+date: 2024-03-28T11:31:44+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
@@ -39,12 +39,12 @@ show_word_count: true
 {{< button href="https://github.com/QwenLM/Qwen1.5" label="GITHUB" external=true >}}
 {{< button href="https://huggingface.co/Qwen" label="HUGGING FACE" external=true >}}
 {{< button href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external=true >}}
-{{< button href="https://huggingface.co/spaces/Qwen/Qwen1.5MoE-A2.7B-Chat" label="DEMO" external=true >}}
+{{< button href="https://huggingface.co/spaces/Qwen/qwen1.5-MoE-A2.7B-Chat-demo" label="DEMO" external=true >}}
 {{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 # 介绍
 
-今天，我们推出Qwen系列的首个MoE模型，Qwen1.5-MoE-A2.7B。它仅拥有27亿个激活参数，但其性能却能与当前最先进的70亿参数模型，如Mistral 7B和Qwen1.5-7B相媲美。相较于包含65亿个Non-Embedding参数的Qwen1.5-7B，Qwen1.5-MoE-A2.7B只有20亿个Non-Embedding参数，约为原模型大小的三分之一。此外，相比Qwen1.5-7B，Qwen1.5-MoE-A2.7B的训练成本降低了75%，推理速度则提升了1.74倍。
+今天，我们推出Qwen系列的首个MoE模型，Qwen1.5-MoE-A2.7B。它仅拥有27亿个激活参数，但其性能却能与当前最先进的70亿参数模型，如Mistral 7B和Qwen1.5-7B相媲美。相较于包含65亿个Non-Embedding参数的Qwen1.5-7B，Qwen1.5-MoE-A2.7B只有20亿个Non-Embedding参数，约为原模型大小的三分之一。此外，相比Qwen1.5-7B，Qwen1.5-MoE-A2.7B的训练成本降低了75%，推理速度则提升至1.74倍。
 
 # 模型结构
 
@@ -145,9 +145,8 @@ response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 要使用vLLM模型，请从源代码安装vLLM：
 
 ```bash
-git clone https://github.com/wenyujin333/vllm.git
+git clone https://github.com/vllm-project/vllm.git
 cd vllm
-git checkout add_qwen_moe
 pip install -e .
 ```
 

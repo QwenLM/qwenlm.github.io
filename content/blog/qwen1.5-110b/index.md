@@ -82,6 +82,11 @@ We also test the chat models on MT-Bench and AlpacaEval 2.0.
         <th align="center">Avg. Score</th><th align="center">LC Win Rate</th>
     </tr>
     <tr>
+        <td>Llama-3-70B-Instruct</td>
+        <td align="center">8.85</td>
+        <td align="center">34.40</td>
+    </tr>
+    <tr>
         <td>Qwen1.5-72B-Chat</td>
         <td align="center">8.61</td>
         <td align="center">36.60</td>

@@ -1,6 +1,6 @@
 ---
 title: "Qwen1.5-MoE: Matching 7B Model Performance with 1/3 Activated Parameters"
-date: 2024-02-28T11:31:44+08:00
+date: 2024-03-28T11:31:44+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
@@ -39,7 +39,7 @@ show_word_count: true
 {{< button href="https://github.com/QwenLM/Qwen1.5" label="GITHUB" external=true >}}
 {{< button href="https://huggingface.co/Qwen" label="HUGGING FACE" external=true >}}
 {{< button href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external=true >}}
-{{< button href="https://huggingface.co/spaces/Qwen/Qwen1.5MoE-A2.7B-Chat" label="DEMO" external=true >}}
+{{< button href="https://huggingface.co/spaces/Qwen/qwen1.5-MoE-A2.7B-Chat-demo" label="DEMO" external=true >}}
 {{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 # Introduction
@@ -98,7 +98,7 @@ We have deployed both Qwen1.5-7B and Qwen1.5-MoE-A2.7B models with vLLM and cond
 
 |Model   | Throughput    | TPS     |
 |:------------|:--------------|---------|
-|Qwen2-7B-Chat| 1.15 | 2298.89 |
+|Qwen1.5-7B-Chat| 1.15 | 2298.89 |
 |Qwen1.5-MoE-A2.7B-Chat| 2.01| 4010.27 |
 
 The Qwen1.5-MoE-A2.7B model exhibits an impressive improvement in speed, being approximately 1.74 times faster compared to the Qwen1.5-7B model. This acceleration is primarily attributed to the fact that the MoE architecture activates a notably smaller portion of its total parameters, thereby reducing computational demands. Moreover, the integration of shared experts contributes substantially to enhancing the model's inference efficiency. Consequently, despite the increased memory requirements associated with MoE models, they demonstrate clear advantages in terms of both throughput and inference speed.
@@ -149,9 +149,8 @@ response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 To use the model with vLLM, follow our fork first and then install vLLM from source as well:
 
 ```bash
-git clone https://github.com/wenyujin333/vllm.git
+git clone https://github.com/vllm-project/vllm.git
 cd vllm
-git checkout add_qwen_moe
 pip install -e .
 ```
 
