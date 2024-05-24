@@ -39,7 +39,7 @@ show_word_count: true
 {{< button href="https://github.com/QwenLM/CodeQwen1.5" label="GITHUB" external=true >}}
 {{< button href="https://huggingface.co/Qwen" label="HUGGING FACE" external=true >}}
 {{< button href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external=true >}}
-{{< button href="https://huggingface.co/spaces/Qwen/CodeQwen1.5-7b-Chat-demo" label="DEMO" external=true >}}
+{{< button href="https://huggingface.co/spaces/Qwen/Qwen1.5-72B-Chat" label="DEMO" external=true >}}
 {{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 # Introduction
@@ -54,7 +54,7 @@ Today, we are delighted to introduce a new member of the Qwen1.5 open-source fam
 
 
 
-# CodeQwen are Basic Coders
+# CodeQwen is a Basic Coder
 
 Code generation is a key competence for large language models, as they are tasked with translating natural language instructions into executable code with unwavering precision. CodeQwen1.5, with only 7 billion parameters, has surpassed larger models in basic code generation capabilities, further narrowing the gap in coding proficiency between GPT-4 and opensource code LLMs. We conducted a thorough evaluation on HumanEval and MBPP to provide a clear and fair comparison as follows.
 
@@ -180,7 +180,7 @@ The evaluations mentioned primarily revolve around Python capabilities; however,
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/codeqwen1.5/radar-vertical.png#center" width="40%">}}
 
-## CodeQwen are Long Context Coders
+# CodeQwen is a Long Context Coder
 
 Long context capability is crucial for code LLMs, serving as the core skill for understanding repository-level code and becoming a code agent. However, current code models still have very limited support for length, which hinders their potential for practical application. CodeQwen1.5 aims to further advance the progress of open-source code models in long context modeling. To achieve this, we have collected and constructed long sequence code data at the repository level for pre-training. Through careful data proportioning and organization, we have enabled it to support input lengths of up to 64K tokens.
 
@@ -203,25 +203,36 @@ Both Evaluation 1 and Evaluation 2 serve as initial and foundational assessments
 
 Currently, participants in the SWE Bench competition predominantly are proprietary models. We introduce CodeQwen1.5 as an open-source model entry. Despite achieving a score of 0.89, CodeQwen1.5 surpasses ChatGPT-3.5, demonstrating the nascent yet promising competitiveness of open-source code models against their proprietary counterparts.
 
-## CodeQwen are Debuggers
+# CodeQwen is a Debugger
 An effective code assistant must demonstrate proficiency in both generating code in response to given specifications and adeptly modifying or debugging existing code to accommodate evolving requirements or rectify errors. In assessing CodeQwen1.5's proficiency in code modification tasks, we concentrated our evaluation on the CodeEditorBench suite, encompassing four distinct dimensions: Debugging, Translation, Language Switching, and Code Polishing. The results indicate that CodeQwen1.5 achieves the SOTA performance at the 7 billion parameter scale.
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/codeqwen1.5/codeedit.jpeg#center" width="90%">}}
 
 
-## CodeQwen are SQLers
+# CodeQwen is a SQLer
 CodeQwen1.5 serves as a solution to bridge the gap between non-programming professionals and efficient data interaction. It alleviates the steep learning curve associated with SQL by enabling users without coding expertise to query databases through natural language. We evaluated CodeQwen1.5-Chat's performance on two popular Text-to-SQL benchmarks, Spider and Bird. Experimental results pose CodeQwen1.5 a second position close to GPT-4 (results come from DIN-SQL, a SOTA prompting method). This outstanding performance is attributed to the utilization of synthetic data throughout both pre-training and fine-tuning stages. Synthetic data, characterized by its scalability, verifiability, and variety, emerges as a compelling area for future research due to its proven effectiveness in enhancing CodeQwen1.5's SQL capabilities.
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/codeqwen1.5/sql-score.png#center" width="90%">}}
 
 
-## Develop with CodeQwen1.5
+# Develop with CodeQwen1.5
 
 CodeQwen1.5 is part of the Qwen1.5 open-source family. We advise you to read our blog for [Qwen1.5](https://qwenlm.github.io/blog/qwen1.5/) to figure out the usages with Transformers, vLLM, llama.cpp, Ollama, etc. 
 
 
 
-## Conclusion
+# Conclusion
 
 We have released CodeQwen1.5-7B and CodeQwen1.5-7B-Chat, an open and versatile code LLM. The models are intended to aid progress in code assistance and code agents, benefiting the research community. We'll keep investing heavily in smart code development, with the ultimate goal of creating AI programmers.
 
+# Citation
+
+```
+@misc{codeqwen1.5,
+    title = {Code with CodeQwen1.5},
+    url = {https://qwenlm.github.io/blog/codeqwen1.5/},
+    author = {Qwen Team},
+    month = {April},
+    year = {2024}
+}
+```

@@ -40,7 +40,7 @@ show_word_count: true
 {{< button href="https://huggingface.co/Qwen" label="HUGGING FACE" external=true >}}
 {{< button href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external=true >}}
 {{< button href="https://huggingface.co/spaces/Qwen/Qwen1.5-72B-Chat" label="DEMO" external=true >}}
-{{< button href="https://discord.gg/CV4E9rpNSD" label="DISCORD" external=true >}}
+{{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 # Introduction
 
@@ -48,7 +48,7 @@ In recent months, our focus has been on developing a "good" model while optimizi
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/intro.jpg#center" width="80%">}}
 
-With Qwen1.5, we are open-sourcing base and chat models across six sizes: 0.5B, 1.8B, 4B, 7B, 14B, and 72B, and also an MoE model (see [blog](https://qwenlm.github.io/blog/qwen-moe/) for more information). In line with tradition, we're also providing quantized models, including Int4 and Int8 GPTQ models, as well as AWQ and GGUF quantized models. To enhance the developer experience, we've merged Qwen1.5's code into Hugging Face transformers, making it accessible with `transformers>=4.37.0` without needing `trust_remote_code`.
+With Qwen1.5, we are open-sourcing base and chat models across six sizes: 0.5B, 1.8B, 4B, 7B, 14B, and 72B. In line with tradition, we're also providing quantized models, including Int4 and Int8 GPTQ models, as well as AWQ and GGUF quantized models. To enhance the developer experience, we've merged Qwen1.5's code into Hugging Face transformers, making it accessible with `transformers>=4.37.0` without needing `trust_remote_code`.
 
 We've collaborated with frameworks like [vLLM](https://vllm.readthedocs.io/), [SGLang](https://github.com/sgl-project/sglang) for deployment, [AutoAWQ](https://github.com/casper-hansen/AutoAWQ), [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) for quantization, [Axolotl](https://github.com/OpenAccess-AI-Collective/axolotl), [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) for finetuning, and [llama.cpp](https://github.com/ggerganov/llama.cpp) for local LLM inference, all of which now support Qwen1.5. The Qwen1.5 series is available on platforms such as [Ollama](https://ollama.ai/) and [LMStudio](https://lmstudio.ai/). Additionally, API services are offered not only on DashScope but also on [together.ai](https://together.ai/), with global accessibility. Visit [here](https://api.together.ai/) to get started, and we recommend trying out [Qwen1.5-72B-chat](https://api.together.xyz/playground/chat/Qwen/Qwen1.5-72B-Chat).
 
@@ -75,7 +75,6 @@ To assess the basic capabilities of language models, we have conducted evaluatio
 | Mixtral-8x7B | 70.6 |   -   | 74.4 | 28.4 |   40.2   | 60.7 |  -  |   -   |
 | Qwen1.5-7B   | 61.0 |  74.1  | 62.5 | 20.3 |   36.0   | 37.4 | 40.2 | 73.1 |
 | Qwen1.5-14B  | 67.6 |  78.7  | 70.1 | 29.2 |   37.8   | 44.0 | 53.7 | 77.6 |
-| Qwen1.5-32B  | 73.4 |  83.5  | 77.4 | 36.1 |   37.2   | 49.4 | 66.8 | 82.3 |
 | Qwen1.5-72B  | 77.5 |  84.1  | 79.5 | 34.1 |   41.5   | 53.4 | 65.5 | 83.5 |
 
 At every model size, Qwen1.5 demonstrates strong performance across the diverse evaluation benchmarks. In particular, Qwen1.5-72B outperforms Llama2-70B across all benchmarks, showcasing its exceptional capabilities in language understanding, reasoning, and math.
@@ -89,10 +88,10 @@ In light of the recent surge in interest for small language models, we have comp
 | StableLM-Zephyr-3B |      2.7B      | 45.9 |  30.3  | 52.5 | 12.5 |   35.4   | 31.9 | 37.7 | 30.9 |
 | Phi-2              |      2.5B      | 52.7 |  23.4  | 57.2 | 3.5 |   47.6   | 55.0 | 43.4 | 24.2 |
 | MiniCPM-2B         |      2.4B      | 53.5 |  51.1  | 53.8 | 10.2 |   50.0   | 47.3 | 36.9 | 51.1 |
+| Gemma-2B           |      2.0B      | 42.3 |  -     |  17.7 | 11.8 |    22.0   | 29.2 | 35.2|  -    |
 | Qwen1.5-0.5B       |      0.3B      | 39.2 |  50.5  | 22.0 | 3.1 |   12.2   | 6.8 | 18.3 | 46.6 |
 | Qwen1.5-1.8B       |      1.2B      | 46.8 |  59.7  | 38.4 | 10.1 |   20.1   | 18.0 | 24.2 | 57.8 |
 | Qwen1.5-4B         |      3.1B      | 56.1 |  67.6  | 57.0 | 10.0 |   25.6   | 29.2 | 32.5 | 66.7 |
-| Qwen1.5-MoE-A2.7B  |      2.0B      | 62.5 |  79.2  | 61.5 | 21.9 |  34.2   | 36.6 | 39.1 | 79.2 |
 
 We can confidently assert that Qwen1.5 base models under 7 billion parameters are highly competitive with the leading small-scale models in the community. In the future, we will continue to improve the quality of small models and exploring methods for effectively transferring the advanced capabilities inherent in larger models into the smaller ones.
 
@@ -178,7 +177,6 @@ The detailed results are demonstrated below:
 | Qwen1.5-0.5B | 26.98 |     44.08     | 3.13 |    9.17    |
 | Qwen1.5-1.8B | 33.57 |     48.37     | 6.47 |    16.19    |
 | Qwen1.5-4B   | 41.43 |     59.76     | 21.33 |    23.34    |
-| Qwen1.5-MoE-A2.7B   | 44.54 |	61.08|	30.20 |	27.35 |
 | Qwen1.5-7B   | 47.70 |     67.63     | 37.27 |    28.36    |
 | Qwen1.5-14B  | 55.72 |     74.10     | 49.93 |    31.69    |
 | Qwen1.5-72B  | 66.35 |     78.16     | 61.67 |    35.57    |
@@ -647,7 +645,7 @@ Finally, since the Python code interpreter has emerged as an increasingly powerf
 
 Larger Qwen1.5-Chat models generally outperform smaller ones, nearing GPT-4's tool-use performance. However, in code interpreter tasks like math problem-solving and visualization, even the largest Qwen1.5-72B-Chat model lags significantly behind GPT-4 due to coding capabilities. We aim in future versions to enhance the coding capabilities of all Qwen models during both pre-training and alignment.
 
-## Develop with Qwen1.5
+# Develop with Qwen1.5
 
 The biggest difference in Qwen1.5 is the integration of Qwen1.5 to Hugging Face transformers. Since 4.37.0, you can use Qwen1.5 without our custom code, which means that you can load the model like the following:
 
@@ -738,9 +736,18 @@ If you would like to use Qwen1.5 for downstream applications, such as RAG, tool 
 
 Overall, as we care about your developing experience, we not only have tried our best to provide good models to the community but also have made efforts to make things easier for all of you. We hope that you can enjoy using Qwen1.5 and that it can help you with your tasks of either research or applications.
 
-## Conclusion
+# Conclusion
 
 We are excited to introduce Qwen1.5, the next version of our Qwen series. In this release, we have opensourced both base and chat models of 6 sizes, including 0.5B, 1.8B, 4B, 7B, 14B, and 72B, and we have also provided quantized models. We have merged our code of Qwen1.5 to Hugging face transformers, and you can directly use it with `transformers>=4.37.0` without `trust_remote_code`. Additionally, we have had frameworks, e.g., vLLM, SGLang, AutoGPTQ, etc., supported Qwen1.5. We believe from now on, using our models will be much easier. We believe that this release is though a small step towards model quality, but it is a big step towards developer experience. Hope you like it and enjoy using it. Join our [Discord](https://discord.gg/yPEP2vHTu4) or [WeChat](https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png) to share your experience, comments, or whatever you like with us. We are looking forward to hearing from you.
 
-## Authors
-> Jinze Bai, Shuai Bai, Yunfei Chu, Zeyu Cui, Kai Dang, Xiaodong Deng, Yang Fan, Wenbin Ge, Fei Huang, Binyuan Hui,  Mei Li, Junyang Lin, Runji Lin, Dayiheng Liu, Tianyu Liu, Keming Lu, Jianxin Ma, Rui Men, Na Ni, Xingzhang Ren, Xuancheng Ren, Zhou San, Sinan Tan, Jianhong Tu, Peng Wang, Shijie Wang, Jin Xu, An Yang, Jian Yang, Kexin Yang, Shusheng Yang, Yang Yao, Bowen Yu, Jianwei Zhang, Yichang Zhang, Zhenru Zhang, Bo Zheng, Chang Zhou, Jingren Zhou, Xiaohuan Zhou, Tianhang Zhu
+# Citation
+
+```
+@misc{qwen1.5,
+    title = {Introducing Qwen1.5},
+    url = {https://qwenlm.github.io/blog/qwen1.5/},
+    author = {Qwen Team},
+    month = {February},
+    year = {2024}
+}
+```

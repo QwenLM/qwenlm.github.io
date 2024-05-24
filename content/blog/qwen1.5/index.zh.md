@@ -46,7 +46,7 @@ show_word_count: true
 
 # 简介
 
-最近几个月，我们专注探索如何构建一个真正「卓越」的模型，并在此过程中不断提升开发者的使用体验。农历新年到来之际，我们推出通义千问开源模型1.5版本: **Qwen1.5**。我们开源了包括0.5B、1.8B、4B、7B、14B和72B共计6个不同规模的Base和Chat模型，, 以及一个MoE模型（点击[博客](https://qwenlm.github.io/blog/qwen-moe/) 了解详情），并同步放出了各尺寸模型对应的量化模型。
+最近几个月，我们专注探索如何构建一个真正「卓越」的模型，并在此过程中不断提升开发者的使用体验。农历新年到来之际，我们推出通义千问开源模型1.5版本: **Qwen1.5**。我们开源了包括0.5B、1.8B、4B、7B、14B和72B共计6个不同规模的Base和Chat模型，并同步放出了各尺寸模型对应的量化模型。
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen1.5/intro.jpg#center" width="80%">}}
 
@@ -78,7 +78,6 @@ show_word_count: true
 | Mixtral-8x7B      |   70.6   |    -     |   74.4   |  28.4    |   40.2    |   60.7   |   -      |    -     |
 | Qwen1.5-7B     |   61.0   |   74.1   |   62.5   |  20.3    |   36.0    |   37.4   |   40.2   |   73.1   |
 | Qwen1.5-14B    |   67.6   |   78.7   |   70.1   |  29.2    |   37.8    |   44.0   |   53.7   |   77.6   |
-| Qwen1.5-32B  | 73.4 |  83.5  | 77.4 | 36.1 |   37.2   | 49.4 | 66.8 | 82.3 |
 | Qwen1.5-72B    |   77.5   |   84.1   |   79.5   |  34.1    |   41.5    |   53.4   |   65.5   |   83.5   |
 
 在不同模型尺寸下，Qwen1.5 都在评估基准中表现出强劲的性能。特别是，Qwen1.5-72B 在所有基准测试中都远远超越了Llama2-70B，展示了其在语言理解、推理和数学方面的卓越能力。
@@ -92,10 +91,10 @@ show_word_count: true
 | StableLM-Zephyr-3B   |      2.7B      | 45.9 |  30.3  |  52.5 | 12.5 |    35.4   | 31.9 | 37.7|  30.9 |
 | Phi-2                |      2.5B      | 52.7 |  23.4  |  57.2 |  3.5 |    47.6   | 55.0 | 43.4|  24.2 |
 | MiniCPM-2B           |      2.4B      | 53.5 |  51.1  |  53.8 | 10.2 |    50.0   | 47.3 | 36.9|  51.1 |
+| Gemma-2B             |      2.0B      | 42.3 |  -     |  17.7 | 11.8 |    22.0   | 29.2 | 35.2|  -    |
 | Qwen1.5-0.5B      |      0.3B      | 39.2 |  50.5  |  22.0 |  3.1 |    12.2   |  6.8 | 18.3|  46.6 |
 | Qwen1.5-1.8B      |      1.2B      | 46.8 |  59.7  |  38.4 | 10.1 |    20.1   | 18.0 | 24.2|  57.8 |
 | Qwen1.5-4B        |      3.1B      | 56.1 |  67.6  |  57.0 | 10.0 |    25.6   | 29.2 | 32.5|  66.7 |
-| Qwen1.5-MoE-A2.7B  |      2.0B      | 62.5 |  79.2  | 61.5 | 21.9 |  34.2   | 36.6 | 39.1 | 79.2 |
 
 我们可以自信地说，参数规模低于 70 亿的 Qwen1.5 base 模型，与业界领先的小型模型相比具有很强的竞争力。未来，我们将继续提高小模型的整体效果，并探索如何将大模型的能力有效迁移到小模型之中。
 
@@ -181,7 +180,6 @@ show_word_count: true
 | Qwen1.5-0.5B   | 26.98 |     44.08     |  3.13  |    9.17     |
 | Qwen1.5-1.8B   | 33.57 |     48.37     |  6.47  |    16.19    |
 | Qwen1.5-4B     | 41.43 |     59.76     | 21.33  |    23.34    |
-| Qwen1.5-MoE-A2.7B   | 44.54 |	61.08|	30.20 |	27.35 |
 | Qwen1.5-7B     | 47.70 |     67.63     | 37.27  |    28.36    |
 | Qwen1.5-14B    | 55.72 |     74.10     | 49.93  |    31.69    |
 | Qwen1.5-72B    | 66.35 |     78.16     | 61.67  |    35.57    |
@@ -652,7 +650,7 @@ show_word_count: true
 
 较大的 Qwen1.5-Chat 模型通常优于较小的模型，接近 GPT-4 的工具使用性能。不过，在数学解题和可视化等代码解释器任务中，即使是最大的 Qwen1.5-72B-Chat 模型，也会因编码能力而明显落后于 GPT-4。我们的目标是在未来的版本中，在预训练和对齐过程中提高所有 Qwen 模型的编码能力。
 
-## 使用Qwen1.5开发
+# 使用Qwen1.5开发
 Qwen1.5 最大的不同之处，在于 Qwen1.5 与 HuggingFace transformers 代码库的集成。从 4.37.0 版本开始，您可以直接使用 transformers 库原生代码，而不加载任何自定义代码（指定trust_remote_code选项）来使用 Qwen1.5，像下面这样加载模型：
     
 ```python
@@ -742,9 +740,19 @@ ollama run qwen
 
 总之，我们始终将关注点放在优化您的开发体验上，不仅致力于为社区打造卓越的模型，还力求让一切操作更为简单易用。希望您在使用 Qwen1.5 的过程中能满意，也希望模型能在您的研究或应用项目中发挥作用。
 
-## 小结
+# 小结
 
 我们发布了 Qwen1.5 —— Qwen 系列的新一代版本。在这次发布中，我们开源了包括 0.5B、1.8B、4B、7B、14B 和 72B 在内的 6 种大小的 Base 和 Chat 模型，并且我们还提供了量化模型。我们已将 Qwen1.5 的代码合并到 Hugging Face transformers 中，您现在可以直接使用  `transformers>=4.37.0`  而无需指定  `trust_remote_code`。此外，我们支持了例如vLLM、SGLang、AutoGPTQ等框架支持Qwen1.5。从现在开始，我们的模型将会更加易用。我们相信这次发布虽然在模型质量上是一小步，但在开发者体验上却是一大步。欢迎加入我们的 [Discord](https://discord.gg/yPEP2vHTu4e) 或 [微信](https://github.com/QwenLM/Qwen/blob/main/assets/wechat.png) 分享您的体验、评论或任何您喜欢的内容，向我们提出宝贵的意见和建议！
 
-## Authors
-> Jinze Bai, Shuai Bai, Yunfei Chu, Zeyu Cui, Kai Dang, Xiaodong Deng, Yang Fan, Wenbin Ge, Fei Huang, Binyuan Hui,  Mei Li, Junyang Lin, Runji Lin, Dayiheng Liu, Tianyu Liu, Keming Lu, Jianxin Ma, Rui Men, Na Ni, Xingzhang Ren, Xuancheng Ren, Zhou San, Sinan Tan, Jianhong Tu, Peng Wang, Shijie Wang, Jin Xu, An Yang, Jian Yang, Kexin Yang, Shusheng Yang, Yang Yao, Bowen Yu, Jianwei Zhang, Yichang Zhang, Zhenru Zhang, Bo Zheng, Chang Zhou, Jingren Zhou, Xiaohuan Zhou, Tianhang Zhu
+
+# 引用
+
+```
+@misc{qwen1.5,
+    title = {Introducing Qwen1.5},
+    url = {https://qwenlm.github.io/blog/qwen1.5/},
+    author = {Qwen Team},
+    month = {February},
+    year = {2024}
+}
+```

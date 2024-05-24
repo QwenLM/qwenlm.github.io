@@ -40,7 +40,7 @@ show_word_count: true
 {{< button href="https://github.com/QwenLM/Qwen1.5" label="GITHUB" external=true >}}
 {{< button href="https://huggingface.co/Qwen" label="HUGGING FACE" external=true >}}
 {{< button href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external=true >}}
-{{< button href="https://huggingface.co/spaces/Qwen/Qwen1.5-110B-Chat-Demo" label="DEMO" external=true >}}
+{{< button href="https://huggingface.co/spaces/Qwen/Qwen1.5-110B-Chat" label="DEMO" external=true >}}
 {{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 
@@ -100,13 +100,26 @@ Qwen1.5-110B与其他Qwen1.5模型相似，采用了相同的Transformer解码�
     </tr>
 </table>
 
-与之前发布的72B模型相比，在两个Chat模型的基准评估中，110B表现显著更好。评估结果的持续改善表明，即使在没有大幅改变后训练方法的情况下，更强大、更大规模的基础语言模型也可以带来更好的Chat模型。
+与之前发布的72B模型相比，在两个聊天模型的基准评估中，110B表现显著更好。评估结果的持续改善表明，即使在没有大幅改变后训练方法的情况下，更强大、更大规模的基础语言模型也可以带来更好的Chat模型。
 
 
-## 使用Qwen1.5-110B
+# 使用Qwen1.5-110B
 
-我们建议您阅读Qwen1.5的[博客](https://qwenlm.github.io/blog/qwen1.5/)了解更多关于在transformers、llama.cpp、vLLM、Ollama、LMStudio、SkyPilot、Axolotl、LLaMA-Factory等框架上使用的方法。
+我们建议您阅读Qwen1.5的[博客](https://qwenlm.github.io/blog/qwen1.5/)了解更多关于在transformers、llama.cpp、vLLM、Ollama等框架上使用的方法。
 
-## 结语
+
+# 结语
 
 Qwen1.5-110B是Qwen1.5系列中规模最大的模型，也是该系列中首个拥有超过1000亿参数的模型。它在与最近发布的SOTA模型Llama-3-70B的性能上表现出色，并且明显优于72B模型。这告诉我们，在模型大小扩展方面仍有很大的提升空间。虽然Llama-3的发布表明预训练数据规模具有重要意义，但我们相信通过在未来的发布中同时扩展数据和模型大小，我们可以同时获得两者的优势。敬请期待Qwen2！
+
+# 引用
+
+```
+@misc{qwen1.5,
+    title = {Introducing Qwen1.5},
+    url = {https://qwenlm.github.io/blog/qwen1.5/},
+    author = {Qwen Team},
+    month = {February},
+    year = {2024}
+}
+```

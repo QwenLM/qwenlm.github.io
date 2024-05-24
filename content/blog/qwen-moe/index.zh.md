@@ -1,6 +1,6 @@
 ---
 title: "Qwen1.5-MoE: 1/3的激活参数量达到7B模型的性能"
-date: 2024-03-28T11:31:44+08:00
+date: 2024-02-28T11:31:44+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
@@ -44,7 +44,7 @@ show_word_count: true
 
 # 介绍
 
-今天，我们推出Qwen系列的首个MoE模型，Qwen1.5-MoE-A2.7B。它仅拥有27亿个激活参数，但其性能却能与当前最先进的70亿参数模型，如Mistral 7B和Qwen1.5-7B相媲美。相较于包含65亿个Non-Embedding参数的Qwen1.5-7B，Qwen1.5-MoE-A2.7B只有20亿个Non-Embedding参数，约为原模型大小的三分之一。此外，相比Qwen1.5-7B，Qwen1.5-MoE-A2.7B的训练成本降低了75%，推理速度则提升至1.74倍。
+今天，我们推出Qwen系列的首个MoE模型，Qwen1.5-MoE-A2.7B。它仅拥有27亿个激活参数，但其性能却能与当前最先进的70亿参数模型，如Mistral 7B和Qwen1.5-7B相媲美。相较于包含65亿个Non-Embedding参数的Qwen1.5-7B，Qwen1.5-MoE-A2.7B只有20亿个Non-Embedding参数，约为原模型大小的三分之一。此外，相比Qwen1.5-7B，Qwen1.5-MoE-A2.7B的训练成本降低了75%，推理速度则提升了1.74倍。
 
 # 模型结构
 
@@ -145,8 +145,9 @@ response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 要使用vLLM模型，请从源代码安装vLLM：
 
 ```bash
-git clone https://github.com/vllm-project/vllm.git
+git clone https://github.com/wenyujin333/vllm.git
 cd vllm
+git checkout add_qwen_moe
 pip install -e .
 ```
 
@@ -173,3 +174,15 @@ curl http://localhost:8000/v1/chat/completions \
 
 # 总结
 我们非常高兴地介绍我们的首个MoE模型Qwen1.5-MoE-A2.7B，它对比当前最好的7B参数模型取得了相当的性能。此外，与传统的7B模型相比，MoE模型在训练成本和推理时间上都取得了显著的降低。我们将持续研究MoE相关技术，未来将推出更强大的MoE模型。
+
+# 引用
+
+```
+@misc{qwen_moe,
+    title = {Qwen1.5-MoE: Matching 7B Model Performance with 1/3 Activated Parameters"},
+    url = {https://qwenlm.github.io/blog/qwen-moe/},
+    author = {Qwen Team},
+    month = {February},
+    year = {2024}
+}
+```
