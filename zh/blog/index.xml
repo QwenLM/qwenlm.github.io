@@ -20,7 +20,8 @@
 此前，我们开源了Qwen1.5系列的模型，参数规模最小至5亿，最大至1100亿。这一次，我们推出更大规模模型Qwen-Max-0428（通义千问网页端及APP产品版本从2.1升级至2.5）。Qwen-Max-0428是经过指令微调的Chat模型。近期该模型登陆了Chatbot Arena，并登榜前十。此外，我们在MT-Bench的评测上也观察到该模型的表现显著优于Qwen1.5-110B-Chat。
 Models MT-Bench Arena Qwen1.5-110B-Chat 8.88 1172 Qwen-Max-0428 8.96 1186 我们也在Hugging Face上提供了Demo服务（链接）：
 同时我们也提供了DashScope API服务（链接）。目前API服务已经支持OpenAI API格式，示例如下所示：
-from openai import OpenAI client = OpenAI( api_key=&amp;#34;$your-dashscope-api-key&amp;#34;, base_url=&amp;#34;https://dashscope.aliyuncs.com/compatible-mode/v1&amp;#34; ) completion = client.chat.completions.create( model=&amp;#34;qwen-max&amp;#34;, messages=[{&amp;#39;role&amp;#39;: &amp;#39;system&amp;#39;, &amp;#39;content&amp;#39;: &amp;#39;You are a helpful assistant.&amp;#39;}, {&amp;#39;role&amp;#39;: &amp;#39;user&amp;#39;, &amp;#39;content&amp;#39;: &amp;#39;Tell me something about large language models.&amp;#39;}] ) print(completion.choices[0].message) 此外，Qwen-Max-0428已上线通义千问网页端及APP。欢迎体验！</description>
+from openai import OpenAI client = OpenAI( api_key=&amp;#34;$your-dashscope-api-key&amp;#34;, base_url=&amp;#34;https://dashscope.aliyuncs.com/compatible-mode/v1&amp;#34; ) completion = client.chat.completions.create( model=&amp;#34;qwen-max&amp;#34;, messages=[{&amp;#39;role&amp;#39;: &amp;#39;system&amp;#39;, &amp;#39;content&amp;#39;: &amp;#39;You are a helpful assistant.&amp;#39;}, {&amp;#39;role&amp;#39;: &amp;#39;user&amp;#39;, &amp;#39;content&amp;#39;: &amp;#39;Tell me something about large language models.&amp;#39;}] ) print(completion.choices[0].message) 此外，Qwen-Max-0428已上线通义千问网页端及APP。欢迎体验！
+引用 @misc{qwen1.5, title = {Introducing Qwen1.5}, url = {https://qwenlm.github.io/blog/qwen1.5/}, author = {Qwen Team}, month = {February}, year = {2024} } </description>
     </item>
     
     <item>
@@ -46,7 +47,7 @@ Qwen1.5-110B Qwen1.5-72B Llama-3-70B Mixtral-8x22B MMLU 80.4 77.5 79.5 77.8 Theo
       <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
 简介 代码助手，是一种基于 LLMs 的智能化的编程工具，它可以帮助程序员更高效、更准确的编写代码，使得整个软件开发过程更加流畅和高效。然而流行的代码助手，比如 Github Copilot，依赖于闭源的商业模型，不仅昂贵还会引起如隐私、安全、版权等方面的担忧。幸运的是，开源社区正在致力于打造开放代码模型来实现开放的代码助手。近期涌现出了一批优秀的 Open CodeLLMs，比如 StarCoder2、CodeLlama、DeepSeek-Coder 等，提供了一条新的路径，但仍然值得探索。
 今天，我们非常激动地和大家介绍来自 Qwen1.5 开源家族的新成员，一个代码专家模型 CodeQwen1.5! CodeQwen1.5 基于 Qwen 语言模型初始化，拥有 7B 参数的模型，其拥有 GQA 架构，经过了 ~3T tokens 代码相关的数据进行预训练，共计支持 92 种编程语言、且最长支持 64K 的上下文输入。效果方面，CodeQwen1.5 展现出了非凡的代码生成、长序列建模、代码修改、SQL 能力等,该模型可以大大提高开发人员的工作效率，并在不同的技术环境中简化软件开发工作流程。
-CodeQwen 是基础的 Coder 代码生成是大语言模型的关键能力之一，期待模型将自然语言指令转换为具有精确的、可执行的代码。仅拥有 70 亿参数的 CodeQwen1.5 在基础代码生成能力上已经超过了更尺寸的模型，进一步缩小了开源 CodeLLM 和 GPT-4 之间编码能力的差距。我们对 HumanEval 和 MBPP 进行了评估，下面是具体的比较。
+CodeQwen 是基础的 Coder 代码生成是大语言模型的关键能力之一，期待模型将自然语言指令转换为具有精确的、可执行的代码。仅拥有 70 亿参数的 CodeQwen1.5 在基础代码生成能力上已经超过了更尺寸的模型，进一步缩小了开源代码 LLM 和 GPT-4 之间的编码能力差距。我们对 HumanEval 和 MBPP 进行了评估，下面是具体的比较。
 Model Size HumanEval 0-shot HumanEval+ 0-shot MBPP 0-shot MBPP+ 0-shot MBPP 3-shot Base Model CodeLlama-Base 7B 33.5 25.</description>
     </item>
     
@@ -90,7 +91,7 @@ Model #Parameters #(Activated) Parameters #(Activated) Non-embedding parameters 
       
       <guid>http://qwenlm.github.io/zh/blog/qwen1.5/</guid>
       <description>GITHUB HUGGING FACE MODELSCOPE DEMO WeChat
-简介 最近几个月，我们专注探索如何构建一个真正「卓越」的模型，并在此过程中不断提升开发者的使用体验。农历新年到来之际，我们推出通义千问开源模型1.5版本: Qwen1.5。我们开源了包括0.5B、1.8B、4B、7B、14B和72B共计6个不同规模的Base和Chat模型，, 以及一个MoE模型（点击博客 了解详情），并同步放出了各尺寸模型对应的量化模型。
+简介 最近几个月，我们专注探索如何构建一个真正「卓越」的模型，并在此过程中不断提升开发者的使用体验。农历新年到来之际，我们推出通义千问开源模型1.5版本: Qwen1.5。我们开源了包括0.5B、1.8B、4B、7B、14B、32B、72B和110B共计8个不同规模的Base和Chat模型，, 以及一个MoE模型（点击博客 了解详情），并同步放出了各尺寸模型对应的量化模型。
 此次更新中，我们不仅像之前一样提供Int4和Int8的GPTQ模型，还提供了AWQ以及GGUF量化模型。为了提升开发者体验，我们将Qwen1.5的代码正式合并到HuggingFace transformers代码库中，所以现在可以直接使用 transformers&amp;gt;=4.37.0 原生代码，而无需指定 trust_remote_code 选项即可进行开发。
 我们已经与vLLM、SGLang（用于部署）、AutoAWQ、AutoGPTQ（用于量化）、Axolotl、LLaMA-Factory（用于微调）以及llama.cpp（用于本地 LLM 推理）等框架合作，所有这些框架现在都支持 Qwen1.5。Qwen1.5 系列可在 Ollama 和 LMStudio 等平台上使用。此外，API 服务不仅在 DashScope 上提供，还在 together.ai 上提供，全球都可访问。请访问here开始使用，我们建议您试用Qwen1.5-72B-chat。
 相较于以往版本，本次更新我们着重提升Chat模型与人类偏好的对齐程度，并且显著增强了模型的多语言处理能力。在序列长度方面，所有规模模型均已实现 32768 个 tokens 的上下文长度范围支持。同时，预训练 Base 模型的质量也有关键优化，有望在微调过程中为您带来更佳体验。这次迭代是我们朝向「卓越」模型目标所迈进一个坚实的步伐。
