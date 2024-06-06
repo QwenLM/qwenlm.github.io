@@ -9,7 +9,16 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 11 May 2024 18:10:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jun 2024 11:59:59 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Qwen-Agent将上下文记忆扩展到百万量级</title>
+      <link>http://qwenlm.github.io/zh/blog/qwen-agent-2405/</link>
+      <pubDate>Thu, 06 Jun 2024 11:59:59 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/zh/blog/qwen-agent-2405/</guid>
+      <description>我们开发了一个智能体用于理解包含百万字词的文档，虽然仅使用Qwen2模型的8k上下文，但效果超过RAG和长序列原生模型。我们还利用此智能体合成长上下文数据，用于训练长上下文的Qwen模型。</description>
+    </item>
+    
     <item>
       <title>Qwen-Max-0428模型介绍</title>
       <link>http://qwenlm.github.io/zh/blog/qwen-max-0428/</link>
