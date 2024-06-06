@@ -9,7 +9,18 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Jun 2024 11:59:59 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Jun 2024 00:00:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello Qwen2</title>
+      <link>http://qwenlm.github.io/blog/qwen2/</link>
+      <pubDate>Fri, 07 Jun 2024 00:00:00 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/blog/qwen2/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
+Introduction After months of efforts, we are pleased to announce the evolution from Qwen1.5 to Qwen2. This time, we bring to you:
+Pretrained and instruction-tuned models of 5 sizes, including Qwen2-0.5B, Qwen2-1.5B, Qwen2-7B, Qwen2-57B-A14B, and Qwen2-72B; Having been trained on data in 27 additional languages besides English and Chinese; State-of-the-art performance in a large number of benchmark evaluations; Significantly improved performance in coding and mathematics; Extended context length support up to 128K tokens with Qwen2-7B-Instruct and Qwen2-72B-Instruct.</description>
+    </item>
+    
     <item>
       <title>Generalizing an LLM from 8k to 1M Context using Qwen-Agent</title>
       <link>http://qwenlm.github.io/blog/qwen-agent-2405/</link>
