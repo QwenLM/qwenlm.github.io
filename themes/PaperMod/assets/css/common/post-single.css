@@ -87,7 +87,7 @@
 }
 
 .post-content h2 {
-    margin: var(--modal-gap) auto var(--content-gap);
+    margin: 32px auto 24px;
     font-size: 32px;
 }
 
