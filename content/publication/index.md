@@ -10,6 +10,8 @@ header:
 
 # Selected Publications
 
+- Qwen Team. (2024). _Qwen2 Techinical Report._ **arXiv**.
+
 - Qwen Team. (2023). _Qwen Technical Report._ **arXiv**.
 
 - Bai, J., Bai S., Yang, S., Wang, S., Tan, S., Wang, P., Lin, J., Zhou, C. & Zhou., J. (2023). _Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond._ **arXiv**.
