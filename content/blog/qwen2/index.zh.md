@@ -1,6 +1,7 @@
 ---
 title: "你好，Qwen2"
 date: 2024-06-07T00:00:00+08:00
+lastmod: 2024-07-16T00:00:00+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
@@ -97,9 +98,9 @@ Qwen2系列包含5个尺寸的预训练和指令微调模型，其中包括Qwen2
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen2/qwen2-72b-instruct.jpg#center" width="100%">}}
 
-我们全面评估了Qwen2-72B-Instruct在16个基准测试中的表现。Qwen2-72B-Instruct在提升基础能力以及对齐人类价值观这两方面取得了较好的平衡。相比Qwen1.5的72B模型，Qwen2-72B-Instruct在所有评测中均大幅超越，并且了取得了匹敌Llama-3-70B-Instruct的表现。
+我们全面评估了Qwen2-72B-Instruct在16个基准测试中的表现。Qwen2-72B-Instruct在提升基础能力以及对齐人类价值观这两方面取得了较好的平衡。相比Qwen1.5的72B模型，Qwen2-72B-Instruct在所有评测中均大幅超越，并且了取得了匹敌Llama-3-70B-Instruct的表现。[^1]
 
-而在小模型方面，Qwen2系列模型基本能够超越同等规模的最优开源模型甚至更大规模的模型。相比近期推出的最好的模型，Qwen2-7B-Instruct依然能在多个评测上取得显著的优势，尤其是代码及中文理解上。
+而在小模型方面，Qwen2系列模型基本能够超越同等规模的最优开源模型甚至更大规模的模型。相比近期推出的最好的模型，Qwen2-7B-Instruct依然能在多个评测上取得显著的优势，尤其是代码及中文理解上。[^1]
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen2/qwen2-7b.jpg#center" width="100%">}}
 
@@ -166,12 +167,14 @@ Qwen2系列中的所有Instruct模型，均在32k上下文长度上进行训练�
 
 # 引用
 
-不久后我们将推出Qwen2的技术报告。欢迎引用！
+如果你觉得我们的工作对你有帮助，欢迎引用！
 
 ```
 @article{qwen2,
-  title={Qwen2 Technical Report},
-  year={2024}
+      title={Qwen2 Technical Report}, 
+      author={An Yang and Baosong Yang and Binyuan Hui and Bo Zheng and Bowen Yu and Chang Zhou and Chengpeng Li and Chengyuan Li and Dayiheng Liu and Fei Huang and Guanting Dong and Haoran Wei and Huan Lin and Jialong Tang and Jialin Wang and Jian Yang and Jianhong Tu and Jianwei Zhang and Jianxin Ma and Jin Xu and Jingren Zhou and Jinze Bai and Jinzheng He and Junyang Lin and Kai Dang and Keming Lu and Keqin Chen and Kexin Yang and Mei Li and Mingfeng Xue and Na Ni and Pei Zhang and Peng Wang and Ru Peng and Rui Men and Ruize Gao and Runji Lin and Shijie Wang and Shuai Bai and Sinan Tan and Tianhang Zhu and Tianhao Li and Tianyu Liu and Wenbin Ge and Xiaodong Deng and Xiaohuan Zhou and Xingzhang Ren and Xinyu Zhang and Xipin Wei and Xuancheng Ren and Yang Fan and Yang Yao and Yichang Zhang and Yu Wan and Yunfei Chu and Yuqiong Liu and Zeyu Cui and Zhenru Zhang and Zhihao Fan},
+      journal={arXiv preprint arXiv:2407.10671},
+      year={2024}
 }
 ```
 
@@ -312,7 +315,7 @@ Qwen2系列中的所有Instruct模型，均在32k上下文长度上进行训练�
 |C-Eval   | 23.4 |   28.0    | 51.1| 59.7 |  58.2 |  **70.6** |
 |CMMLU   | 24.2 |   -    | 51.1 | 57.8 | 55.1 | **70.3** |
   
-## 指令微调模型评测
+## 指令微调模型评测[^1]
 
 ### Qwen2-72B-Instruct
 | Datasets | Llama-3-70B-Instruct | Qwen1.5-72B-Chat | **Qwen2-72B-Instruct** |
@@ -444,3 +447,4 @@ Qwen2系列中的所有Instruct模型，均在32k上下文长度上进行训练�
 
 以上结果均反映了Qwen2指令微调模型突出的多语言能力。
 
+[^1]: 2024-07-16 更新: 指令微调模型结果可能与技术报告存在差异；如有不同，以技术报告为准。

@@ -1,6 +1,7 @@
 ---
 title: "Hello Qwen2"
 date: 2024-06-07T00:00:00+08:00
+lastmod: 2024-07-16T00:00:00+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
@@ -104,10 +105,10 @@ After extensive large-scale pre-training, we conduct post-training to further en
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen2/qwen2-72b-instruct.jpg#center" width="100%">}}
 
-We comprehensively evaluate Qwen2-72B-Instruct on 16 benchmarks across various domains. Qwen2-72B-Instruct strikes a balance between obtaining better capabilities and aligning well with human values. Specifically, Qwen2-72B-Instruct significantly surpasses Qwen1.5-72B-Chat across all benchmarks, and also reaches competitive performance compared with Llama-3-70B-Instruct.
+We comprehensively evaluate Qwen2-72B-Instruct on 16 benchmarks across various domains. Qwen2-72B-Instruct strikes a balance between obtaining better capabilities and aligning well with human values. Specifically, Qwen2-72B-Instruct significantly surpasses Qwen1.5-72B-Chat across all benchmarks, and also reaches competitive performance compared with Llama-3-70B-Instruct.[^1]
 
 
-In terms of smaller models, our Qwen2 models also outcompete the SOTA models of similar or even larger sizes. In comparison with the very recently released SOTA models, Qwen2-7B-Instruct can still demonstrate advantages across benchmarks, showing specifically outstanding performance on coding and Chinese-related metrics.
+In terms of smaller models, our Qwen2 models also outcompete the SOTA models of similar or even larger sizes. In comparison with the very recently released SOTA models, Qwen2-7B-Instruct can still demonstrate advantages across benchmarks, showing specifically outstanding performance on coding and Chinese-related metrics.[^1]
 
 {{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/assets/blog/qwen2/qwen2-7b.jpg#center" width="100%">}}
 
@@ -182,12 +183,14 @@ We are training larger Qwen2 models to further explore model scaling along with 
 
 # Citation
 
-We are going to release the technical report for Qwen2 very soon. Feel free to give us a cite!
+If you find our work helpful, feel free to give us a cite!
 
 ```
 @article{qwen2,
-  title={Qwen2 Technical Report},
-  year={2024}
+      title={Qwen2 Technical Report}, 
+      author={An Yang and Baosong Yang and Binyuan Hui and Bo Zheng and Bowen Yu and Chang Zhou and Chengpeng Li and Chengyuan Li and Dayiheng Liu and Fei Huang and Guanting Dong and Haoran Wei and Huan Lin and Jialong Tang and Jialin Wang and Jian Yang and Jianhong Tu and Jianwei Zhang and Jianxin Ma and Jin Xu and Jingren Zhou and Jinze Bai and Jinzheng He and Junyang Lin and Kai Dang and Keming Lu and Keqin Chen and Kexin Yang and Mei Li and Mingfeng Xue and Na Ni and Pei Zhang and Peng Wang and Ru Peng and Rui Men and Ruize Gao and Runji Lin and Shijie Wang and Shuai Bai and Sinan Tan and Tianhang Zhu and Tianhao Li and Tianyu Liu and Wenbin Ge and Xiaodong Deng and Xiaohuan Zhou and Xingzhang Ren and Xinyu Zhang and Xipin Wei and Xuancheng Ren and Yang Fan and Yang Yao and Yichang Zhang and Yu Wan and Yunfei Chu and Yuqiong Liu and Zeyu Cui and Zhenru Zhang and Zhihao Fan},
+      journal={arXiv preprint arXiv:2407.10671},
+      year={2024}
 }
 ```
 <br><br>
@@ -329,7 +332,7 @@ The datasets for evaluation include:
 |C-Eval   | 23.4 |   28.0    | 51.1| 59.7 |  58.2 |  **70.6** |
 |CMMLU   | 24.2 |   -    | 51.1 | 57.8 | 55.1 | **70.3** |
   
-## Instruction-tuned Model Evaluation
+## Instruction-tuned Model Evaluation[^1]
 
 ### Qwen2-72B-Instruct
 | Datasets | Llama-3-70B-Instruct | Qwen1.5-72B-Chat | **Qwen2-72B-Instruct** |
@@ -460,3 +463,4 @@ Grouped by task types, the results are shown as follows:
 
 These results demonstrate the strong multilingual capabilities of Qwen2 instruction-tuned models.
 
+[^1]: Update on 2024-07-16: The results of instruction-tuned models may differ from those presented in the technical report; in case of any discrepancy, the results documented in the technical report should take precedence.
