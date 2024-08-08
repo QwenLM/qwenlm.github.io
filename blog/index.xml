@@ -9,7 +9,17 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Jun 2024 00:00:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing Qwen2-Math</title>
+      <link>http://qwenlm.github.io/blog/qwen2-math/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/blog/qwen2-math/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DISCORD
+🚨 This model mainly supports English. We will release bilingual (English and Chinese) math models soon. Introduction Over the past year, we have dedicated significant effort to researching and enhancing the reasoning capabilities of large language models, with a particular focus on their ability to solve arithmetic and mathematical problems. Today, we are delighted to introduce a series of math-specific large language models of our Qwen2 series, Qwen2-Math and Qwen2-Math-Instruct-1.</description>
+    </item>
+    
     <item>
       <title>Hello Qwen2</title>
       <link>http://qwenlm.github.io/blog/qwen2/</link>
