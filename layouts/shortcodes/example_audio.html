@@ -1,0 +1,42 @@
+{{ if .IsNamedParams }}
+{{ $hide := false }}
+{{ with .Get "hide" }}
+{{ $hide = . }}
+{{ end }}
+{{ $next := false }}
+{{ with .Get "next" }}
+{{ $next = . }}
+{{ end }}
+{{ with $.Page.Resources.GetMatch (.Get "data") }}
+  {{ $data := . | transform.Unmarshal }}
+  {{ with $data }}
+  <div class="example-content" {{- if $hide }}style="display: none;"{{- end }}>
+    {{ $title := "Example" }}
+    {{ with .title }}
+      {{ $title = . }}
+    {{ end }}
+    <div class="title">
+      <span>{{- $title }}</span>
+      {{ if $next }}
+         <a class="next-button">Next</a>
+      {{ end }}
+    </div>
+    {{ with .messages }}
+    <div class="grid-layout">
+      {{ range . }}
+      <div class="message">
+        <div class="role">{{ .role }}</div>
+        <div class="content wide-content"> <!-- 添加 wide-content 类 -->
+          {{ $content := .content | replaceRE "\\[audio\\]\\(([^\\)]+)\\)" "<audio class=\"audio-icon\" controls><source src=\"$1\" type=\"audio/wav\">Your browser does not support the audio element.</audio>" }}
+          <div class="text-content">{{ $content | safeHTML }}</div> <!-- 为文字部分添加类 -->
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get resource %q" $.Params.data }}
+{{ end }}
+{{ end }}
