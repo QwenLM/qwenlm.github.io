@@ -1,0 +1,21 @@
+{
+    "title": "Audio Analysis : Speech transcription and story telling",
+    "messages": [
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/en-speech-1.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "The original content of this audio is: 'Stop all the clocks, cut off the telephone, prevent the dog from barking, silence the pianos and with muffled drum bring out the coffin, let the mourners come.'"
+        },
+        {
+            "role": "User",
+            "content": "No less than 50 words and no more than 200 words, add scenes such as rain and thunder to the poem. Finally, give the verses you created in lines."
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "In the midst of an eerie stormy night, With raindrops falling heavy and bright, The world seemed to hush its voice, As winds howled through the darkened space.\n&nbsp\nStop all the clocks, the time stood still, As the lightning flashed through the sky, The telephone's ring was drowned out, By the roaring thunder that shook the ground.\n&nbsp\nPrevent the dog from barking, its cries were silenced, By the fear that gripped it in the night, Silence the pianos, their keys were muted, As the mournful sound of raindrops beat on wood.\n&nbsp\nWith muffled drums, a slow march began, A solemn procession through the storm, The coffin was carried, heavy and solemn, Let the mourners come, to pay their final respects.\n&nbsp\nAs the storm slowly passed, the world emerged, A new day dawned, but memories lingered, Of the night when time stood still, And the mourners came, to say goodbye."
+        }
+    ]
+}

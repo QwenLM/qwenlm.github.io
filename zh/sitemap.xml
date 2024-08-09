@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://qwenlm.github.io/zh/blog/qwen2-audio/</loc>
+    <lastmod>2024-08-09T16:22:39+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/blog/qwen2-audio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/blog/qwen2-audio/"
+                />
+  </url><url>
     <loc>http://qwenlm.github.io/zh/blog/qwen2-math/</loc>
     <lastmod>2024-08-08T00:00:00+08:00</lastmod>
     <xhtml:link
@@ -159,7 +172,7 @@
                 />
   </url><url>
     <loc>http://qwenlm.github.io/zh/blog/</loc>
-    <lastmod>2024-08-08T00:00:00+08:00</lastmod>
+    <lastmod>2024-08-09T16:22:39+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -172,7 +185,7 @@
                 />
   </url><url>
     <loc>http://qwenlm.github.io/zh/</loc>
-    <lastmod>2024-08-08T00:00:00+08:00</lastmod>
+    <lastmod>2024-08-09T16:22:39+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

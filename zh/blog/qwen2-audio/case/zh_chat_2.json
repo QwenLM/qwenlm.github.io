@@ -1,0 +1,37 @@
+{
+    "title": "语音交互：背景音乐感知及推荐",
+    "messages": [
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/audio_1719289082714.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "在这种环境下，你可以做很多事情，比如阅读、写作、编程、学习新技能、练习乐器、看电影、玩游戏等。你也可以和朋友聊天、锻炼身体、烹饪美食、组织活动等。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-2-1.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/audio_1719289129739.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "当然可以！根据你的兴趣，我推荐《哈利·波特》系列、《冰与火之歌》系列、《指环王》系列、《福尔摩斯探案集》、《傲慢与偏见》、《老人与海》、《1984》、《麦田里的守望者》等。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-2-2.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/dianying.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "当然有！我推荐《肖申克的救赎》、《星球大战：帝国反击战》、《阿甘正传》、《美丽心灵》、《饮食男女》、《盗梦空间》、《海上钢琴师》、《机器人总动员》等。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-2-3.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/yueqi.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "我推荐学习钢琴，因为钢琴是一种多才多艺的乐器，能够演奏出美妙的旋律，并且有很多有趣的技巧可以探索。学习钢琴的最佳方法是每天定时练习，每次至少30分钟，同时结合听音乐、看视频、参加课程等方式来加深理解。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-2-4.wav)"
+        }
+    ]
+}

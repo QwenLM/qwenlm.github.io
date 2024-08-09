@@ -9,7 +9,17 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Aug 2024 16:18:19 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen2-Audio: Chat with Your Voice!</title>
+      <link>http://qwenlm.github.io/blog/qwen2-audio/</link>
+      <pubDate>Fri, 09 Aug 2024 16:18:19 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/blog/qwen2-audio/</guid>
+      <description>DEMO PAPER GITHUB HUGGING FACE MODELSCOPE DISCORD
+To achieve the objective of building an AGI system, the model should be capable of understanding information from different modalities. Thanks to the rapid development of large language models, LLMs are now capable of understanding language and reasoning. Previously we have taken a step forward to extend our LLM, i.e., Qwen, to more modalities, including vision and audio, and built Qwen-VL and Qwen-Audio. Today, we release Qwen2-Audio, the next version of Qwen-Audio, which is capable of accepting audio and text inputs and generating text outputs.</description>
+    </item>
+    
     <item>
       <title>Introducing Qwen2-Math</title>
       <link>http://qwenlm.github.io/blog/qwen2-math/</link>
