@@ -1,0 +1,62 @@
+{
+    "title": "音频分析：混合音频分析",
+    "messages": [
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/WHJ_1-0.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "这段音频的原始内容是:‘路过灌木丛时’\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-a2-1.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/WHJ_1-1.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "有人在说话，内容是’路过灌木丛时’。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-a2-2.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/WHJ_1-2.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "有人在说话，内容是’路过灌木丛时’。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-a2-3.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/audio_1718961628717.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "男性。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-a2-4.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/audio_1718961640722.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "他说的是：‘When passing through the bushes.’"
+        }
+        ,
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/spk_00.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "The person says ‘毕竟是年事已高啊’ in Mandarin."
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/spk_33.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "The person says ‘毕竟是年事已高啊’ in Mandarin."
+        }
+    ]
+}

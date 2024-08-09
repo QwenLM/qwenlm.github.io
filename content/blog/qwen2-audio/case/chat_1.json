@@ -1,0 +1,21 @@
+{
+    "title": "Voice Chat: Identify speaker information and respond",
+    "messages": [
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/guess age.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "Yes, the speaker is female and in her twenties."
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/1718857224593-3efbd24f-f7f8-4f10-abba-24df5d92210b.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "I'm sorry to hear that you're feeling stressed about your exam. It's completely normal to feel anxious when you're preparing for an important test. Here are some tips that might help you: \n&nbsp\n1. Start studying early: Don't leave everything until the last minute. Break up your study sessions into smaller chunks of time, and try to stick to a regular schedule.\n\n2. Find a quiet place to study: A quiet environment can help you concentrate better. If possible, find a library or a study room where you can work without distractions.\n3.Take breaks: It's important to take breaks during your study sessions. This will give your brain a chance to rest and recharge. Try taking short breaks every hour or so.\n4. Get enough sleep: Lack of sleep can make it harder to focus and retain information. Make sure you're getting enough sleep each night, ideally around 7-8 hours.\n5. Practice relaxation techniques: Deep breathing exercises, meditation, or yoga can all help you relax and reduce stress.\n&nbsp\nRemember, it's okay if you're not feeling well-prepared. Just do your best, and trust yourself. Good luck with your exam!"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "title": "Voice Chat: Speech translation",
+    "messages": [
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/1718864196340-99f0394d-7d0b-4b4b-b86a-4d8f3a2ac09c.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "每个人都希望被欣赏，所以如果你欣赏某人，不要把它保密。"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/translate it into German.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "Jeder möchte geschätzt werden, also wenn du jemanden schätzt, lass es nicht als Geheimnis verbergen."
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/how about into French.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "Chacun veut être apprecié, alors si tu apprécies quelqu'un, ne le gardes pas secret."
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/给我生成一些类似这句话意思的，其他说法的句子，用中文生成.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "1. 每个人都喜欢被赞美，所以如果你喜欢一个人，不要隐藏你的赞赏。\n2. 所有人都渴望得到认可，因此如果你欣赏某人，请不要独自享用这种感觉。\n3. 人们都希望被欣赏，所以如果你喜欢某人，不要独自保密欣赏他人是一种美德，所以不要让别人知道你对他们的赞赏是秘密的。\n4. 人们都希望受到赞扬，所以如果你欣赏某人，不妨公开表达出来。\n5. 如果你喜欢某人，不要犹豫告诉他们，因为每个人都有权利享受他人的赞赏。"
+        }
+    ]
+}

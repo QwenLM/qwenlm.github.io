@@ -1,0 +1,21 @@
+{
+    "title": "Voice Chat: Detecting background noise and responding accordingly",
+    "messages": [
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/audio-0-100.wav.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "Use headphones to block out external noise and find a quiet place to study. Prioritize your tasks and set realistic goals for yourself. Use active learning techniques such as summarizing, note-taking, and quizzing to help you retain information. Take breaks and practice self-care to avoid burnout."
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/en-noise-2.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "Yes, you can try negotiating with them to reach a mutually beneficial agreement. You could also consider seeking help from a mediator or professional negotiator if needed."
+        }
+    ]
+}
