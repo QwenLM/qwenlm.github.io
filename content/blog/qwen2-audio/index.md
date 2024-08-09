@@ -56,7 +56,7 @@ To achieve the objective of building an AGI system, the model should be capable 
 
 <br>
 
-We open-weight Qwen2-Audio-7B in Hugging Face and ModelScope, and we have built a demo for users to interact with. Below are some examples to show the model performance:
+We open-weight Qwen2-Audio-7B and Qwen2-Audio-7B-Instruct in Hugging Face and ModelScope, and we have built a demo for users to interact with. Below are some examples to show the model performance:
 
 <style>
   .example-content .grid-layout {
