@@ -85,6 +85,8 @@ Qwen2-Math 的基础模型使用 Qwen2-1.5B/7B/72B 进行初始化，然后在�
 
 这里我们列举了一些测试的竞赛题，其中包括了多道 IMO 竞赛题。通过评测及具体样例分析，我们发现 Qwen2-Math 已经具备了解决一些简单竞赛题的数学能力。欢迎点击下方折叠块查看样例！
 
+> 所有解决方案均由我们的模型生成，未经过任何修改。请注意，我们不保证过程中的陈述是正确的。
+
 <details>
 <summary>
 Problem From IMO Shortlist 2002</summary>
@@ -778,7 +780,6 @@ Thus, the final answer is:
 
 $$
 \boxed{\text{Penny}}
-
 $$
 </details>
 
