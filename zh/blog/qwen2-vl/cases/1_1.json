@@ -1,0 +1,13 @@
+{
+    "title": "Example: Handwritten Text Recognition",
+    "messages": [
+                {
+            "role": "User",
+            "content": "What is the text?\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2-VL/multilingual_2.png)"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "The text on the wall is in Portuguese and reads: \"não é normal ter medo de andar sozinha na rua!!!\" This translates to: \"It is not normal to be afraid to walk alone on the street!!!\""
+        }
+    ]
+}

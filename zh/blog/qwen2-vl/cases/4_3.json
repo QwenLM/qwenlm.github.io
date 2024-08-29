@@ -1,0 +1,9 @@
+{
+    "title": "Example: UI Interactions",
+    "messages": [
+        {
+            "role": "Operate a Mobile Phone",
+            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2-VL/Operate%20a%20Mobile%20Phone.mp4\" controls=\"1\">}}"
+        }
+    ]
+}

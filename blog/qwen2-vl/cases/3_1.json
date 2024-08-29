@@ -1,0 +1,21 @@
+{
+    "title": "Example: Video Understanding",
+    "messages": [
+                {
+            "role": "User",
+            "content": "Please describe the video in detail.\n{{<video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/space_woaudio.mp4\" controls=\"true\"  muted=\"true\" >}}"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "The video begins with a man speaking to the camera, followed by a group of people sitting in a control room. The camera then cuts to two men floating inside a space station, where they are seen speaking to the camera. The men appear to be astronauts, and they are wearing space suits. The space station is filled with various equipment and machinery, and the camera pans around to show the different areas of the station. The men continue to speak to the camera, and they appear to be discussing their mission and the various tasks they are performing. Overall, the video provides a fascinating glimpse into the world of space exploration and the daily lives of astronauts."
+        },
+        {
+            "role": "User",
+            "content": "What is the color of the clothes the two astronauts wearing?"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "The two astronauts are wearing blue and black clothes."
+        }
+    ]
+}

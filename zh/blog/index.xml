@@ -9,7 +9,23 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 09 Aug 2024 16:22:39 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Aug 2024 00:24:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen2-VL: 更清晰地看世界</title>
+      <link>http://qwenlm.github.io/zh/blog/qwen2-vl/</link>
+      <pubDate>Thu, 29 Aug 2024 00:24:00 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/zh/blog/qwen2-vl/</guid>
+      <description>DEMO GITHUB HUGGING FACE MODELSCOPE API DISCORD
+经历了接近一年时间的持续努力，今天我们很高兴地宣布我们最新一代的视觉语言模型：Qwen2-VL ！Qwen2-VL 基于 Qwen2 打造，相比 Qwen-VL，它具有以下特点：
+读懂不同分辨率和不同长宽比的图片：Qwen2-VL 在 MathVista、DocVQA、RealWorldQA、MTVQA 等视觉理解基准测试中取得了全球领先的表现。
+理解20分钟以上的长视频：Qwen2-VL 可理解长视频，并将其用于基于视频的问答、对话和内容创作等应用中。
+能够操作手机和机器人的视觉智能体：借助复杂推理和决策的能力，Qwen2-VL 可集成到手机、机器人等设备，根据视觉环境和文字指令进行自动操作。
+多语言支持：为了服务全球用户，除英语和中文外，Qwen2-VL 现在还支持理解图像中的多语言文本，包括大多数欧洲语言、日语、韩语、阿拉伯语、越南语等。 我们以 Apache 2.0 协议开源了 Qwen2-VL-2B 和 Qwen2-VL-7B，并发布了 Qwen2-VL-72B 的 API！开源代码已集成到 Hugging Face Transformers、vLLM 和其他第三方框架中。希望能为您提供便捷的开发体验！
+模型性能 我们从六个方面来评估我们模型的视觉能力，包括综合的大学题目、数学能力、文档表格多语言文字图像的理解、通用场景下的问答、视频理解、Agent 能力。整体来看，我们 72B 规模的模型在大部分的指标上都达到了最优，甚至超过了 GPT-4o 和 Claude3.5-Sonnet 等闭源模型，特别是在文档理解方面优势明显，仅在对综合的大学题目上和 GPT-4o 还有差距。同时 Qwen2-VL 72B 也刷新了开源多模态模型的最好表现。 在 7B 规模上，我们同样支持图像、多图、视频的输入，在更经济的规模上也实现了有竞争力的性能表现，特别是像 DocVQA 之类的文档理解能力和 MTVQA 考察的图片中多语言文字理解能力都处于 SOTA 水平。 除此之外，我们还提供了一个更小的 2B 规模的模型，以此支持移动端的丰富应用。它具备完整图像视频多语言的理解能力，性能强劲，特别在视频文档和通用场景问答相较同规模模型优势明显。 模型能力案例 1. 更细节的识别理解 Qwen2-VL 不仅能识别植物和地标，而且能理解场景中多个对象间的关系。我们还特别增强了对手写文字及图像中多种语言的识别能力，令其在全球范围内更加易用。
+Example: Multi-object RecognitionNextUserOutput the color and number of each box.</description>
+    </item>
+    
     <item>
       <title>Qwen2-Audio：开启语音对话！</title>
       <link>http://qwenlm.github.io/zh/blog/qwen2-audio/</link>

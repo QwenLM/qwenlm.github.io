@@ -1,0 +1,14 @@
+{
+    "title": "Example: Information Extraction of High Resolution Images with Extreme Aspect Ratio",
+    "messages": [
+                {
+            "role": "User",
+            "content": "qwen-vl-max-0809对视频内容的理解功能存在哪些限制？\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2-VL/screenshot2.png)"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "qwen-vl-max-0809对视频内容的理解功能存在以下限制：视频文件大小最大为150MB，视频文件格式支持MP4、AVI、MKV、MOV、FLV、WMV等，视频尺寸无限制，但视频文件会被调整到约600K像素数，更大尺寸的视频文件不会有更好的理解效果。"
+            
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Example: Handwritten Formula Recognition",
+    "messages": [
+                {
+            "role": "User",
+            "content": "What are all the scene text in the image and their languages?\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2-VL/multilingual_1.png)"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "The text in the image and their respective languages are:\n\n1. \"WELCOME\" - English\n2. \"bienvenida\" - Spanish\n3. \"Bienvenue\" - French\n4. \"Willkommen\" - German\n5. \"benvenuto\" - Italian"
+        }
+    ]
+}

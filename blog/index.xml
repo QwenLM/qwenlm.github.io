@@ -9,7 +9,19 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 09 Aug 2024 16:18:19 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Aug 2024 00:24:00 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen2-VL: To See the World More Clearly</title>
+      <link>http://qwenlm.github.io/blog/qwen2-vl/</link>
+      <pubDate>Thu, 29 Aug 2024 00:24:00 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/blog/qwen2-vl/</guid>
+      <description>DEMO GITHUB HUGGING FACE MODELSCOPE API DISCORD
+After a year&amp;rsquo;s relentless efforts, today we are thrilled to release Qwen2-VL! Qwen2-VL is the latest version of the vision language models based on Qwen2 in the Qwen model familities. Compared with Qwen-VL, Qwen2-VL has the capabilities of:
+SoTA understanding of images of various resolution &amp;amp; ratio: Qwen2-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc.
+Understanding videos of 20min+: Qwen2-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation, etc.</description>
+    </item>
+    
     <item>
       <title>Qwen2-Audio: Chat with Your Voice!</title>
       <link>http://qwenlm.github.io/blog/qwen2-audio/</link>

@@ -1,0 +1,9 @@
+{
+    "title": "Example: Paly a Game",
+    "messages": [
+        {
+            "role": "24 points",
+            "content": "{{< video src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2-VL/Play%20a%20Game.mp4\" controls=\"1\">}}"
+        }
+    ]
+}

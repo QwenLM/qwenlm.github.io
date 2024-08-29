@@ -1,0 +1,9 @@
+{
+    "title": "Example: Visual Interactions",
+    "messages": [
+        {
+            "role": "Operate a Robotic Arm",
+            "content": "{{< video src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2-VL/Operate%20a%20Robotic%20Arm.mp4\" controls=\"1\">}}"
+        }
+    ]
+}

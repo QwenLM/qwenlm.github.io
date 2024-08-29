@@ -1,0 +1,13 @@
+{
+    "title": "Example: Plant identification",
+    "messages": [
+                {
+            "role": "User",
+            "content": "What kind of flower is this?\n![image](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/flowers.jpg)"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "The flowers in the picture are forget-me-nots (Myosotis). These small, delicate flowers are known for their vibrant colors, typically blue, pink, or white, and are often used in bouquets and gardens for their charming appearance."
+        }
+    ]
+}
