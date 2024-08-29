@@ -1,0 +1,13 @@
+{
+    "title": "Example: Information Extraction",
+    "messages": [
+                {
+            "role": "User",
+            "content": "What are the Linux versions and their release dates in the picture? Return results as a JSON list.\n![image](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/information_extraction.jpg)"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "```json\n[\n  {\n    \"version\": \"6.11-rc3\",\n    \"release_date\": \"2024-08-11\"\n  },\n  {\n    \"version\": \"6.10.4\",\n    \"release_date\": \"2024-08-11\"\n  },\n  {\n    \"version\": \"6.9.12 [EOL]\",\n    \"release_date\": \"2024-07-27\"\n  },\n  {\n    \"version\": \"6.6.45\",\n    \"release_date\": \"2024-08-11\"\n  },\n  {\n    \"version\": \"6.1.104\",\n    \"release_date\": \"2024-08-11\"\n  },\n  {\n    \"version\": \"5.15.164\",\n    \"release_date\": \"2024-07-27\"\n  },\n  {\n    \"version\": \"5.10.223\",\n    \"release_date\": \"2024-07-27\"\n  },\n  {\n    \"version\": \"5.4.281\",\n    \"release_date\": \"2024-07-27\"\n  },\n  {\n    \"version\": \"4.19.319\",\n    \"release_date\": \"2024-07-27\"\n  },\n  {\n    \"version\": \"next-20240812\",\n    \"release_date\": \"2024-08-12\"\n  }\n]\n```"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Example: Multi-object Recognition",
+    "messages": [
+                {
+            "role": "User",
+            "content": "Output the color and number of each box.\n![image](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/boxes.png)"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "The image shows a stack of colorful blocks with numbers on them. Here is the color and number of each block from top to bottom:\n\n- Top row (single block): Blue with the number 9\n- Second row (two blocks): Light blue with the number 7, and green with the number 8\n- Third row (three blocks): Purple with the number 4, pink with the number 5, and light green with the number 6\n- Bottom row (four blocks): Red with the number 0, orange with the number 1, yellow with the number 2, and light green with the number 3"
+        }
+    ]
+}

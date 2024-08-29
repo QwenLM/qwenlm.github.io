@@ -1,0 +1,9 @@
+{
+    "title": "Example: Code Interpreter",
+    "messages": [
+        {
+            "role": "Visualize Charts",
+            "content": "{{< video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/Code_Interpreter.mov\" controls=\"1\">}}"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Example: Code",
+    "messages": [
+                {
+            "role": "User",
+            "content": "Solve the algorithmic problem in the web page.\n![image](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/Code.jpeg)"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "To solve the \"Snake in Matrix\" problem, we need to implement a function that takes the size of the matrix `n` and a list of commands, and returns the final position of the snake after executing all the commands. Here's a step-by-step approach to solve this problem:\n\n1. **Initialize Variables**:\n   - Initialize the current position of the snake as `0`.\n   - Initialize the direction of the snake as \"RIGHT\" (initially, the snake moves to the right).\n\n2. **Define Movement Functions**:\n   - Create a function to move the snake based on the current direction and the size of the matrix `n`.\n   - Update the position of the snake accordingly.\n\n3. **Process Commands**:\n   - Iterate through each command in the list of commands.\n   - For each command, update the direction and position of the snake.\n\n4. **Return Final Position**:\n   - After processing all commands, return the final position of the snake.\n\nHere's the Python code to implement the solution:\n\n```python\nclass Solution:\n    def finalPositionOfSnake(self, n: int, commands: List[str]) -> int:\n        # Initialize variables\n        position = 0\n        direction = \"RIGHT\"\n        \n        # Define movement functions\n        def move_right():\n            nonlocal position\n            position += 1\n        \n        def move_down():\n            nonlocal position\n            position += n\n        \n        def move_left():\n            nonlocal position\n            position -= 1\n        \n        def move_up():\n            nonlocal position\n            position -= n\n        \n        # Process commands\n        for command in commands:\n            if command == \"RIGHT\":\n                move_right()\n            elif command == \"DOWN\":\n                move_down()\n            elif command == \"LEFT\":\n                move_left()\n            elif command == \"UP\":\n                move_up()\n        \n        # Return final position\n        return position\n```\n\nThis code defines a class `Solution` with a method `finalPositionOfSnake` that takes the size of the matrix `n` and a list of commands, and returns the final position of the snake after executing all the commands. The movement functions (`move_right`, `move_down`, `move_left`, `move_up`) are used to update the position of the snake based on the current direction."
+        }
+    ]
+}

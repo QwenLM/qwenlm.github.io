@@ -1,0 +1,13 @@
+{
+    "title": "Example: Handwritten Text Recognition",
+    "messages": [
+                {
+            "role": "User",
+            "content": "识别图中所有文字，无需添加标点。\n![image](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/Handwritten_chinese.jpeg)"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "尊敬的老师\n\n展信舒颜\n\n气温骤降\n\n树叶无声无息的掉落\n\n教诲如春风\n\n师恩深似海\n\n愿温馨、喜悦与幸福\n\n如同吐露芬芳的花朵\n\n永远洋溢在您幸福的时光里"
+        }
+    ]
+}

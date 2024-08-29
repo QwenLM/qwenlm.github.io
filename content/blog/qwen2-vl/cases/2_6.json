@@ -1,0 +1,13 @@
+{
+    "title": "Example: Information Extraction and Organization",
+    "messages": [
+                {
+            "role": "User",
+            "content": "将图中的每日的最高气温和最低气温整理成表格。\n![image](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/table_weather.jpg)"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "以下是图中每日的最高气温和最低气温整理成的表格：\n\n| 日期       | 最高气温 | 最低气温 |\n|------------|----------|----------|\n| 08/12      | 31°C     | 23°C     |\n| 08/13      | 30°C     | 22°C     |\n| 08/14      | 30°C     | 23°C     |\n| 08/15      | 31°C     | 24°C     |\n| 08/16      | 31°C     | 24°C     |\n| 08/17      | 30°C     | 24°C     |\n| 08/18      | 30°C     | 23°C     |\n| 08/19      | 30°C     | 22°C     |\n\n希望这对你有帮助！"
+        }
+    ]
+}
