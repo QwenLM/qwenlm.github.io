@@ -301,7 +301,7 @@ print(output_text)
 To facilitate seamless integration and use of our latest models, we support a range of tools and frameworks in the open-source ecosystem, including quantization ([AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ), [AutoAWQ](https://github.com/casper-hansen/AutoAWQ)), deployment ([vLLM](https://github.com/vllm-project/vllm)), finetuning ([Llama-Factory](https://github.com/hiyouga/LLaMA-Factory)), etc. 
 
 ## License
-Both the opensource Qwen2-VL-2B and Qwen2-VL-7B are under Apache 2.0. 
+Both the open-source Qwen2-VL-2B and Qwen2-VL-7B are under Apache 2.0. 
 
 ## What's Next
 
