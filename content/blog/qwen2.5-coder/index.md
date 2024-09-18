@@ -83,9 +83,6 @@ Qwen2.5-Coder-Instruct excels in several key areas:
 | ------------------------------- | --------- | --------- | ---------------- | ----------------- | --------------- | ---------- |
 | DeepSeek-Coder-V2-Lite-Instruct | 61        | **87.6**  | 56.1             | 26.4              | 39.8            | 6.7        |
 | Qwen2.5-Coder-7B-Instruct-v2    | **66.8**  | 86.7      | **60.5**         | **29.8**          | **43.5**        | **10**     |
-| **Model**                       | **AMC23** | **MMLU**  | **MMLU-Pro**     | **IFEval**        | **CEval**       | **GPQA**   |
-| DeepSeek-Coder-V2-Lite-Instruct | 40.4      | 42.5      | 60.6             | 38.6              | 60.1            | 27.6       |
-| Qwen2.5-Coder-7B-Instruct-v2    | **42.5**  | **45.6**  | **68.7**         | **58.6**          | **61.4**        | **35.6**   |
 
 4. **Basic capabilities**: We also assessed the general capabilities, and the results indicate that Qwen2.5-Coder-Instruct maintains the advantages of Qwen2.5 in terms of general abilities.
 
