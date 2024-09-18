@@ -1,0 +1,9 @@
+{
+    "title": "Example: Long Text Generation",
+    "messages": [
+        {
+            "role": "Text Generation",
+            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/long_text.mp4\" controls=\"1\">}}"
+        }
+    ]
+}

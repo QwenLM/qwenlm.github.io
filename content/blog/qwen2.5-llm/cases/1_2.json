@@ -1,0 +1,9 @@
+{
+    "title": "Example: Structured Data Understanding",
+    "messages": [
+        {
+            "role": "Table Understanding",
+            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/table_understanding.mp4\" controls=\"1\">}}"
+        }
+    ]
+}
