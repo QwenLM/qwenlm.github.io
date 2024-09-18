@@ -81,8 +81,8 @@ Qwen2.5-Coder-Instruct excels in several key areas:
   
 | **Model**                       | **Math**  | **GSM8K** | **GaoKao2023en** | **OlympiadBench** | **CollegeMath** | **AIME24** |
 | ------------------------------- | --------- | --------- | ---------------- | ----------------- | --------------- | ---------- |
-| DeepSeek-Coder-V2-Lite-Instruct | 61        | **87.6**  | 56.1             | 26.4              | 39.8            | 6.7        |
-| Qwen2.5-Coder-7B-Instruct    | **66.8**  | 86.7      | **60.5**         | **29.8**          | **43.5**        | **10**     |
+| DeepSeek-Coder-V2-Lite-Instruct | 61.0        | **87.6**  | 56.1             | 26.4              | 39.8            | 6.7        |
+| Qwen2.5-Coder-7B-Instruct    | **66.8**  | 86.7      | **60.5**         | **29.8**          | **43.5**        | **10.0**     |
 
 4. **Basic capabilities**: We also assessed the general capabilities, and the results indicate that Qwen2.5-Coder-Instruct maintains the advantages of Qwen2.5 in terms of general abilities.
 
