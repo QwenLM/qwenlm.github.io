@@ -1,6 +1,6 @@
 ---
 title: "Qwen2.5: 基础模型大派对！"
-date: 2024-09-18T00:00:04+08:00
+date: 2024-09-19T00:00:04+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
