@@ -1,6 +1,6 @@
 ---
 title: "Qwen2.5: A Party of Foundation Models!"
-date: 2024-09-18T02:00:04+08:00
+date: 2024-09-19T00:00:04+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
