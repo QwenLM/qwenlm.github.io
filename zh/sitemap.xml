@@ -2,6 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://qwenlm.github.io/zh/blog/qwen2.5/</loc>
+    <lastmod>2024-09-18T00:00:04+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/blog/qwen2.5/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/blog/qwen2.5/"
+                />
+  </url><url>
+    <loc>http://qwenlm.github.io/zh/blog/qwen2.5-llm/</loc>
+    <lastmod>2024-09-18T00:00:03+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/blog/qwen2.5-llm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/blog/qwen2.5-llm/"
+                />
+  </url><url>
+    <loc>http://qwenlm.github.io/zh/blog/qwen2.5-coder/</loc>
+    <lastmod>2024-09-18T00:00:02+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/blog/qwen2.5-coder/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/blog/qwen2.5-coder/"
+                />
+  </url><url>
+    <loc>http://qwenlm.github.io/zh/blog/qwen2.5-math/</loc>
+    <lastmod>2024-09-18T00:00:01+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://qwenlm.github.io/blog/qwen2.5-math/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://qwenlm.github.io/zh/blog/qwen2.5-math/"
+                />
+  </url><url>
     <loc>http://qwenlm.github.io/zh/blog/qwen2-vl/</loc>
     <lastmod>2024-08-29T00:24:00+08:00</lastmod>
     <xhtml:link
@@ -185,7 +237,7 @@
                 />
   </url><url>
     <loc>http://qwenlm.github.io/zh/blog/</loc>
-    <lastmod>2024-08-29T00:24:00+08:00</lastmod>
+    <lastmod>2024-09-18T00:00:04+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -198,7 +250,7 @@
                 />
   </url><url>
     <loc>http://qwenlm.github.io/zh/</loc>
-    <lastmod>2024-08-29T00:24:00+08:00</lastmod>
+    <lastmod>2024-09-18T00:00:04+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
