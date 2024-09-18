@@ -9,7 +9,17 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Sep 2024 02:00:04 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Sep 2024 00:00:03 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen2.5-LLM: Extending the boundary of LLMs</title>
+      <link>http://qwenlm.github.io/blog/qwen2.5-llm/</link>
+      <pubDate>Thu, 19 Sep 2024 00:00:03 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/blog/qwen2.5-llm/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
+Introduction In this blog, we delve into the details of our latest Qwen2.5 series language models. We have developed a range of decoder-only dense models, with seven of them open-sourced, spanning from 0.5B to 72B parameters. Our research indicates a significant interest among users in models within the 10-30B range for production use, as well as 3B models for mobile applications. To meet these demands, we are open-sourcing Qwen2.</description>
+    </item>
+    
     <item>
       <title>Qwen2.5: A Party of Foundation Models!</title>
       <link>http://qwenlm.github.io/blog/qwen2.5/</link>
@@ -18,16 +28,6 @@
       <guid>http://qwenlm.github.io/blog/qwen2.5/</guid>
       <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
 Introduction In the past three months since Qwen2&amp;rsquo;s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. We are announcing what might be the largest opensource release in history!</description>
-    </item>
-    
-    <item>
-      <title>Qwen2.5-LLM: Extending the boundary of LLMs</title>
-      <link>http://qwenlm.github.io/blog/qwen2.5-llm/</link>
-      <pubDate>Wed, 18 Sep 2024 00:00:03 +0800</pubDate>
-      
-      <guid>http://qwenlm.github.io/blog/qwen2.5-llm/</guid>
-      <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
-Introduction In this blog, we delve into the details of our latest Qwen2.5 series language models. We have developed a range of decoder-only dense models, with seven of them open-sourced, spanning from 0.5B to 72B parameters. Our research indicates a significant interest among users in models within the 10-30B range for production use, as well as 3B models for mobile applications. To meet these demands, we are open-sourcing Qwen2.</description>
     </item>
     
     <item>
