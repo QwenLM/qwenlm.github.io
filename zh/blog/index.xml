@@ -36,7 +36,7 @@ Qwen2.5 LLM Qwen2.5-Coder Qwen2.5-Math
       <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
 简介 我们隆重推出最新发布的Qwen2.5系列语言模型！我们共开源了7款decoder-only的稠密模型，参数规模从0.5B到72B不等。我们调研发现产品对10B至30B模型的兴趣明显增加，同时3B规模的模型也越来越适用于移动端场景。为此，Qwen2.5系列开源了Qwen2.5-3B、Qwen2.5-14B 和 Qwen2.5-32B。同时，我们还推出了Qwen-Plus与Qwen-Turbo版本，可以通过阿里云大模型服务平台的API服务进行体验。
 相比Qwen2系列，Qwen2.5带来了以下全新升级：
-全面开源：考虑到产品对10B至30B范围模型的需求和移动端对3B模型的兴趣，此次除了继续开源Qwen2系列中的0.5B/1.5B/7B/72B四款模型外，Qwen2.5系列还增加了两个高性价比的中等规模模型—— Qwen2.5-14B 和 Qwen2.5-32B，以及一款适合移动端的 Qwen2.5-3B。所有模型在同类开源产品中均具有很强的竞争力，例如Qwen2.5-32B的整体表现超越了Qwen2-72B，Qwen2.5-14B则领先于Qwen2-57B-A14B。
+全面开源：考虑到用户对10B至30B范围模型的需求和移动端对3B模型的兴趣，此次除了继续开源Qwen2系列中的0.5B/1.5B/7B/72B四款模型外，Qwen2.5系列还增加了两个高性价比的中等规模模型—— Qwen2.5-14B 和 Qwen2.5-32B，以及一款适合移动端的 Qwen2.5-3B。所有模型在同类开源产品中均具有很强的竞争力，例如Qwen2.5-32B的整体表现超越了Qwen2-72B，Qwen2.5-14B则领先于Qwen2-57B-A14B。
 更大规模、更高质量的预数据训练集：我们的预训练数据集规模从 7T tokens 扩展到了 18T tokens。
 知识储备升级：Qwen2.5的知识涵盖更广。在MMLU基准中，Qwen2.5-7B 和 72B的得分相较于Qwen2分别从70.3提升到 74.2，和从84.2提升到 86.1。此外，Qwen2.5还在 GPQA、MMLU-Pro、MMLU-redux 和 ARC-c 等多个基准测试中有了明显提升。
 代码能力增强：得益于Qwen2.5-Coder的突破，Qwen2.5在代码生成能力上也大幅提升。Qwen2.5-72B-Instruct在LiveCodeBench（2305-2409）、MultiPL-E和MBPP中的分别得分 55.5、75.1 和 88.2，优于Qwen2-72B-Instruct的32.2、69.2和80.2。
