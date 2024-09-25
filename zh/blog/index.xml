@@ -55,7 +55,7 @@ Qwen2.5 LLM Qwen2.5-Coder Qwen2.5-Math
       <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
 简介 四月初，我们发布了 CodeQwen1.5, 得到了社区广泛的关注与喜爱。自那以后，我们一直在继续努力提升代码模型。今天，我们很高兴地宣布新一代的开放代码模型 Qwen2.5-Coder 的发布。并正式将 CodeQwen 的命名改为 Qwen-Coder，我们认为 Coder 更加拟人、灵动，期待其可以在未来真正与人类结对编程。Qwen2.5-Coder 是我们 Qwen2.5 开源家族的一员，共包括三个尺寸的模型：1.5B、 7B 和 32B（在路上）。
 本次更新的两大核心包括代码训练数据的进一步 scaling，以及探索在提升代码能力的同时保持数学和通用能力。
-码无止境：Qwen2.5-Coder 基于强大的 Qwen2.5 初始化，扩增了更大规模的代码训练数据持续训练，包括源代码、文本代码混合数据、合成数据等共计 5.5T tokens。使得 Qwen2.5-Coder 在代码生成、代码推理、代码修复等任务上都有了显著提升。 学无止境：我们希望 Qwen2.5-Coder 在提升代码能力的同时，也能保持在数学、通用能力等方面的优势。因此，我们在 Qwen2.5-Coder 中加入了更多的数学、通用能力数据，为未来的真实应用提供更为全面的基座。 Qwen2.5-Coder: Base Models Qwen2.5-Coder 最多 128K tokens 上下文，支持 92 种编程语言，并在多个代码相关的评估任务中都取得了显著的提升，包括代码生成、多编程语言代码生成、代码补全、代码修复等。值得注意的是，本次开源的 7B 版本 Qwen2.5-Coder，甚至打败了更大尺寸的 DeepSeek-Coder-V2-Lite 和 Codestral-20B，成为当前最强大的基础代码模型之一。除了代码任务外，Qwen2.5-Coder 也具备极具竞争力的数学能力。面向通用任务，我们评估了 MMLU 和 ARC，结果表明 Qwen2.5-Coder 很好的保持了 Qwen2.5 的通用能力。
+码无止境：Qwen2.5-Coder 基于强大的 Qwen2.5 初始化，扩增了更大规模的代码训练数据持续训练，包括源代码、文本代码混合数据、合成数据等共计 5.5T tokens。使得 Qwen2.5-Coder 在代码生成、代码推理、代码修复等任务上都有了显著提升。 学无止境：我们希望 Qwen2.5-Coder 在提升代码能力的同时，也能保持在数学、通用能力等方面的优势。因此，我们在 Qwen2.5-Coder 中加入了更多的数学、通用能力数据，为未来的真实应用提供更为全面的基座。 Qwen2.5-Coder: Base Models Qwen2.5-Coder 最多 128K tokens 上下文，支持 92 种编程语言，并在多个代码相关的评估任务中都取得了显著的提升，包括代码生成、多编程语言代码生成、代码补全、代码修复等。值得注意的是，本次开源的 7B 版本 Qwen2.5-Coder，甚至打败了更大尺寸的 DeepSeek-Coder-V2-Lite 和 CodeStral-22B，成为当前最强大的基础代码模型之一。除了代码任务外，Qwen2.5-Coder 也具备极具竞争力的数学能力。面向通用任务，我们评估了 MMLU 和 ARC，结果表明 Qwen2.5-Coder 很好的保持了 Qwen2.5 的通用能力。
 Qwen2.5-Coder-Instruct: Instruction-Tuned Models 我们在 Qwen2.5-Coder 的基础上，通过指令微调，得到了 Qwen2.5-Coder-Instruct。Qwen2.5-Coder-Instruct 除了进一步提升了多个任务上的性能外，还在更多的评估中体现出了卓越的泛化性。</description>
     </item>
     
