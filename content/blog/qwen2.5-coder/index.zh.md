@@ -1,6 +1,6 @@
 ---
 title: "Qwen2.5-Coder: 码无止境，学无止境!"
-date: 2024-09-18T00:00:02+08:00
+date: 2024-09-19T00:00:02+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
@@ -103,8 +103,16 @@ Qwen2.5-Coder 采用**Apache 2.0**的许可。我们希望本次开放程度的�
 # Citation
 
 ```
-@article{qwen2,
-  title={Qwen2 Technical Report},
+@article{hui2024qwen2,
+  title={Qwen2. 5-Coder Technical Report},
+  author={Hui, Binyuan and Yang, Jian and Cui, Zeyu and Yang, Jiaxi and Liu, Dayiheng and Zhang, Lei and Liu, Tianyu and Zhang, Jiajun and Yu, Bowen and Dang, Kai and others},
+  journal={arXiv preprint arXiv:2409.12186},
+  year={2024}
+}
+@article{yang2024qwen2,
+  title={Qwen2 technical report},
+  author={Yang, An and Yang, Baosong and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Zhou, Chang and Li, Chengpeng and Li, Chengyuan and Liu, Dayiheng and Huang, Fei and others},
+  journal={arXiv preprint arXiv:2407.10671},
   year={2024}
 }
 ```

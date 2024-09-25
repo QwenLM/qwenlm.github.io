@@ -1,6 +1,6 @@
 ---
 title: "Qwen2.5: A Party of Foundation Models!"
-date: 2024-09-18T02:00:04+08:00
+date: 2024-09-19T00:00:04+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
@@ -65,7 +65,7 @@ Our latest release features the LLMs **Qwen2.5**, along with specialized models 
 
 <br>
 
-All our open-source models, except for the 3B and 72B variants, are licensed under Apache 2.0. You can find the license files in the respective Hugging Face repositories. In addition to these models, we offer APIs for our flagship language models: **Qwen2.5-Plus** and **Qwen2.5-Turbo** through Model Studio, and we encourage you to explore them! Furthermore, we have also open-sourced the **Qwen2-VL-72B**, which features performance enhancements compared to last month's release.
+All our open-source models, except for the 3B and 72B variants, are licensed under Apache 2.0. You can find the license files in the respective Hugging Face repositories. In addition to these models, we offer APIs for our flagship language models: **Qwen-Plus** and **Qwen-Turbo** through Model Studio, and we encourage you to explore them! Furthermore, we have also open-sourced the **Qwen2-VL-72B**, which features performance enhancements compared to last month's release.
 
 For more details about Qwen2.5, Qwen2.5-Coder, and Qwen2.5-Math, feel free to visit the following links:
 
@@ -104,7 +104,7 @@ The specialized expert language models, namely **Qwen2.5-Coder** for coding and 
 
 ## Qwen2.5
 
-To showcase Qwen2.5's capabilities, we benchmark our largest open-source model, **Qwen2.5-72B** - a 72B-parameter dense decoder-only language model - against leading open-source models like Llama-3.1-70B, Mistral-Large-V2, and DeepSeek-V2.5. We present comprehensive results from instruction-tuned versions across various benchmarks, evaluating both model capabilities and human preferences.
+To showcase Qwen2.5's capabilities, we benchmark our largest open-source model, **Qwen2.5-72B** - a 72B-parameter dense decoder-only language model - against leading open-source models like Llama-3.1-70B and Mistral-Large-V2. We present comprehensive results from instruction-tuned versions across various benchmarks, evaluating both model capabilities and human preferences.
 
 {{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/Qwen2.5-72B-Instruct-Score.jpg" width="100%" alt="Qwen2.5-72B Instruct Performance" >}}
 
@@ -113,12 +113,12 @@ Besides the instruction-tuned language models, we figure out that the base langu
 {{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/Qwen2.5-72B-base.001.jpeg" width="100%" alt="Qwen2.5-72B Base Model Performance" >}}
 
 
-Furthermore, we benchmark the latest version of our API-based model, **Qwen-Plus**, against leading proprietary and open-source models, including GPT4-o, Claude-3.5-Sonnet, Llama-3.1-405B, and DeepSeek-V2.5. This comparison showcases Qwen-Plus's competitive standing in the current landscape of large language models. We show that **Qwen-Plus** significantly outcompetes DeepSeek-V2.5 and demonstrates competitive performance against Llama-3.1-405B, while still underperforming compared to GPT4-o and Claude-3.5-Sonnet in some aspects. This benchmarking not only highlights Qwen2.5-Plus's strengths but also identifies areas for future improvement, reinforcing our commitment to continuous enhancement and innovation in the field of large language models.
+Furthermore, we benchmark the latest version of our API-based model, **Qwen-Plus**, against leading proprietary and open-source models, including GPT4-o, Claude-3.5-Sonnet, Llama-3.1-405B, and DeepSeek-V2.5. This comparison showcases Qwen-Plus's competitive standing in the current landscape of large language models. We show that **Qwen-Plus** significantly outcompetes DeepSeek-V2.5 and demonstrates competitive performance against Llama-3.1-405B, while still underperforming compared to GPT4-o and Claude-3.5-Sonnet in some aspects. This benchmarking not only highlights Qwen-Plus's strengths but also identifies areas for future improvement, reinforcing our commitment to continuous enhancement and innovation in the field of large language models.
 
-{{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/qwen-plus-instruct.001.jpeg" width="100%" alt="Qwen2.5-Plus Instruct Performance" >}}
+{{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/qwen-plus-instruct.001.jpeg" width="100%" alt="Qwen-Plus Instruct Performance" >}}
 
 
-A significant update in Qwen2.5 is the reintroduction of our 14B and 32B models, **Qwen2.5-14B** and **Qwen2.5-32B**. These models outperform baseline models of comparable or larger sizes, such as Phi-3.5-MoE-Instruct and Gemma2-27B-IT, across diverse tasks. They achieve an optimal balance between model size and capability, delivering performance that matches or exceeds some larger models. Additionally, our API-based model, **Qwen2.5-Turbo**, offers highly competitive performance compared to the two open-source models, while providing a cost-effective and rapid service.
+A significant update in Qwen2.5 is the reintroduction of our 14B and 32B models, **Qwen2.5-14B** and **Qwen2.5-32B**. These models outperform baseline models of comparable or larger sizes, such as Phi-3.5-MoE-Instruct and Gemma2-27B-IT, across diverse tasks. They achieve an optimal balance between model size and capability, delivering performance that matches or exceeds some larger models. Additionally, our API-based model, **Qwen-Turbo**, offers highly competitive performance compared to the two open-source models, while providing a cost-effective and rapid service.
 
 {{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/qwen2.5-32B-instruct_wturbo.001.jpeg" width="100%" alt="Qwen2.5-32B Instruct Performance" >}}
 

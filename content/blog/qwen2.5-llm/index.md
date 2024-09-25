@@ -1,6 +1,6 @@
 ---
 title: "Qwen2.5-LLM: Extending the boundary of LLMs"
-date: 2024-09-18T00:00:03+08:00
+date: 2024-09-19T00:00:03+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
@@ -38,15 +38,15 @@ show_word_count: true
 ---
 
 
-{{< button href="<https://github.com/QwenLM/Qwen2.5>" label="GITHUB" external=true >}}
-{{< button href="<https://huggingface.co/Qwen>" label="HUGGING FACE" external=true >}}
-{{< button href="<https://modelscope.cn/organization/qwen>" label="MODELSCOPE" external=true >}}
-{{< button href="<https://huggingface.co/spaces/Qwen/Qwen2.5-72B-Instruct>" label="DEMO" external=true >}}
-{{< button href="<https://discord.gg/yPEP2vHTu4>" label="DISCORD" external=true >}}
+{{< button href="https://github.com/QwenLM/Qwen2.5" label="GITHUB" external=true >}}
+{{< button href="https://huggingface.co/Qwen" label="HUGGING FACE" external=true >}}
+{{< button href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external=true >}}
+{{< button href="https://huggingface.co/spaces/Qwen/Qwen2.5-72B-Instruct" label="DEMO" external=true >}}
+{{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 # Introduction
 
-In this blog, we delve into the details of our latest Qwen2.5 series language models. We have developed a range of decoder-only dense models, with seven of them open-sourced, spanning from 0.5B to 72B parameters. Our research indicates a significant interest among users in models within the 10-30B range for production use, as well as 3B models for mobile applications. To meet these demands, we are open-sourcing Qwen2.5-3B, Qwen2.5-14B, and Qwen2.5-32B. Furthermore, we are excited to offer additional models, including Qwen2.5-Plus and Qwen2.5-Turbo, available through API services via [Alibaba Cloud Model Studio](https://help.aliyun.com/zh/model-studio/developer-reference/what-is-qwen-llm).
+In this blog, we delve into the details of our latest Qwen2.5 series language models. We have developed a range of decoder-only dense models, with seven of them open-sourced, spanning from 0.5B to 72B parameters. Our research indicates a significant interest among users in models within the 10-30B range for production use, as well as 3B models for mobile applications. To meet these demands, we are open-sourcing Qwen2.5-3B, Qwen2.5-14B, and Qwen2.5-32B. Furthermore, we are excited to offer additional models, including Qwen-Plus and Qwen-Turbo, available through API services via [Alibaba Cloud Model Studio](https://help.aliyun.com/zh/model-studio/developer-reference/what-is-qwen-llm).
 
 Compared with the Qwen2 series, the Qwen2.5 series has the following upgrades:
 
@@ -298,9 +298,9 @@ The datasets for evaluation include:
 
 The Qwen2.5-72B-Instruct model delivers exceptional performance, even surpassing the larger Llama-3.1-405B in several critical tasks. Qwen2.5-72B-Instruct excels in mathematics (MATH: 83.1), coding (LiveCodeBench: 55.5), and chatting (Arena-Hard: 81.2). Compared to its base model Qwen2.5-72B and its predecessor Qwen2-72B-Instruct, the Qwen2.5-72B-Instruct showcases comprehensive improvements across all tasks.
 
-### Qwen2.5-Turbo & Qwen2.5-14B-Instruct & Qwen2.5-32B-Instruct Performance
+### Qwen-Turbo & Qwen2.5-14B-Instruct & Qwen2.5-32B-Instruct Performance
 
-| Datasets | Qwen2-57B-A14B-Instruct | Gemma2-27B-IT | GPT4o-mini | **Qwen2.5-Turbo** | **Qwen2.5-14B-Instruct** | **Qwen2.5-32B-Instruct** |
+| Datasets | Qwen2-57B-A14B-Instruct | Gemma2-27B-IT | GPT4o-mini | **Qwen-Turbo** | **Qwen2.5-14B-Instruct** | **Qwen2.5-32B-Instruct** |
 | --- | --- | --- | --- | --- | --- | --- |
 | MMLU-Pro | 52.8 | 55.5 | 63.1 | 64.8 | 63.7 | **69.0** |
 | MMLU-redux | 72.6 | 75.7 | 81.5 | 80.4 | 80.0 | **83.9** |
@@ -317,7 +317,7 @@ The Qwen2.5-72B-Instruct model delivers exceptional performance, even surpassing
 | AlignBench v1.1 | 7.02 | 7.22 | 7.81 | **7.99** | 7.94 | 7.93 |
 | MTbench | 8.55 | 9.10 | - | 8.86 | 8.88 | **9.20** |
 
-The Qwen2.5-32B-Instruct model demonstrates superior performance across most tasks when compared to other models of similar size. In comparison to GPT-4o-mini, our open-source model, Qwen2.5-14B-Instruct, along with our API model, Qwen2.5-Turbo, also deliver competitive results across all benchmarks.
+The Qwen2.5-32B-Instruct model demonstrates superior performance across most tasks when compared to other models of similar size. In comparison to GPT-4o-mini, our open-source model, Qwen2.5-14B-Instruct, along with our API model, Qwen-Turbo, also deliver competitive results across all benchmarks.
 
 
 ### Qwen2.5-7B-Instruct Performance

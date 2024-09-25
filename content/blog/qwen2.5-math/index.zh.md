@@ -1,6 +1,6 @@
 ---
 title: "Qwen2.5-Math: 世界领先的数学开源大语言模型"
-date: 2024-09-18T00:00:01+08:00
+date: 2024-09-19T00:00:01+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]

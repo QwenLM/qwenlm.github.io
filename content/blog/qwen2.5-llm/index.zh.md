@@ -1,6 +1,6 @@
 ---
 title: "Qwen2.5-LLM：扩展大型语言模型的边界"
-date: 2024-09-18T00:00:03+08:00
+date: 2024-09-19T00:00:03+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
@@ -38,11 +38,11 @@ show_word_count: true
 ---
 
 
-{{< button href="<https://github.com/QwenLM/Qwen2.5>" label="GITHUB" external=true >}}
-{{< button href="<https://huggingface.co/Qwen>" label="HUGGING FACE" external=true >}}
-{{< button href="<https://modelscope.cn/organization/qwen>" label="MODELSCOPE" external=true >}}
-{{< button href="<https://huggingface.co/spaces/Qwen/Qwen2.5-72B-Instruct>" label="DEMO" external=true >}}
-{{< button href="<https://discord.gg/yPEP2vHTu4>" label="DISCORD" external=true >}}
+{{< button href="https://github.com/QwenLM/Qwen2.5" label="GITHUB" external=true >}}
+{{< button href="https://huggingface.co/Qwen" label="HUGGING FACE" external=true >}}
+{{< button href="https://modelscope.cn/organization/qwen" label="MODELSCOPE" external=true >}}
+{{< button href="https://huggingface.co/spaces/Qwen/Qwen2.5-72B-Instruct" label="DEMO" external=true >}}
+{{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 # 简介
 
@@ -50,7 +50,7 @@ show_word_count: true
 
 相比Qwen2系列，Qwen2.5带来了以下全新升级：
 
-1) **全面开源**：考虑到产品对10B至30B范围模型的需求和移动端对3B模型的兴趣，此次除了继续开源Qwen2系列中的0.5B/1.5B/7B/72B四款模型外，Qwen2.5系列还增加了两个高性价比的中等规模模型—— **Qwen2.5-14B** 和 **Qwen2.5-32B**，以及一款适合移动端的 **Qwen2.5-3B**。所有模型在同类开源产品中均具有很强的竞争力，例如Qwen2.5-32B的整体表现超越了Qwen2-72B，Qwen2.5-14B则领先于Qwen2-57B-A14B。
+1) **全面开源**：考虑到用户对10B至30B范围模型的需求和移动端对3B模型的兴趣，此次除了继续开源Qwen2系列中的0.5B/1.5B/7B/72B四款模型外，Qwen2.5系列还增加了两个高性价比的中等规模模型—— **Qwen2.5-14B** 和 **Qwen2.5-32B**，以及一款适合移动端的 **Qwen2.5-3B**。所有模型在同类开源产品中均具有很强的竞争力，例如Qwen2.5-32B的整体表现超越了Qwen2-72B，Qwen2.5-14B则领先于Qwen2-57B-A14B。
 
 2) **更大规模、更高质量的预数据训练集**：我们的预训练数据集规模从 7T tokens 扩展到了 **18T** tokens。
 

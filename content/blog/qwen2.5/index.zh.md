@@ -1,6 +1,6 @@
 ---
 title: "Qwen2.5: 基础模型大派对！"
-date: 2024-09-18T00:00:04+08:00
+date: 2024-09-19T00:00:04+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
@@ -96,7 +96,7 @@ Qwen2.5 模型总体上对各种system prompt更具适应性，增强了角色�
 
 # API
 
-除了我们的开源模型之外，我们还通过 API 服务提供了更多的模型。您可以访问 [Alibaba Cloud Model Studio](https://help.aliyun.com/zh/model-studio/developer-reference/what-is-qwen-llm) 获取更多详情，包括定价信息。关于 API 模型的性能，请参阅接下来的模型性能部分。
+除了我们的开源模型之外，我们还通过 API 服务提供了更多的模型。您可以访问 [阿里云百炼平台](https://help.aliyun.com/zh/model-studio/developer-reference/what-is-qwen-llm) 获取更多详情，包括定价信息。关于 API 模型的性能，请参阅接下来的模型性能部分。
 
 <table>
     <thead>
@@ -140,7 +140,7 @@ Qwen2.5 模型总体上对各种system prompt更具适应性，增强了角色�
 
 ## Qwen2.5
 
-为了展示 Qwen2.5 的能力，我们用我们最大的开源模型 **Qwen2.5-72B** —— 一个拥有 720 亿参数的稠密 decoder-only 语言模型——与领先的开源模型如 Llama-3.1-70B、Mistral-Large-V2 和 DeepSeek-V2.5 进行了基准测试。我们在多个基准测试中展示了经过指令调优的版本的综合结果，评估了模型的能力和人类偏好。
+为了展示 Qwen2.5 的能力，我们用我们最大的开源模型 **Qwen2.5-72B** —— 一个拥有 720 亿参数的稠密 decoder-only 语言模型——与领先的开源模型如 Llama-3.1-70B 和 Mistral-Large-V2进行了基准测试。我们在多个基准测试中展示了经过指令调优的版本的综合结果，评估了模型的能力和人类偏好。
 
 {{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/Qwen2.5-72B-Instruct-Score.jpg" width="100%" alt="Qwen2.5-72B Instruct Performance" >}}
 
@@ -152,7 +152,7 @@ Qwen2.5 模型总体上对各种system prompt更具适应性，增强了角色�
 此外，我们将基于 API 的模型 **Qwen-Plus** 与领先的专有和开源模型进行了对比，包括 GPT4-o、Claude-3.5-Sonnet、Llama-3.1-405B 和 DeepSeek-V2.5。这一对比展示了 **Qwen-Plus** 在当前大型语言模型领域中的竞争地位。结果显示，**Qwen-Plus** 显著优于 DeepSeek-V2.5，并且在与 Llama-3.1-405B 的竞争中表现出了竞争力，尽管在某些方面仍不及 GPT4-o 和 Claude-3.5-Sonnet。
 这次基准测试不仅突显了 Qwen-Plus 的优势，也指出了未来需要改进的地方，进一步强化了我们在大型语言模型领域持续改进和创新的承诺。
 
-{{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/Qwen2.5-plus-instruct-v2.jpeg" width="100%" alt="Qwen2.5-32B Instruct Performance" >}}
+{{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/qwen-plus-instruct.001.jpeg" width="100%" alt="Qwen2.5-32B Instruct Performance" >}}
 
 
 Qwen2.5 的一个重要更新是重新引入了我们的 140 亿参数和 320 亿参数模型，即 **Qwen2.5-14B** 和 **Qwen2.5-32B**。这些模型在多样化的任务中超越了同等规模或更大规模的基线模型，例如 Phi-3.5-MoE-Instruct 和 Gemma2-27B-IT。
