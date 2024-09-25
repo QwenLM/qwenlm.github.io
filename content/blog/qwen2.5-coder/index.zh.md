@@ -55,7 +55,7 @@ show_word_count: true
 
 # Qwen2.5-Coder: Base Models
 
-Qwen2.5-Coder 最多 **128K** tokens 上下文，支持 92 种编程语言，并在多个代码相关的评估任务中都取得了显著的提升，包括代码生成、多编程语言代码生成、代码补全、代码修复等。值得注意的是，本次开源的 7B 版本 Qwen2.5-Coder，甚至打败了更大尺寸的 DeepSeek-Coder-V2-Lite 和 Codestral-20B，成为当前最强大的基础代码模型之一。除了代码任务外，Qwen2.5-Coder 也具备极具竞争力的数学能力。面向通用任务，我们评估了 MMLU 和 ARC，结果表明 Qwen2.5-Coder 很好的保持了 Qwen2.5 的通用能力。
+Qwen2.5-Coder 最多 **128K** tokens 上下文，支持 92 种编程语言，并在多个代码相关的评估任务中都取得了显著的提升，包括代码生成、多编程语言代码生成、代码补全、代码修复等。值得注意的是，本次开源的 7B 版本 Qwen2.5-Coder，甚至打败了更大尺寸的 DeepSeek-Coder-V2-Lite 和 CodeStral-22B，成为当前最强大的基础代码模型之一。除了代码任务外，Qwen2.5-Coder 也具备极具竞争力的数学能力。面向通用任务，我们评估了 MMLU 和 ARC，结果表明 Qwen2.5-Coder 很好的保持了 Qwen2.5 的通用能力。
 
 {{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/Qwen2.5-Coder/qwen2.5-coder-base.jpg#center" width="100%">}}
 

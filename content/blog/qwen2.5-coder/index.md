@@ -57,7 +57,7 @@ This update focuses on two main improvements: scaling up the code training data 
 
 # Qwen2.5-Coder: Base Models
 
-Qwen2.5-Coder supports up to 128K tokens of context, covers 92 programming languages, and has achieved remarkable improvements across various code-related evaluation tasks, including code generation, multi-programming code generation, code completion, and code repair. Notably, the open-source 7B version of Qwen2.5-Coder has even outperformed larger models like DeepSeek-Coder-V2-Lite and Codestral, making it one of the most powerful base code models available. Beyond code tasks, Qwen2.5-Coder also demonstrates competitive math capabilities in evaluations such as GSM8K and Math. For general tasks, evaluations on MMLU and ARC show that Qwen2.5-Coder has retained the general ability performance of Qwen2.5.
+Qwen2.5-Coder supports up to 128K tokens of context, covers 92 programming languages, and has achieved remarkable improvements across various code-related evaluation tasks, including code generation, multi-programming code generation, code completion, and code repair. Notably, the open-source 7B version of Qwen2.5-Coder has even outperformed larger models like DeepSeek-Coder-V2-Lite and CodeStral-22B, making it one of the most powerful base code models available. Beyond code tasks, Qwen2.5-Coder also demonstrates competitive math capabilities in evaluations such as GSM8K and Math. For general tasks, evaluations on MMLU and ARC show that Qwen2.5-Coder has retained the general ability performance of Qwen2.5.
 
 {{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/Qwen2.5-Coder/qwen2.5-coder-base.jpg#center" width="100%">}}
 
