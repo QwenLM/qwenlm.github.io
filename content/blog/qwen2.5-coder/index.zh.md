@@ -67,7 +67,7 @@ Qwen2.5-Coder 最多 **128K** tokens 上下文，支持 92 种编程语言，并
 
 特别的，Qwen2.5-Coder-Instruct 在几个方面表现非常突出：
 
-1. 卓越的多编程语言能力：为了更广泛的评估多编程语言能力，我们使用 McEval 在 Qwen2.5-Coder-Instruct 上进行了更多的测试，共设计 40 多种编程语言。结果表明 Qwen2.5-Coder-Instruct 在多种编程语言任务上表现非常出色，包括一些小众语言。
+1. 卓越的多编程语言能力：为了更广泛的评估多编程语言能力，我们使用 McEval 在 Qwen2.5-Coder-Instruct 上进行了更多的测试，共涉及 40 多种编程语言。结果表明 Qwen2.5-Coder-Instruct 在多种编程语言任务上表现非常出色，包括一些小众语言。
 
 {{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/Qwen2.5-Coder/mveval.jpg#center" width="70%">}}
 
