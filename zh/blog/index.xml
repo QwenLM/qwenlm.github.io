@@ -9,7 +9,21 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Sep 2024 00:00:04 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Nov 2024 00:00:02 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen2.5-Coder 全系列: 强大、多样、实用。</title>
+      <link>http://qwenlm.github.io/zh/blog/qwen2.5-coder-family/</link>
+      <pubDate>Tue, 12 Nov 2024 00:00:02 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/zh/blog/qwen2.5-coder-family/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE KAGGLE DEMO DISCORD
+简介 今天，我们很高兴开源「强大」、「多样」、「实用」的 Qwen2.5-Coder 全系列模型，致力于持续推动 Open CodeLLMs 的发展。
+强大：Qwen2.5-Coder-32B-Instruct 成为目前 SOTA 的开源代码模型，代码能力追平 GPT-4o，展现出强大且全面的代码能力，同时具备良好的通用和数学能力。 多样：上个月我们开源了 1.5B、7B 两个尺寸，本次开源又带来 0.5B、3B、14B、32B 四个尺寸，截至目前， Qwen2.5-Coder 已经覆盖了主流的六个模型尺寸，以满足不同开发者的需要。 实用：我们探索了 Qwen2.5-Coder 在代码助手和 Artifacts 两种场景下的实用性，并用一些样例来展示 Qwen2.5-Coder 在实际场景中的应用潜力。 强大：代码能力达到开源模型 SOTA 代码生成：Qwen2.5-Coder-32B-Instruct 作为本次开源的旗舰模型，在多个流行的代码生成基准（如EvalPlus、LiveCodeBench、BigCodeBench）上都取得了开源模型中的最佳表现，并且达到和 GPT-4o 有竞争力的表现。
+代码修复：代码修复是一个重要的编程能力。Qwen2.5-Coder-32B-Instruct 可以帮助用户修复代码中的错误，让编程更加高效。Aider 是流行的代码修复的基准，Qwen2.5-Coder-32B-Instruct 达到 73.7 分，在 Aider 上的表现与 GPT-4o 相当。
+代码推理：代码推理是指模型能否学习代码执行的过程，准确地预测模型的输入与输出。上个月发布的 Qwen2.5-Coder-7B-Instruct 已经在代码推理能力上展现出了不俗的表现，32B 模型的表现更进一步。 多编程语言：智能编程助手应该熟悉所有编程语言，Qwen2.5-Coder-32B-Instruct 在 40 多种编程语言上表现出色，在 McEval 上取得了 65.9 分，其中 Haskell、Racket 等语言表现令人印象深刻，这得益于我们在预训练阶段独特的数据清洗和配比。 另外，Qwen2.5-Coder-32B-Instruct 的多编程语言代码修复能力同样令人惊喜，这将有助于用户理解和修改自己熟悉的编程语言，极大缓解陌生语言的学习成本。
+与 McEval 类似，MdEval 是多编程语言的代码修复基准，Qwen2.5-Coder-32B-Instruct 在 MdEval 上取得了 75.</description>
+    </item>
+    
     <item>
       <title>Qwen2.5: 基础模型大派对！</title>
       <link>http://qwenlm.github.io/zh/blog/qwen2.5/</link>

@@ -1,0 +1,9 @@
+{
+    "title": "Example: Emoji dancing",
+    "messages": [
+                {
+            "role": "",
+            "content": "{{< video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/Qwen2.5-Coder-Family/cases/final-dancing.mp4\" controls=\"1\">}}"
+        }
+    ]
+}

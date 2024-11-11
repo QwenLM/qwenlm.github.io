@@ -9,7 +9,18 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Sep 2024 00:00:04 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Nov 2024 00:00:02 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen2.5-Coder Series: Powerful, Diverse, Practical.</title>
+      <link>http://qwenlm.github.io/blog/qwen2.5-coder-family/</link>
+      <pubDate>Tue, 12 Nov 2024 00:00:02 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/blog/qwen2.5-coder-family/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE KAGGLE DEMO DISCORD
+Introduction Today, we are excited to open source the &amp;ldquo;Powerful&amp;rdquo;, &amp;ldquo;Diverse&amp;rdquo;, and &amp;ldquo;Practical&amp;rdquo; Qwen2.5-Coder series, dedicated to continuously promoting the development of Open CodeLLMs.
+Powerful: Qwen2.5-Coder-32B-Instruct has become the current SOTA open-source code model, matching the coding capabilities of GPT-4o. While demonstrating strong and comprehensive coding abilities, it also possesses good general and mathematical skills; Diverse: Building on the previously open-sourced two sizes of 1.</description>
+    </item>
+    
     <item>
       <title>Qwen2.5: A Party of Foundation Models!</title>
       <link>http://qwenlm.github.io/blog/qwen2.5/</link>

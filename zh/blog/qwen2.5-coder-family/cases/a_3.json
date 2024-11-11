@@ -1,0 +1,9 @@
+{
+    "title": "Example: Drafting a resume",
+    "messages": [
+                {
+            "role": "",
+            "content": "{{< video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/Qwen2.5-Coder-Family/cases/final-cv.mp4\" controls=\"1\">}}"
+        }
+    ]
+}

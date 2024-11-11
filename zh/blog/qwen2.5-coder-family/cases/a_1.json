@@ -1,0 +1,9 @@
+{
+    "title": "Example: Three-body Problem Simulation",
+    "messages": [
+                {
+            "role": "",
+            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/Qwen2.5-Coder-Family/cases/final-3body.mp4\" controls=\"1\">}}"
+        }
+    ]
+}
