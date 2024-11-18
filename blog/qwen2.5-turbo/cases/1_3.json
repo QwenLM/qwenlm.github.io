@@ -1,0 +1,25 @@
+{
+    "title": "Example: Understanding Multiple Papers",
+    "messages": [
+        {
+            "role": "",
+            "content": "{{< video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-Turbo/case3.mp4\" controls=\"1\">}}"
+        },
+        {
+            "role": "User",
+            "content": "[Upload 7 papers about long-context LLM, which have a length of 171k tokens. Sources: [1](https://arxiv.org/abs/2402.17463) [2](https://arxiv.org/abs/2407.02490) [3](https://arxiv.org/abs/2402.05136) [4](https://arxiv.org/abs/2402.04617) [5](https://arxiv.org/abs/2407.11963) [6](https://arxiv.org/abs/2404.06654) [7](https://arxiv.org/abs/2404.14469)]\n\nclassify the above papers into two categories"
+        },
+        {
+            "role": "Qwen2.5-Turbo",
+            "content": "The papers provided can be classified into two categories based on their focus:\n\n**Category 1: Long-Context Scaling Techniques**\n* **DCA (Dual Chunk Attention)**: This paper introduces a new training-free framework to allow large language models to handle long-context sequences by breaking down the attention computation into smaller chunks. (File: 1. DCA.pdf)\n* **MInference**: This paper proposes a method to accelerate pre-filling for long-context language models by using a dynamic sparse attention mechanism with a context memory module. (File: 2. minference.pdf)\n* **InfLLM**: This paper presents a training-free memory-based approach to enable large language models to understand extremely long sequences by incorporating an efficient context memory mechanism. (File: 4. infLLM.pdf)\n* **SnapKV**: This paper introduces a fine-tuning-free approach to efficiently minimize the key-value (KV) cache size of large language models during generation while maintaining comparable performance. (File: 7. SnapKV.pdf)\n\n**Category 2: Benchmarking Long-Context Capabilities**\n* **LV-Eval**: This paper introduces a challenging long-context benchmark designed to evaluate the capabilities of large language models across various lengths and tasks, with a focus on mitigating knowledge leakage and providing a balanced evaluation. (File: 3. lveval.pdf)\n* **NeedleBench**: This paper presents a benchmark for evaluating the retrieval and reasoning capabilities of large language models in long-context scenarios, including a needle-in-a-haystack task. (File: 5. needlebench.pdf)\n* **RULER**: This paper proposes a synthetic benchmark for evaluating long-context language models with diverse task categories, including retrieval, multi-hop tracing, aggregation, and question answering. (File: 6. ruler.pdf)"
+        },
+        {
+            "role": "User",
+            "content": "Output a JSON array where each element sequentially contains the paper title and a one-sentence summary"
+        },
+        {
+            "role": "Qwen2.5-Turbo",
+            "content": "```json\n[\n    {\n        \"title\": \"Dual Chunk Attention\",\n        \"summary\": \"DCA introduces a novel training-free framework to enable large language models to handle \nlong-context sequences bydecomposing attention computation into smaller chunks.\"\n    },\n    {\n        \"title\": \"MInference 1.0: Accelerating Pre-filling for Long-Context LLMs via Dynamic Sparse Attention\",\n        \"summary\": \"MInference uses a dynamic sparse attention mechanism with a context memory module to\nsignificantlyreduce the latency of long-context LLM inference.\"\n    },\n    {\n        \"title\": \"InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory\",\n        \"summary\": \"InfLLM leverages an efficient context memory to enable large language models to process\nextremelylong sequences without additional training.\"\n    },\n    {\n        \"title\": \"SnapKV: LLM Knows What You are Looking for Before Generation\",\n        \"summary\": \"SnapKV is a fine-tuning-free approach that efficiently compresses the KV cache to minimize\nmemory usage while maintaining model performance.\"\n    },\n    {\n        \"title\": \"LV-EVAL: A Balanced Long-Context Benchmark with 5 Length Levels Up to 256K\",\n        \"summary\": \"LV-EVAL is a benchmark designed to evaluate large language models' long-context capabilities\nacross multiple lengths and tasks, focusing on mitigating knowledge leakage.\"\n    },\n    {\n        \"title\": \"NeedleBench: Can LLMs Do Retrieval and Reasoning in 1 Million Context Window?\",\n        \"summary\": \"NeedleBench assesses the retrieval and reasoning capabilities of large language models in\nlong-context scenarios, including tasks like needle-in-a-haystack.\"\n    },\n    {\n        \"title\": \"RULER: What's the Real Context Size of Your Long-Context Language Models?\",\n        \"summary\": \"RULER is a synthetic benchmark that evaluates long-context language models through tasks\nlike retrieval, multi-hop tracing, aggregation, and question answering.\"\n    }\n]\n```"
+        }
+    ]
+}

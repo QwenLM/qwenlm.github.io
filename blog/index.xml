@@ -9,7 +9,18 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 12 Nov 2024 00:00:02 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Nov 2024 00:00:03 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Extending the Context Length to 1M Tokens!</title>
+      <link>http://qwenlm.github.io/blog/qwen2.5-turbo/</link>
+      <pubDate>Fri, 15 Nov 2024 00:00:03 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/blog/qwen2.5-turbo/</guid>
+      <description>API Documentation (Chinese) HuggingFace Demo ModelScope Demo
+Introduction After the release of Qwen2.5, we heard the community&amp;rsquo;s demand for processing longer contexts. In recent months, we have made many optimizations for the model capabilities and inference performance of extremely long context. Today, we are proud to introduce the new Qwen2.5-Turbo version, which features:
+Longer Context Support: We have extended the model&amp;rsquo;s context length from 128k to 1M, which is approximately 1 million English words or 1.</description>
+    </item>
+    
     <item>
       <title>Qwen2.5-Coder Series: Powerful, Diverse, Practical.</title>
       <link>http://qwenlm.github.io/blog/qwen2.5-coder-family/</link>

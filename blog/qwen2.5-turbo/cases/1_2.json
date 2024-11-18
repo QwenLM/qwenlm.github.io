@@ -1,0 +1,25 @@
+{
+    "title": "Example: Understanding Repository",
+    "messages": [
+        {
+            "role": "",
+            "content": "{{< video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-Turbo/case2.mp4\" controls=\"1\">}}"
+        },
+        {
+            "role": "User",
+            "content": "[Upload a text file containing all code files from the [Qwen-Agent](https://github.com/QwenLM/Qwen-Agent) repository, which has a length of 133k tokens.]\n\nPlease read the codes carefully and ensure your response is comprehensive. Introduce this repository"
+        },
+        {
+            "role": "Qwen2.5-Turbo",
+            "content": "Qwen-Agent is a framework designed for developing LLM (Large Language Model) applications. It is based on the instruction-following, tool usage, planning, and memory capabilities of Qwen. Here are some key points and functionalities:\n1. **Agent Class**: Provides a high-level interface for integrating tool calls and LLM interactions. It supports role-playing, automatic planning, and tool invocation.\n2. **DocQA Agent**: Specialized for document question answering, capable of handling long documents and providing context-aware responses.\n3. **Function Calling**: Supports function calling, enabling interaction with tools or APIs directly from the model's responses.\n4. **RAG (Retrieval-Augmented Generation)**: Integrates document retrieval with generation, enhancing the model's ability to recall and use information from documents.\n5. **Tool Integration**: Includes various built-in and custom tools, such as code interpreters, web extractors, and image generators, which can be used to perform tasks like code execution, web scraping, and image manipulation.\n6. **Multi-Agent Systems**: Supports the creation of multi-agent systems where multiple agents can interact, simulate conversations, and collaborate on tasks.\n7. **Customization**: Highly customizable, allowing developers to tailor the framework to specific needs, such as creating custom agents, defining custom workflows, and integrating additional tools.\n8. **Examples and Demos**: Comes with several examples and demos, such as a Chrome browser extension called BrowserQwen, which demonstrates the practical application of Qwen-Agent in a real-world scenario.\n9. **Testing and Debugging**: Includes testing and debugging utilities, such as test cases and logging mechanisms, to ensure the reliability and effectiveness of the developed applications.\n10. **Dependencies**: Requires certain dependencies to be installed for specific functionalities, such as ``qwen-agent[gui]`` for GUI support and ``qwen-agent[rag]`` for RAG support.\nThis repository is valuable for researchers, developers, and anyone interested in leveraging large language models for complex tasks and applications."
+        },
+        {
+            "role": "User",
+            "content": "What are the subclasses of Agent in this repository, and provide their file paths"
+        },
+        {
+            "role": "Qwen2.5-Turbo",
+            "content": "Here are the subclasses of the ``Agent`` class in the Qwen-Agent repository along with their file paths:\n1. **Assistant**\n* File Path: ``qwen_agent/agents/assistant.py``\n2. **ArticleAgent**\n    * File Path: ``qwen_agent/agents/article_agent.py``\n3. **BasicDocQA**\n    * File Path: ``qwen_agent/agents/doc_qa/basic_doc_qa.py``\n4. **DialogueRetrievalAgent**\n    * File Path: ``qwen_agent/agents/dialogue_retrieval_agent.py``\n5. **DialogueSimulator**\n    * File Path: ``qwen_agent/agents/dialogue_simulator.py``\n6. **DocQAAgent** (Note: The actual implementation of DocQAAgent may vary with each release)\n    * File Path: ``qwen_agent/agents/doc_qa/basic_doc_qa.py``\n7. **GroupChat**\n    * File Path: ``qwen_agent/agents/group_chat.py``\n8. **GroupChatAutoRouter**\n    * File Path: ``qwen_agent/agents/group_chat_auto_router.py``\n9. **GroupChatCreator**\n    * File Path: ``qwen_agent/agents/group_chat_creator.py``\n10. **HumanSimulator**\n    * File Path: ``qwen_agent/agents/human_simulator.py``\n11. **ReActChat**\n    * File Path: ``qwen_agent/agents/react_chat.py``\n12. **Router**\n    * File Path: ``qwen_agent/agents/router.py``\n13. **TIRMathAgent**\n    * File Path: ``qwen_agent/agents/tir_agent.py``\n14. **UserAgent**\n    * File Path: ``qwen_agent/agents/user_agent.py``\n15. **VisualStorytelling**\n    * File Path: ``qwen_agent/agents/visual_storytelling.py``\n16. **MemoAssistant**\n    * File Path: ``qwen_agent/agents/memo_assistant.py``\n17. **WriteFromScratch**\n    * File Path: ``qwen_agent/agents/writing/write_from_scratch.py``\n18. **ExpandWriting**\n    * File Path: ``qwen_agent/agents/writing/expand_writing.py``\n19. **OutlineWriting**\n* File Path: ``qwen_agent/agents/writing/outline_writing.py``\n\nThese subclasses extend the base ``Agent`` class to provide specialized functionalities tailored for different use cases within the Qwen-Agent framework."
+        }
+    ]
+}

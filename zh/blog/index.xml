@@ -9,7 +9,18 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 12 Nov 2024 00:00:02 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Nov 2024 00:00:03 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>将上下文长度扩展至百万 Tokens ！</title>
+      <link>http://qwenlm.github.io/zh/blog/qwen2.5-turbo/</link>
+      <pubDate>Fri, 15 Nov 2024 00:00:03 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/zh/blog/qwen2.5-turbo/</guid>
+      <description>API文档 HuggingFace Demo ModelScope Demo
+简介 在 Qwen2.5 发布之后，我们听到社区对处理更长序列的需求。在这段时间，我们针对长序列处理能力以及长序列下的推理效率进行了很多优化。今天，我们隆重推出新的 Qwen2.5-Turbo 版本，其特点在于：
+更长的上下文支持: 我们首次将模型的上下文长度从 128k 扩展到 1M，该长度约为 100 万个英文单词或 150 万个汉字，相当于 10 本长篇小说，150 小时的演讲稿，3 万行代码。该模型能在 1M 长度的大海捞针 (Passkey Retrieval) 任务中实现 100% 的准确率，在长文本评测集 RULER 上获得 93.1 分，超越 GPT-4 的 91.6 分，GLM4-9B-1M 的 89.9 分。此外，在短序列能力上，该模型仍然保持了非常强的竞争力，与 GPT-4o-mini 持平。 更快的推理速度: 利用稀疏注意力机制，我们成功将处理 1M tokens 上下文时的首字返回时间从 4.9 分钟降低到68秒，实现 4.3 倍加速比。 更低的价格：价格仍为 0.3元 / 1M tokens。在相同成本下，Qwen2.5-Turbo 相比 GPT-4o-mini 能够处理 3.6 倍的 Token。 现在，你可以通过阿里云大模型服务平台的 API 服务，或者通过 HuggingFace Demo 或者 ModelScope Demo 进行体验。</description>
+    </item>
+    
     <item>
       <title>Qwen2.5-Coder 全系列: 强大、多样、实用。</title>
       <link>http://qwenlm.github.io/zh/blog/qwen2.5-coder-family/</link>
