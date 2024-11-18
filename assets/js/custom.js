@@ -17,16 +17,23 @@ document.addEventListener('scroll', (e) => {
 });
 
 /* example gallery */
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const examples = document.querySelectorAll(".example-container");
-    examples.forEach((example)=>{
+    examples.forEach((example) => {
         const elements = example.querySelectorAll(".example-content");
-        for (let i=0; i < elements.length; i++) {
+        if (elements.length === 1) {
+            const next = elements[0].querySelector(".next-button");
+            if (next) {
+                next.style.display = "none";
+            }
+            return
+        }
+        for (let i = 0; i < elements.length; i++) {
             const ele = elements[i];
-            const nexti = i + 1 === elements.length ? 0: i+1;
+            const nexti = i + 1 === elements.length ? 0 : i + 1;
             const next_ele = elements[nexti];
             const title = ele.querySelector(".title").firstElementChild;
-            const title_text = `${title.textContent} (${i+1}/${elements.length})`
+            const title_text = `${title.textContent} (${i + 1}/${elements.length})`
             title.textContent = title_text;
             const button = ele.querySelector(".next-button");
             button.addEventListener("click", (e) => {

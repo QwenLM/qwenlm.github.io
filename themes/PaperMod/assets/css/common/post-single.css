@@ -586,3 +586,7 @@ div.footnotes{
     text-align: right;
     margin-right: var(--content-gap);
     color: var(--secondary);
+}
+.example-content .grid-layout .content {
+    min-width: var(--min-width);
+}
