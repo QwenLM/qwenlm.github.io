@@ -1,0 +1,17 @@
+{
+    "title": "Example: Understanding Long Novels",
+    "messages": [
+        {
+            "role": "",
+            "content": "{{< video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-Turbo/case1_en.mp4\" controls=\"1\">}}"
+        },
+        {
+            "role": "User",
+            "content": "[Upload the three Chinese novels of ``The Three-Body Problem``, which contain 690k tokens.]\n\nProvide a summary of the plots of these three novels in English"
+        },
+        {
+            "role": "Qwen2.5-Turbo",
+            "content": "The three novels you mentioned from the \"Earth's Past\" series are interconnected and form a trilogy that delves into the complex interactions between Earth and an alien civilization known as the Trisolarans.\n\n**First Novel: \"Earth's Past\"**\nIn the first novel, the narrative focuses on the development of a top-secret project called \"Red Coast\" (红岸) initiated by the Chinese military. The protagonist, Ye Wenjie, is a scientist who discovers that the Trisolarans have begun listening to the universe. Her actions, particularly her decision to respond to the Trisolarans, drastically alter the course of human history. She sets up a powerful signal to send to the Trisolarans using the sun as an amplifier. This action marks the beginning of a new era where humanity faces a significant existential threat.\n\n**Second Novel: \"Dark Forest\"**\nThe second novel, titled \"Dark Forest,\" delves into the concept of the \"Dark Forest Theory.\" According to this theory, the universe is a vast battlefield where civilizations must remain silent to avoid detection and subsequent destruction. The Trisolarans and humans engage in a complex strategic game, with the Trisolarans deploying advanced weapons known as \"water drops\" (水滴). These water drops are capable of destroying entire planets by disrupting their ecosystems. Meanwhile, humans develop their own strategies, including the \"Wall-Bearing Plan\" (面壁计划), which involves four individuals who devise plans to counter the Trisolaran threat without revealing their intentions to the outside world. The story follows one of these face-bearers, Luo Ji, as he struggles with the ethical implications of his mission.\n\n**Third Novel: \"Death's End\"**\nIn \"Death's End,\" Luo Ji becomes the ultimate guardian of the Dark Forest Theory. He holds the key to the survival of both human and Trisolaran civilizations. However, his position as the guardian (执剑人) brings him immense personal struggle and psychological turmoil. As Luo Ji's time as the guardian nears its end, he must make a critical decision about the future of humanity. Meanwhile, the Trisolarans continue their efforts to colonize and assimilate other worlds. The novel explores the consequences of this decision and the broader impact on the universe. It also introduces a new element: the creation of micro-black holes (黑域) by humans, which could potentially isolate them from the rest of the universe. However, the effectiveness of this strategy is questioned when six of these micro-black holes begin to move and accelerate towards Earth.\nThe trilogy as a whole explores themes of survival, technological advancement, and the ethical dilemmas faced by humanity in the face of extraterrestrial threats. Each novel builds upon the previous one, revealing more about the intricate relationship between the two civilizations and the universe they inhabit."
+        }
+    ]
+}
