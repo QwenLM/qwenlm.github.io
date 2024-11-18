@@ -125,7 +125,7 @@ Qwen2.5-Coder 开源模型家族包含 0.5B、1.5B、3B、7B、14B、32B 六个�
 下面是 Qwen2.5-Coder 在 [Cursor](https://www.cursor.com/) 场景下的一个例子。
 
 {{< fullwidth class="example-container" >}}
-{{< example data="cases/c_1.json" hide=false next=true >}}
+{{< example data="cases/c_1.json" hide=false next=false >}}
 {{< /fullwidth >}}
 
 另外，Qwen2.5-Coder-32B 在预训练模型上就展现出强大的代码补全能力，在 Humaneval-Infilling、CrossCodeEval、CrossCodeLongEval、RepoEval、SAFIM 等 5 个评测集上都取得了 SOTA 表现。

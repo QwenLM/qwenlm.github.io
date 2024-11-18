@@ -119,7 +119,7 @@ Code assistants have become widely used, but most currently rely on closed-sourc
 
 
 {{< fullwidth class="example-container" >}}
-{{< example data="cases/c_1.json" hide=false next=true >}}
+{{< example data="cases/c_1.json" hide=false next=false >}}
 {{< /fullwidth >}}
 
 Additionally, Qwen2.5-Coder-32B has demonstrated strong code completion capabilities on pre-trained models, achieving SOTA performance on a total of 5 benchmarks: Humaneval-Infilling, CrossCodeEval, CrossCodeLongEval, RepoEval, and SAFIM. To maintain a fair comparison, we controlled the maximum sequence length to 8k and used the Fill-in-the-Middle mode for testing. Among the four evaluation sets of CrossCodeEval, CrossCodeLongEval, RepoEval, and Humaneval-Infilling, we evaluated whether the generated content was exactly equal to the true labels (Exact Match). In SAFIM, we used the one-time execution success rate (Pass@1) for evaluation.
