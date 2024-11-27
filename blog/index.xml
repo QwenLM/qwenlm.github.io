@@ -9,7 +9,18 @@
       <link>http://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 15 Nov 2024 00:00:03 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Nov 2024 00:00:03 +0800</lastBuildDate><atom:link href="http://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QwQ: Reflect Deeply on the Boundaries of the Unknown</title>
+      <link>http://qwenlm.github.io/blog/qwq-32b-preview/</link>
+      <pubDate>Thu, 28 Nov 2024 00:00:03 +0800</pubDate>
+      
+      <guid>http://qwenlm.github.io/blog/qwq-32b-preview/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
+Note: This is the pronunciation of QwQ: /kwju:/ , similar to the word &amp;ldquo;quill&amp;rdquo;.
+What does it mean to think, to question, to understand? These are the deep waters that QwQ (Qwen with Questions) wades into. Like an eternal student of wisdom, it approaches every problem - be it mathematics, code, or knowledge of our world - with genuine wonder and doubt. QwQ embodies that ancient philosophical spirit: it knows that it knows nothing, and that&amp;rsquo;s precisely what drives its curiosity.</description>
+    </item>
+    
     <item>
       <title>Extending the Context Length to 1M Tokens!</title>
       <link>http://qwenlm.github.io/blog/qwen2.5-turbo/</link>
