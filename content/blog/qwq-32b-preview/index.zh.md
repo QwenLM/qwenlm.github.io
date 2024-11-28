@@ -76,7 +76,6 @@ QwQ-32B-Preview 是由 Qwen 团队开发的实验性研究模型，专注于增�
 
 {{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/assets/blog/qwq-32b-preview/QwQ-32B-Preview_result.png#center" width="100%">}}
 
-{{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/assets/blog/qwq-32b-preview/QwQ-32B-Preview_acc_with_k.png#center" width="65%">}}
 
 
 具体表现如下：

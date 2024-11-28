@@ -72,7 +72,6 @@ Through deep exploration and countless trials, we discovered something profound:
 
 {{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/assets/blog/qwq-32b-preview/QwQ-32B-Preview_result.png#center" width="100%">}}
 
-{{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/assets/blog/qwq-32b-preview/QwQ-32B-Preview_acc_with_k.png#center" width="65%">}}
 
 
 
