@@ -1,0 +1,9 @@
+{
+    "title": "Example: Code Interpreter",
+    "messages": [
+        {
+            "role": "Write code based on the structure diagram.",
+            "content": "{{< video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/Code_Interpreter3.mov\" controls=\"1\">}}"
+        }
+    ]
+}

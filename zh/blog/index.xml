@@ -9,7 +9,23 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 28 Nov 2024 00:00:03 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Dec 2024 00:00:03 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QVQ: 更睿智地看世界</title>
+      <link>https://qwenlm.github.io/zh/blog/qvq-72b-preview/</link>
+      <pubDate>Wed, 25 Dec 2024 00:00:03 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/zh/blog/qvq-72b-preview/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE KAGGLE DEMO DISCORD
+在人类的思维中，语言和视觉紧密交织，塑造着我们感知和理解世界的方式。我们的推理能力深深植根于语言思维和视觉记忆之中。那么，当我们将这些能力赋予人工智能时，会发生什么呢？如今的大语言模型已经展现出卓越的推理能力，但我们不禁思考：它们能否通过掌握视觉理解的力量，攀登认知能力的新高峰？
+设想一下，一个人工智能能够像物理学大师一样，面对复杂的物理问题，沉着冷静地通过逻辑推理找到解决方案。正是这样的愿景激发我们创造了 QVQ —— 一个基于 Qwen2-VL-72B 构建的开源多模态推理模型。QVQ 在人工智能的视觉理解和复杂问题解决能力方面实现了重大突破。在 MMMU 评测中，QVQ 取得了 70.3 的优异成绩，并且在各项数学相关基准测试中相比 Qwen2-VL-72B-Instruct 都有显著提升。通过细致的逐步推理，QVQ 在视觉推理任务中展现出增强的能力，尤其在需要复杂分析思维的领域表现出色。
+局限性 QVQ-72B-Preview 是由 Qwen 团队开发的实验性研究模型，专注于增强视觉推理能力。尽管它的表现超出了预期，但仍有几个限制需要注意：
+语言混合与切换：模型可能会意外地混合语言或在语言之间切换，从而影响响应的清晰度。 递归推理：模型可能会陷入循环逻辑模式，产生冗长的响应而无法得出结论。 安全和伦理考虑：模型需要增强安全措施，以确保可靠和安全的性能，用户在部署时应保持谨慎。 性能和基准限制：尽管模型在视觉推理方面有所改善，但它无法完全替代 Qwen2-VL-72B 的能力。此外，在多步骤视觉推理过程中，模型可能会逐渐失去对图像内容的关注，导致幻觉。 模型表现 我们在 4 个数据集上评估 QVQ-72B-Preview，包括：
+MMMU：一个大学级别的多学科多模态评测集，旨在考察模型视觉相关的综合理解和推理能力。 MathVista：一个数学相关的视觉推理测试集，评估拼图测试图形的逻辑推理、函数图的代数推理和学术论文图形的科学推理等能力。 MathVision：一个高质量多模态数学推理测试集，来自于真实的数学竞赛，相比于MathVista具有更多的问题多样性和学科广度。 OlympiadBench：一个奥林匹克竞赛级别的双语多模态科学基准测试集，包含来自奥林匹克数学和物理竞赛的8,476个问题，包括中国高考。每个问题都附有专家级别的注释，详细说明了逐步推理的过程。 QVQ-72B-Preview 在 MMMU 基准测试中取得了 70.3 的分数，显著超越了 Qwen2-VL-72B-Instruct。此外，在剩下的三个专注于数学和科学问题的基准测试中，该模型表现出色，有效缩小了与领先的最先进的 o1 模型之间的差距。
+示例 以下，我们将展示几个示例，以说明该新模型在视觉推理任务中的应用。
+Example: MathNextUserGiven $h(x) = f(x) \cdot g(x)$, find $h&amp;rsquo;(2)$ using the table below: QVQ-72B-PreviewLet&amp;rsquo;s tackle this problem step by step.</description>
+    </item>
+    
     <item>
       <title>QwQ: 思忖未知之界</title>
       <link>https://qwenlm.github.io/zh/blog/qwq-32b-preview/</link>

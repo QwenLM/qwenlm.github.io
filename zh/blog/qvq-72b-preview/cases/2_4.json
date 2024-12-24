@@ -1,0 +1,13 @@
+{
+    "title": "Example: Math",
+    "messages": [
+                {
+            "role": "User",
+            "content": "Please tell me how many days are between Ruka's birthday and Yuki's birthday? Think carefully step by step.\n![image](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/math1.jpg)"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "To determine the number of days between Ruka's and Yuki's birthdays, we need to calculate the difference between their respective birth dates.\n\n1. Ruka's birthday is on June 24.\n2. Yuki's birthday is on September 17.\n\nLet's break it down step by step:\n\n1. **From June 24 to June 30:**\n   - June 24 to June 30 is 6 days.\n\n2. **From July 1 to August 31:**\n   - July has 31 days.\n   - August has 31 days.\n   - Total days in July and August: 31 + 31 = 62 days.\n\n3. **From September 1 to September 17:**\n   - September 1 to September 17 is 17 days.\n\nNow, we add all these days together:\n\n- June 24 to June 30: 6 days\n- July 1 to August 31: 62 days\n- September 1 to September 17: 17 days\n\nTotal days = 6 + 62 + 17 = 85 days\n\nTherefore, there are 85 days between Ruka's and Yuki's birthdays."
+        }
+    ]
+}
