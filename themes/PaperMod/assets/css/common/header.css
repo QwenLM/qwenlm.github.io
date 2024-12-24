@@ -52,8 +52,8 @@
 } */
 
 .logo {
-    /* flex-wrap: inherit; */
-    display: block;
+    display: flex;
+    align-items: center;
 }
 
 .logo a {
@@ -63,8 +63,8 @@
 
 .logo a img,
 .logo a svg {
-    height: 30px;
-    width: 30px;
+    /* height: 30px;
+    width: 30px; */
     vertical-align: middle;
     pointer-events: none;
     /* animation: loading 20s linear infinite; */

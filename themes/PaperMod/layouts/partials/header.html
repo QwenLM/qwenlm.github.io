@@ -85,6 +85,7 @@ const hasHeaderBg = {{ $hasHeaderBg }};
                 {{/*  {{- $label_text -}}  */}}
             </a>
             {{- end }}
+            {{- if not (and site.Params.disable_theme_toggle site.Params.disable_language_switch) }}
             <div class="logo-switches">
                 {{- if (not site.Params.disable_theme_toggle) }}
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
@@ -108,7 +109,8 @@ const hasHeaderBg = {{ $hasHeaderBg }};
                     </svg>
                 </button>
                 {{- end }}
-                {{/*  {{- $lang := .Lang}}
+                {{- if (not site.Params.disable_language_switch) }}
+                {{- $lang := .Lang}}
                 {{- $separator := or $label_text (not site.Params.disable_theme_toggle)}}
                 {{- with site.Home.AllTranslations }}
                 <ul class="lang-switch">
@@ -126,10 +128,12 @@ const hasHeaderBg = {{ $hasHeaderBg }};
                         </a>
                     </li>
                     {{- end -}}
-                    {{- end}}
+                    {{- end  }}
                 </ul>
-                {{- end }}  */}}
+                {{- end }}
+                {{- end }}
             </div>
+            {{- end }}
         </div>
         {{- $currentPage := . }}
         <ul id="menu">
