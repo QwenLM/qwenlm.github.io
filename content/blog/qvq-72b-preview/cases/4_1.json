@@ -1,0 +1,9 @@
+{
+    "title": "Example: Function Calling",
+    "messages": [
+        {
+            "role": "Ask about the weather",
+            "content": "{{< video autoplay=\"true\" loop=\"true\" src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/funcall_weather.mov\" controls=\"1\">}}"
+        }
+    ]
+}
