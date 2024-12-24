@@ -79,7 +79,7 @@ params:
 
   label:
     text: "Qwen"
-    icon: /image/logo.png
+    icon: /img/logo.png
     iconHeight: 30
 
   # profile-mode
