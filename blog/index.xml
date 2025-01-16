@@ -9,7 +9,17 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 25 Dec 2024 00:00:03 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jan 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Towards Effective Process Supervision in Mathematical Reasoning</title>
+      <link>https://qwenlm.github.io/blog/qwen2.5-math-prm/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwen2.5-math-prm/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DISCORD
+Introduction In recent years, Large Language Models (LLMs) have made remarkable advances in mathematical reasoning, yet they can make mistakes, such as miscalculations or logical errors, leading to wrong conclusions. Moreover, even when achieving correct final answers, these powerful models can still regularly make up plausible reasoning steps, where the final answers build upon flawed calculations or derivations, which undermine the reliability and trustworthiness of LLMs&amp;rsquo; reasoning processes.</description>
+    </item>
+    
     <item>
       <title>QVQ: To See the World with Wisdom</title>
       <link>https://qwenlm.github.io/blog/qvq-72b-preview/</link>
