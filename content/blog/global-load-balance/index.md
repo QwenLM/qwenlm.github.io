@@ -1,5 +1,5 @@
 ---
-title: "Global-batch load balance almost free launch to improve your MoE LLM training"
+title: "Global-batch load balance almost free lunch to improve your MoE LLM training"
 date: 2025-01-21T00:00:03+08:00
 weight: 1
 # aliases: ["/first"]
