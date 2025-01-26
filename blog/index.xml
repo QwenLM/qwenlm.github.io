@@ -9,7 +9,18 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 21 Jan 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Jan 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen2.5-1M: Deploy Your Own Qwen with Context Length up to 1M Tokens</title>
+      <link>https://qwenlm.github.io/blog/qwen2.5-1m/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwen2.5-1m/</guid>
+      <description>Tech Report HuggingFace ModelScope Qwen Chat HuggingFace Demo ModelScope Demo DISCORD
+Introduction Two months after upgrading Qwen2.5-Turbo to support context length up to one million tokens, we are back with the open-source Qwen2.5-1M models and the corresponding inference framework support. Here&amp;rsquo;s what you can expect from this release:
+Opensource Models: We&amp;rsquo;re releasing two new checkpoints, Qwen2.5-7B-Instruct-1M and Qwen2.5-14B-Instruct-1M, marking the first time we&amp;rsquo;ve upgraded our opensource Qwen models to handle 1M-token contexts.</description>
+    </item>
+    
     <item>
       <title>Global-batch load balance almost free lunch to improve your MoE LLM training</title>
       <link>https://qwenlm.github.io/blog/global-load-balance/</link>
