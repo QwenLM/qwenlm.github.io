@@ -1,0 +1,13 @@
+{
+  "title": "Example: Parsing Screenshot",
+  "messages": [
+    {
+      "role": "User",
+      "content": "图片解析成html\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/docparsing8.png)"
+    },
+    {
+      "role": "Qwen2.5-VL",
+      "content": "```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>淘宝许愿淘彩头分25亿</title>\n    <style>\n        body {\n            background-color: #4a0d6e;\n            margin: 0;\n            padding: 0;\n            font-family: Arial, sans-serif;\n            color: white;\n            text-align: center;\n        }\n        .header {\n            display: flex;\n            justify-content: space-between;\n            align-items: center;\n            padding: 10px;\n        }\n        .header h1 {\n            margin: 0;\n            color: gold;\n        }\n        .content {\n            padding: 20px;\n        }\n        .wish-options {\n            display: flex;\n            justify-content: center;\n            gap: 10px;\n            margin-top: 20px;\n        }\n        .wish-option {\n            width: 100px;\n            height: 200px;\n            border-radius: 10px;\n            padding: 10px;\n            box-sizing: border-box;\n            cursor: pointer;\n        }\n        .selected {\n            background-color: gold;\n        }\n        .unselected {\n            background-color: purple;\n        }\n        .footer {\n            margin-top: 20px;\n        }\n        .button {\n            background-color: gold;\n            border: none;\n            padding: 10px 20px;\n            border-radius: 5px;\n            cursor: pointer;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"header\">\n        <div><img src=\"back_arrow.png\" alt=\"Back\"></div>\n        <h1>淘宝·许愿淘彩头分25亿</h1>\n        <div><img src=\"more_options.png\" alt=\"More Options\"></div>\n    </div>\n    <div class=\"content\">\n        <p>许下新年心愿得红包</p>\n        <img src=\"golden_lantern.png\" alt=\"Golden Lantern\">\n        <div class=\"wish-options\">\n            <div class=\"wish-option selected\">福寿康宁</div>\n            <div class=\"wish-option unselected\">我想免费周游世界</div>\n            <div class=\"wish-option unselected\">追随自己的热情</div>\n        </div>\n        <div class=\"footer\">\n            <button class=\"button\">换一批 | 定制心愿</button>\n            <p>许下你的定制心愿，更灵验哦</p>\n            <button class=\"button\">许愿拿红包 🎉</button>\n        </div>\n    </div>\n</body>\n</html>\n```"
+    }
+  ]
+}

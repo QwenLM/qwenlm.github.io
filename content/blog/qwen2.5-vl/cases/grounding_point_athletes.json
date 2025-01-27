@@ -1,0 +1,13 @@
+{
+    "title": "Example: Precise Object Grounding",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Identify basketball players and detect the key points of their heads and hands, returning them in the form of points. The primary label is the player's name, and the secondary labels include left hand, right hand, and head.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/grounding_point_athletes_draw.png)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "```json\n[\n\t{\"point_2d\": [\"394\", \"105\"], \"label\": \"LeBron James\", \"label2\": \"head\"},\n\t{\"point_2d\": [\"876\", \"131\"], \"label\": \"Stephen Curry\", \"label2\": \"head\"},\n\t{\"point_2d\": [\"100\", \"614\"], \"label\": \"LeBron James\", \"label2\": \"right hand\"},\n\t{\"point_2d\": [\"460\", \"507\"], \"label\": \"LeBron James\", \"label2\": \"left hand\"},\n\t{\"point_2d\": [\"784\", \"660\"], \"label\": \"Stephen Curry\", \"label2\": \"left hand\"},\n\t{\"point_2d\": [\"945\", \"507\"], \"label\": \"Stephen Curry\", \"label2\": \"right hand\"}\n]\n```"
+        }
+    ]
+}

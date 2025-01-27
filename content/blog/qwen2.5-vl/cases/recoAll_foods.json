@@ -1,0 +1,13 @@
+{
+    "title": "Example: Foods Identification",
+    "messages": [
+        {
+            "role": "User",
+            "content": "What are these foots? Please give their names in Chinese and English.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/recoAll_foods.jpg)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "Sure! Here are the names of the foods in the images, both in Chinese and English:\n1. **Top Left Image:**\n   - **Chinese:** 牛仔骨 (Niú zǎi gǔ)\n   - **English:** Beef Short Ribs\n2. **Top Right Image:**\n   - **Chinese:** 蔬菜沙拉 (Shūcài shālā)\n   - **English:** Vegetable Salad\n3. **Bottom Left Image:**\n   - **Chinese:** 红烧狮子头 (Hóngshāo shizi tóu)\n   - **English:** Braised Meatballs\n4. **Bottom Right Image:**\n   - **Chinese:** 火锅 (Huǒguō)\n   - **English:** Hot Pot (with various ingredients like meat, vegetables, and seafood)"
+        }
+    ]
+}

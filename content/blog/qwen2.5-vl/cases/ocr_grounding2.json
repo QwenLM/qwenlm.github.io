@@ -1,0 +1,13 @@
+{
+    "title": "Example: Text Spotting",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Spotting all the text in the image with line-level, and output in JSON format.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/ocr_grounding2.png)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "```json\n[\n\t{\"bbox_2d\": [209, 87, 603, 140], \"text_content\": \"路翼汽车工作室\"},\n\t{\"bbox_2d\": [295, 147, 595, 168], \"text_content\": \"电话：18665095150 13560234709\"}\n]\n```"
+        }
+    ]
+}
