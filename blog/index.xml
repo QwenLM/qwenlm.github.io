@@ -22,6 +22,18 @@ Opensource Models: We&amp;rsquo;re releasing two new checkpoints, Qwen2.5-7B-Ins
     </item>
     
     <item>
+      <title>Qwen2.5 VL! Qwen2.5 VL! Qwen2.5 VL!</title>
+      <link>https://qwenlm.github.io/blog/qwen2.5-vl/</link>
+      <pubDate>Sun, 26 Jan 2025 19:08:30 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwen2.5-vl/</guid>
+      <description>QWEN CHAT GITHUB HUGGING FACE MODELSCOPE DISCORD
+We release Qwen2.5-VL, the new flagship vision-language model of Qwen and also a significant leap from the previous Qwen2-VL. To try the latest model, feel free to visit Qwen Chat and choose Qwen2.5-VL-72B-Instruct. Also, we open both base and instruct models in 3 sizes, including 3B, 7B, and 72B, in both Hugging Face and ModelScope.
+The key features include:
+Understand things visually: Qwen2.</description>
+    </item>
+    
+    <item>
       <title>Global-batch load balance almost free lunch to improve your MoE LLM training</title>
       <link>https://qwenlm.github.io/blog/global-load-balance/</link>
       <pubDate>Tue, 21 Jan 2025 00:00:03 +0800</pubDate>

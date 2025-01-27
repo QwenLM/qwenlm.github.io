@@ -1,0 +1,9 @@
+{
+    "title": "Example: Mobile Use",
+    "messages": [
+        {
+            "role": "帮我给我的QQ好友张三，发送一条新春祝福",
+            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/agent_QQ_with_log.mp4\" controls=\"1\" >}}"
+        }
+    ]
+}

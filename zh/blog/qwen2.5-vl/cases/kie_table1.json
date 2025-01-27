@@ -1,0 +1,21 @@
+{
+  "title": "Example: Key Information Extraction",
+  "messages": [
+    {
+      "role": "User",
+      "content": "1类桥梁比2类桥梁多多少\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/kie_table1.jpg)"
+    },
+    {
+      "role": "Qwen2.5-VL",
+      "content": "根据图片中的数据，1类桥梁的数量为152座，2类桥梁的数量为136座。因此，1类桥梁比2类桥梁多：\n\n152 - 136 = 16座\n\n所以，1类桥梁比2类桥梁多16座。"
+    },
+    {
+      "role": "User",
+      "content": "1类桥梁中各种类型桥分别是多少"
+    },
+    {
+      "role": "Qwen2.5-VL",
+      "content": "根据图片中的数据，1类桥梁的数量为152座。具体到各种类型的桥，数量如下：\n\n- 特大桥：0座\n- 大桥：70座\n- 中桥：35座\n- 小桥、通道桥：47座\n\n因此，在1类桥梁中：\n- 有0座特大桥，\n- 有70座大桥，\n- 有35座中桥，\n- 有47座小桥和通道桥。"
+    }
+  ]
+}

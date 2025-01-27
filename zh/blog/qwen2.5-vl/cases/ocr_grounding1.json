@@ -1,0 +1,13 @@
+{
+    "title": "Example: Text Spotting",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Spotting all the text in the image with line-level, and output in JSON format.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/ocr_grounding1.png)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "```json\n[\n\t{\"bbox_2d\": [108, 175, 496, 230], \"text_content\": \"AuntieAnne's\"},\n\t{\"bbox_2d\": [49, 429, 252, 450], \"text_content\": \"CINNAMON SUGAR\"},\n\t{\"bbox_2d\": [49, 463, 61, 483], \"text_content\": \"1\"},\n\t{\"bbox_2d\": [102, 463, 113, 483], \"text_content\": \"x\"},\n\t{\"bbox_2d\": [131, 463, 198, 483], \"text_content\": \"17,000\"},\n\t{\"bbox_2d\": [461, 463, 534, 488], \"text_content\": \"17,000\"},\n\t{\"bbox_2d\": [21, 510, 143, 531], \"text_content\": \"SUB TOTAL\"},\n\t{\"bbox_2d\": [461, 516, 534, 538], \"text_content\": \"17,000\"},\n\t{\"bbox_2d\": [21, 579, 176, 601], \"text_content\": \"GRAND TOTAL\"},\n\t{\"bbox_2d\": [461, 585, 534, 607], \"text_content\": \"17,000\"},\n\t{\"bbox_2d\": [21, 628, 126, 649], \"text_content\": \"CASH IDR\"},\n\t{\"bbox_2d\": [461, 634, 534, 656], \"text_content\": \"20,000\"},\n\t{\"bbox_2d\": [21, 676, 169, 698], \"text_content\": \"CHANGE DUE\"},\n\t{\"bbox_2d\": [471, 682, 529, 704], \"text_content\": \"3,000\"},\n]\n```"
+        }
+    ]
+}

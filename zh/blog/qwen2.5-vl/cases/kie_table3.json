@@ -1,0 +1,21 @@
+{
+  "title": "Example: Key Information Extraction",
+  "messages": [
+    {
+      "role": "User",
+      "content": "本月人工费花费多少\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/kie_table3.png)"
+    },
+    {
+      "role": "Qwen2.5-VL",
+      "content": "根据表格中的数据，2006年6月30日的“本月合计”行显示了当月的各项费用。其中，“人工费”列的数值为45,560元。\n\n因此，本月的人工费花费为45,560元。"
+    },
+    {
+      "role": "User",
+      "content": "材料费分别用在了哪些方面"
+    },
+    {
+      "role": "Qwen2.5-VL",
+      "content": "根据提供的表格，材料费分别用在了以下几个方面：\n\n1. **耗用主要材料**：金额为114,240元。\n2. **耗用结构件**：金额为138,350元。\n3. **耗用其他材料**：金额为14,160元。\n4. **摊销周转材料**：金额为7,130元。\n\n这些费用合计为：\n\\[ 114,240 + 138,350 + 14,160 + 7,130 = 273,880 \\text{元} \\]\n\n这与“本月合计”中的材料费273,880元一致。"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Example: QwenVL HTML with image caption",
+  "messages": [
+    {
+      "role": "User",
+      "content": "QwenVL HTML with image caption\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/docparsing6.png)"
+    },
+    {
+      "role": "Qwen2.5-VL",
+      "content": "```html\n<html>\n<body>\n<div class=\"image caption\" data-bbox=\"30 164 1225 807\">\n    <img data-bbox=\"30 164 1225 807\" />\n    <p>This is an image of a magazine cover. It's got three pictures on it, and then the title underneath that says 2030 in white letters, and then next to that it has some Chinese writing. The picture on the left shows wind turbines up on top of a hillside. There's several of them. They're all white with blue bases. You can see mountains off in the distance behind this hillside. Then there's another picture right beside that one showing water coming out from a dam. And then the third picture shows solar panels lined up in rows as far as you can see.</p>\n</div>\n<p data-bbox=\"95 871 1120 925\">这是科学家描绘的美好图景：到 2030 年，地球上消耗的所有能源，都将是清洁的可再生能源。要进入这个由风、水、太阳所主导的新能源时代，我们必须克服怎样的困难？</p>\n<h2 data-bbox=\"89 953 451 995\">24 可再生能源政策简史</h2>\n<p data-bbox=\"134 1081 458 1116\">产业圆桌 Industry Round Table</p>\n<p data-bbox=\"89 1121 444 1163\">26 2030 我们开什么车</p>\n<p data-bbox=\"683 1078 1064 1121\">44 完美主义 硬币的两面</p>\n<p data-bbox=\"134 1280 486 1315\">信息技术 Information Technology</p>\n<p data-bbox=\"89 1320 384 1362\">30 电视向网络投降</p>\n<p data-bbox=\"683 1280 1064 1325\">50 社会身份 健康晴雨表</p>\n</body>\n</html>\n```"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Example: Pointing to target object",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Locate the person who act bravely, report the bbox coordinates in JSON format.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/grounding_brave.png)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "```json\n[\n\t{\"bbox_2d\": [74, 58, 526, 619], \"label\": \"person who act bravely\"}\n]\n```"
+        }
+    ]
+}

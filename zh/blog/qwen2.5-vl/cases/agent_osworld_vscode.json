@@ -1,0 +1,9 @@
+{
+    "title": "Example: Computer Use",
+    "messages": [
+        {
+            "role": "帮我下载在 “/home/user/eval.vsix” 位置的VS Code插件\n(Please help me install an extension in VS Code from a local VSIX file “/home/user/eval.vsix”)",
+            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/agent_qwen25vl_osworld_showcase_vscode.mov\" controls=\"1\">}}"
+        }
+    ]
+}

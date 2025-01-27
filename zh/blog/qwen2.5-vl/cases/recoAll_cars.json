@@ -1,0 +1,13 @@
+{
+    "title": "Example: Cars Identification",
+    "messages": [
+        {
+            "role": "User",
+            "content": "What are these cars? Please give their names in Chinese and English.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/recoAll_cars.jpg)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "这些车分别是：\n1. 左上角：劳斯莱斯（Rolls-Royce）\n2. 右上角：梅赛德斯-奔驰GLE（Mercedes-Benz GLE）\n3. 左下角：法拉利Portofino M（Ferrari Portofino M）\n4. 右下角：保时捷911（Porsche 911）"
+        }
+    ]
+}

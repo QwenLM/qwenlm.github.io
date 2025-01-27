@@ -1,0 +1,13 @@
+{
+    "title": "Example: Vertical Text Recognition",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Read all texts in the image, output in lines.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/ocr_vertical.jpg)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "平安喜樂 \n八方來財 \n順風順水順財神 \n暴富 \n大吉 \n諸事皆順 \n福 \n時來運轉 \n發財 \n如意 \n有錢有勢有前程 \n好運來"
+        }
+    ]
+}

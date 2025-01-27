@@ -1,0 +1,13 @@
+{
+  "title": "Example: Key Information Extraction",
+  "messages": [
+    {
+      "role": "User",
+      "content": "Extract following information from the receipt：['发票代码','发票号码','到站','燃油费','票价','乘车日期','开车时间','车次','座号']，output in JSON。\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/kie_receipt.jpg)"
+    },
+    {
+      "role": "Qwen2.5-VL",
+      "content": "```json\n{\n    \"发票代码\": \"221021325353\",\n    \"发票号码\": \"10283819\",\n    \"到站\": \"开发区\",\n    \"燃油费\": \"2.0\",\n    \"票价\": \"8.00<全>\",\n    \"乘车日期\": \"2013-06-29\",\n    \"开车时间\": \"流水\",\n    \"车次\": \"040\",\n    \"座号\": \"371\"\n}\n```"
+    }
+  ]
+}

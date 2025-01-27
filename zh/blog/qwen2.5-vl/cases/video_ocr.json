@@ -1,0 +1,13 @@
+{
+    "title": "Example: Information Extraction from Videos",
+    "messages": [
+                {
+            "role": "User",
+            "content": "Watch the video and list the paper titles in a table.\n{{<video src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/video_ocr.mp4\" controls=\"true\"  muted=\"true\" width=\"50%\" >}}"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "Here is a table listing the paper titles from the video:\n\n| Paper Title |\n|-------------|\n| A New Sequential Prediction Framework with Spatial-temporal Embedding |\n| NeW CRFs: Neural Window Fully-connected CRFs for Monocular Depth Estimation |\n| Deep Unified Representation for Heterogeneous Recommendation |\n| OFA: Unifying Architectures, Tasks, and Modalities Through a Simple Sequence-to-Sequence Learning Framework |\n| KoMen: Domain Knowledge Guided Interaction Recommendation for Emerging Scenarios Yiqing Xie |\n| Vision-Language Pre-Training for Boosting Scene Text Detectors |"
+        }
+    ]
+}

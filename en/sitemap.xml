@@ -15,6 +15,19 @@
                 href="https://qwenlm.github.io/blog/qwen2.5-1m/"
                 />
   </url><url>
+    <loc>https://qwenlm.github.io/blog/qwen2.5-vl/</loc>
+    <lastmod>2025-01-26T19:08:30+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://qwenlm.github.io/zh/blog/qwen2.5-vl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://qwenlm.github.io/blog/qwen2.5-vl/"
+                />
+  </url><url>
     <loc>https://qwenlm.github.io/blog/global-load-balance/</loc>
     <lastmod>2025-01-21T00:00:03+08:00</lastmod>
     <xhtml:link

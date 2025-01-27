@@ -1,0 +1,13 @@
+{
+    "title": "Example: Multilingual Text Recognition",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Recognise all texts in the image, output in lines.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/ocr_arabic.jpg)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "SMK أبو منير\nلبيع وصيانة الروديترات\nروديترات ماء - مكيف - دفايات\nCOOLING CAR SYSTEM\nأبو منير\n052-204-5334\nمحمد أبو سيراج\n059-831-0796\n056-811-8256"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "title": "Example: Computer Use",
+    "messages": [
+        {
+            "role": "您能帮我增强我照片的色彩鲜艳度吗？\n(Could you assist me in enhancing the color vibrancy of my photo?)",
+            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/agent_qwen25vl_osworld_showcase_gimp.mov\" controls=\"1\">}}"
+        }
+    ]
+}

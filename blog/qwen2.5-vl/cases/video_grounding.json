@@ -1,0 +1,13 @@
+{
+    "title": "Example: Temporal Video Grounding",
+    "messages": [
+                {
+            "role": "User",
+            "content": "Give the query: 'the user is experiencing the image generation feature', when does the described content occur in the video? Use seconds for time format.\n{{<video src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/video_grounding.mp4\" controls=\"true\"  muted=\"true\" >}}"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "The described content occurs from 28 seconds to 50 seconds in the video. During this segment, the user interacts with the image generation feature, requesting and receiving an artistic double scene painting of a mountain during day and night. The user then adds a bird to the generated image, demonstrating the functionality of the image generation tool."
+        }
+    ]
+}
