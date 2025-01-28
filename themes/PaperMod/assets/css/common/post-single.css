@@ -87,7 +87,7 @@
 }
 
 .post-content h2 {
-    margin: var(--modal-gap) auto var(--content-gap);
+    margin: 32px auto 24px;
     font-size: 32px;
 }
 
@@ -586,3 +586,7 @@ div.footnotes{
     text-align: right;
     margin-right: var(--content-gap);
     color: var(--secondary);
+}
+.example-content .grid-layout .content {
+    min-width: var(--min-width);
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Example: Attractions Identification",
+    "messages": [
+        {
+            "role": "User",
+            "content": "What are these attractions? Please give their names in Chinese and English.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/recoAll_attractions.jpg)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "These attractions are:\n1. Top left: The Great Pyramids of Giza (埃及的吉萨大金字塔)\n2. Top right: The Great Wall of China (中国的长城)\n3. Bottom left: The Statue of Liberty (美国的自由女神像)\n4. Bottom right: The Terracotta Army (中国的秦始皇兵马俑)"
+        }
+    ]
+}

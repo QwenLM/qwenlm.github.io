@@ -1,0 +1,9 @@
+{
+    "title": "Example: Lissajous Curve",
+    "messages": [
+                {
+            "role": "",
+            "content": "{{< video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/Qwen2.5-Coder-Family/cases/final-lissajous.mp4\" controls=\"1\">}}"
+        }
+    ]
+}

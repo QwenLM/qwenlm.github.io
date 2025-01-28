@@ -1,0 +1,53 @@
+{
+    "title": "音频分析：音乐分析",
+    "messages": [
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/music_qingting_ACT9MsIM5Bg.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "这段音乐包含有合成器的旋律，低音吉他和鼓点。鼓点是由原声鼓和小军鼓组成的，并且在循环的后半部分有一个上升的打击乐段。这首歌可能在家里跳舞时播放。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/合成1.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/key_zh.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "这段音乐的调性是F#小调。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/2.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/bpm.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "这段音乐的BPM大约为130.045。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/bpm合成.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/music_fenxi__zVFfYfyyFg.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "这段音乐听起来像是朋克风格，有扭曲的电吉他、有力的鼓点和一个声音尖锐的男声在唱歌。整体感觉很强烈和充满能量。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/合成4.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/qingxu .wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "它传达了一种愤怒和挑战的情绪。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/5.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/bpm_p.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "它的BPM大约是100到120之间。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/6.wav)"
+        }
+    ]
+}

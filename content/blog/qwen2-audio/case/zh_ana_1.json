@@ -1,0 +1,29 @@
+{
+    "title": "音频分析：说话人信息识别",
+    "messages": [
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/WHJ_5-1.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "两个人在说话。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-a1-1.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/WHJ_5-2.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "说话人的情绪是兴奋和满意的。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-a1-2.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/WHJ_5-3.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "说话人大概在41岁以上。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-a1-3.wav)"
+        }
+    ]
+}

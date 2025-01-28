@@ -1,0 +1,45 @@
+{
+    "title": "音频分析：综合分析",
+    "messages": [
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/WHJ_9-5.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "有人在说话，内容是“梅西助跑打门球进了，球进了，比赛的第23分钟，阿根廷队1-0领先，梅西本届赛事的第六个球。”\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-a5-5.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/WHJ_9-1.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "这段音频的场景是足球比赛中的一个片段。梅西在比赛中助跑并打门进球，使得阿根廷队以1比0领先。这已经是梅西在本届赛事中的第六个球。现场有观众欢呼，气氛热烈。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-a5-1.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/WHJ_9-2.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "音频中有球迷欢呼的声音，因为梅西进球了。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-a5-2.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/WHJ_9-3.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "这是来自体育场内的声音。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-a5-3.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/WHJ_9-4.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "这段音频可以用来制作体育新闻或比赛实况转播。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-a5-4.wav)"
+        }
+    ]
+}

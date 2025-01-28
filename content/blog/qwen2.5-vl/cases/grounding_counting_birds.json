@@ -1,0 +1,13 @@
+{
+    "title": "Example: Precise Object Grounding",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Count the number of birds in the figure, including those that are only showing their heads. To ensure accuracy, first detect their key points, then give the total number..\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/grounding_counting_birds_draw.png)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "```json\n[\n\t{\"point_2d\": [\"38\", \"314\"], \"label\": \"birds\"},\n\t{\"point_2d\": [\"126\", \"309\"], \"label\": \"birds\"},\n\t{\"point_2d\": [\"195\", \"277\"], \"label\": \"birds\"},\n\t{\"point_2d\": [\"243, 291\"], \"label\": \"birds\"},\n\t{\"point_2d\": [\"285, 291\"], \"label\": \"birds\"},\n\t{\"point_2d\": [\"345, 291\"], \"label\": \"birds\"},\n\t{\"point_2d\": [\"400, 284\"], \"label\": \"birds\"},\n\t{\"point_2d\": [\"465, 298\"], \"label\": \"birds\"},\n\t{\"point_2d\": [\"525, 314\"], \"label\": \"birds\"},\n\t{\"point_2d\": [\"644, 314\"], \"label\": \"birds\"},\n\t{\"point_2d\": [\"695, 314\"], \"label\": \"birds\"},\n\t{\"point_2d\": [\"762, 304\"], \"label\": \"birds\"},\n\t{\"point_2d\": [\"834, 264\"], \"label\": \"birds\"},\n\t{\"point_2d\": [\"248, 638\"], \"label\": \"birds\"}\n]\n```\nThere are a total of 14 birds in the figure."
+        }
+    ]
+}

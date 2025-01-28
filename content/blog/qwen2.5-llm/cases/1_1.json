@@ -1,0 +1,9 @@
+{
+    "title": "Example: Generating JSON Output",
+    "messages": [
+        {
+            "role": "JSON Output",
+            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/json_output.mp4\" controls=\"1\">}}"
+        }
+    ]
+}

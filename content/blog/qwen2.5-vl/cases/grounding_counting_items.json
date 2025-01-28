@@ -1,0 +1,13 @@
+{
+    "title": "Example: Detecting before Counting",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Please first output bbox coordinates and names of every item in this image in JSON format, and then answer how many items are there in the image.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/grounding_counting_items.png)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "```json\n[\n\t{\"bbox_2d\": [19, 3, 84, 125], \"label\": \"ice cream\"},\n\t{\"bbox_2d\": [167, 0, 288, 134], \"label\": \"flip flops\"},\n\t{\"bbox_2d\": [349, 0, 457, 123], \"label\": \"beach umbrella\"},\n\t{\"bbox_2d\": [521, 4, 635, 123], \"label\": \"starfish\"},\n\t{\"bbox_2d\": [10, 180, 118, 294], \"label\": \"cocktail drink\"},\n\t{\"bbox_2d\": [150, 196, 308, 283], \"label\": \"sunglasses\"},\n\t{\"bbox_2d\": [354, 192, 467, 300], \"label\": \"lifebuoy\"},\n\t{\"bbox_2d\": [532, 202, 635, 290], \"label\": \"watermelon slice\"},\n\t{\"bbox_2d\": [2, 379, 134, 452], \"label\": \"straw hat\"},\n\t{\"bbox_2d\": [167, 335, 308, 456], \"label\": \"palm tree\"},\n\t{\"bbox_2d\": [360, 359, 468, 476], \"label\": \"sun\"},\n\t{\"bbox_2d\": [546, 338, 642, 452], \"label\": \"martini glass\"}\n]\n```\nThere are 12 items in the image."
+        }
+    ]
+}

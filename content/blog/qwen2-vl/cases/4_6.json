@@ -1,0 +1,9 @@
+{
+    "title": "Example: Action and Reasoning",
+    "messages": [
+        {
+            "role": "Put a cold mug in the microwave",
+            "content": "{{< video src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2-VL/pick_clean_then_place_in_recep_trial.mp4\" controls=\"1\">}}"
+        }
+    ]
+}

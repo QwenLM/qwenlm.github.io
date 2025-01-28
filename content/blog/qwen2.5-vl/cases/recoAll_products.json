@@ -1,0 +1,13 @@
+{
+    "title": "Example: Products Identification",
+    "messages": [
+        {
+            "role": "User",
+            "content": "What are these products? Please give their names in Chinese and English.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/recoAll_products.jpg)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "Sure, here are the products and their Chinese and English names:\n1. **Top Left Image:**\n   - **English Name:** Propolinse Mouthwash\n   - **Chinese Name:** 蜂胶漱口水\n2. **Top Right Image:**\n   - **English Name:** George Caroll Moisturizing and Refreshing Shampoo\n   - **Chinese Name:** 乔治卡罗尔保湿清爽洗发水\n3. **Bottom Left Image:**\n   - **English Name:** On The Body Sweet Love Perfume Water\n   - **Chinese Name:** 洋甘菊甜蜜爱香水\n4. **Bottom Right Image:**\n   - **English Name:** Tiger Balm Mosquito Repellent\n   - **Chinese Name:** 虎标驱蚊水"
+        }
+    ]
+}

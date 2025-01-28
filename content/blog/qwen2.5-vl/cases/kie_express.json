@@ -1,0 +1,13 @@
+{
+  "title": "Example: Key Information Extraction",
+  "messages": [
+    {
+      "role": "User",
+      "content": "You are a delivery bill verification expert who can identify house numbers and courier label information, and verify whether the address on the courier label matches the house number. Please identify the house number from the bill address and the house number on the door separately, and then verify if the door number is delivered correctly.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/kie_express.png)"
+    },
+    {
+      "role": "Qwen2.5-VL",
+      "content": "To verify the delivery, let's break down the information from both the courier label and the door.\n\n### Courier Label Information:\n- **Address on the label:** 1935 South Wabash Avenue Suite 1, Chicago, IL 60616\n- **House number from the address:** 1935\n\n### Door Information:\n- **House number on the door:** 1935\n\n### Verification:\n- The house number on the courier label is **1935**.\n- The house number on the door is also **1935**.\n\nSince both the house numbers match, the delivery is verified to be correct. The package should indeed be delivered to this location."
+    }
+  ]
+}

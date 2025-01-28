@@ -1,6 +1,7 @@
 ---
 title: "Introducing Qwen"
 date: 2024-01-23T22:13:29+08:00
+lastmod: 2024-07-16T00:00:00+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
@@ -109,3 +110,16 @@ We currently support function calling, code interpreter, and hugging face agent,
 ## Summary
 
 We release the Qwen series, and in this blog, we provide a simple introduction to the Qwen language models Now, we are still following the recipes of pretraining, SFT, and RLHF and we are figuring out a path towards scaling model and data. We hope that our opensource is contributive to the research and application communities.
+
+## Citation
+
+If you find our work helpful, feel free to give us a cite!
+
+```
+@article{qwen,
+  title={Qwen Technical Report},
+  author={Jinze Bai and Shuai Bai and Yunfei Chu and Zeyu Cui and Kai Dang and Xiaodong Deng and Yang Fan and Wenbin Ge and Yu Han and Fei Huang and Binyuan Hui and Luo Ji and Mei Li and Junyang Lin and Runji Lin and Dayiheng Liu and Gao Liu and Chengqiang Lu and Keming Lu and Jianxin Ma and Rui Men and Xingzhang Ren and Xuancheng Ren and Chuanqi Tan and Sinan Tan and Jianhong Tu and Peng Wang and Shijie Wang and Wei Wang and Shengguang Wu and Benfeng Xu and Jin Xu and An Yang and Hao Yang and Jian Yang and Shusheng Yang and Yang Yao and Bowen Yu and Hongyi Yuan and Zheng Yuan and Jianwei Zhang and Xingxuan Zhang and Yichang Zhang and Zhenru Zhang and Chang Zhou and Jingren Zhou and Xiaohuan Zhou and Tianhang Zhu},
+  journal={arXiv preprint arXiv:2309.16609},
+  year={2023}
+}
+```

@@ -1,0 +1,13 @@
+{
+    "title": "Example: Grounding with Description",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Locate every cake and describe their features, output the bbox coordinates in JSON format.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/grounding_cupcakes_descriptions.png)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "```json\n[\n\t{\"bbox_2d\": [130, 725, 304, 906], \"label\": \"cake with white frosting and eyes\"},\n\t{\"bbox_2d\": [344, 641, 508, 800], \"label\": \"cake with white frosting and eyes\"},\n\t{\"bbox_2d\": [289, 530, 435, 690], \"label\": \"cake with white frosting and colorful sprinkles\"},\n\t{\"bbox_2d\": [40, 542, 197, 712], \"label\": \"cake with white frosting and colorful sprinkles\"},\n\t{\"bbox_2d\": [64, 386, 202, 566], \"label\": \"cake with pink frosting and red sprinkles\"},\n\t{\"bbox_2d\": [245, 375, 363, 529], \"label\": \"cake with pink frosting and blue sprinkles\"},\n\t{\"bbox_2d\": [389, 359, 492, 494], \"label\": \"cake with pink frosting and blue sprinkles\"},\n\t{\"bbox_2d\": [423, 436, 555, 587], \"label\": \"cake with pink frosting and googly eyes\"},\n\t{\"bbox_2d\": [518, 348, 642, 512], \"label\": \"cake with pink frosting and blue sprinkles\"},\n\t{\"bbox_2d\": [500, 549, 652, 698], \"label\": \"cake with white frosting and googly eyes\"},\n\t{\"bbox_2d\": [615, 465, 757, 626], \"label\": \"cake with white frosting and colorful sprinkles\"},\n\t{\"bbox_2d\": [723, 372, 849, 525], \"label\": \"cake with chocolate frosting\"},\n\t{\"bbox_2d\": [782, 497, 944, 676], \"label\": \"cake with white frosting and colorful candies\"}\n]\n```"
+        }
+    ]
+}

@@ -70,6 +70,17 @@
             mybutton.style.opacity = "0";
         }
     };
+    mybutton.oncontextmenu = (e) => {
+        // right click to show all examples
+        e.preventDefault();
+        document.querySelectorAll(".example-container").forEach((e) => { e.style.backgroundColor = "unset"; });
+        document.querySelectorAll(".example-content").forEach((e) => {
+            e.style.display = "block";
+            e.style.backgroundColor = "var(--code-bg)";
+            e.style.marginBottom = "var(--modal-gap)";
+        });
+        document.querySelectorAll(".next-button").forEach((e) => { e.style.display = "none"; });
+    };
 
 </script>
 {{- end }}

@@ -1,0 +1,37 @@
+{
+    "title": "Example: Multi-Video Understanding",
+    "messages": [
+                {
+            "role": "User",
+            "content": "视频中的人在做什么？\n{{< video src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2-VL/part1_woaudio.mp4\" controls=\"1\" muted=\"true\">}}"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "视频中的人正在使用吸尘器清理地板。"
+        },
+        {
+            "role": "User",
+            "content": "如果要进一步清洁地面的话，接下来该怎么做？"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "如果要进一步清洁地面，可以使用拖把或湿布擦拭地面，以去除吸尘器无法清除的污渍和灰尘。"
+        },
+        {
+            "role": "User",
+            "content": "已经用拖把清洁了地面，评价一下清洁工作？\n{{< video src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2-VL/part2_woaudio.mp4\" controls=\"1\" muted=\"true\">}}"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "从视频中可以看出，清洁工作已经完成，地面已经变得干净整洁。"
+        },
+        {
+            "role": "User",
+            "content": "通过你看到的，接下来还能做些什么？"
+        },
+        {
+            "role": "Qwen2-VL",
+            "content": "接下来可以将拖把清洗干净，晾干备用。"
+        }
+    ]
+}

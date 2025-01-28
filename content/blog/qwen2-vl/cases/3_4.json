@@ -1,0 +1,9 @@
+{
+    "title": "Example: Screen sharing chat",
+    "messages": [
+                {
+            "role": "Screen sharing chat",
+            "content": "{{< video src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2-VL/Screen%20sharing%20chat.mov\" controls=\"1\">}}"
+        }
+    ]
+}

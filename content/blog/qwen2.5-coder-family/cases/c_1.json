@@ -1,0 +1,9 @@
+{
+    "title": "Example: Qwen2.5-Coder 🤝 Cursor",
+    "messages": [
+                {
+            "role": "",
+            "content": "{{< video src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5/Qwen2.5-Coder-Family/cases/final-game_of_life.mp4\" controls=\"1\">}}"
+        }
+    ]
+}

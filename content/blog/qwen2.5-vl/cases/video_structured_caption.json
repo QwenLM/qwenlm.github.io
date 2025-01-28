@@ -1,0 +1,13 @@
+{
+    "title": "Example: Structured Video Captioning",
+    "messages": [
+                {
+            "role": "User",
+            "content": "Localize a series of activity events in the video, output the start and end timestamp for each event, and describe each event with sentences. Provide the result in json format with 'mm:ss.ff' format for time depiction.\n{{<video src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/video_structured_caption.mp4\" controls=\"true\"  muted=\"true\" >}}"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "```json\n[\n    {\n        \"start_time\": \"00:21.00\",\n        \"end_time\": \"00:49.00\",\n        \"description\": \"A person removes a piece of meat from its packaging and cuts off the fat.\"\n    },\n    {\n        \"start_time\": \"00:50.00\",\n        \"end_time\": \"01:27.00\",\n        \"description\": \"The person seasons the meat with salt and pepper on both sides.\"\n    },\n    {\n        \"start_time\": \"01:28.00\",\n        \"end_time\": \"01:36.00\",\n        \"description\": \"The seasoned meat is placed on a grill.\"\n    },\n    {\n        \"start_time\": \"01:37.00\",\n        \"end_time\": \"02:08.00\",\n        \"description\": \"Oil is poured into a pot followed by chopped onions, carrots, and bell peppers which are then stirred.\"\n    },\n    {\n        \"start_time\": \"02:09.00\",\n        \"end_time\": \"02:26.00\",\n        \"description\": \"A rack is placed inside the pot and the meat is set on top.\"\n    },\n    {\n        \"start_time\": \"02:27.00\",\n        \"end_time\": \"02:34.00\",\n        \"description\": \"Beer is poured into the pot.\"\n    },\n    {\n        \"start_time\": \"02:35.00\",\n        \"end_time\": \"02:43.00\",\n        \"description\": \"The lid of the pot is covered with charcoal briquettes.\"\n    },\n    {\n        \"start_time\": \"03:14.00\",\n        \"end_time\": \"04:26.00\",\n        \"description\": \"The meat is sliced into pieces.\"\n    }\n]\n```"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "title": "Example: Computer Use",
+    "messages": [
+        {
+            "role": "帮我找到 Manchester, GB 地区这个月的天气 \n(Find the monthly forecast for Manchester, GB for this month.)",
+            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/agent_qwen25vl_osworld_showcase_chrome.mov\" controls=\"1\">}}"
+        }
+    ]
+}

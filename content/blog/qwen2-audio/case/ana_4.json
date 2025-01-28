@@ -1,0 +1,53 @@
+{
+    "title": "Audio Analysis: Robustness of mixed audio analysis",
+    "messages": [
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/spk_0.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "The old man laid down his hand to light a cigar."
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/spk_1.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "The old man laid down his hand to light a cigar."
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/spk_2.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "The old man laid down his hand to light a cigar."
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/spk_3.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "The old man laid down his hand to light a cigar."
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/robust_1.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "The lyrics of the singing are 'Waiting for my favorite song.'"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/robust_2.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "The lyrics of the singing are 'Waiting for my favorite song.'"
+        }
+    ]
+}

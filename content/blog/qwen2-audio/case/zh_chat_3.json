@@ -1,0 +1,29 @@
+{
+    "title": "语音交互：说话人信息识别及环境音感知交互",
+    "messages": [
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/voice-chat-1-1-%E7%8C%9C%E7%8C%9C%E6%80%A7%E5%88%AB%E5%B9%B4%E9%BE%84.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "男性，16-25岁\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-1-1.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/voice-chat-2-1-%E9%9B%A8%E5%A3%B0%E7%9D%A1%E8%A7%89.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "因为这种场景让你感到放松和舒适，有助于提高睡眠质量。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-1-2.wav)"
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/voice-chat-2-2-%E8%A3%85%E4%BF%AE%E5%99%AA%E9%9F%B3.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "你可以尝试使用耳塞或者寻找一个相对安静的工作环境来帮助你集中注意力。\n[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tts-1-3.wav)"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Example: Dense Text Recognition",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Recognise all texts in the image, output in lines.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/ocr_dense.jpg)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "品名：初吻巧克力 产品类型：代可可脂牛奶巧克力 保质期：12个月 \n配料：代可可脂、白砂糖、可可粉、精炼植物油、奶油、全脂奶粉、食品添加剂（磷脂）\n食用盐、食用香料。产品标准代号：SB/T 10402 贮存条件：请置于阴凉干燥处 \n食品生产许可证编号：QS3705 1301 0024 生产日期：见合格证 \n制造商：山东京特食品有限公司 地址：广饶县经济技术开发区 \n电话：0546-6440388 传真：0546-6447566 产地：山东省东营市"
+        }
+    ]
+}

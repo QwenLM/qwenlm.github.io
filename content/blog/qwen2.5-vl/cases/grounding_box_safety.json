@@ -1,0 +1,13 @@
+{
+    "title": "Example: Precise Object Grounding",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Detect all motorcyclists in the image and return their locations in the form of coordinates. The format of output should be like {\"bbox_2d\": [x1, y1, x2, y2], \"label\": \"motorcyclist\", \"sub_label\": \"wearing helmat\" # or \"not wearing helmat\"}.\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/gronding_box_safety_draw.png)"
+        },
+        {
+            "role": "Qwen2.5-VL",
+            "content": "```json\n[\n\t{\"bbox_2d\": [341, 258, 397, 360], \"label\": \"motorcyclist\", \"sub_label\": \"not wearing helmat \"},\n\t{\"bbox_2d\": [212, 332, 274, 448], \"label\": \"motorcyclist\", \"sub_label\": \"not wearing helmat \"},\n\t{\"bbox_2d\": [66, 124, 112, 198], \"label\": \"motorcyclist\", \"sub_label\": \"not wearing helmat \"},\n\t{\"bbox_2d\": [5, 235, 63, 320], \"label\": \"motorcyclist\", \"sub_label\": \"wearing helmat \"}\n]\n```"
+        }
+    ]
+}

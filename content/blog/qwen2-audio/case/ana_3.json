@@ -1,0 +1,37 @@
+{
+    "title": "Audio Analysis: Music analysis",
+    "messages": [
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/_zVFfYfyyFg.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "This is a pop punk music piece. There is a male vocalist singing melodically in the lead. The tune is being played by the guitar with the bass guitar playing in the background. The rhythmic background consists of loud and aggressive sounding drums. The atmosphere is rebellious. This piece could be used in the soundtrack of a high school drama movie or TV show during scenes where the characters are rebelling against authority."
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/key.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "The key of this music is F# major."
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/tempo.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "The tempo of this music is 104.17 bpm."
+        },
+        {
+            "role": "User",
+            "content": "[audio](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/timesignature.wav)"
+        },
+        {
+            "role": "Qwen2-Audio",
+            "content": "The time signature of this music is 4/4."
+        }
+    ]
+}

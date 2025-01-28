@@ -1,0 +1,13 @@
+{
+  "title": "Example: QwenVL HTML",
+  "messages": [
+    {
+      "role": "User",
+      "content": "QwenVL HTML\n![image](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/docparsing2.png)"
+    },
+    {
+      "role": "Qwen2.5-VL",
+      "content": "```html\n<html><body>\n<div class=\"formula\" data-bbox=\"920 213 1345 326\"><img data-bbox=\"920 213 1345 326\"/><div>$$h=D \\tan \\theta \\approx D \\theta=D \\frac{\\lambda}{2 L}$$</div></div>\n<p data-bbox=\"247 338 1458 392\">测出玻璃片长度 $D$ 和条纹间距 $L$, 即可求出薄片的厚度或细丝直径。</p>\n<p data-bbox=\"308 392 1894 458\">(2) 利用劈尖的等厚条纹, 可检查工件的表面是否平整和有无缺陷, 如图 9-21 所示。</p>\n<div class=\"image\" data-bbox=\"420 508 894 832\"><img data-bbox=\"420 508 894 832\"/></div>\n<p data-bbox=\"384 858 934 914\">图 9-20 测量细丝或薄片的厚度</p>\n<p></p>\n<div class=\"image\" data-bbox=\"1268 468 1788 832\"><img data-bbox=\"1268 468 1788 832\"/></div>\n<p data-bbox=\"1138 858 1914 914\">图 9-21 检查工件的表面是否平整和有无缺陷</p>\n<h2 data-bbox=\"324 946 534 1000\"> 2. 牛顿环</h2>\n<p data-bbox=\"247 1020 2016 1278\">如图 9-22 所示, 在一块光学平晶上, 放置一曲率半径很大的平凸透镜, 在透镜和平晶间便形成空气膜层。以单色平行光垂直照射, 经空气膜上、下表面反射的两束光发生干涉, 于是在空气膜的上表面出现一组干涉条纹。这也是一种等厚干涉条纹, 并且是以触点为圆心的一组同心圆环, 称为牛顿环。彩色牛顿环的投影见彩色插图 6 。</p>\n<div class=\"image\" data-bbox=\"600 1308 1034 1914\"><img data-bbox=\"600 1308 1034 1914\"/></div>\n<p data-bbox=\"844 1950 900 2000\">(a)</p>\n<p></p>\n<div class=\"image\" data-bbox=\"1138 1288 1658 1942\"><img data-bbox=\"1138 1288 1658 1942\"/></div>\n<p data-bbox=\"1418 1950 1508 2000\">(b)</p>\n<p data-bbox=\"988 2016 1272 2068\">图 9-22 牛顿环</p>\n<p data-bbox=\"336 2084 916 2144\">(1) 牛顿环明纹与暗纹的位置</p>\n<p data-bbox=\"247 2148 2016 2276\">考虑到入射光在膜层的上表面的反射无半波损失, 但在下表面的反射有半波损失。设 $r$为牛顿环第 $k$ 级圆环的半径, 该环对应空气膜厚度为 $e$, 则明环条件为</p>\n<div class=\"formula\" data-bbox=\"778 2296 1524 2484\"><img data-bbox=\"778 2296 1524 2484\"/><div>$$\\delta=2 e+\\frac{\\lambda}{2}=k \\lambda \\quad(k=1,2,3, \\cdots)$$</div>暗环条件为 $\\quad \\delta=2 e+\\frac{\\lambda}{2}=(2 k+1) \\frac{\\lambda}{2} \\quad(k=0,1,2, \\cdots)$</div>\n<p data-bbox=\"336 2516 742 2576\">(2) 牛顿环半径公式</p>\n<p data-bbox=\"336 2580 584 2642\">在 $\\triangle O O^{\\prime} A$ 中</p>\n<p></p>\n<div class=\"formula\" data-bbox=\"880 2572 1398 2648\"><img data-bbox=\"880 2572 1398 2648\"/><div>$$r^{2}=R^{2}-(R-e)^{2}=2 R e-e^{2}$$</div></div>\n<p data-bbox=\"247 2648 1650 2708\">因为 $R \\gg e$, 略去 2 阶小项 $e^{2}$ 后, 得 $e=r^{2} / 2 R$, 代入式 (9-27), 则明环条件为</p>\n<div class=\"formula\" data-bbox=\"798 2708 1448 2822\"><img data-bbox=\"798 2708 1448 2822\"/><div>$$\\delta=\\frac{r^{2}}{R}+\\frac{\\lambda}{2}=k \\lambda \\quad(k=1,2,3, \\cdots)$$</div></div>\n</body></html>\n```"
+    }
+  ]
+}

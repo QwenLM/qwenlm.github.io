@@ -1,0 +1,9 @@
+{
+    "title": "Example: Live chat",
+    "messages": [
+                {
+            "role": "Live chat",
+            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen2.5-VL/video_livechat.mov\" controls=\"1\">}}"
+        }
+    ]
+}
