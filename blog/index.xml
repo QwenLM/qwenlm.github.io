@@ -9,7 +9,17 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Jan 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jan 2025 23:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen2.5-Max: Exploring the Intelligence of Large-scale MoE Model</title>
+      <link>https://qwenlm.github.io/blog/qwen2.5-max/</link>
+      <pubDate>Tue, 28 Jan 2025 23:00:04 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwen2.5-max/</guid>
+      <description>QWEN CHAT API DEMO DISCORD
+It is widely recognized that continuously scaling both data size and model size can lead to significant improvements in model intelligence. However, the research and industry community has limited experience in effectively scaling extremely large models, whether they are dense or Mixture-of-Expert (MoE) models. Many critical details regarding this scaling process were only disclosed with the recent release of DeepSeek V3. Concurrently, we are developing Qwen2.</description>
+    </item>
+    
     <item>
       <title>Qwen2.5-1M: Deploy Your Own Qwen with Context Length up to 1M Tokens</title>
       <link>https://qwenlm.github.io/blog/qwen2.5-1m/</link>
