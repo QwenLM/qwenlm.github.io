@@ -1,5 +1,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+{{- if eq .Kind "404" }}
+<meta http-equiv="Refresh" content='5; url={{ "/" | absURL | safeHTML }}'>  
+{{- end }}
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robots_no_index true) }}
 <meta name="robots" content="index, follow">

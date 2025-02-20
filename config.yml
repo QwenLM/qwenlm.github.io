@@ -24,13 +24,7 @@ languages:
     params:
       date_format: "2006年1月2日"
     disableKinds:
-      - "404"
       - home
-      - rss
-      - section
-      - sitemap
-      - taxonomy
-      - term
 
 
 minify:
@@ -174,6 +168,10 @@ menu:
       name: About
       url: /about
       weight: 40
+    - identifer: qwen-chat
+      name: Try Qwen Chat
+      url: https://chat.qwenlm.ai
+      weight: 50
     # - identifier: search
     #   name: SEARCH
     #   url: /search

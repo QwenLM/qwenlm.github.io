@@ -1,3 +1,6 @@
 {{- define "main" }}
-<div class="not-found">404</div>
+<div class="not-found">
+    <h1>404</h1>
+    <p>You will be redirected to home page shortly. If not, please click <a href={{ "/" | absURL | safeHTMLAttr }}>here</a>.</p> 
+</div>
 {{- end }}{{/* end main */ -}}
