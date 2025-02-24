@@ -9,7 +9,20 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Jan 2025 23:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Feb 2025 02:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&lt;think&gt;...&lt;/think&gt; QwQ-Max-Preview</title>
+      <link>https://qwenlm.github.io/zh/blog/qwq-max-preview/</link>
+      <pubDate>Tue, 25 Feb 2025 02:00:04 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/zh/blog/qwq-max-preview/</guid>
+      <description>QWEN CHAT DISCORD
+这篇博客出自 QwQ-Max-Preview 之手。希望各位看官喜欢！
+介绍 &amp;lt;think&amp;gt;
+好的，用户希望我为他们的博客创建一个标题和介绍，宣布 QwQ-Max-Preview 的发布。让我先整理一下他们提到的关键点。 首先，该模型属于通义千问系列，基于 Qwen2.5-Max 构建。这是一个预览版本，因此他们可能希望强调这是正式发布前的抢先体验。主要优势包括深度推理、数学、编程、通用领域以及与 Agent 相关的任务。他们还提到了未来的更新计划，并将开源代码，采用 Apache 2.0 许可证。 对于标题，我需要让它吸引人并包含模型名称。也许可以这样写：“隆重推出 QwQ-Max-Preview ：深度推理与多领域精通的全新飞跃”。这突出了预览状态和关键功能。 介绍部分应简要总结公告内容。以对发布的兴奋之情开头，提到它基于 Qwen2.5-Max ，强调其在推理、数学、编程和 Agent 任务方面的强大能力。同时指出这是一个预览版本，未来会有更新，并最终开源。保持简洁，不展开解释，按照用户要求避免使用 Markdown，段落也要简短。最后检查是否涵盖了所有要点：模型名称、基于 Qwen2.5、预览状态、推理/数学/编程/Agent 任务的优势、未来更新、以及 Apache 2.0 开源许可。是的，这些都包括了。好了，现在开始整合内容。 &amp;lt;/think&amp;gt;
+我们很高兴向大家介绍 QwQ-Max-Preview，这是 Qwen 系列的最新成果。这一版本基于 Qwen2.5-Max 构建，在数学、编程以及通用任务中展现了更强的能力，同时在与 Agent 相关的工作流中也有不错的表现。作为即将发布的 QwQ-Max 的预览版，这个版本还在持续优化中。我们计划在不久的将来以 Apache 2.0 许可协议开源发布 QwQ-Max 以及 Qwen2.5-Max。我们期待与大家一起探索智能推理的更多可能性！ 示例 CodingNextQwQ-Max-PreviewGameNextQwQ-Max-PreviewGameNextQwQ-Max-PreviewAgentNextQwQ-Max-PreviewAgentNextQwQ-Max-PreviewMathNextQwQ-Max-PreviewCreative WritingNextQwQ-Max-PreviewSearchNextQwQ-Max-Preview接下来的工作 &amp;lt;think&amp;gt;</description>
+    </item>
+    
     <item>
       <title>Qwen2.5-Max：探索大规模 MoE 模型的智能</title>
       <link>https://qwenlm.github.io/zh/blog/qwen2.5-max/</link>
