@@ -1,0 +1,9 @@
+{
+    "title": "Search",
+    "messages": [
+        {
+            "role": "QwQ-Max-Preview",
+            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwq-search.mp4\" controls=\"1\" muted=\"true\">}}"
+        }
+    ]
+}
