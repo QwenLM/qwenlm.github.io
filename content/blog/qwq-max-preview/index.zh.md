@@ -38,7 +38,7 @@ show_word_count: true
 ---
 
 
-{{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/qwq-banner-zh.jpg" width="100%">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwq-banner-zh.jpg" width="100%">}}
 
 
 {{< button href="https://chat.qwen.ai" label="QWEN CHAT" external=true >}}
