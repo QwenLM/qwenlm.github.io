@@ -71,13 +71,6 @@ We’re happy to unveil QwQ-Max-Preview , the latest advancement in the Qwen ser
 
 {{< fullwidth class="example-container" >}}
 {{< example data="cases/coder.json" hide=false next=true >}}
-{{< example data="cases/game.json" hide=true next=true >}}
-{{< example data="cases/game2.json" hide=true next=true >}}
-{{< example data="cases/agent.json" hide=true next=true >}}
-{{< example data="cases/agent_zh.json" hide=true next=true >}}
-{{< example data="cases/math.json" hide=true next=true >}}
-{{< example data="cases/creative_writing.json" hide=true next=true >}}
-{{< example data="cases/search.json" hide=true next=true >}}
 {{< /fullwidth >}}
 
 
