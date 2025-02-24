@@ -3,7 +3,7 @@
     "messages": [
         {
             "role": "QwQ-Max-Preview",
-            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwq-agent-zh.mp4\" controls=\"1\" muted=\"true\" >}}"
+            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwq-agent-zh.mp4\" controls=\"1\" muted=\"1\" >}}"
         }
     ]
 }
