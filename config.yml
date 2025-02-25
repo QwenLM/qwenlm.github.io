@@ -170,7 +170,7 @@ menu:
       weight: 40
     - identifer: qwen-chat
       name: Try Qwen Chat
-      url: https://chat.qwenlm.ai
+      url: https://chat.qwen.ai
       weight: 50
     # - identifier: search
     #   name: SEARCH
