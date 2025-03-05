@@ -9,7 +9,22 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 25 Feb 2025 02:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Mar 2025 00:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QwQ-32B: 领略强化学习之力</title>
+      <link>https://qwenlm.github.io/zh/blog/qwq-32b/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:04 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/zh/blog/qwq-32b/</guid>
+      <description>QWEN CHAT Hugging Face ModelScope DEMO DISCORD
+大规模强化学习（RL）有潜力超越传统的预训练和后训练方法来提升模型性能。近期的研究表明，强化学习可以显著提高模型的推理能力。例如，DeepSeek R1 通过整合冷启动数据和多阶段训练，实现了最先进的性能，使其能够进行深度思考和复杂推理。这一次，我们探讨了大规模强化学习（RL）对大语言模型的智能的提升作用，同时很高兴推出我们最新的推理模型 QwQ-32B。这是一款拥有 320 亿参数的模型，其性能可与具备 6710 亿参数（其中 370 亿被激活）的 DeepSeek-R1 媲美。这一成果突显了将强化学习应用于经过大规模预训练的强大基础模型的有效性。此外，我们还在推理模型中集成了与 Agent 相关的能力，使其能够在使用工具的同时进行批判性思考，并根据环境反馈调整推理过程。我们希望我们的一点努力能够证明强大的基础模型叠加大规模强化学习也许是一条通往通用人工智能的可行之路。
+QwQ-32B 已在 Hugging Face 和 ModelScope 开源，采用了 Apache 2.0 开源协议。大家可通过 Qwen Chat 直接进行体验！
+模型效果 QwQ-32B 在一系列基准测试中进行了评估，测试了数学推理、编程能力和通用能力。以下结果展示了 QwQ-32B 与其他领先模型的性能对比，包括 DeepSeek-R1-Distilled-Qwen-32B、DeepSeek-R1-Distilled-Llama-70B、o1-mini 以及原始的 DeepSeek-R1。
+强化学习 我们在冷启动的基础上开展了大规模强化学习。在初始阶段，我们特别针对数学和编程任务进行了 RL 训练。与依赖传统的奖励模型（reward model）不同，我们通过校验生成答案的正确性来为数学问题提供反馈，并通过代码执行服务器评估生成的代码是否成功通过测试用例来提供代码的反馈。随着训练轮次的推进，这两个领域中的性能均表现出持续的提升。在第一阶段的 RL 过后，我们增加了另一个针对通用能力的 RL。此阶段使用通用奖励模型和一些基于规则的验证器进行训练。我们发现，通过少量步骤的通用 RL，可以提升其他通用能力，同时在数学和编程任务上的性能没有显著下降。
+API 以下我们展示了一段简短的示例代码，说明如何通过 API 使用 QwQ-32B。
+from openai import OpenAI import os # Initialize OpenAI client client = OpenAI( # If the environment variable is not configured, replace with your API Key: api_key=&amp;#34;sk-xxx&amp;#34; # How to get an API Key：https://help.</description>
+    </item>
+    
     <item>
       <title>&lt;think&gt;...&lt;/think&gt; QwQ-Max-Preview</title>
       <link>https://qwenlm.github.io/zh/blog/qwq-max-preview/</link>

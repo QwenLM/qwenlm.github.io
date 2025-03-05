@@ -9,7 +9,18 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 25 Feb 2025 02:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Mar 2025 00:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QwQ-32B: Embracing the Power of Reinforcement Learning</title>
+      <link>https://qwenlm.github.io/blog/qwq-32b/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:04 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwq-32b/</guid>
+      <description>QWEN CHAT Hugging Face ModelScope DEMO DISCORD
+Scaling Reinforcement Learning (RL) has the potential to enhance model performance beyond conventional pretraining and post-training methods. Recent studies have demonstrated that RL can significantly improve the reasoning capabilities of models. For instance, DeepSeek R1 has achieved state-of-the-art performance by integrating cold-start data and multi-stage training, enabling deep thinking and complex reasoning.
+Our research explores the scalability of Reinforcement Learning (RL) and its impact on enhancing the intelligence of large language models.</description>
+    </item>
+    
     <item>
       <title>&lt;think&gt;...&lt;/think&gt; QwQ-Max-Preview</title>
       <link>https://qwenlm.github.io/blog/qwq-max-preview/</link>
