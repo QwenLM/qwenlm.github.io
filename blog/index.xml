@@ -9,7 +9,17 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Mar 2025 00:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Mar 2025 00:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen2.5-VL-32B: Smarter and Lighter</title>
+      <link>https://qwenlm.github.io/blog/qwen2.5-vl-32b/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:04 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwen2.5-vl-32b/</guid>
+      <description>QWEN CHAT GITHUB HUGGING FACE MODELSCOPE DISCORD
+Introduction At the end of January this year, we launched the Qwen2.5-VL series of models, which received widespread attention and positive feedback from the community. Building on the Qwen2.5-VL series, we continued to optimize the model using reinforcement learning and open-sourced the new VL model with the beloved 32B parameter scale under the Apache 2.0 license — Qwen2.5-VL-32B-Instruct. Compared to the previously released Qwen2.</description>
+    </item>
+    
     <item>
       <title>QwQ-32B: Embracing the Power of Reinforcement Learning</title>
       <link>https://qwenlm.github.io/blog/qwq-32b/</link>

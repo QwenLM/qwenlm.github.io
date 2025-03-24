@@ -9,7 +9,20 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Mar 2025 00:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Mar 2025 00:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen2.5-VL-32B: 更聪明、更轻量!</title>
+      <link>https://qwenlm.github.io/zh/blog/qwen2.5-vl-32b/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:04 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/zh/blog/qwen2.5-vl-32b/</guid>
+      <description>QWEN CHAT GITHUB HUGGING FACE MODELSCOPE DISCORD
+介绍 今年一月底，我们推出了 Qwen2.5-VL 系列模型，获得了社区的广泛关注和积极反馈。在 Qwen2.5-VL 系列的基础上，我们使用强化学习持续优化模型，并使用 Apache 2.0 协议开源 32B 这个备受喜爱的参数规模的新 VL 模型—— Qwen2.5-VL-32B-Instruct。相比此前发布的 Qwen2.5-VL 系列模型，本次推出的 32B 模型的特点如下：
+回复更符合人类主观偏好：调整了输出风格，使回答更加详细、格式更规范，并更符合人类偏好。 数学推理能力：复杂数学问题求解的准确性显著提升。 图像细粒度理解与推理：在图像解析、内容识别以及视觉逻辑推导等任务中表现出更强的准确性和细粒度分析能力。 性能表现 我们与业内先进的同规模模型进行比较，包括近期推出的 Mistral-Small-3.1-24B 和 Gemma-3-27B-IT， Qwen2.5-VL-32B-Instruct 展现出了明显的优势，甚至超越了更大规模的 Qwen2-VL-72B-Instruct 模型。尤其是在多模态任务中，例如 MMMU、MMMU-Pro 和 MathVista，这些任务强调复杂的多步骤推理，Qwen2.5-VL-32B-Instruct 表现尤为突出。在注重主观用户体验评估的 MM-MT-Bench 基准测试中，该模型相较于其前代 Qwen2-VL-72B-Instruct 取得了显著进步。
+除了在视觉能力上优秀，Qwen2.5-VL-32B-Instruct 在纯文本能力上也达到了同规模的最优表现。
+样例 Fine-grained Image Understanding and ReasoningNextUserI am driving a large truck on this road, and it is now 12 o&amp;rsquo;clock. Can I reach a place 110 kilometers away before 13 o&amp;rsquo;clock?</description>
+    </item>
+    
     <item>
       <title>QwQ-32B: 领略强化学习之力</title>
       <link>https://qwenlm.github.io/zh/blog/qwq-32b/</link>
