@@ -9,7 +9,26 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 24 Mar 2025 00:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Mar 2025 00:00:45 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen2.5 Omni: See, Hear, Talk, Write, Do It All!</title>
+      <link>https://qwenlm.github.io/zh/blog/qwen2.5-omni/</link>
+      <pubDate>Thu, 27 Mar 2025 00:00:45 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/zh/blog/qwen2.5-omni/</guid>
+      <description>QWEN CHAT HUGGING FACE MODELSCOPE DASHSCOPE GITHUB PAPER DEMO DISCORD
+我们发布了 Qwen2.5-Omni，Qwen 模型家族中新一代端到端多模态旗舰模型。该模型专为全方位多模态感知设计，能够无缝处理文本、图像、音频和视频等多种输入形式，并通过实时流式响应同时生成文本与自然语音合成输出。想要体验最新的模型，请访问 Qwen Chat 并选择Qwen2.5-Omni-7B。该模型现已在 Hugging Face、ModelScope、DashScope和 GitHub上开放，技术文档请查阅我们的论文。您可以通过我们的Demo体验互动功能，或加入我们的Discord进行讨论。
+主要特点：
+全能创新架构：我们提出了一种全新的Thinker-Talker架构，这是一种端到端的多模态模型，旨在支持文本/图像/音频/视频的跨模态理解，同时以流式方式生成文本和自然语音响应。我们提出了一种新的位置编码技术，称为TMRoPE（Time-aligned Multimodal RoPE），通过时间轴对齐实现视频与音频输入的精准同步。
+实时音视频交互：架构旨在支持完全实时交互，支持分块输入和即时输出。
+自然流畅的语音生成：在语音生成的自然性和稳定性方面超越了许多现有的流式和非流式替代方案。
+全模态性能优势：在同等规模的单模态模型进行基准测试时，表现出卓越的性能。Qwen2.5-Omni在音频能力上优于类似大小的Qwen2-Audio，并与Qwen2.5-VL-7B保持同等水平。
+卓越的端到端语音指令跟随能力：Qwen2.5-Omni在端到端语音指令跟随方面表现出与文本输入处理相媲美的效果，在MMLU通用知识理解和GSM8K数学推理等基准测试中表现优异。
+Your browser does not support the video tag.模型架构 Qwen2.5-Omni采用Thinker-Talker双核架构。Thinker模块如同大脑，负责处理文本、音频、视频等多模态输入，生成高层语义表征及对应文本内容；Talker模块则类似发声器官，以流式方式接收Thinker实时输出的语义表征与文本，流畅合成离散语音单元。Thinker基于Transformer解码器架构，融合音频/图像编码器进行特征提取；Talker则采用双轨自回归Transformer解码器设计，在训练和推理过程中直接接收来自Thinker的高维表征，并共享全部历史上下文信息，形成端到端的统一模型架构。
+模型性能 Qwen2.5-Omni在包括图像，音频，音视频等各种模态下的表现都优于类似大小的单模态模型以及封闭源模型，例如Qwen2.5-VL-7B、Qwen2-Audio和Gemini-1.5-pro。在多模态任务OmniBench，Qwen2.5-Omni达到了SOTA的表现。此外，在单模态任务中，Qwen2.5-Omni在多个领域中表现优异，包括语音识别（Common Voice）、翻译（CoVoST2）、音频理解（MMAU）、图像推理（MMMU、MMStar）、视频理解（MVBench）以及语音生成（Seed-tts-eval和主观自然听感）。
+下一步 我们期待听到您的反馈，并看到您使用 Qwen2.5-Omni 开发的创新应用。在不久的将来，我们将着力增强模型对语音指令的遵循能力，并提升音视频协同理解能力。更值得期待的是，我们将持续拓展多模态能力边界，以发展成为一个全面的通用模型！</description>
+    </item>
+    
     <item>
       <title>Qwen2.5-VL-32B: 更聪明、更轻量!</title>
       <link>https://qwenlm.github.io/zh/blog/qwen2.5-vl-32b/</link>
@@ -21,25 +40,6 @@
 回复更符合人类主观偏好：调整了输出风格，使回答更加详细、格式更规范，并更符合人类偏好。 数学推理能力：复杂数学问题求解的准确性显著提升。 图像细粒度理解与推理：在图像解析、内容识别以及视觉逻辑推导等任务中表现出更强的准确性和细粒度分析能力。 性能表现 我们与业内先进的同规模模型进行比较，包括近期推出的 Mistral-Small-3.1-24B 和 Gemma-3-27B-IT， Qwen2.5-VL-32B-Instruct 展现出了明显的优势，甚至超越了更大规模的 Qwen2-VL-72B-Instruct 模型。尤其是在多模态任务中，例如 MMMU、MMMU-Pro 和 MathVista，这些任务强调复杂的多步骤推理，Qwen2.5-VL-32B-Instruct 表现尤为突出。在注重主观用户体验评估的 MM-MT-Bench 基准测试中，该模型相较于其前代 Qwen2-VL-72B-Instruct 取得了显著进步。
 除了在视觉能力上优秀，Qwen2.5-VL-32B-Instruct 在纯文本能力上也达到了同规模的最优表现。
 样例 Fine-grained Image Understanding and ReasoningNextUserI am driving a large truck on this road, and it is now 12 o&amp;rsquo;clock. Can I reach a place 110 kilometers away before 13 o&amp;rsquo;clock?</description>
-    </item>
-    
-    <item>
-      <title>Qwen2.5 Omni: See, Hear, Talk, Write, Do It All!</title>
-      <link>https://qwenlm.github.io/zh/blog/qwen2.5-omni/</link>
-      <pubDate>Wed, 19 Mar 2025 15:51:45 +0800</pubDate>
-      
-      <guid>https://qwenlm.github.io/zh/blog/qwen2.5-omni/</guid>
-      <description>QWEN CHAT HUGGING FACE MODELSCOPE DASHSCOPE GITHUB PAPER DEMO DISCORD
-我们发布了 Qwen2.5-Omni，Qwen 模型家族中新一代端到端多模态旗舰模型。该模型专为全方位多模态感知设计，能够无缝处理文本、图像、音频和视频等多种输入形式，并通过实时流式响应同时生成文本与自然语音合成输出。想要体验最新的模型，请访问 Qwen Chat 并选择Qwen2.5-Omni-7B。该模型现已在 Hugging Face、ModelScope、DashScope和 GitHub上开放，技术文档请查阅我们的论文。您可以通过我们的Demo体验互动功能，或加入我们的Discord进行讨论。
-主要特点：
-全能创新架构：我们提出了一种全新的Thinker-Talker架构，这是一种端到端的多模态模型，旨在支持文本/图像/音频/视频的跨模态理解，同时以流式方式生成文本和自然语音响应。我们提出了一种新的位置编码技术，称为TMRoPE（Time-aligned Multimodal RoPE），通过时间轴对齐实现视频与音频输入的精准同步。
-实时音视频交互：架构旨在支持完全实时交互，支持分块输入和即时输出。
-自然流畅的语音生成：在语音生成的自然性和稳定性方面超越了许多现有的流式和非流式替代方案。
-全模态性能优势：在同等规模的单模态模型进行基准测试时，表现出卓越的性能。Qwen2.5-Omni在音频能力上优于类似大小的Qwen2-Audio，并与Qwen2.5-VL-7B保持同等水平。
-卓越的端到端语音指令跟随能力：Qwen2.5-Omni在端到端语音指令跟随方面表现出与文本输入处理相媲美的效果，在MMLU通用知识理解和GSM8K数学推理等基准测试中表现优异。
-Your browser does not support the video tag. 模型架构 Qwen2.5-Omni采用Thinker-Talker双核架构。Thinker模块如同大脑，负责处理文本、音频、视频等多模态输入，生成高层语义表征及对应文本内容；Talker模块则类似发声器官，以流式方式接收Thinker实时输出的语义表征与文本，流畅合成离散语音单元。Thinker基于Transformer解码器架构，融合音频/图像编码器进行特征提取；Talker则采用双轨自回归Transformer解码器设计，在训练和推理过程中直接接收来自Thinker的高维表征，并共享全部历史上下文信息，形成端到端的统一模型架构。
-模型性能 Qwen2.5-Omni在包括图像，音频，音视频等各种模态下的表现都优于类似大小的单模态模型以及封闭源模型，例如Qwen2.5-VL-7B、Qwen2-Audio和Gemini-1.5-pro。在多模态任务OmniBench，Qwen2.5-Omni达到了SOTA的表现。此外，在单模态任务中，Qwen2.5-Omni在多个领域中表现优异，包括语音识别（Common Voice）、翻译（CoVoST2）、音频理解（MMAU）、图像推理（MMMU、MMStar）、视频理解（MVBench）以及语音生成（Seed-tts-eval和主观自然听感）。
-下一步 我们期待听到您的反馈，并看到您使用 Qwen2.5-Omni 开发的创新应用。在不久的将来，我们将着力增强模型对语音指令的遵循能力，并提升音视频协同理解能力。更值得期待的是，我们将持续拓展多模态能力边界，以发展成为一个全面的通用模型！</description>
     </item>
     
     <item>
