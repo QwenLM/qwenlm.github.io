@@ -43,7 +43,7 @@ show_word_count: true
 {{< button href="https://modelscope.cn/models/Qwen/Qwen2.5-Omni-7B" label="MODELSCOPE" external=true >}}
 {{< button href="https://help.aliyun.com/zh/model-studio/user-guide/qwen-omni" label="DASHSCOPE" external=true >}}
 {{< button href="https://github.com/QwenLM/Qwen2.5-Omni" label="GITHUB" external=true >}}
-{{< button href="https://github.com/QwenLM/Qwen2.5-Omni/assets/Qwen2.5_Omni.pdf" label="PAPER" external=true >}}
+{{< button href="https://github.com/QwenLM/Qwen2.5-Omni/blob/main/assets/Qwen2.5_Omni.pdf" label="PAPER" external=true >}}
 {{< button href="https://huggingface.co/spaces/Qwen/Qwen2.5-Omni-7B-Demo" label="DEMO" external=true >}}
 {{< button href="https://discord.com/invite/yPEP2vHTu4" label="DISCORD" external=true >}}
 
