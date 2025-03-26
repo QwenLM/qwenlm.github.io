@@ -1,6 +1,6 @@
 ---
 title: "Qwen2.5 Omni: See, Hear, Talk, Write, Do It All!"
-date: 2025-03-19T15:51:45+08:00
+date: 2025-03-27T00:00:45+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
