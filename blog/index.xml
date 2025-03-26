@@ -9,7 +9,17 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 24 Mar 2025 00:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Mar 2025 00:00:45 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen2.5 Omni: See, Hear, Talk, Write, Do It All!</title>
+      <link>https://qwenlm.github.io/blog/qwen2.5-omni/</link>
+      <pubDate>Thu, 27 Mar 2025 00:00:45 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwen2.5-omni/</guid>
+      <description>QWEN CHAT HUGGING FACE MODELSCOPE DASHSCOPE GITHUB PAPER DEMO DISCORD
+We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis. To try the latest model, feel free to visit Qwen Chat and choose Qwen2.5-Omni-7B. The model is now openly available on Hugging Face, ModelScope, DashScope,and GitHub, with technical documentation available in our Paper.</description>
+    </item>
+    
     <item>
       <title>Qwen2.5-VL-32B: Smarter and Lighter</title>
       <link>https://qwenlm.github.io/blog/qwen2.5-vl-32b/</link>
@@ -18,16 +28,6 @@
       <guid>https://qwenlm.github.io/blog/qwen2.5-vl-32b/</guid>
       <description>QWEN CHAT GITHUB HUGGING FACE MODELSCOPE DISCORD
 Introduction At the end of January this year, we launched the Qwen2.5-VL series of models, which received widespread attention and positive feedback from the community. Building on the Qwen2.5-VL series, we continued to optimize the model using reinforcement learning and open-sourced the new VL model with the beloved 32B parameter scale under the Apache 2.0 license — Qwen2.5-VL-32B-Instruct. Compared to the previously released Qwen2.</description>
-    </item>
-    
-    <item>
-      <title>Qwen2.5 Omni: See, Hear, Talk, Write, Do It All!</title>
-      <link>https://qwenlm.github.io/blog/qwen2.5-omni/</link>
-      <pubDate>Wed, 19 Mar 2025 15:51:45 +0800</pubDate>
-      
-      <guid>https://qwenlm.github.io/blog/qwen2.5-omni/</guid>
-      <description>QWEN CHAT HUGGING FACE MODELSCOPE DASHSCOPE GITHUB PAPER DEMO DISCORD
-We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis. To try the latest model, feel free to visit Qwen Chat and choose Qwen2.5-Omni-7B. The model is now openly available on Hugging Face, ModelScope, DashScope,and GitHub, with technical documentation available in our Paper.</description>
     </item>
     
     <item>
