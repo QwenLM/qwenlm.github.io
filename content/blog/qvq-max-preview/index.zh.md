@@ -1,6 +1,6 @@
 ---
 title: "QVQ-Max：有依据地思考"
-date: 2025-03-26T00:00:04+08:00
+date: 2025-03-28T00:00:04+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
