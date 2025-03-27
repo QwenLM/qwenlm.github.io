@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://qwenlm.github.io/blog/qvq-max-preview/</loc>
+    <lastmod>2025-03-28T00:00:04+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://qwenlm.github.io/zh/blog/qvq-max-preview/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://qwenlm.github.io/blog/qvq-max-preview/"
+                />
+  </url><url>
     <loc>https://qwenlm.github.io/blog/qwen2.5-omni/</loc>
     <lastmod>2025-03-27T00:00:45+08:00</lastmod>
     <xhtml:link
@@ -13,19 +26,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://qwenlm.github.io/blog/qwen2.5-omni/"
-                />
-  </url><url>
-    <loc>https://qwenlm.github.io/blog/qvq-max-preview/</loc>
-    <lastmod>2025-03-26T00:00:04+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://qwenlm.github.io/zh/blog/qvq-max-preview/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://qwenlm.github.io/blog/qvq-max-preview/"
                 />
   </url><url>
     <loc>https://qwenlm.github.io/blog/qwen2.5-vl-32b/</loc>
@@ -419,7 +419,7 @@
                 />
   </url><url>
     <loc>https://qwenlm.github.io/blog/</loc>
-    <lastmod>2025-03-27T00:00:45+08:00</lastmod>
+    <lastmod>2025-03-28T00:00:04+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -432,7 +432,7 @@
                 />
   </url><url>
     <loc>https://qwenlm.github.io/</loc>
-    <lastmod>2025-03-27T00:00:45+08:00</lastmod>
+    <lastmod>2025-03-28T00:00:04+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
