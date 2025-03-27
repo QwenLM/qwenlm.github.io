@@ -1,0 +1,9 @@
+{
+    "title": "Learn to code by watching videos",
+    "messages": [
+        {
+            "role": "QVQ-Max-Preview",
+            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"http://qianwen-res.oss-cn-beijing.aliyuncs.com/QVQ-Max/video_and_code.mov\" controls=\"1\" muted=\"true\" >}}"
+        }
+    ]
+}

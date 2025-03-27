@@ -1,0 +1,9 @@
+{
+    "title": "Multi-image Recognition",
+    "messages": [
+        {
+            "role": "QVQ-Max-Preview",
+            "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"http://qianwen-res.oss-accelerate.aliyuncs.com/QVQ-Max/travel.mov\" controls=\"1\" muted=\"true\" >}}"
+        }
+    ]
+}

@@ -11,7 +11,37 @@
 Your browser does not support the video tag.
 模型架构 Qwen2.5-Omni采用Thinker-Talker双核架构。Thinker模块如同大脑，负责处理文本、音频、视频等多模态输入，生成高层语义表征及对应文本内容；Talker模块则类似发声器官，以流式方式接收Thinker实时输出的语义表征与文本，流畅合成离散语音单元。Thinker基于Transformer解码器架构，融合音频/图像编码器进行特征提取；Talker则采用双轨自回归Transformer解码器设计，在训练和推理过程中直接接收来自Thinker的高维表征，并共享全部历史上下文信息，形成端到端的统一模型架构。
 模型性能 Qwen2.5-Omni在包括图像，音频，音视频等各种模态下的表现都优于类似大小的单模态模型以及封闭源模型，例如Qwen2.5-VL-7B、Qwen2-Audio和Gemini-1.5-pro。在多模态任务OmniBench，Qwen2.5-Omni达到了SOTA的表现。此外，在单模态任务中，Qwen2.5-Omni在多个领域中表现优异，包括语音识别（Common Voice）、翻译（CoVoST2）、音频理解（MMAU）、图像推理（MMMU、MMStar）、视频理解（MVBench）以及语音生成（Seed-tts-eval和主观自然听感）。
-下一步 我们期待听到您的反馈，并看到您使用 Qwen2.5-Omni 开发的创新应用。在不久的将来，我们将着力增强模型对语音指令的遵循能力，并提升音视频协同理解能力。更值得期待的是，我们将持续拓展多模态能力边界，以发展成为一个全面的通用模型！</p></div><footer class=entry-footer><span title='2025-03-27 00:00:45 +0800 +0800'>2025年3月27日</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;44 字&nbsp;·&nbsp;Qwen Team</footer><a class=entry-link aria-label="post link to Qwen2.5 Omni: See, Hear, Talk, Write, Do It All!" href=https://qwenlm.github.io/zh/blog/qwen2.5-omni/></a></article><article class=post-entry><header class=entry-header><h2>Qwen2.5-VL-32B: 更聪明、更轻量!</h2></header><div class=entry-content><p>QWEN CHAT GITHUB HUGGING FACE MODELSCOPE DISCORD
+下一步 我们期待听到您的反馈，并看到您使用 Qwen2.5-Omni 开发的创新应用。在不久的将来，我们将着力增强模型对语音指令的遵循能力，并提升音视频协同理解能力。更值得期待的是，我们将持续拓展多模态能力边界，以发展成为一个全面的通用模型！</p></div><footer class=entry-footer><span title='2025-03-27 00:00:45 +0800 +0800'>2025年3月27日</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;44 字&nbsp;·&nbsp;Qwen Team</footer><a class=entry-link aria-label="post link to Qwen2.5 Omni: See, Hear, Talk, Write, Do It All!" href=https://qwenlm.github.io/zh/blog/qwen2.5-omni/></a></article><article class=post-entry><header class=entry-header><h2>QVQ-Max：有依据地思考</h2></header><div class=entry-content><p>QWEN CHAT GITHUB HUGGING FACE MODELSCOPE DISCORD
+介绍 去年12月，我们推出了 QVQ-72B-Preview, 作为一个探索模型，它存在很多问题。今天，我们正式推出 QVQ-Max 视觉推理模型的第一版。这款模型的特点是，它不仅能够“看懂”图片和视频里的内容，还能结合这些信息进行分析、推理，甚至给出解决方案。从数学题到生活小问题，从编程代码到艺术创作，QVQ-Max 都表现出了不俗的能力。虽然这只是我们的第一个版本，但它的潜力已经让人眼前一亮。
+MathVision 是汇集各类困难多模态数学的 benchmark，我们通过模型在上面的表现来评估模型解决复杂数学问题的能力。如图所示，通过调整模型 thinking 的最大长度，我们会发现模型在 MathVision 的准确率会持续提升，这展现了模型巨大的潜力。
+接下来，我们就来聊聊 QVQ-Max 的设计初衷、实际能力以及它能为大家做些什么。
+为什么需要视觉推理？ 传统的AI模型大多依赖文字输入，比如回答问题、写文章或者生成代码。但现实生活中，很多信息并不是用文字表达的，而是以图片、图表甚至视频的形式存在。一张图片可能包含丰富的细节，比如颜色、形状、位置关系等，而这些信息往往比文字更直观、也更复杂。
+举个例子，如果你想知道一张建筑图纸是否合理，光靠描述可能很难判断，但如果能看到图纸并结合专业知识去分析，就会容易得多。这就是视觉推理的意义——它让 AI 不仅能“看”，还能“理解”并“思考”。
+我们设计 QVQ-Max 的目标很简单：让它成为一个既“眼尖”又“脑快”的助手，帮助用户解决各种实际问题。
+核心能力：从观察到推理 QVQ-Max的能力可以总结为三个方面：细致观察、深入推理和灵活应用。下面分别来说说它在这些方面的表现。
+细致观察：抓住每一个细节
+QVQ-Max 对图片的解析能力非常强，无论是复杂的图表还是日常生活中随手拍的照片，它都能快速识别出关键元素。比如，它可以告诉你一张照片里有哪些物品、有什么文字标识，甚至还能指出一些你可能忽略的小细节。
+深入推理：不只是“看到”，还要“想到”
+仅仅识别出图片里的内容还不够，QVQ-Max 还能进一步分析这些信息，并结合背景知识得出结论。例如，在一道几何题中，它可以根据题目附带的图形推导出答案；在一段视频里，它能根据画面内容推测出接下来可能发生的情节。
+灵活应用：从解答问题到创作
+除了分析和推理，QVQ-Max 还能做一些有趣的事情，比如帮你设计插画、生成短视频脚本，甚至根据你的需求创作角色扮演的内容。如果你上传一幅草稿，它可能会帮你完善成一幅完整的作品；上传一个日常照片，它可以化身犀利的评论家，占卜师。
+样例 QVQ-Max 的应用范围很广，无论是在学习、工作还是日常生活中，它都能派上用场。
+职场工具：在工作中，QVQ-Max 可以协助完成数据分析、信息整理、编程写代码等任务。 学习助手：对于学生来说，QVQ-Max 可以帮助解答数学、物理等科目的难题，尤其是那些配有图表的题目。它还能通过直观的方式讲解复杂概念，让学习变得更轻松。 生活小帮手：在生活中，QVQ-Max 也能提供不少实用建议。比如，它可以根据你的衣柜照片推荐穿搭方案，或者根据食谱图片指导你如何烹饪一道新菜。 Multi-image Recognition
+Next
+QVQ-Max-Preview
+Mathematical Reasoning
+Next
+QVQ-Max-Preview
+Interpreting Palm Readings (For Reference Only)
+Next
+QVQ-Max-Preview
+Video Understanding
+Next
+QVQ-Max-Preview
+Learn to code by watching videos
+Next
+QVQ-Max-Preview
+下一步 目前的 QVQ-Max 只是第一版，还有很多可以提升的空间。接下来，我们会重点关注以下几个方向：...</p></div><footer class=entry-footer><span title='2025-03-26 00:00:04 +0800 +0800'>2025年3月26日</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;92 字&nbsp;·&nbsp;Qwen Team</footer><a class=entry-link aria-label="post link to QVQ-Max：有依据地思考" href=https://qwenlm.github.io/zh/blog/qvq-max-preview/></a></article><article class=post-entry><header class=entry-header><h2>Qwen2.5-VL-32B: 更聪明、更轻量!</h2></header><div class=entry-content><p>QWEN CHAT GITHUB HUGGING FACE MODELSCOPE DISCORD
 介绍 今年一月底，我们推出了 Qwen2.5-VL 系列模型，获得了社区的广泛关注和积极反馈。在 Qwen2.5-VL 系列的基础上，我们使用强化学习持续优化模型，并使用 Apache 2.0 协议开源 32B 这个备受喜爱的参数规模的新 VL 模型—— Qwen2.5-VL-32B-Instruct。相比此前发布的 Qwen2.5-VL 系列模型，本次推出的 32B 模型的特点如下：
 回复更符合人类主观偏好：调整了输出风格，使回答更加详细、格式更规范，并更符合人类偏好。 数学推理能力：复杂数学问题求解的准确性显著提升。 图像细粒度理解与推理：在图像解析、内容识别以及视觉逻辑推导等任务中表现出更强的准确性和细粒度分析能力。 性能表现 我们与业内先进的同规模模型进行比较，包括近期推出的 Mistral-Small-3.1-24B 和 Gemma-3-27B-IT， Qwen2.5-VL-32B-Instruct 展现出了明显的优势，甚至超越了更大规模的 Qwen2-VL-72B-Instruct 模型。尤其是在多模态任务中，例如 MMMU、MMMU-Pro 和 MathVista，这些任务强调复杂的多步骤推理，Qwen2.5-VL-32B-Instruct 表现尤为突出。在注重主观用户体验评估的 MM-MT-Bench 基准测试中，该模型相较于其前代 Qwen2-VL-72B-Instruct 取得了显著进步。
 除了在视觉能力上优秀，Qwen2.5-VL-32B-Instruct 在纯文本能力上也达到了同规模的最优表现。
@@ -52,12 +82,6 @@ QwQ-Max-Preview
 Search
 Next
 QwQ-Max-Preview
-接下来的工作 &lt;think>...</p></div><footer class=entry-footer><span title='2025-02-25 02:00:04 +0800 +0800'>2025年2月25日</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;133 字&nbsp;·&nbsp;Qwen Team</footer><a class=entry-link aria-label="post link to ... QwQ-Max-Preview" href=https://qwenlm.github.io/zh/blog/qwq-max-preview/></a></article><article class=post-entry><header class=entry-header><h2>Qwen2.5-Max：探索大规模 MoE 模型的智能</h2></header><div class=entry-content><p>QWEN CHAT API DEMO DISCORD
-过去有一种观点认为，持续地增长数据规模和模型参数规模是一种通向 AGI 的可能的路径。然而，整个大模型社区对于训练超大规模的模型的经验都相对匮乏，不论是稠密模型还是 MoE 模型。近期，DeepSeek V3 的发布让大家了解到超大规模 MoE 模型的效果及实现方法，而同期，Qwen 也在研发超大规模的 MoE 模型 Qwen2.5-Max，使用超过 20 万亿 token 的预训练数据及精心设计的后训练方案进行训练。今天，我们很高兴能给大家分享 Qwen2.5-Max 目前所取得的成果。大家可以通过 API 的方式进行访问，也可以登录 Qwen Chat 进行体验！
-性能 我们将 Qwen2.5-Max 与业界领先的模型（无论是闭源还是开源）在一系列广受关注的基准测试上进行了对比评估。这些基准测试包括测试大学水平知识的 MMLU-Pro、评估编程能力的 LiveCodeBench，全面评估综合能力的 LiveBench，以及近似人类偏好的 Arena-Hard。我们的评估结果涵盖了基座模型和指令模型的性能得分。
-首先，我们直接对比了指令模型的性能表现。指令模型即我们平常使用的可以直接对话的模型。我们将 Qwen2.5-Max 与业界领先的模型（包括 DeepSeek V3、GPT-4o 和 Claude-3.5-Sonnet）的性能结果进行了对比。
-在 Arena-Hard、LiveBench、LiveCodeBench 和 GPQA-Diamond 等基准测试中，Qwen2.5-Max 的表现超越了 DeepSeek V3。同时在 MMLU-Pro 等其他评估中也展现出了极具竞争力的成绩。
-在基座模型的对比中，由于无法访问 GPT-4o 和 Claude-3.5-Sonnet 等闭源模型的基座模型，我们将 Qwen2.5-Max 与目前领先的开源 MoE 模型 DeepSeek V3、最大的开源稠密模型 Llama-3.1-405B，以及同样位列开源稠密模型前列的 Qwen2.5-72B 进行了对比。对比结果如下图所示。
-我们的基座模型在大多数基准测试中都展现出了显著的优势。我们相信，随着后训练技术的不断进步，下一个版本的 Qwen2....</p></div><footer class=entry-footer><span title='2025-01-28 23:00:04 +0800 +0800'>2025年1月28日</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;162 字&nbsp;·&nbsp;Qwen Team</footer><a class=entry-link aria-label="post link to Qwen2.5-Max：探索大规模 MoE 模型的智能" href=https://qwenlm.github.io/zh/blog/qwen2.5-max/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://qwenlm.github.io/zh/blog/page/2/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://qwenlm.github.io/zh/>Qwen</a></span>
+接下来的工作 &lt;think>...</p></div><footer class=entry-footer><span title='2025-02-25 02:00:04 +0800 +0800'>2025年2月25日</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;133 字&nbsp;·&nbsp;Qwen Team</footer><a class=entry-link aria-label="post link to ... QwQ-Max-Preview" href=https://qwenlm.github.io/zh/blog/qwq-max-preview/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://qwenlm.github.io/zh/blog/page/2/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://qwenlm.github.io/zh/>Qwen</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 8" fill="currentcolor"><path d="M12 8H0l6-8z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")},mybutton.oncontextmenu=e=>{e.preventDefault(),document.querySelectorAll(".example-container").forEach(e=>{e.style.backgroundColor="unset"}),document.querySelectorAll(".example-content").forEach(e=>{e.style.display="block",e.style.backgroundColor="var(--code-bg)",e.style.marginBottom="var(--modal-gap)"}),document.querySelectorAll(".next-button").forEach(e=>{e.style.display="none"})}</script></body></html>
