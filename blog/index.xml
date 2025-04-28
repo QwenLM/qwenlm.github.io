@@ -9,7 +9,17 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 28 Mar 2025 00:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Apr 2025 04:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen3: Think Deeper, Act Faster</title>
+      <link>https://qwenlm.github.io/blog/qwen3/</link>
+      <pubDate>Tue, 29 Apr 2025 04:00:00 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwen3/</guid>
+      <description>QWEN CHAT GitHub Hugging Face ModelScope Kaggle DEMO DISCORD
+Introduction Today, we are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. Our flagship model, Qwen3-235B-A22B, achieves competitive results in benchmark evaluations of coding, math, general capabilities, etc., when compared to other top-tier models such as DeepSeek-R1, o1, o3-mini, Grok-3, and Gemini-2.5-Pro. Additionally, the small MoE model, Qwen3-30B-A3B, outcompetes QwQ-32B with 10 times of activated parameters, and even a tiny model like Qwen3-4B can rival the performance of Qwen2.</description>
+    </item>
+    
     <item>
       <title>QVQ-Max: Think with Evidence</title>
       <link>https://qwenlm.github.io/blog/qvq-max-preview/</link>

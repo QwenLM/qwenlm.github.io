@@ -9,7 +9,19 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 28 Mar 2025 00:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Apr 2025 04:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen3：思深，行速</title>
+      <link>https://qwenlm.github.io/zh/blog/qwen3/</link>
+      <pubDate>Tue, 29 Apr 2025 04:00:00 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/zh/blog/qwen3/</guid>
+      <description>QWEN CHAT GitHub Hugging Face ModelScope Kaggle DEMO DISCORD
+引言 今天，我们宣布推出 Qwen3，这是 Qwen 系列大型语言模型的最新成员。我们的旗舰模型 Qwen3-235B-A22B 在代码、数学、通用能力等基准测试中，与 DeepSeek-R1、o1、o3-mini、Grok-3 和 Gemini-2.5-Pro 等顶级模型相比，表现出极具竞争力的结果。此外，小型 MoE 模型 Qwen3-30B-A3B 的激活参数数量是 QwQ-32B 的 10%，表现更胜一筹，甚至像 Qwen3-4B 这样的小模型也能匹敌 Qwen2.5-72B-Instruct 的性能。
+我们开源了两个 MoE 模型的权重：Qwen3-235B-A22B，一个拥有 2350 多亿总参数和 220 多亿激活参数的大模型，以及Qwen3-30B-A3B，一个拥有约 300 亿总参数和 30 亿激活参数的小型 MoE 模型。此外，六个 Dense 模型也已开源，包括 Qwen3-32B、Qwen3-14B、Qwen3-8B、Qwen3-4B、Qwen3-1.7B 和 Qwen3-0.6B，均在 Apache 2.0 许可下开源。
+Models Layers Heads (Q / KV) Tie Embedding Context Length Qwen3-0.6B 28 16 / 8 Yes 32K Qwen3-1.</description>
+    </item>
+    
     <item>
       <title>QVQ-Max：有依据地思考</title>
       <link>https://qwenlm.github.io/zh/blog/qvq-max-preview/</link>
