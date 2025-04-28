@@ -123,6 +123,13 @@ Qwen3 models are supporting **119 languages and dialects**. This extensive multi
 | Other | Japanese, Korean, Georgian, Basque, Haitian, Papiamento, Kabuverdianu, Tok Pisin, Swahili |
 
 
+- **Improved Agentic Capabilities**
+
+We have optimized the Qwen3 models for coding and agentic capabilities, and also we have strengthened the support of MCP as well. Below we provide examples to show how Qwen3 thinks and interacts with the environment.
+
+<video src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/mcp.mov" controls></video>
+
+
 <br><br>
 
 ## Pre-training

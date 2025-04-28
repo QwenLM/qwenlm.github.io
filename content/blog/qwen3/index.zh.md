@@ -117,6 +117,12 @@ Qwen3 模型支持 **119 种语言和方言**。这一广泛的多语言能力�
 | 南亚语系 | 越南语、高棉语  |
 | 其他 | 日语、韩语、格鲁吉亚语、巴斯克语、海地语、帕皮阿门托语、卡布维尔迪亚努语、托克皮辛语、斯瓦希里语 |
 
+- **增强的 Agent 能力**
+
+我们优化了 Qwen3 模型的编码和代理能力，同时也加强了对 MCP 的支持。下面我们将提供一些示例，展示 Qwen3 是如何思考并与环境进行交互的。
+
+<video src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/mcp.mov" controls></video>
+
 
 <br><br>
 
