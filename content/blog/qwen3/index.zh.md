@@ -45,8 +45,10 @@ show_word_count: true
 
 
 {{< button href="https://chat.qwen.ai" label="QWEN CHAT" external=true >}}
+{{< button href="https://github.com/QwenLM/Qwen3" label="GitHub" external=true >}}
 {{< button href="https://huggingface.co/collections/Qwen/qwen3-67dd247413f0e2e4f653967f" label="Hugging Face" external=true >}}
 {{< button href="https://modelscope.cn/collections/Qwen3-9743180bdc6b48" label="ModelScope" external=true >}}
+{{< button href="https://www.kaggle.com/models/qwen-lm/qwen-3" label="Kaggle" external=true >}}
 {{< button href="https://huggingface.co/spaces/Qwen/Qwen3-Demo" label="DEMO" external=true >}}
 {{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
