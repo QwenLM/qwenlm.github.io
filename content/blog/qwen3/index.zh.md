@@ -161,7 +161,7 @@ Qwen3 模型支持 **119 种语言和方言**。这一广泛的多语言能力�
 以下是如何在不同框架中使用 Qwen3 的简单指南。首先，我们提供了一个在 Hugging Face `transformers` 中使用 Qwen3-30B-A3B 的标准示例：
 
 ```python
-from modelscope import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_name = "Qwen/Qwen3-30B-A3B"
 
