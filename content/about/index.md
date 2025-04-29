@@ -9,7 +9,7 @@ header:
 ---
 # Qwen Team
 
-The Qwen team aims at chasing artificial general intelligence and now focuses on building generalist models, including large language models and large multimodal models. We embrace opensource and previously we have released the Qwen model series, including the language models (Qwen), expert models (Qwen-Coder and Qwen-Math), and multimodal models (Qwen-VL and Qwen-Audio). Additionally, we have built web service and APP for users to benefit from the assistance of Qwen for your daily work and life. We are a group of people with diverse talents and interests. Feel free to chat with us and welcome to join us!
+The Qwen team aims at chasing artificial general intelligence and now focuses on building generalist models, including large language models and large multimodal models. We embrace open source and previously we have released the Qwen model series, including the language models (Qwen), expert models (Qwen-Coder and Qwen-Math), and multimodal models (Qwen-VL and Qwen-Audio). Additionally, we have built web services and APP for users to benefit from the assistance of Qwen for your daily work and life. We are a group of people with diverse talents and interests. Feel free to chat with us and welcome to join us!
 
 ## Links
 
