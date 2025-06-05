@@ -9,7 +9,19 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 29 Apr 2025 04:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jun 2025 21:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen3 Embedding：新一代文本表征与排序模型</title>
+      <link>https://qwenlm.github.io/zh/blog/qwen3-embedding/</link>
+      <pubDate>Thu, 05 Jun 2025 21:00:00 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/zh/blog/qwen3-embedding/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DISCORD
+我们正式发布 Qwen3 Embedding 系列模型, Qwen 模型家族的新成员。该系列模型专为文本表征、检索与排序任务设计，基于 Qwen3 基础模型进行训练，充分继承了 Qwen3 在多语言文本理解能力方面的优势。在多项基准测试中，Qwen3 Embedding 系列在文本表征和排序任务中展现了卓越的性能。我们使用了 Apache 2.0 协议在 Hugging Face 和 ModelScope 上开源了这一系列的文本表征及排序模型，并在 GitHub 公布了技术报告及相关代码。
+排序模型评测结果
+Model Param MTEB-R CMTEB-R MMTEB-R MLDR MTEB-Code FollowIR Qwen3-Embedding-0.6B 0.6B 61.82 71.02 64.64 50.26 75.41 5.09 Jina-multilingual-reranker-v2-base 0.3B 58.22 63.37 63.73 39.66 58.98 -0.68 gte-multilingual-reranker-base 0.3B 59.51 74.08 59.44 66.33 54.18 -1.64 BGE-reranker-v2-m3 0.6B 57.03 72.16 58.36 59.51 41.38 -0.01 Qwen3-Reranker-0.6B 0.</description>
+    </item>
+    
     <item>
       <title>Qwen3：思深，行速</title>
       <link>https://qwenlm.github.io/zh/blog/qwen3/</link>

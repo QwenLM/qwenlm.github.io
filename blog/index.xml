@@ -9,7 +9,17 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 29 Apr 2025 04:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jun 2025 21:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen3 Embedding: Advancing Text Embedding and Reranking Through Foundation Models</title>
+      <link>https://qwenlm.github.io/blog/qwen3-embedding/</link>
+      <pubDate>Thu, 05 Jun 2025 21:00:00 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwen3-embedding/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DISCORD
+We release Qwen3 Embedding series, a new proprietary model of the Qwen model family. These models are specifically designed for text embedding, retrieval, and reranking tasks, built on the Qwen3 foundation model. Leveraging Qwen3’s robust multilingual text understanding capabilities, the series achieves state-of-the-art performance across multiple benchmarks for text embedding and reranking tasks. We have open-sourced this series of text embedding and reranking models under the Apache 2.</description>
+    </item>
+    
     <item>
       <title>Qwen3: Think Deeper, Act Faster</title>
       <link>https://qwenlm.github.io/blog/qwen3/</link>
