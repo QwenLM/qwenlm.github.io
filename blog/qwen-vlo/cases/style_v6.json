@@ -1,0 +1,21 @@
+{
+    "title": "Style Conversion",
+    "messages": [
+        {
+            "role": "User",
+            "content": "生成一条可爱的锦鲤，背景是西湖雷峰塔\n\nTranslation: Generate a cute koi with the Leifeng Pagoda in West Lake as the background"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/Style_Conversion/style_v6-out-1.png\" height=\"256px\" >}}"
+        },
+        {
+            "role": "User",
+            "content": "把图片转化为乐高人偶风格，模块化积木造型，保持鱼的廓形，采用简洁的背景突出主体，添加柔光渲染效果\n\nTranslation: Transform the picture into a Lego figure style, with modular building block shapes, maintain the outline of the fish, use a simple background to highlight the main subject, and add soft light rendering effects"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/Style_Conversion/style_v6-out-2.png\" height=\"256px\" >}}"
+        }
+    ]
+}

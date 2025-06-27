@@ -1,0 +1,14 @@
+{
+    "title": "Text to Image",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Epic anime artwork of a wizard atop a mountain at night casting a cosmic spell into the dark sky that says \"Qwen VLo!\" made out of colorful energy'"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case7/1.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}

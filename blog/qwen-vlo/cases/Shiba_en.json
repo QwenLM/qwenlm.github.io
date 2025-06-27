@@ -1,0 +1,77 @@
+{
+    "title": "A cute Shiba Inu",
+    "messages": [
+                {
+                    "role": "User",
+                    "content": "生成一个可爱的柴犬 \n\nTranslation: Generate a cute Shiba Inu"
+                },
+                {
+                    "role": "Qwen-VLo",
+                    "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case1/1.png\" height=\"512px\" >}}"
+                },
+                {
+                    "role": "User",
+                    "content": "背景改成草原\n\nTranslation: Change the background to a grassland"
+                },
+                {
+                    "role": "Qwen-VLo",
+                    "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case1/2.png\" height=\"512px\" >}}"
+                },
+                {
+                    "role": "User",
+                    "content": "给它带上红色帽子和黑色透明墨镜,帽子上写着“QwenVLo”\n\nTranslation: Put a red hat and black transparent sunglasses on it, with 'QwenVLo' written on the hat"
+                },
+                {
+                    "role": "Qwen-VLo",
+                    "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case1/3.png\" height=\"512px\" >}}"
+                },
+                {
+                    "role": "User",
+                    "content": "变成吉卜力风格\n\nTranslation: Switch to Ghibli style"
+                },
+                {
+                    "role": "Qwen-VLo",
+                    "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case1/4.png\" height=\"512px\" >}}"
+                },
+                {
+                    "role": "User",
+                    "content": "变成3d Q版风格\n\nTranslation: Switch to 3D Q-version style"
+                },
+                {
+                    "role": "Qwen-VLo",
+                    "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case1/5.png\" height=\"512px\" >}}"
+                },
+                {
+                    "role": "User",
+                    "content": "把它放到水晶球里\n\nTranslation: Place it inside a crystal ball"
+                },
+                {
+                    "role": "Qwen-VLo",
+                    "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case1/6.png\" height=\"512px\" >}}"
+                },
+                {
+                    "role": "User",
+                    "content": "桌面上摆着这个水晶球，生成以一个人的第一视角在公园的圆形咖啡桌上在笔记本上画画\n\nTranslation: Place this crystal ball on a desk and generate an image from a first-person perspective of someone drawing on a notebook placed on a round coffee table in a park"
+                },
+                {
+                    "role": "Qwen-VLo",
+                    "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case1/7.png\" height=\"512px\" >}}"
+                },
+                {
+                    "role": "User",
+                    "content": "用蓝色的蒙版检测框框出图中的笔\n\nTranslation: Use a blue mask to detect and frame the pen in the picture"
+                },
+                {
+                    "role": "Qwen-VLo",
+                    "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case1/8.png\" height=\"512px\" >}}"
+                },
+                {
+                    "role": "User",
+                    "content": "用粉色的mask分割出图中的狗狗边缘\n\nTranslation: Use a pink mask to segment the edge of the dog in the picture"
+                },
+                {
+                    "role": "Qwen-VLo",
+                    "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case1/9.png\" height=\"512px\" >}}"
+                }
+    ]
+}

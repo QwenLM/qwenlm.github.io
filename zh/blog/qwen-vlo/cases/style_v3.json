@@ -1,0 +1,13 @@
+{
+    "title": "Style Conversion",
+    "messages": [
+        {
+            "role": "User",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/Style_Conversion/style_v3-in.jpg\" height=\"256px\" >}}将迈阿密夜景的繁华城市天际线转换为果冻质感（布丁造型）的特殊材质建模风格，主题为现代都市，添加透明果冻层叠加的效果和微妙的弹性物理模拟。\n\nTranslation: Transform the bustling city skyline of Miami's night view into a special material modeling style with a jelly-like texture (pudding shape), with the theme of modern city. Add the effect of transparent jelly layer superimposition and subtle elastic physical simulation."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/Style_Conversion/style_v3-out.png\" height=\"256px\" >}}"
+        }
+    ]
+}

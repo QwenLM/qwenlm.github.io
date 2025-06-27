@@ -1,0 +1,76 @@
+{
+    "title": "Style Conversion",
+    "messages": [
+        {
+            "role": "User",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case10/1.jpeg\" height=\"256px\" >}}变成吉卜力风格 \n\nTranslation: Turn into Ghibli style"
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case10/2.png\" height=\"512px\" >}}"
+
+        },
+        {
+            "role": "User",
+            "content": "变成海贼王画风\n\nTranslation: Turn into One Piece art style"
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case10/3.png\" height=\"512px\" >}}"
+
+        },
+        {
+            "role": "User",
+            "content": "变成龙珠画风\n\nTranslation: Turn into Dragon Ball art style"
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case10/4.png\" height=\"512px\" >}}"
+
+        },
+        {
+            "role": "User",
+            "content": "变成海绵宝宝风格\n\nTranslation: Turn into SpongeBob style"
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case10/5.png\" height=\"512px\" >}}"
+
+        },
+        {
+            "role": "User",
+            "content": "变成我的世界里的角色\n\nTranslation: Turn into a character from Minecraft"
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case10/6.png\" height=\"512px\" >}}"
+
+        },
+        {
+            "role": "User",
+            "content": "变成像素画风格\n\nTranslation: Turn into pixel art style"
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case10/7.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+

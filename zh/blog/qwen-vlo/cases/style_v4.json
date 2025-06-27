@@ -1,0 +1,13 @@
+{
+    "title": "Style Conversion",
+    "messages": [
+        {
+            "role": "User",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/Style_Conversion/style_v4-in.jpg\" height=\"512px\" >}} 将照片中的女性主体转换为细致精美的3D渲染收藏摆件，装置在浅奶油色与柔和金色装饰的温馨展示盒中，保持优雅姿态与服饰细节，采用萌趣可爱的风格表现。\n\nTranslation: Convert the female subject in the photo to a detailed and exquisite 3D rendered collectible figure, displayed in a warm and cozy display box with a shallow cream color and soft golden decoration, maintaining an elegant pose and clothing details, presented in a cute and adorable style."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/Style_Conversion/style_v4_out.png\" height=\"512px\" >}}"
+        }
+    ]
+}

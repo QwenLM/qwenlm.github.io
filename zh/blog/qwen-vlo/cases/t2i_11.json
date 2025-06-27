@@ -1,0 +1,15 @@
+{
+    "title": "Text to Image",
+    "messages": [
+        {
+            "role": "User",
+            "content": "丛林时尚 标题“Qwen VLo”，flowers，这是一幅植物插画，前景描绘了盛开的仙人掌。背景中充满了各种植物，包括沙漠植物和一些栖息在其中的小鸟。这种设计适合自然主题的封面或横幅  \n\nTranslation: Jungle Chic, titled \"Qwen VLo\", flowers. This is a botanical illustration where the foreground depicts blooming cacti. The background is filled with various plants, including desert flora and small birds inhabiting them. This design is suitable for nature-themed covers or banners."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case11/3.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}
+

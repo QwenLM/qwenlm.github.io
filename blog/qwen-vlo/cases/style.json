@@ -1,0 +1,45 @@
+{
+    "title": "Style Conversion",
+    "messages": [
+        {
+            "role": "User",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case2/1.png\" height=\"256px\" >}}\n变成真实照片   \nTranslation: Turn into a real photo"
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case2/2.png\" height=\"512px\" >}}"
+
+        },
+        {
+            "role": "User",
+            "content": "背景换成艾弗尔铁塔   \nTranslation: Change the background to the Eiffel Tower "
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case2/3.png\" height=\"512px\" >}}"
+
+        },
+                {
+            "role": "User",
+            "content": "变成气球飘到空中   \nTranslation: Turn into a balloon floating in the air"
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case2/4.png\" height=\"512px\" >}}"
+
+        },
+                {
+            "role": "User",
+            "content": "把西瓜换成榴莲  \nTranslation:  Replace the watermelon with durian"
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case2/5.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}

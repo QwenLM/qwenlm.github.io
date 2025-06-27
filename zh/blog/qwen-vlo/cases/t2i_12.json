@@ -1,0 +1,16 @@
+{
+    "title": "Text to Image",
+    "messages": [
+        {
+            "role": "User",
+            "content": "这是一幅充满禅意的金箔彩画，细腻地描绘了一位渔翁静立于芦苇丛中的场景。画面中，微风轻拂，芦苇摇曳，光影交错之间展现出强烈的对比效果。明亮的部分以金箔点缀，闪耀着温暖而神圣的光辉，而暗部则通过深邃的阴影营造出神秘与宁静的氛围。整体画面传递出一种超然物外的空灵之感，仿佛将观者带入一个远离尘世喧嚣、唯有自然与内心对话的静谧世界。  \n\nTranslation: This is a Zen-inspired colorful gold-leaf painting that delicately depicts an old fisherman standing quietly among reeds. In the scene, a gentle breeze sways the reeds, creating a play of light and shadow that reveals strong contrast. Bright areas are accented with gold leaf, glowing with warm and sacred radiance, while darker parts use deep shadows to evoke a sense of mystery and tranquility. The overall image conveys a transcendent ethereal quality, as if drawing viewers into a serene world far removed from worldly noise — a place of quiet communion between nature and the inner self."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case11/4.png\" height=\"180px\" >}}"
+
+        }
+    ]
+}
+
+

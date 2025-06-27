@@ -1,0 +1,13 @@
+{
+    "title": "Style Conversion",
+    "messages": [
+        {
+            "role": "User",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/Style_Conversion/style_v2-in.jpg\" height=\"256px\" >}} 将照片中的猫转换为皮克斯 3D 风格，保持蓝眼睛和白橙色毛发特征，背景为红色树叶的秋日氛围。\n\nTranslation: Transform the cat in the photo into Pixar 3D style, maintaining the features of blue eyes and white-orange fur, with the autumn atmosphere of red leaves in the background."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/Style_Conversion/style_v2_out.png\" height=\"256px\" >}}"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "title": "Poster Your Cat",
+    "messages": [
+        {
+            "role": "User",
+            "content": "生成一只黑色的小猫\n\nTranslation: Generate a black kitten"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/cat_poster/o1.png\" height=\"512px\" >}}"
+        },
+        {
+            "role": "User",
+            "content": "生成一个以这只小黑猫为主体的广角巨幅摄影，主角小黑猫骄傲地站在中间，戴着一顶鲜红色的帽子，为它可爱的外表增添了一丝奇思妙想。在它的左边，动物们成群结队，老虎、狮子、猴子、鹿和天上的飞鸟，它们的眼睛闪烁着凶猛的光芒，散发出一种不可战胜的气势。在右边是一只外星人，还有一个发出耀眼的深蓝色光的飞碟。飞碟发出眩目的光束，与动物大军形成鲜明对比。广角镜头捕捉到了壮观的场景，突出了小猫的勇敢和双方之间的紧张关系。\n\nTranslation: Generate a wide-angle large-scale photograph with this little black cat as the main subject. The protagonist, the little black cat, stands proudly in the middle, wearing a bright red hat, adding a touch of ingenuity to its cute appearance. On its left, there are groups of animals, tigers, lions, monkeys, deer and birds in the sky. Their eyes sparkle with fierce light and exude an invincible momentum. On the right is an alien and a flying saucer emitting dazzling deep blue light. The flying saucer emitted dazzling beams of light, in sharp contrast to the army of animals. The wide-angle lens captured the spectacular scene, highlighting the kitten's bravery and the tension between the two sides."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/cat_poster/o2.png\" height=\"512px\" >}}"
+        }
+    ]
+}

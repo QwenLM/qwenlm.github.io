@@ -9,7 +9,29 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 05 Jun 2025 21:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Jun 2025 22:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen VLo: 从“看懂”世界到“描绘”世界</title>
+      <link>https://qwenlm.github.io/zh/blog/qwen-vlo/</link>
+      <pubDate>Thu, 26 Jun 2025 22:00:04 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/zh/blog/qwen-vlo/</guid>
+      <description>QWEN CHAT DISCORD
+介绍 多模态大模型的演进正在不断突破我们对技术边界的认知。从最初的 QwenVL 到如今的 Qwen2.5 VL ，我们在提升模型对图像内容的理解能力方面取得了一些进展。今天，我们正式推出 Qwen VLo ——一个多模态统一理解与生成模型。这一全新升级的模型不仅能够“看懂”世界，更能基于理解进行高质量的再创造，真正实现了从感知到生成的跨越。需要注意的是，这是一款预览版本，您可以通过 Qwen Chat 访问它。您可以直接发送类似“生成一张可爱猫咪的图片”的提示来生成图像，或者上传一张猫咪的图片并要求“给猫咪头上加顶帽子”来修改图像。图像的生成过程如下所示:
+生成过程：发挥你想象力，将你的想法变成现实
+正如视频中展示的生成过程，Qwen VLo 以一种渐进式生成方式，从左到右、从上到下逐步清晰地构建整幅图片。在生成过程中，模型会对预测的内容不断调整和优化，从而确保最终结果更加和谐一致。这种生成机制不仅提升了视觉效果，还为用户带来了更灵活、更可控的创作体验。
+从理解到创造：更精准的多模态生成能力 Qwen VLo在原始多模态理解与生成能力上进行了全面升级，显著增强了对图像内容的理解深度，并在此基础上实现了更加准确和一致的生成效果。以下是 Qwen VLo 的核心亮点：
+更精准的内容理解与再创造 以往的多模态模型在生成过程中容易出现语义不一致的问题，例如将汽车误生成其他类型的物体，或者无法保留原图的关键结构特征。而 Qwen VLo 通过更强大的细节捕捉能力，能够在生成过程中保持高度的语义一致性。例如，当用户输入一张汽车的照片并要求“更换颜色”时，Qwen VLo 不仅能准确识别车型，还能保留其原有的结构特征，同时完成色彩风格的自然转换，让生成结果既符合预期又不失真实感。
+支持开放指令编辑修改生成 用户可以通过自然语言提出各种创意性指令，如“将这张画风改为梵高风格”、“让这张照片看起来像19世纪的老照片”或“给这张图片添加一个晴朗的天空”。Qwen VLo 能够灵活响应这些开放性指令，并生成符合用户预期的结果。无论是艺术风格迁移、场景重构还是细节修饰，模型都能轻松应对。甚至一些传统的视觉感知人物如预测深度图、分割图、检测图以及边缘信息等也可以通过编辑指令轻松完成。更进一步，像很多更复杂的指令，比如一条指令中同时包含修改物体、修改文字、更换背景，模型也能轻松完成。
+多语言指令支持 Qwen VLo 支持包括中文、英文在内的多种语言指令，打破了语言壁垒，为全球用户提供了统一且便捷的交互体验。无论您使用哪种语言，只需简单描述您的需求，模型便能快速理解并输出理想结果。
+样例 Qwen VLo 更像一个人类画师, 根据自己的理解再进行创作. 下面是一些具体的例子。
+Qwen VLo 能够直接生成图像，并对其进行修改，例如替换背景、添加主体、进行风格迁移，甚至可以完成基于开放指令的大幅修改，包括检测和分割等视觉感知任务。
+A cute Shiba InuNextUser生成一个可爱的柴犬
+Translation: Generate a cute Shiba Inu
+Qwen-VLoUser背景改成草原
+Translation: Change the background to a grassland</description>
+    </item>
+    
     <item>
       <title>Qwen3 Embedding：新一代文本表征与排序模型</title>
       <link>https://qwenlm.github.io/zh/blog/qwen3-embedding/</link>

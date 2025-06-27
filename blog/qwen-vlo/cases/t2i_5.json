@@ -1,0 +1,14 @@
+{
+    "title": "Text to Image",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Typographic art, a road, a road with a text \"2025\", a tiny silhouette of a man waving, a tiny man dragging a suitcase, soft focus effect, new Chinese style, ink lines, wet ink smudges, dark red sprinkled with gold foil background, commercial illustration, rock color, the title is centered with a large handwritten graffiti \"A New Beginning\", impact, scribbled handwriting, artistic composition"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case7/5.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}

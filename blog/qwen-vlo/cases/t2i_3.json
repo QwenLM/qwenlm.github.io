@@ -1,0 +1,14 @@
+{
+    "title": "Text to Image",
+    "messages": [
+        {
+            "role": "User",
+            "content": "米开朗基罗头像画面凹版印刷，黑白图片，精致的线条细致线条刻画细节，细致的细节，白色背景，高清画质。"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case7/3.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "title": "Complex Image Prompt",
+    "messages": [
+        {
+            "role": "User",
+            "content":  "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case8/1.png\" height=\"256px\" >}}\nnow generate a POV of a person drawing this diagram in their notebook, at a round cafe table in park"
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case8/2.png\" height=\"512px\" >}}"
+        },
+        {
+            "role": "User",
+            "content":  "now show the same scene with a smug young Isaac Newton sitting at the table, with a prism, demonstrating the experiment, without the notebook in view"
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case8/3.png\" height=\"512px\" >}}"
+        }
+    ]
+}

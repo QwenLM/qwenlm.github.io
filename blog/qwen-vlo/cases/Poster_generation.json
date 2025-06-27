@@ -1,0 +1,29 @@
+{
+    "title": "Poster Generation",
+    "messages": [
+        {
+            "role": "User",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/coffee.jpg\" height=\"256px\" >}}\n生成一个关于这个咖啡的宣传海报，咖啡罐是主体，放在木质桌面上，有一种自然复古感。咖啡罐打开，上方悬着一个正在向下倒水的手冲壶，咖啡向外泼溅，散发出袅袅热气。主色调用深棕/咖色（象征咖啡）搭配奶白/浅金（象征奶泡），标题是奶泡风格的手写体“一杯咖啡，唤醒你的清晨”\n\nTranslation: Create a promotional poster for this coffee. The main subject is a coffee jar placed on a wooden tabletop, giving a natural and vintage feel. The jar is open, with a hand-pouring kettle suspended above it, pouring water downward. Coffee beans are splashing out and steam is rising. The color scheme features deep brown/sepia (symbolizing coffee) paired with creamy white/light gold (representing milk foam). The title is in milk foam-style handwriting: 'A Cup of Coffee to Wake Up Your Morning.'"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/coffee_out.png\" height=\"512px\" >}}"
+        },
+        {
+            "role": "User",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/lamp.jpg\" height=\"512px\" >}}\nSet the object in the image as the main visual focus, placing it centrally in the frame. The background should have a dark blue tone. The desk lamp is turned on, with light gradually diffusing outward, creating a warm orange-yellow halo effect. In front of the lamp base, place a dark wood desk surface with a few pages of an open magazine and a pair of sunglasses scattered on it. The overall style leans towards a vintage modern aesthetic, with strong contrasts in light and shadow. The color scheme creates tension between dark blue and orange. The title should be placed in the upper right corner of the image, with the text: \"Illuminating not just the desk, but an attitude.\"\n\n翻译：将图像中的主体设为视觉焦点，置于画面中央。背景采用深蓝色调。台灯处于开启状态，光线逐渐向外扩散，营造出温暖的橙黄色光晕效果。在灯座前方，放置深色木制桌面，桌面上散落着几页打开的杂志和一副太阳镜。整体风格偏向复古现代风，光影对比强烈。色彩搭配上，深蓝色与橙色形成张力。标题位于图像右上角，文字为：“Illuminating not just the desk, but an attitude.”（照明不仅是书桌，更是一种态度。）"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/lamp_out.png\" height=\"512px\" >}}"
+        },
+        {
+            "role": "User",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/apple.png\" height=\"512px\" >}}\n一、核心视觉元素\n\n主体强化\n保留高清苹果主体（占比40%-50%画面）\n增加苹果切面展示：横向剖面（5片星形果核）+纵向剖面（果肉纤维特写）\n水晶质感：在苹果表面添加1-2滴写实水珠（直径约苹果1/8高度）\n自然生态元素\n动态飘落的苹果花花瓣（3-5片，浅粉色渐变）\n蜜蜂停留特写（透明翅膀动态效果）\n老树根局部肌理（右下角虚化处理）\n二、信息架构系统\n\n标题层级\n主标题（24pt）：「咬一口阳光的味道」\n副标题（14pt）：「来自海拔1200米的冰川矿物土壤」"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/apple_out.png\" height=\"512px\" >}}"
+        }
+    ]
+}

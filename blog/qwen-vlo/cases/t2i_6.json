@@ -1,0 +1,14 @@
+{
+    "title": "Text to Image",
+    "messages": [
+        {
+            "role": "User",
+            "content": "国风海报设计，文字排版艺术，一条路，道路劲头涂鸦“2025”，一个极小的小人剪影挥手，一个极小的人拖着行李箱，柔焦效果，新中式，水墨线条，湿墨晕染，暗红色洒金箔背景，商业插画，岩彩，标题居中手写大大的涂鸦“新的开始”，冲击力，潦草字迹，艺术构图"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case7/6.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}

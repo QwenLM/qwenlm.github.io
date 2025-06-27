@@ -9,7 +9,17 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 05 Jun 2025 21:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Jun 2025 22:00:04 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen VLo: From &#34;Understanding&#34; the World to &#34;Depicting&#34; It</title>
+      <link>https://qwenlm.github.io/blog/qwen-vlo/</link>
+      <pubDate>Thu, 26 Jun 2025 22:00:04 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwen-vlo/</guid>
+      <description>QWEN CHAT DISCORD
+Introduction The evolution of multimodal large models is continually pushing the boundaries of what we believe technology can achieve. From the initial QwenVL to the latest Qwen2.5 VL, we have made progress in enhancing the model&amp;rsquo;s ability to understand image content. Today, we are excited to introduce a new model, Qwen VLo, a unified multimodal understanding and generation model. This newly upgraded model not only &amp;ldquo;understands&amp;rdquo; the world but also generates high-quality recreations based on that understanding, truly bridging the gap between perception and creation.</description>
+    </item>
+    
     <item>
       <title>Qwen3 Embedding: Advancing Text Embedding and Reranking Through Foundation Models</title>
       <link>https://qwenlm.github.io/blog/qwen3-embedding/</link>
