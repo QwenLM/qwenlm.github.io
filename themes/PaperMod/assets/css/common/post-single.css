@@ -541,6 +541,12 @@ div.footnotes{
     font-size: 0.8em;
     transition: all 0.5s;
 }
+
+.example-content .grid-layout.scroll {
+    max-height: 76vh;
+    overflow: auto;
+}
+
 .example-content .title {
     margin-bottom: var(--content-gap);
     font-size: 1.2em;

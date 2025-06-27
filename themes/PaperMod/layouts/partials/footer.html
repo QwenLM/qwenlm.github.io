@@ -78,10 +78,10 @@
             e.style.display = "block";
             e.style.backgroundColor = "var(--code-bg)";
             e.style.marginBottom = "var(--modal-gap)";
+            e.classList.remove("scroll")
         });
         document.querySelectorAll(".next-button").forEach((e) => { e.style.display = "none"; });
     };
-
 </script>
 {{- end }}
 

@@ -7,6 +7,10 @@
 {{ with .Get "next" }}
 {{ $next = . }}
 {{ end }}
+{{ $scroll := false }}
+{{ with .Get "scroll" }}
+{{ $scroll = . }}
+{{ end }}
 {{ with $.Page.Resources.GetMatch (.Get "data") }}
   {{ $data := . | transform.Unmarshal }}
   {{ with $data }}
@@ -22,7 +26,7 @@
   </div>
   {{ end }}
   {{ with .messages }}
-  <div class="grid-layout">
+  <div class="grid-layout {{- if $scroll }} scroll{{- end}}">
     {{ range . }}
     <div class="role">{{ .role }}</div>
     <div class="content">{{ .content | $.Page.RenderString }}</div>

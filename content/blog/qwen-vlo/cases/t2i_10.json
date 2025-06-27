@@ -1,0 +1,15 @@
+{
+    "title": "Text to Image",
+    "messages": [
+        {
+            "role": "User",
+            "content": "大海中快速行驶微小的船，光学调色风格，鸟瞰大图，彩虹渐变海平面，一半海水一半油画，国家地理照片，8K分辨率，蜡笔涂抹艺术，互动艺术品 \n\nTranslation: A tiny boat swiftly sailing across the vast ocean, optical color grading style, aerial view, rainbow gradient horizon, half sea and half oil painting texture, National Geographic photo style, 8K resolution, crayon brushstroke art, interactive artwork, no watermark or logo."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case11/2.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}
+

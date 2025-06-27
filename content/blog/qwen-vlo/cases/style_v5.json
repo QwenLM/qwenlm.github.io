@@ -1,0 +1,13 @@
+{
+    "title": "Style Conversion",
+    "messages": [
+        {
+            "role": "User",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/Style_Conversion/style_v5-in.jpg\" height=\"256px\" >}} 将铁王座转换为Jellycat毛绒玩具风格，保持剑刃纹理细节，采用柔和的毛绒材质渲染。\n\nTranslation: Transform the Iron Throne into the Jellycat plush toy style, retain the texture details of the sword blade, and use soft plush material for rendering."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/Style_Conversion/style_v5-out.png\" height=\"256px\" >}}"
+        }
+    ]
+}

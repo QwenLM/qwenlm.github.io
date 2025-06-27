@@ -1,0 +1,45 @@
+{
+    "title": "Select Remove Add",
+    "messages": [
+        {
+            "role": "User",
+            "content": "生成一张凌乱的书桌，上面堆满了各种物品。一边是书本、笔记本和文具胡乱堆叠，新旧笔记交错，笔帽、橡皮等文具散落一旁。另一边电子产品如手机、平板和电脑“各占一方”，充电线杂乱缠绕。 \n\nTranslation: Generate a messy desk, which is piled up with all kinds of items. On one side, books, notebooks and stationery are randomly piled up, with new and old notes interwoven, and pen caps, erasers and other stationery are scattered around. On the other side, electronic products such as mobile phones, tablets and computers each occupy their own space, with charging cables tangled up in a mess."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/add_remove/input.png\" height=\"512px\" >}}"
+        },
+        {
+            "role": "User",
+            "content": "用红色的框标示出图中的手机 \n\nTranslation: Mark the mobile phone in the picture with a red box"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/add_remove/o1.png\" height=\"512px\" >}}"
+        },
+        {
+            "role": "User",
+            "content": "擦除这个手机\n\nTranslation: Erase this mobile phone"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/add_remove/o2.png\" height=\"512px\" >}}"
+        },
+        {
+            "role": "User",
+            "content": "在桌面上添加一杯咖啡\n\nTranslation: Add a cup of coffee on the desk"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/add_remove/o3.png\" height=\"512px\" >}}"
+        },
+        {
+            "role": "User",
+            "content": "将这张图变成边缘检测图\n\nTranslation: Convert this picture into an edge detection picture"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/add_remove/o4.png\" height=\"512px\" >}}"
+        }
+    ]
+}

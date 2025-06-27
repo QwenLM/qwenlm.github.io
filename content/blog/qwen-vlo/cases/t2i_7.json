@@ -1,0 +1,14 @@
+{
+    "title": "Text to Image",
+    "messages": [
+        {
+            "role": "User",
+            "content": "国风绘画，电影海报，意境，写意，设计感，画面下方是小小的一个骑马奔跑的唐朝官员剪影，红色背景上隐约可见的荔枝纹理，穿插几片绿叶，狂草书法字“长安”，排版设计"
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case7/7.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}

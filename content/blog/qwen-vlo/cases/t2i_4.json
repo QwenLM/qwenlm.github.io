@@ -1,0 +1,14 @@
+{
+    "title": "Text to Image",
+    "messages": [
+        {
+            "role": "User",
+            "content": "A lone astronaut floats inside a vast space station, painting swirling galaxies onto a massive canvas that hangs weightlessly in the air. Their paintbrush leaves behind trails of cosmic dust, and their suit is stained with nebula-colored hues. Their helmet is off, revealing eyes filled with the reflection of distant planets. Outside the glass window, a black hole looms, twisting light into mesmerizing patterns."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case7/4.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}
