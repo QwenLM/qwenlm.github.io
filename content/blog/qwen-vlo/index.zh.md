@@ -36,11 +36,12 @@ show_word_count: true
 #   gradient: false
 #   blur: false
 ---
+{{< figure src="https://qianwen-res.oss-accelerate.aliyuncs.com/Qwen-VLo/vlo.png#center" width="100%">}}
 
 {{< button href="https://chat.qwenlm.ai" label="QWEN CHAT" external=true >}}
 {{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
-
+{{<video src="https://qianwen-res.oss-accelerate.aliyuncs.com/Qwen-VLo/vlo.mov" muted="true" width="100%" loop="true" autoplay="true">}}
 
 ## **介绍**
 
@@ -49,7 +50,7 @@ show_word_count: true
 
 **生成过程：发挥你想象力，将你的想法变成现实**
 
-{{<video src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/header_cn.mov" muted="true" width="100%" loop="true" autoplay="true">}}
+{{<video src="https://qianwen-res.oss-accelerate.aliyuncs.com/Qwen-VLo/header_cn.mov" muted="true" width="100%" loop="true" autoplay="true">}}
 
 
 

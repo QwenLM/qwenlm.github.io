@@ -36,10 +36,12 @@ show_word_count: true
 #   gradient: false
 #   blur: false
 ---
-
+{{< figure src="https://qianwen-res.oss-accelerate.aliyuncs.com/Qwen-VLo/vlo.png#center" width="100%">}}
 
 {{< button href="https://chat.qwenlm.ai" label="QWEN CHAT" external=true >}}
 {{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
+
+{{<video src="https://qianwen-res.oss-accelerate.aliyuncs.com/Qwen-VLo/vlo.mov" muted="true" width="100%" loop="true" autoplay="true">}}
 
 ## **Introduction**
 
@@ -47,7 +49,7 @@ The evolution of multimodal large models is continually pushing the boundaries o
 
 **The Creative Process: Turn Your Imagination Into Reality**
 
-{{<video src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/head_en.mov" muted="true" width="100%" loop="true" autoplay="true">}}
+{{<video src="https://qianwen-res.oss-accelerate.aliyuncs.com/Qwen-VLo/head_en.mov" muted="true" width="100%" loop="true" autoplay="true">}}
 
 <!-- {{< figure src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/QVQ-Max/test_time.png#center" width="80%">}} -->
 
