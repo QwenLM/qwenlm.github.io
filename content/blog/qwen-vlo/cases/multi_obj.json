@@ -1,0 +1,15 @@
+{
+    "title": "Multiple image input",
+    "messages": [
+        {
+            "role": "User",
+            "content":  "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case9/1.png\" height=\"256px\" >}}{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case9/3.png\" height=\"256px\" >}}{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case9/4.png\" height=\"256px\" >}}{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case9/5.png\" height=\"256px\" >}}{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case9/2.png\" height=\"256px\" >}}\n把这些洗浴用品，放到这个红色的篮子里面\n\n\nTranslation: Put these bathing products into this red basket."
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case9/6.png\" height=\"512px\" >}}"
+        }
+    ]
+}
+

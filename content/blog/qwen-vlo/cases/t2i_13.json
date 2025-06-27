@@ -1,0 +1,14 @@
+{
+    "title": "Text to Image",
+    "messages": [
+        {
+            "role": "User",
+            "content": "一幅壮丽的自然风景画，展现巍峨的雪山耸立于远方，山峰覆盖着洁白的积雪，反射出耀眼的光芒。雪山脚下是一片辽阔的草原，有一个人在骑马，绿草如茵，点缀着五彩斑斓的野花。一条蜿蜒的河流从草原中穿过，河水清澈见底，在阳光下泛起粼粼波光。天空湛蓝，漂浮着几缕白云，与远处的雪山相映成趣。整个画面充满宁静与宏伟的气息，让人感受到大自然的壮美与生命力。超高清细节，广角视角，写实风格，光影效果强烈，8K分辨率。  \n\nTranslation: A magnificent natural landscape painting showcasing majestic snow-capped mountains standing in the distance, their peaks covered in pure white snow reflecting dazzling light. At the foot of the mountains lies a vast grassland where a rider gallops across the terrain—lush green meadows dotted with vibrant wildflowers. A winding river flows through the plains, its crystal-clear waters shimmering under the sunlight. The sky is a brilliant blue, scattered with a few drifting white clouds that harmonize beautifully with the distant snowy peaks. The entire scene exudes a sense of serenity and grandeur, evoking the awe-inspiring beauty and vitality of nature. Ultra-high-definition details, wide-angle perspective, realistic style, intense lighting effects, 8K resolution."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case11/5.png\" height=\"180px\" >}}"
+
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "title": "Text to Image",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Fisheye lens, an orange cat wearing sunglasses, a scarf, and fuzzy ear muffs stands on the snow smiling while taking a selfie. In the background are continuous snow-capped mountains, and a small yellow rubber duck toy peeks out from its backpack."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case7/2.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "title": "Style Conversion",
+    "messages": [
+        {
+            "role": "User",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case3/1.jpeg\" height=\"256px\" >}}\nConvert the couple in the photo into a minimalist flat illustration style Q-version sticker, retaining the facial features, with thick white borders, figures extending beyond the circular area, the circular area filled with a solid color, transparent background, and an overall cute style."
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case3/2.png\" height=\"512px\" >}}"
+
+        },
+        {
+            "role": "User",
+            "content": "Convert the couple in the photo into a detailed, exquisite, and adorable 3D rendered collectible figurine, placed inside a cozy and romantic display box decorated with light cream and soft golden accents, while preserving the characteristics of the snowy scene and the figures' poses."
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case3/3.png\" height=\"512px\" >}}"
+
+        },
+                {
+            "role": "User",
+            "content": "Add the text \"Happy Wedding\""
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case3/4.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}

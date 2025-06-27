@@ -1,0 +1,17 @@
+{
+    "title": "Text to Image",
+    "messages": [
+        {
+            "role": "User",
+            "content": "动漫插画；水彩手绘；前景是草坡，草坡上有个人在奔跑，动态感，然后是厚重的白云；蓝色背景；颜色层次多渐变；过渡自然和谐  \n\nTranslation: Anime illustration; watercolor hand-drawn style; the foreground features a grassy hill where a person is running, conveying a sense of motion. Behind are thick, billowing clouds; blue background; multi-layered color gradients with smooth and harmonious transitions."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case11/1.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}
+
+
+

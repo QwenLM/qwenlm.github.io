@@ -1,0 +1,29 @@
+{
+    "title": "Style Conversion",
+    "messages": [
+        {
+            "role": "User",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/Style_Conversion/style_v7-in.jpg\" height=\"256px\" >}} 将照片中的红色跑车转换为细致精美的3D渲染收藏摆件，装置在浅奶油色与柔和金色装饰的粉彩展示盒中，保持跑车的红色条纹特征，采用萌趣可爱风格。\n\nTranslation: Transform the red sports car in the photo into a detailed and exquisite 3D rendered collectible ornament, installed in a pastel display box decorated with light cream and soft gold, maintaining the red stripe feature of the sports car and adopting a cute and playful style."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/Style_Conversion/style_v7-out-1.png\" height=\"256px\" >}}"
+        },
+        {
+            "role": "User",
+            "content": "把图中的跑车变成毛绒玩具\n\nTranslation: Turn the car in the picture into a plush toy."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/Style_Conversion/style_v7-out-2.png\" height=\"256px\" >}}"
+        },
+        {
+            "role": "User",
+            "content": "再把跑车变成奶油布丁风格的\n\nTranslation: Turn the car into a cream pudding style."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/Style_Conversion/style_v7-out-3.png\" height=\"256px\" >}}"
+        }
+    ]
+}

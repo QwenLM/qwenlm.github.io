@@ -1,0 +1,14 @@
+{
+    "title": "Complex Image Prompt",
+    "messages": [
+        {
+            "role": "User",
+            "content":  "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case4/1.jpeg\" height=\"256px\" >}}\nGenerate a photo in which a man wearing a black hat is reading a newspaper on the subway, next to him is a beautiful young woman wearing red sunglasses, and there's also a Husky dog. The subway window shows the Statue of Liberty, and the subway station sign displays 'Qwen VLo'. \n\n(翻译：生成照片，图中男人带着黑帽子在地铁上看报纸，旁边是一个美丽的带红色墨镜年轻女性，还有一只哈士奇，地铁的窗外是自由女神像，地铁的站牌显示“Qwen VLo”)"
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case4/1_out.png\" height=\"512px\" >}}"
+        }
+    ]
+}

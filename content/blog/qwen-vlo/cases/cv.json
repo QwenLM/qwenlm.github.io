@@ -1,0 +1,35 @@
+{
+    "title": "Perception and Localization",
+    "messages": [
+        {
+            "role": "User",
+            "content": "生成摆满水果的桌面   \nTranslation: Generate a table full of fruits"
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case6/1.png\" height=\"512px\" >}}"
+
+        },
+        {
+            "role": "User",
+            "content": "预测边缘检测图   \nTranslation: Predict an edge detection map "
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case6/2.png\" height=\"512px\" >}}"
+
+        },
+                {
+            "role": "User",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case6/1.png\" height=\"512px\" >}}用红色mask分割图中香蕉的边缘   \nTranslation: Use a red mask to segment the edges of the banana in the image."
+
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case6/3.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}

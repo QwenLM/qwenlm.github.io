@@ -1,0 +1,14 @@
+{
+    "title": "Text to Image",
+    "messages": [
+        {
+            "role": "User",
+            "content": "Crayon scraper painting, large color blocks, smudges, freehand brushwork, on a golden hill, a father and his daughter are running, slanted, the sky is a deep and dark dreamy star track, serif font headline \"Father's Day\"."
+        },
+        {
+            "role": "Qwen-VLo",
+            "content": "{{< figure src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VLo/case7/8.png\" height=\"512px\" >}}"
+
+        }
+    ]
+}
