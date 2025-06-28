@@ -167,7 +167,7 @@ In the third stage, we integrated non-thinking capabilities into the thinking mo
 Below is a simple guide for you to use Qwen3 on different frameworks. First of all, we provide an standard example of using Qwen3-30B-A3B in Hugging Face transformers:
 
 ```python
-from modelscope import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_name = "Qwen/Qwen3-30B-A3B"
 
