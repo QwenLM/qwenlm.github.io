@@ -1,7 +1,7 @@
 ---
 title: "Time to Speak Some Dialects, Qwen-TTS!"
 date: 2025-06-27T15:01:34+08:00
-# weight: 1
+weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
 draft: false
