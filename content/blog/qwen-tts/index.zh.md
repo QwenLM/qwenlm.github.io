@@ -40,9 +40,9 @@ show_word_count: true
 {{< button href="https://help.aliyun.com/zh/model-studio/qwen-tts" label="API" external=true >}}
 
 ## 简介
-我们正式通过[Qwen API](https://help.aliyun.com/zh/model-studio/qwen-tts)发布了**Qwen-TTS**(`qwen-tts-latest` or `qwen-tts-2025-05-22`)的最新版本。Qwen-TTS使用了超过300万小时的大规模语料库进行训练，合成效果实现了人类级别的自然度和表现力。比较亮眼的是，Qwen-TTS 会根据输入文本自动调整韵律、节奏和情绪变化。此外，Qwen-TTS支持生成三种中文方言，包括北京话、上海话和四川话。
+我们通过 [Qwen API](https://help.aliyun.com/zh/model-studio/qwen-tts) 更新了 **Qwen-TTS** ( `qwen-tts-latest` or `qwen-tts-2025-05-22` ) 的最新版本。Qwen-TTS 使用了超过 300 万小时的大规模语料库进行训练，合成效果实现了人类级别的自然度和表现力。比较亮眼的是，Qwen-TTS 会根据输入文本自动调整韵律、节奏和情绪变化。此外，Qwen-TTS 支持生成三种中文方言，包括北京话、上海话和四川话。
 
-<!-- Qwen-TTS 的核心技术创新在于使用了 *Qwen-TTS-Tokenizer*，这是一个低比特率的语音表征器，能够同时编码语义和声学信息，并在 Qwen-Audio 上进行训练。Qwen-TTS 还采用了 [Qwen2.5-Omni 技术报告](https://arxiv.org/abs/2503.20215) 中引入的双轨 Transformer，以实现流式语音生成。 -->
+<!-- Qwen-TTS 的核心技术创新在于使用了 *Qwen-TTS-Tokenizer*，这是一个低比特率的语音表征器，能够同时编码语义和声学信息，并在 Qwen-Audio 上进行训练。Qwen-TTS 还采用了 [Qwen 2.5-Omni 技术报告](https://arxiv.org/abs/2503.20215) 中引入的双轨 Transformer，以实现流式语音生成。 -->
 
 目前，Qwen-TTS 支持七种中英双语音色，包括 Cherry、Ethan、Chelsie、Serena、Dylan（北京话）、Jada（上海话） 和 Sunny（四川话），更多语言和风格选项即将在近期推出。
 
@@ -84,7 +84,7 @@ show_word_count: true
   <tr>
     <td class="tg-t0cb" rowspan="2">Jada</td>
     <td class="tg-t0cb" rowspan="2">上海话</td>
-    <td class="tg-t0cb">侬只小赤佬，啊呀，数学句子错它八道题，还想吃肯德基啊！夜到麻将队三缺一啊，嘿嘿，叫阿三头来顶嘛！哦，提前上料这样产品，还要卖300块硬币啊。</td>
+    <td class="tg-t0cb">侬只小赤佬，啊呀，数学句子错它八道题，还想吃肯德基啊！夜到麻将队三缺一啊，嘿嘿，叫阿三头来顶嘛！哦，提前上料这样产品，还要卖 300 块硬币啊。</td>
     <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/上海话-zh.wav" type="audio/wav"></audio></td>
   </tr>
   <tr>
@@ -201,7 +201,7 @@ Qwen-TTS 生成的效果目前已经达到了人类水平，其在 SeedTTS-Eval 
   </tr>
   <tr>
     <td class="tg-t0cb" rowspan="2"><span style="color:#1F1F1F;background-color:#FFF">Ethan</span></td>
-    <td class="tg-t0cb">啊？真的假的？他们俩拍吻戏。可是我觉得他们两个没有CP感欸。</td>
+    <td class="tg-t0cb">啊？真的假的？他们俩拍吻戏。可是我觉得他们两个没有 CP 感欸。</td>
     <td class="tg-hxmt"><audio controls><source src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-TTS/sample/tts_sample/Ethan_ZH.wav" type="audio/wav"></audio></td>
   </tr>
   <tr>
@@ -230,7 +230,7 @@ Qwen-TTS 生成的效果目前已经达到了人类水平，其在 SeedTTS-Eval 
 
 
 ## 使用方法
-通过Qwen API使用Qwen-TTS是非常简单的，我们在下面提供了一个简单的代码片段以供体验：
+通过 Qwen API 使用 Qwen-TTS 是非常简单的，我们在下面提供了一个简单的代码片段以供体验：
 
 ```python
 import os

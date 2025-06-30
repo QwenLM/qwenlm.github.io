@@ -39,13 +39,14 @@ show_word_count: true
 
 
 {{< button href="https://help.aliyun.com/zh/model-studio/qwen-tts" label="API" external=true >}}
+{{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
+
 
 ## Introduction
 
 
-We are excited to introduce the latest version of **Qwen-TTS** (`qwen-tts-latest` or `qwen-tts-2025-05-22`) through [Qwen API](https://help.aliyun.com/zh/model-studio/qwen-tts) . Trained on a large-scale dataset encompassing over millions of hours of speech, Qwen-TTS achieves human-level naturalness and expressiveness. Notably, Qwen-TTS automatically adjusts prosody, pacing, and emotional inflections in response to the input text. Notably, Qwen-TTS supports the generation of 3 Chinese dialects, including Pekingese, Shanghainese, and Sichuanese.
+Here we introduce the latest update of **Qwen-TTS** (`qwen-tts-latest` or `qwen-tts-2025-05-22`) through [Qwen API](https://help.aliyun.com/zh/model-studio/qwen-tts) . Trained on a large-scale dataset encompassing over millions of hours of speech, Qwen-TTS achieves human-level naturalness and expressiveness. Notably, Qwen-TTS automatically adjusts prosody, pacing, and emotional inflections in response to the input text. Notably, Qwen-TTS supports the generation of 3 Chinese dialects, including Pekingese, Shanghainese, and Sichuanese.
 
-<!-- The core technical innovation of Qwen-TTS lies in its use of the *Qwen-TTS-Tokenizer*, a low-bitrate speech representation tokenizer that encodes both semantic and acoustic information, trained on Qwen-Audio. Qwen-TTS also adopts the dual-track Transformer, as introduced in the [Qwen2.5-Omni Technical Report](https://arxiv.org/abs/2503.20215), to enable streaming speech generation. -->
 
 As of now, Qwen-TTS supports 7 Chinese-English bilingual voices, including Cherry, Ethan, Chelsie, Serena, Dylan (Pekingese), Jada (Shanghainese) and Sunny (Sichuanese). More languages and stylistic options will be released in the near future.
 
