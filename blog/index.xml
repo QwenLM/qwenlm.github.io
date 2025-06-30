@@ -11,6 +11,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 27 Jun 2025 15:01:30 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Time to Speak Some Dialects, Qwen-TTS!</title>
+      <link>https://qwenlm.github.io/blog/qwen-tts/</link>
+      <pubDate>Fri, 27 Jun 2025 15:01:30 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwen-tts/</guid>
+      <description>API Introduction We are excited to introduce the latest version of Qwen-TTS (qwen-tts-latest or qwen-tts-2025-05-22) through Qwen API . Trained on a large-scale dataset encompassing over millions of hours of speech, Qwen-TTS achieves human-level naturalness and expressiveness. Notably, Qwen-TTS automatically adjusts prosody, pacing, and emotional inflections in response to the input text. Notably, Qwen-TTS supports the generation of 3 Chinese dialects, including Pekingese, Shanghainese, and Sichuanese.
+As of now, Qwen-TTS supports 7 Chinese-English bilingual voices, including Cherry, Ethan, Chelsie, Serena, Dylan (Pekingese), Jada (Shanghainese) and Sunny (Sichuanese).</description>
+    </item>
+    
+    <item>
       <title>Qwen VLo: From &#34;Understanding&#34; the World to &#34;Depicting&#34; It</title>
       <link>https://qwenlm.github.io/blog/qwen-vlo/</link>
       <pubDate>Thu, 26 Jun 2025 22:00:04 +0800</pubDate>
@@ -372,16 +382,6 @@ Additionally, we have WeChat groups for chatting and we invite you to join the g
       
       <guid>https://qwenlm.github.io/blog/ofa/</guid>
       <description>2022 is a year of generalist models! With the bloom of multimodal pretraining, especially the unified model, we have witnessed the opportunity to building a generalist model that is capable of processing tasks of different modalities or multi-modalities! Thus, we propose OFA1, namely One-For-All, a unified multimodal pretrained model that unifies understanding and generation tasks concerning modalities into a single framework, and we pretrain OFA with the instruction-based multitask-pretraining that endows it with multiple capabilities.</description>
-    </item>
-    
-    <item>
-      <title>Time to Speak Some Dialects, Qwen-TTS!</title>
-      <link>https://qwenlm.github.io/blog/qwen-tts/</link>
-      <pubDate>Fri, 27 Jun 2025 15:01:30 +0800</pubDate>
-      
-      <guid>https://qwenlm.github.io/blog/qwen-tts/</guid>
-      <description>API Introduction We are excited to introduce the latest version of Qwen-TTS (qwen-tts-latest or qwen-tts-2025-05-22) through Qwen API . Trained on a large-scale dataset encompassing over millions of hours of speech, Qwen-TTS achieves human-level naturalness and expressiveness. Notably, Qwen-TTS automatically adjusts prosody, pacing, and emotional inflections in response to the input text. Notably, Qwen-TTS supports the generation of 3 Chinese dialects, including Pekingese, Shanghainese, and Sichuanese.
-As of now, Qwen-TTS supports 7 Chinese-English bilingual voices, including Cherry, Ethan, Chelsie, Serena, Dylan (Pekingese), Jada (Shanghainese) and Sunny (Sichuanese).</description>
     </item>
     
     <item>
