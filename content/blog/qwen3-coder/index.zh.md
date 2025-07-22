@@ -86,22 +86,22 @@ Qwen Code 是一个 CLI 工具，修改自 Gemini CLI，针对 Qwen3‑Coder系�
 
 确保已安装 Node.js 20 及以上版本，可以通过以下命令安装：
 
-```
+```bash
 curl -qL https://www.npmjs.com/install.sh | sh
 ```
 然后通过 npm 管理器安装 Qwen Code：
-```
+```bash
 npm i -g @qwen-code/qwen-code
 ```
 > 另一种方式是从源码安装：
-> ```
+> ```bash
 > git clone https://github.com/QwenLM/qwen-code.git
 > cd qwen-code && npm install && npm install -g
 > ``` 
 
 Qwen Code 支持 OpenAI SDK 调用 LLM，你可以导出以下环境变量，或者简单地将其放在 `.envfile` 中。
 
-```
+```bash
 export OPENAI_API_KEY="your_api_key_here"
 export OPENAI_BASE_URL="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
 export OPENAI_MODEL="qwen3-coder-plus"
@@ -111,7 +111,7 @@ export OPENAI_MODEL="qwen3-coder-plus"
 ### Claude Code
 除了 Qwen Code 之外，现在还可以将 Qwen3‑Coder 与 Claude Code 搭配使用。只需在[阿里云百炼](https://bailian.console.aliyun.com/)平台申请 API Key，并安装 Claude Code，即可开始畅享编码体验。
 
-```
+```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
@@ -119,7 +119,7 @@ npm install -g @anthropic-ai/claude-code
 
 #### 使用dashscope提供的代理  API
 只需要将Anthropic的base url替换成dashscope上提供的endpoint即可。
-```
+```bash
 export ANTHROPIC_BASE_URL=https://dashscope-intl.aliyuncs.com/api/v2/apps/claude-code-proxy
 export ANTHROPIC_AUTH_TOKEN=your-dashscope-apikey
 ```
@@ -127,18 +127,18 @@ export ANTHROPIC_AUTH_TOKEN=your-dashscope-apikey
 
 #### Optional 2: 使用 claude-code-config 自定义路由
 claude-code-router 是一个第三方的路由工具，用于为 Claude Code 灵活地切换不同的后端 API。dashScope平台提供了一个简单的扩展包 claude-code-config，可为 claude-code-router 生成包含 dashScope 支持的默认配置。
-```
+```bash
 npm install -g @musistudio/claude-code-router
 npm install -g @dashscope-js/claude-code-config
 ```
 生成配置文件和插件目录：
-```
+```bash
 ccr-dashscope
 ```
 该命令会自动生成 ccr 所需的配置文件和插件目录。你也可以手动调整 ~/.claude-code-router/config.json 和 ~/.claude-code-router/plugins/ 中的配置。
 
 最后，通过 ccr 开始使用 Claude Code：
-```
+```bash
 ccr code
 ```
 至此，你即可通过 ccr 使用 Claude Code 畅享 Qwen3‑Coder 的强大编码能力。祝开发顺利！
@@ -173,7 +173,7 @@ ccr code
 ## API
 如您希望通过百炼 API 平台 [Alibaba Cloud Model Studio](https://modelstudio.console.alibabacloud.com/) 调用 Qwen3-Coder，欢迎使用以下示例代码进行测试:
 
-```
+```python
 import os
 from openai import OpenAI
 
