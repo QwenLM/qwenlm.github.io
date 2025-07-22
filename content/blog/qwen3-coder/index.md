@@ -109,7 +109,7 @@ export OPENAI_MODEL="qwen3-coder-plus"
 Now enjoy your vibe coding with Qwen-Code and Qwen, by simply typing: qwen!
 
 ### Claude Code
-In addition to Qwen Code, you can now use Qwen3‑Coder with Claude Code. Simply request an API key on [dashscope](https://dashscope.aliyun.com/) platform and install Claude Code to start coding.
+In addition to Qwen Code, you can now use Qwen3‑Coder with Claude Code. Simply request an API key on [Alibaba Cloud Model Studio](https://modelstudio.console.alibabacloud.com/) platform and install Claude Code to start coding.
 
 ```
 npm install -g @anthropic-ai/claude-code
