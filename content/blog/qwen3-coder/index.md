@@ -86,22 +86,22 @@ Qwen Code is a research-purpose CLI tool adapted from Gemini CLI, with enhanced 
 Make sure you have installed nodejs 20+:
 
 You could install it via the following commands:
-```
+```bash
 curl -qL https://www.npmjs.com/install.sh | sh
 ```
 Then install Qwen code via npm manager:
-```
+```bash
 npm i -g @qwen-code/qwen-code
 ```
 > The other way is to install from the source:
-> ```
+> ```bash
 > git clone https://github.com/QwenLM/qwen-code.git
 > cd qwen-code && npm install && npm install -g
 > ``` 
 
 Qwen Code supports the OpenAI SDK when calling LLMs, and you can export the following environment variables or simply put them under the `.envfile`.
 
-```
+```bash
 export OPENAI_API_KEY="your_api_key_here"
 export OPENAI_BASE_URL="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
 export OPENAI_MODEL="qwen3-coder-plus"
@@ -111,14 +111,14 @@ Now enjoy your vibe coding with Qwen-Code and Qwen, by simply typing: qwen!
 ### Claude Code
 In addition to Qwen Code, you can now use Qwen3‑Coder with Claude Code. Simply request an API key on [Alibaba Cloud Model Studio](https://modelstudio.console.alibabacloud.com/) platform and install Claude Code to start coding.
 
-```
+```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
 We have provided two entrypoints for seamlessly experiencing coding with Qwen3-Coder.
 
 #### Optional 1: Claude Code proxy API
-```
+```bash
 export ANTHROPIC_BASE_URL=https://dashscope-intl.aliyuncs.com/api/v2/apps/claude-code-proxy
 export ANTHROPIC_AUTH_TOKEN=your-dashscope-apikey
 ```
@@ -127,17 +127,17 @@ Then you should be able to use Claude Code with Qwen3-Coder!
 #### Optional 2: claude-code-config npm package for router customization
 claude-code-router aims for customizing different backend models for Claude Code. The dashscope team also provide a convenient config npm extension, namely claude-code-config, that provides default configuration for claude-code-router with DashScope support.
 Run installation:
-```
+```bash
 npm install -g @musistudio/claude-code-router
 npm install -g @dashscope-js/claude-code-config
 ```
 and then run configuration:
-```
+```bash
 ccr-dashscope
 ```
 The command will automatically generate the config json files and plugin directories for ccr. (You could also manually adjust these under ~/.claude-code-router/config.json and ~/.claude-code-router/plugins/ )
 Start using claude code via ccr:
-```
+```bash
 ccr code
 ```
 
@@ -168,7 +168,7 @@ Configure the Qwen3-Coder-480B-A35B-Instruct to cline
 ## API
 You can directly access the API of Qwen3-Coder through [Alibaba Cloud Model Studio](https://modelstudio.console.alibabacloud.com/). Here is a demonstration of how to use this model with the Qwen API.
 
-```
+```python
 import os
 from openai import OpenAI
 
