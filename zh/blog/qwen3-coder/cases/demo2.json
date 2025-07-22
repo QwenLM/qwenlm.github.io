@@ -1,0 +1,7 @@
+{
+    "title": "Example: Qwen with Cline",
+    "messages": [{
+        "role": "",
+        "content": "{{< video autoplay=\"false\" loop=\"false\" src=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/demo2.mp4\" controls=\"1\">}}"
+    }]
+}

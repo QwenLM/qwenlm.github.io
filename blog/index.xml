@@ -9,7 +9,17 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 27 Jun 2025 15:01:30 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Jul 2025 21:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen3-Coder: Agentic Coding in the World</title>
+      <link>https://qwenlm.github.io/blog/qwen3-coder/</link>
+      <pubDate>Tue, 22 Jul 2025 21:00:00 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwen3-coder/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DISCORD
+Today, we&amp;rsquo;re announcing Qwen3-Coder, our most agentic code model to date. Qwen3-Coder is available in multiple sizes, but we&amp;rsquo;re excited to introduce its most powerful variant first: Qwen3-Coder-480B-A35B-Instruct — a 480B-parameter Mixture-of-Experts model with 35B active parameters which supports the context length of 256K tokens natively and 1M tokens with extrapolation methods, offering exceptional performance in both coding and agentic tasks. Qwen3-Coder-480B-A35B-Instruct sets new state-of-the-art results among open models on Agentic Coding, Agentic Browser-Use, and Agentic Tool-Use, comparable to Claude Sonnet 4.</description>
+    </item>
+    
     <item>
       <title>Time to Speak Some Dialects, Qwen-TTS!</title>
       <link>https://qwenlm.github.io/blog/qwen-tts/</link>

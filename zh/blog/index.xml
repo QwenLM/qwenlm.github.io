@@ -9,7 +9,20 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 27 Jun 2025 15:01:34 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Jul 2025 21:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen3-Coder: 在世界中自主编程</title>
+      <link>https://qwenlm.github.io/zh/blog/qwen3-coder/</link>
+      <pubDate>Tue, 22 Jul 2025 21:00:00 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/zh/blog/qwen3-coder/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DISCORD
+今天我们正式发布 Qwen3-Coder，这是我们迄今为止最具代理能力的代码模型。Qwen3-Coder 拥有多个尺寸，但我们迫不及待地给大家提供当前最强大的版本，Qwen3-Coder-480B-A35B-Instruct。这是一个总参数量 480B，激活 35B 的 MoE 模型，原生支持 256K token 的上下文并可通过 YaRN 扩展到 1M token，拥有卓越的代码和 Agent 能力。Qwen3-Coder-480B-A35B-Instruct 在 Agentic Coding、Agentic Browser-Use 和 Agentic Tool-Use 上取得了开源模型的 SOTA 效果，可以与 Cluade Sonnet4 媲美。
+与此同时，我们还推出并开源了一款用于代理式编程的命令行工具：Qwen Code。Qwen Code 基于 Gemini Code 进行二次开发，但我们进行了 prompt 和工具调用协议适配，使得 Qwen Code 可以最大程度激发 Qwen3-Coder 在 Agentic Coding 任务上的表现。另外，Qwen3-Coder 可以和社区优秀的编程工具结合，如 Claude Code、Cline 等，作为一款基础模型，我们期待在数字世界的任何角落都可以使用它，Agentic Coding in the World!
+Qwen3-Coder Pre-Training 我们在预训练阶段上仍然在努力，这次 Qwen3-Coder 我们从不同角度进行 Scaling，以提升模型的代码能力：
+数据扩展：总计 7.5T（代码占比 70%），在保持通用与数学能力的同时，具备卓越的编程能力； 上下文扩展：原生支持 256K 上下文，借助 YaRN 可拓展至 1M，专为仓库级和动态数据（如 Pull Request）优化，助力 Agentic Coding； 合成数据扩展：利用 Qwen2.</description>
+    </item>
+    
     <item>
       <title>Time to Speak Some Dialects, Qwen-TTS!</title>
       <link>https://qwenlm.github.io/zh/blog/qwen-tts/</link>
