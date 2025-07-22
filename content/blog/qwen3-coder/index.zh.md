@@ -109,7 +109,7 @@ export OPENAI_MODEL="qwen3-coder-plus"
 现在，你可以通过简单地输入 `qwen` 来享受 Qwen-Code 和 Qwen 带来的编程体验。
 
 ### Claude Code
-除了 Qwen Code 之外，现在还可以将 Qwen3‑Coder 与 Claude Code 搭配使用。只需在 [dashscope](https://dashscope.aliyun.com/) 平台申请 API Key，并安装 Claude Code，即可开始畅享编码体验。
+除了 Qwen Code 之外，现在还可以将 Qwen3‑Coder 与 Claude Code 搭配使用。只需在[阿里云百炼](https://bailian.console.aliyun.com/)平台申请 API Key，并安装 Claude Code，即可开始畅享编码体验。
 
 ```
 npm install -g @anthropic-ai/claude-code
