@@ -103,7 +103,7 @@ Qwen Code 支持 OpenAI SDK 调用 LLM，你可以导出以下环境变量，或
 
 ```bash
 export OPENAI_API_KEY="your_api_key_here"
-export OPENAI_BASE_URL="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
+export OPENAI_BASE_URL="https://dashscope.aliyuncs.com/compatible-mode/v1"
 export OPENAI_MODEL="qwen3-coder-plus"
 ```
 现在，你可以通过简单地输入 `qwen` 来享受 Qwen-Code 和 Qwen 带来的编程体验。
@@ -120,7 +120,7 @@ npm install -g @anthropic-ai/claude-code
 #### 使用dashscope提供的代理  API
 只需要将Anthropic的base url替换成dashscope上提供的endpoint即可。
 ```bash
-export ANTHROPIC_BASE_URL=https://dashscope-intl.aliyuncs.com/api/v2/apps/claude-code-proxy
+export ANTHROPIC_BASE_URL=https://dashscope.aliyuncs.com/api/v2/apps/claude-code-proxy
 export ANTHROPIC_AUTH_TOKEN=your-dashscope-apikey
 ```
 可选方案 2：使用 claude-code-config 自定义路由
