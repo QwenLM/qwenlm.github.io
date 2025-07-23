@@ -46,7 +46,7 @@ show_word_count: true
 {{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 
-今天我们正式发布 Qwen3-Coder，这是我们迄今为止最具代理能力的代码模型。Qwen3-Coder 拥有多个尺寸，但我们迫不及待地给大家提供当前最强大的版本，Qwen3-Coder-480B-A35B-Instruct。这是一个总参数量 480B，激活 35B 的 MoE 模型，原生支持 256K token 的上下文并可通过 YaRN 扩展到 1M token，拥有卓越的代码和 Agent 能力。Qwen3-Coder-480B-A35B-Instruct 在 Agentic Coding、Agentic Browser-Use 和 Agentic Tool-Use 上取得了开源模型的 SOTA 效果，可以与 Cluade Sonnet4 媲美。
+今天我们正式发布 Qwen3-Coder，这是我们迄今为止最具代理能力的代码模型。Qwen3-Coder 拥有多个尺寸，但我们迫不及待地给大家提供当前最强大的版本，Qwen3-Coder-480B-A35B-Instruct。这是一个总参数量 480B，激活 35B 的 MoE 模型，原生支持 256K token 的上下文并可通过 YaRN 扩展到 1M token，拥有卓越的代码和 Agent 能力。Qwen3-Coder-480B-A35B-Instruct 在 Agentic Coding、Agentic Browser-Use 和 Agentic Tool-Use 上取得了开源模型的 SOTA 效果，可以与 Claude Sonnet4 媲美。
 
 <div align="center">
   <img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/qwen3-coder-main.jpg" alt="" width="800" />
