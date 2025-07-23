@@ -68,7 +68,7 @@ There’s still room to scale in pretraining—and with Qwen3-Coder, we’re adv
 <div align="center">
   <img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/coderl.png" alt="" width="800" />
 </div>
-Unlike the prevailing focus on competition-level code generation in the community, we believe all code tasks are naturally well-suited for execution-driven large-scale reinforcement learning. That’s why we scaled up Code RL training on a broader set of real-world coding tasks. By automatically scaling test cases of diversity coding tasks, we created high-quality training instances and successfully unlocked the full potential of reinforcement learning. It not only significantly boosted code execution success rates, but also brought gains to other tasks. This encourages us to keep exploring hard-to-solve, easy-to-verify tasks as fertile ground for large-scale reinforcement learning.
+Unlike the prevailing focus on competitive-level code generation in the community, we believe all code tasks are naturally well-suited for execution-driven large-scale reinforcement learning. That’s why we scaled up Code RL training on a broader set of real-world coding tasks. By automatically scaling test cases of diversity coding tasks, we created high-quality training instances and successfully unlocked the full potential of reinforcement learning. It not only significantly boosted code execution success rates, but also brought gains to other tasks. This encourages us to keep exploring hard-to-solve, easy-to-verify tasks as fertile ground for large-scale reinforcement learning.
 
 #### Scaling Long-Horizon RL
 <div align="center">
