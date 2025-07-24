@@ -1,5 +1,5 @@
 ---
-title: "Qwen-MT: 更聪明更快速地翻译"
+title: "Qwen-MT：速度与智能翻译的完美融合"
 date: 2025-07-24T22:00:00+08:00
 weight: 1
 # aliases: ["/first"]
@@ -45,7 +45,7 @@ show_word_count: true
 
 ## 简介
 
-我们通过[Qwen API](https://bailian.console.aliyun.com/?tab=doc#/doc/?type=model&url=https%3A%2F%2Fhelp.aliyun.com%2Fdocument_detail%2F2860790.html&renderType=iframe) 推出了 Qwen-MT（qwen-mt-turbo）的最新升级版本。本次更新基于强大的 Qwen3 模型，进一步使用超大规模多语言和翻译数据对模型进行训练，全面增强其多语言理解与翻译能力，并结合强化学习技术，显著提升了翻译结果的准确性与语言流畅度。
+我们通过[Qwen API](https://bailian.console.aliyun.com/?tab=model#/model-market/detail/qwen-mt-turbo) 推出了 Qwen-MT（qwen-mt-turbo）的最新升级版本。本次更新基于强大的 Qwen3 模型，进一步使用超大规模多语言和翻译数据对模型进行训练，全面增强其多语言理解与翻译能力，并结合强化学习技术，显著提升了翻译结果的准确性与语言流畅度。
 
 核心亮点包括：
 - **92 种语言互译**：支持超过92种主流官方语言及重要方言之间的高质量互译，覆盖全球 95% 以上的人口，满足广泛的语言交流需求。

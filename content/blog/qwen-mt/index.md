@@ -1,5 +1,5 @@
 ---
-title: "Qwen-MT：速度与智能翻译的完美融合"
+title: "Qwen-MT: Where Speed Meets Smart Translation"
 date: 2025-07-24T22:00:00+08:00
 weight: 1
 # aliases: ["/first"]
@@ -45,7 +45,7 @@ show_word_count: true
 ## Introduction
 
 
-Here we introduce the latest update of Qwen-MT (qwen-mt-turbo) via [Qwen API](https://modelstudio.console.alibabacloud.com/). This update builds upon the powerful Qwen3, leveraging trillions multilingual and translation tokens to comprehensively enhance the model’s multilingual understanding and translation capabilities. By integrating reinforcement learning techniques, the model achieves significant improvements in translation accuracy and linguistic fluency.
+Here we introduce the latest update of Qwen-MT (qwen-mt-turbo) via [Qwen API](https://modelstudio.console.alibabacloud.com/?tab=doc#/doc/?type=model&url=https://www.alibabacloud.com/help/en/doc-detail/2840914_2.html&renderType=component&modelId=qwen-mt-turbo). This update builds upon the powerful Qwen3, leveraging trillions multilingual and translation tokens to comprehensively enhance the model’s multilingual understanding and translation capabilities. By integrating reinforcement learning techniques, the model achieves significant improvements in translation accuracy and linguistic fluency.
 
 Key Features:
 - **Multilingual Support for 92 Languages**: Qwen-MT enables high-quality translation across 92 major official languages and prominent dialects, covering over 95% of the global population to meet diverse cross-lingual communication needs.
@@ -114,7 +114,7 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key=os.getenv("DASHSCOPE_API_KEY"),
-    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
 )
 
 messages = [
@@ -149,7 +149,7 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key=os.getenv("DASHSCOPE_API_KEY"),
-    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
 )
 
 messages = [
@@ -205,7 +205,7 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key=os.getenv("DASHSCOPE_API_KEY"),
-    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
 )
 
 messages = [
