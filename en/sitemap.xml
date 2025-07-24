@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://qwenlm.github.io/blog/qwen-mt/</loc>
+    <lastmod>2025-07-24T22:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://qwenlm.github.io/zh/blog/qwen-mt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://qwenlm.github.io/blog/qwen-mt/"
+                />
+  </url><url>
     <loc>https://qwenlm.github.io/blog/qwen3-coder/</loc>
     <lastmod>2025-07-22T21:00:00+08:00</lastmod>
     <xhtml:link
@@ -484,7 +497,7 @@
                 />
   </url><url>
     <loc>https://qwenlm.github.io/blog/</loc>
-    <lastmod>2025-07-22T21:00:00+08:00</lastmod>
+    <lastmod>2025-07-24T22:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -497,7 +510,7 @@
                 />
   </url><url>
     <loc>https://qwenlm.github.io/</loc>
-    <lastmod>2025-07-22T21:00:00+08:00</lastmod>
+    <lastmod>2025-07-24T22:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"

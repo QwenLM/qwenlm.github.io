@@ -9,7 +9,19 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 22 Jul 2025 21:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Jul 2025 22:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen-MT: Where Speed Meets Smart Translation</title>
+      <link>https://qwenlm.github.io/blog/qwen-mt/</link>
+      <pubDate>Thu, 24 Jul 2025 22:00:00 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwen-mt/</guid>
+      <description>DEMO API DISCORD
+Introduction Here we introduce the latest update of Qwen-MT (qwen-mt-turbo) via Qwen API. This update builds upon the powerful Qwen3, leveraging trillions multilingual and translation tokens to comprehensively enhance the model’s multilingual understanding and translation capabilities. By integrating reinforcement learning techniques, the model achieves significant improvements in translation accuracy and linguistic fluency.
+Key Features:
+Multilingual Support for 92 Languages: Qwen-MT enables high-quality translation across 92 major official languages and prominent dialects, covering over 95% of the global population to meet diverse cross-lingual communication needs.</description>
+    </item>
+    
     <item>
       <title>Qwen3-Coder: Agentic Coding in the World</title>
       <link>https://qwenlm.github.io/blog/qwen3-coder/</link>

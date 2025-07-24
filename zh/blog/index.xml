@@ -9,7 +9,22 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 22 Jul 2025 21:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Jul 2025 22:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen-MT：速度与智能翻译的完美融合</title>
+      <link>https://qwenlm.github.io/zh/blog/qwen-mt/</link>
+      <pubDate>Thu, 24 Jul 2025 22:00:00 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/zh/blog/qwen-mt/</guid>
+      <description>DEMO API DISCORD
+简介 我们通过Qwen API 推出了 Qwen-MT（qwen-mt-turbo）的最新升级版本。本次更新基于强大的 Qwen3 模型，进一步使用超大规模多语言和翻译数据对模型进行训练，全面增强其多语言理解与翻译能力，并结合强化学习技术，显著提升了翻译结果的准确性与语言流畅度。
+核心亮点包括：
+92 种语言互译：支持超过92种主流官方语言及重要方言之间的高质量互译，覆盖全球 95% 以上的人口，满足广泛的语言交流需求。 高度可控性：提供术语干预、领域提示、记忆库等专业翻译功能，并支持用户自定义提示，有效提升模型在复杂、专业或特定应用场景下的翻译表现。 低延迟、低成本：采用轻量级 MoE（Mixture of Experts）架构，在保证卓越性能的同时实现更快的响应速度和更低的 API 调用价格（每百万输出token低至2元），更适合高并发、实时性要求高的应用场景。 自动评估 在中英、英德多领域翻译以及 WMT24 多语言翻译任务中，Qwen-MT 显著优于同规模模型，如 GPT-4.1-mini、Gemini-2.5-Flash 和 Qwen3-8B。甚至与 GPT-4.1、Gemini-2.5-Pro、Qwen3-235B-A22B 等顶级大模型相比，翻译效果依然毫不逊色，凭借轻量化的模型架构设计带来快速的翻译体验。
+人工评估 翻译自动评测存在一定的局限性。为更准确地评估翻译质量，我们针对中文、英语、日语、韩语、泰语、阿拉伯语、意大利语、俄语、西班牙语、法语等主要语言，开展了基于真实场景翻译数据的人工评测。每条测试样本均由三名专业译员独立评分并进行交叉校准，确保评估结果的客观性与可靠性。在合格率、优良率上，Qwen-MT 均展现出显著优势，体现出其在实际应用中的卓越翻译能力。
+以下是一些翻译样例：
+原文 Qwen-MT译文 Make your cubicle neat, tidy and make it a homey charm. 让你的隔间整洁有序，营造出温馨舒适的氛围。 Little study hack for y’all… do your homework/assignments the first day it was given to you… NO PROCRASTINATING!!! the day it was assigned 给大家一个学习小技巧……拿到作业/任务的第一天就完成它……千万别拖延！就在布置的当天完成！ Kim also attended her ex&amp;rsquo;s first Donda listening party at Atlanta&amp;rsquo;s Mercedes-Benz Stadium on July 22.</description>
+    </item>
+    
     <item>
       <title>Qwen3-Coder: 在世界中自主编程</title>
       <link>https://qwenlm.github.io/zh/blog/qwen3-coder/</link>
