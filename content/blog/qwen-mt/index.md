@@ -235,7 +235,7 @@ print(completion.choices[0].message.content)
 # The second SELECT statement returns a number that indicates how many rows were returned by the first SELECT statement without LIMIT clause.
 ```
 
-For more advanced features, please refer to [Qwen API](https://www.alibabacloud.com/help/zh/model-studio/videos/translation-ability).
+For more advanced features, please refer to [Qwen API](https://www.alibabacloud.com/help/en/model-studio/translation-abilities).
 
 <br><br>
 
