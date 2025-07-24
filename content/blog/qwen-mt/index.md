@@ -38,11 +38,9 @@ show_word_count: true
 ---
 
 
-
-
-
-{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen3-banner.png" width="100%" alt="Qwen3 Main Image" >}}
-
+{{< button href="https://huggingface.co/spaces/Qwen/Qwen3-MT-Demo" label="DEMO" external=true >}}
+{{< button href="https://modelstudio.console.alibabacloud.com/?tab=doc#/doc/?type=model&url=https://www.alibabacloud.com/help/en/doc-detail/2840914_2.html&renderType=component&modelId=qwen-mt-turbo" label="API" external=true >}}
+{{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 ## Introduction
 
@@ -63,15 +61,15 @@ Key Features:
 ### Automatic Evaluation
 We evaluate Qwen-MT on multi-domain translation benchmark, specifically Chinese-English and English-German translation, as well as WMT24 multilingual translation benchmark. Experimental results demonstrate that Qwen-MT significantly outperforms comparably-sized models including GPT-4.1-mini, Gemini-2.5-Flash, and Qwen3-8B. Notably, even when compared to state-of-the-art large language models such as GPT-4.1, Gemini-2.5-Pro, and Qwen3-235B-A22B, Qwen-MT maintains competitive translation quality while its optimized lightweight architecture enables rapid translation processing.
 
-{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen3-base.jpg" width="100%">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen-mt-001.jpeg" width="100%">}}
 
 
 ### Human Evaluation
 
 Automatic evaluation methods have inherent limitations, we further implemented human evaluation protocols leveraging real-world translation data across ten major languages: Chinese, English, Japanese, Korean, Thai, Arabic, Italian, Russian, Spanish, and French. Our rigorous evaluation framework involved three independent professional translators scoring each test sample, followed by systematic cross-validation procedures to ensure both objectivity and reliability of the assessment outcomes. Notably, Qwen-MT achieved superior performance metrics, demonstrating significant advantages in both acceptance rates and excellence rates, validating its exceptional translation capabilities in practical deployment scenarios.
 
-{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen3-base.jpg" width="100%">}}
-{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen3-base.jpg" width="100%">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen-mt-002.jpeg" width="100%">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen-mt-003.png" width="100%">}}
 
 Here are some translation examples：
 

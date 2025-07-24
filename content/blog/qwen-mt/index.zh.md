@@ -39,10 +39,9 @@ show_word_count: true
 
 
 
-
-
-{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen3-banner.png" width="100%" alt="Qwen3 Main Image" >}}
-
+{{< button href="https://modelscope.cn/studios/Qwen/Qwen3-MT-demo" label="DEMO" external=true >}}
+{{< button href="https://bailian.console.aliyun.com/?tab=model#/model-market/detail/qwen-mt-turbo" label="API" external=true >}}
+{{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 ## 简介
 
@@ -60,14 +59,14 @@ show_word_count: true
 
 在中英、英德多领域翻译以及 WMT24 多语言翻译任务中，Qwen-MT 显著优于同规模模型，如 GPT-4.1-mini、Gemini-2.5-Flash 和 Qwen3-8B。甚至与 GPT-4.1、Gemini-2.5-Pro、Qwen3-235B-A22B 等顶级大模型相比，翻译效果依然毫不逊色，凭借轻量化的模型架构设计带来快速的翻译体验。
 
-{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen3-base.jpg" width="100%">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen-mt-001.jpeg" width="100%">}}
 
 ## 人工评估
 
 翻译自动评测存在一定的局限性。为更准确地评估翻译质量，我们针对中文、英语、日语、韩语、泰语、阿拉伯语、意大利语、俄语、西班牙语、法语等主要语言，开展了基于真实场景翻译数据的人工评测。每条测试样本均由三名专业译员独立评分并进行交叉校准，确保评估结果的客观性与可靠性。在合格率、优良率上，Qwen-MT 均展现出显著优势，体现出其在实际应用中的卓越翻译能力。
 
-{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen3-base.jpg" width="100%">}}
-{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen3-base.jpg" width="100%">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen-mt-002.jpeg" width="100%">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/qwen-mt-003.png" width="100%">}}
 
 以下是一些翻译样例：
 
