@@ -9,7 +9,21 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 24 Jul 2025 22:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Jul 2025 15:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GSPO：迈向持续拓展的语言模型强化学习</title>
+      <link>https://qwenlm.github.io/zh/blog/gspo/</link>
+      <pubDate>Sun, 27 Jul 2025 15:00:00 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/zh/blog/gspo/</guid>
+      <description>PAPER DISCORD
+引言 强化学习 （Reinforcement Learning，RL）已成为拓展语言模型、增强其深度推理与问题求解能力的关键技术范式。为了持续拓展 RL，首要前提是确保稳定、鲁棒的训练过程。然而，我们观察到现有的 RL 算法（如 GRPO）在长期训练中会暴露出严重的不稳定性问题并招致不可逆转的模型崩溃，阻碍了通过增加计算以获得进一步的性能提升。
+为了能够持续拓展 RL，我们提出了 Group Sequence Policy Optimization (GSPO) 算法。不同于过去的 RL 算法，GSPO 定义了序列级别的重要性比率，并在序列层面执行裁剪、奖励和优化。相较于 GRPO，GSPO 在以下方面展现出突出优势：
+强大高效：GSPO 具备显著更高的训练效率，并且能够通过增加计算获得持续的性能提升； 稳定性出色：GSPO 能够保持稳定的训练过程，并且根本地解决了混合专家（Mixture-of-Experts，MoE）模型的 RL 训练稳定性问题； 基础设施友好：由于在序列层面执行优化，GSPO 原则上对精度容忍度更高，具有简化 RL 基础设施的诱人前景。 以上优点促成了最新的 Qwen3 模型（Instruct、Coder、Thinking）的卓越性能。
+序列级别的优化目标 设 $x$ 为查询，$\pi_{\theta_\mathrm{old}}$ 为用于采样回复的策略，$\{y_i\}_{i=1}^G$ 为采样得到的回复组，$\widehat{A}_{i}$ 为各个回复的组内相对优势，$\pi_\theta$ 为需优化的当前策略。GSPO 采用以下优化目标：
+$$f \mathcal{J}_\text{GSPO} (\theta) = \mathbb{E}_{ x \sim \mathcal{D},\, \{y_i\}_{i=1}^G \sim \pi_{\theta_\text{old}}( \cdot | x) } \left[ \frac{1}{G} \sum_{i=1}^{G} \min \left( s_{i}(\theta) \widehat{A}_{i}, \, \mathrm{clip} \left( s_{i}(\theta), 1 - {\varepsilon}, 1 + {\varepsilon} \right) \widehat{A}_{i} \right) \right], $$ 其中</description>
+    </item>
+    
     <item>
       <title>Qwen-MT：速度与智能翻译的完美融合</title>
       <link>https://qwenlm.github.io/zh/blog/qwen-mt/</link>

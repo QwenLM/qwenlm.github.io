@@ -9,7 +9,18 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 24 Jul 2025 22:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Jul 2025 15:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GSPO: Towards Scalable Reinforcement Learning for Language Models</title>
+      <link>https://qwenlm.github.io/blog/gspo/</link>
+      <pubDate>Sun, 27 Jul 2025 15:00:00 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/gspo/</guid>
+      <description>PAPER DISCORD
+Introduction Reinforcement Learning (RL) has emerged as a pivotal paradigm for scaling language models and enhancing their deep reasoning and problem-solving capabilities. To scale RL, the foremost prerequisite is maintaining stable and robust training dynamics. However, we observe that existing RL algorithms (such as GRPO) exhibit severe instability issues during long training and lead to irreversible model collapse, hindering further performance improvements with increased compute.
+To enable successful RL scaling, we propose the Group Sequence Policy Optimization (GSPO) algorithm.</description>
+    </item>
+    
     <item>
       <title>Qwen-MT: Where Speed Meets Smart Translation</title>
       <link>https://qwenlm.github.io/blog/qwen-mt/</link>
