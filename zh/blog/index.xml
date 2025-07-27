@@ -21,7 +21,7 @@
 为了能够持续拓展 RL，我们提出了 Group Sequence Policy Optimization (GSPO) 算法。不同于过去的 RL 算法，GSPO 定义了序列级别的重要性比率，并在序列层面执行裁剪、奖励和优化。相较于 GRPO，GSPO 在以下方面展现出突出优势：
 强大高效：GSPO 具备显著更高的训练效率，并且能够通过增加计算获得持续的性能提升； 稳定性出色：GSPO 能够保持稳定的训练过程，并且根本地解决了混合专家（Mixture-of-Experts，MoE）模型的 RL 训练稳定性问题； 基础设施友好：由于在序列层面执行优化，GSPO 原则上对精度容忍度更高，具有简化 RL 基础设施的诱人前景。 以上优点促成了最新的 Qwen3 模型（Instruct、Coder、Thinking）的卓越性能。
 序列级别的优化目标 设 $x$ 为查询，$\pi_{\theta_\mathrm{old}}$ 为用于采样回复的策略，$\{y_i\}_{i=1}^G$ 为采样得到的回复组，$\widehat{A}_{i}$ 为各个回复的组内相对优势，$\pi_\theta$ 为需优化的当前策略。GSPO 采用以下优化目标：
-$$f \mathcal{J}_\text{GSPO} (\theta) = \mathbb{E}_{ x \sim \mathcal{D},\, \{y_i\}_{i=1}^G \sim \pi_{\theta_\text{old}}( \cdot | x) } \left[ \frac{1}{G} \sum_{i=1}^{G} \min \left( s_{i}(\theta) \widehat{A}_{i}, \, \mathrm{clip} \left( s_{i}(\theta), 1 - {\varepsilon}, 1 + {\varepsilon} \right) \widehat{A}_{i} \right) \right], $$ 其中</description>
+$$ \mathcal{J}_\text{GSPO} (\theta) = \mathbb{E}_{ x \sim \mathcal{D},\, \{y_i\}_{i=1}^G \sim \pi_{\theta_\text{old}}( \cdot | x) } \left[ \frac{1}{G} \sum_{i=1}^{G} \min \left( s_{i}(\theta) \widehat{A}_{i}, \, \mathrm{clip} \left( s_{i}(\theta), 1 - {\varepsilon}, 1 + {\varepsilon} \right) \widehat{A}_{i} \right) \right], $$ 其中</description>
     </item>
     
     <item>
