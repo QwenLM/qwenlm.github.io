@@ -59,7 +59,7 @@ show_word_count: true
 设 $x$ 为查询，$\pi_{\theta_\mathrm{old}}$ 为用于采样回复的策略，$\\{y_i\\}\_{i=1}^G$ 为采样得到的回复组，$\widehat{A}\_{i}$ 为各个回复的组内相对优势，$\pi_\theta$ 为需优化的当前策略。GSPO 采用以下优化目标：
 
 {{< rawhtml >}}
-$$f
+$$
 \mathcal{J}_\text{GSPO} (\theta) 
 =
 \mathbb{E}_{ x \sim \mathcal{D},\, \{y_i\}_{i=1}^G \sim \pi_{\theta_\text{old}}( \cdot | x) }
@@ -88,21 +88,21 @@ $$
 
 我们使用基于 Qwen3-30B-A3B-Base 微调得到的冷启动模型进行实验，并汇报其训练奖励曲线以及在 AIME'24、LiveCodeBench 和 CodeForces 等基准上的性能曲线。我们对比 GRPO 作为基线。注意 GRPO 必需采用 Routing Replay 训练策略才能正常收敛（我们将在后文讨论），而 **GSPO 则无需该策略**。
 
-{{< figure src="results.jpg#center" title="结果">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/results.jpg#center" title="实验结果">}}
 
 
 从上图可见，GSPO 表现出比 GRPO **显著更高的训练效率**，即在同等计算开销下能够取得更优的性能。特别地，我们观察到 GSPO 可以**通过增加算力来获得持续的性能提升**——这正是我们所期待的算法的**可拓展性**。最终，我们成功地将 GSPO 应用于最新的 Qwen3 模型的大规模 RL 训练，进一步释放了 RL scaling 的潜能！
 
 一个有趣的观察是，GSPO 所裁剪的 token 比例比 GRPO 要高上两个数量级（如下图所示），但却具有更高的训练效率。这进一步表明 GRPO 采用的 token 级别的优化目标是有噪和低效的，而 GSPO 的序列级别的优化目标则提供了更可靠、有效的学习信号。
 
-{{< figure src="clipping.jpg#center" title="裁剪">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/clipping.jpg#center" title="被裁剪的 token 比例">}}
 
 
 ## 对 MoE RL 和基础设施的收益
 
 我们发现，当采用 GRPO 算法时，MoE 模型的专家激活波动性会使得 RL 训练无法正常收敛。为了解决这一挑战，我们过去采用了**路由回放（Routing Replay）**训练策略，即缓存 $\pi_{\theta_\text{old}}$ 中激活的专家，并在计算重要性比率时在 $\pi_\theta$ 中“回放”这些路由模式。从下图可见，Routing Replay 对于 GRPO 训练 MoE 模型的正常收敛至关重要。然而，Routing Replay 的做法会产生额外的内存和通信开销，并可能限制 MoE 模型的实际可用容量。
 
-{{< figure src="routing_replay.jpg#center" title="Routing Replay">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/routing_replay.jpg#center" title="Routing Replay 对 MoE 模型的 GRPO 训练的作用">}}
 
 GSPO 的一大突出优势在于**彻底消除了对 Routing Replay 的依赖**。其核心洞见在于：GSPO 仅关注序列级别的似然（即 $\pi_\theta(y_i|x)$），而对个别 token 的似然（即 $\pi_\theta(y_{i,t}|x,y_{i,<t})$）不敏感。因此，其无需 Routing Replay 等对基础设施负担较大的手段，既简化和稳定了训练过程，又使得模型能够最大化地发挥容量与潜能。
 
@@ -118,7 +118,7 @@ GSPO 的一大突出优势在于**彻底消除了对 Routing Replay 的依赖**�
 
 ```tex
 @article{gspo,
-  title={Group Sequence Policy Optimization, 
+  title={Group Sequence Policy Optimization}, 
   author={
     Chujie Zheng and Shixuan Liu and Mingze Li and Xiong-Hui Chen and Bowen Yu and 
     Chang Gao and Kai Dang and Yuqiong Liu and Rui Men and An Yang and Jingren Zhou and 

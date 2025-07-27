@@ -60,9 +60,9 @@ Let $x$ be a query, $\pi_{\theta_\mathrm{old}}$ be the old policy that generates
 
 {{< rawhtml >}}
 $$
-\mathcal{J}_\text{GSPO} (\theta) 
-=
-\mathbb{E}_{ x \sim \mathcal{D},\, \{y_i\}_{i=1}^G \sim \pi_{\theta_\text{old}}( \cdot | x) }
+\mathcal{J}_\text{GSPO} (\theta)
+=\,
+\mathbb{E}_{ x \sim \mathcal{D},\, \{y_i\}_{i=1}^G \sim \pi_{\theta_\mathrm{old}}( \cdot | x) }
 \left[ 
 \frac{1}{G} \sum_{i=1}^{G}
 \min \left( s_{i}(\theta)  \widehat{A}_{i},  \, \mathrm{clip} \left( s_{i}(\theta), 1 - {\varepsilon}, 1 + {\varepsilon} \right) \widehat{A}_{i} \right) 
@@ -83,26 +83,27 @@ $$
 {{< /rawhtml >}}
 
 
+
 Here, $s_i(\theta)$ is **the importance ratio defined based on sequence likelihood** in GSPO, where we perform length normalization to reduce variance and unify the numerical range of $s_i(\theta)$.
 
 ## Training Efficiency and Performance
 
 We experiment with a cold-start model fine-tuned from Qwen3-30B-A3B-Base and report its training reward curves as well as performance curves on the AIME'24, LiveCodeBench, and CodeForces benchmarks. We compare against GRPO as the baseline. Note that GRPO necessitates the Routing Replay training strategy for the normal convergence of MoE RL (which we will discuss later), while **GSPO has obviated the need for this strategy**.
 
-{{< figure src="results.jpg#center" title="Results">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/results.jpg#center" title="Experimental results">}}
 
 As shown in the figure above, GSPO demonstrates **significantly higher training efficiency** than GRPO, achieving better performance under the same training cost. Particularly, we observe that **GSPO can deliver continuous performance improvement through increasing the training compute, regularly updating the query set, and extending the generation length** — this is exactly the **scalability** we expect from an algorithm. Ultimately, we successfully applied GSPO to the large-scale RL training of the latest Qwen3 models, further unleashing the potential of RL scaling!
 
 An interesting observation is that the fraction of tokens clipped in GSPO is two orders of magnitude higher than that in GRPO (as shown in the figure below), while GSPO still achieves higher training efficiency. This further demonstrates that GRPO's token-level optimization objective is noisy and inefficient, while GSPO's sequence-level approach provides a more reliable and effective learning signal.
 
-{{< figure src="clipping.jpg#center" title="Clipping">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/clipping.jpg" title="Fractions of clipped tokens">}}
 
 
 ## Benefits for MoE RL and Infrastructure
 
 We found that when adopting the GRPO algorithm, the expert activation volatility of MoE models prevents RL training from converging properly. To address this challenge, we previously employed the **Routing Replay** training strategy, which caches the activated experts in $\pi_{\theta_\text{old}}$ and "replays" these routing patterns in $\pi_\theta$ when computing importance ratios. As shown in the figure below, Routing Replay is crucial for normal convergence of GRPO training on MoE models. However, the Routing Replay strategy incurs additional memory and communication overhead and may limit the actual capacity of MoE models.
 
-{{< figure src="routing_replay.jpg#center" title="Routing Replay">}}
+{{< figure src="https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/routing_replay.jpg" title="Effect of Routing Replay in the GRPO training of MoE models">}}
 
 The notable advantage of GSPO lies in **completely eliminating the dependency on Routing Replay**. The key insight is that GSPO only focuses on sequence-level likelihood (i.e., $\pi_\theta(y_i|x)$) and is not sensitive to individual token likelihood (i.e., $\pi_\theta(y_{i,t}|x,y_{i,<t})$). Therefore, it does not require infrastructure-heavy workarounds like Routing Replay, both simplifying and stabilizing the training process while allowing models to maximize their capacity.
 
