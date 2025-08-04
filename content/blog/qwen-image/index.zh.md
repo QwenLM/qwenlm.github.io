@@ -42,7 +42,7 @@ show_word_count: true
 {{< button href="https://github.com/QwenLM/Qwen-Image" label="GITHUB" external=true >}}
 {{< button href="https://huggingface.co/Qwen/Qwen-Image" label="HUGGING FACE" external=true >}}
 {{< button href="https://modelscope.cn/models/Qwen/Qwen-Image" label="MODELSCOPE" external=true >}}
-{{< button href="https://huggingface.co/spaces/Qwen/Qwen-Image" label="DEMO" external=true >}}
+{{< button href="https://modelscope.cn/aigc/imageGeneration?tab=advanced" label="DEMO" external=true >}}
 {{< button href="https://discord.gg/yPEP2vHTu4" label="DISCORD" external=true >}}
 
 
