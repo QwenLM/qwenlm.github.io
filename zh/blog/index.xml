@@ -9,7 +9,27 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Jul 2025 15:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Aug 2025 22:08:30 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen-Image：擅长文字渲染的创作利器</title>
+      <link>https://qwenlm.github.io/zh/blog/qwen-image/</link>
+      <pubDate>Mon, 04 Aug 2025 22:08:30 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/zh/blog/qwen-image/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
+我们很高兴推出 Qwen-Image，一个20B的MMDiT模型。这是通义千问系列中首个图像生成基础模型，其在复杂文本渲染和精确图像编辑方面取得了显著进展。如需体验最新模型，欢迎访问 Qwen Chat 并选择“图像生成”功能。
+主要特性包括：
+卓越的文本渲染能力: Qwen-Image 在复杂文本渲染方面表现出色，支持多行布局、段落级文本生成以及细粒度细节呈现。无论是英语还是中文，均能实现高保真输出。 一致性的图像编辑能力: 通过增强的多任务训练范式，Qwen-Image 在编辑过程中能出色地保持编辑的一致性。 强大的跨基准性能表现: 在多个公开基准测试中的评估表明，Qwen-Image 在各类生成与编辑任务中均获得SOTA，是一个强大的图像生成基础模型。 性能表现 我们在多个公开基准上对Qwen-Image进行了全面评估，包括用于通用图像生成的GenEval、DPG和OneIG-Bench，以及用于图像编辑的GEdit、ImgEdit和GSO。Qwen-Image在所有基准测试中均取得了最先进的性能，展现出其在图像生成与图像编辑方面的强大能力。此外，在用于文本渲染的LongText-Bench、ChineseWord和TextCraft上的结果表明，Qwen-Image在文本渲染方面表现尤为出色，特别是在中文文本渲染上，大幅领先现有的最先进模型。这凸显了Qwen-Image作为先进图像生成模型的独特地位，兼具广泛的通用能力与卓越的文本渲染精度。
+示例展示 Qwen-Image的突出能力之一是能够在不同场景中实现高保真的文本渲染。我们来看下面这个中文渲染的case：
+宫崎骏的动漫风格。平视角拍摄，阳光下的古街热闹非凡。一个穿着青衫、手里拿着写着“阿里云”卡片的逍遥派弟子站在中间。旁边两个小孩惊讶的看着他。左边有一家店铺挂着“云存储”的牌子，里面摆放着发光的服务器机箱，门口两个侍卫守护者。右边有两家店铺，其中一家挂着“云计算”的牌子，一个穿着旗袍的美丽女子正看着里面闪闪发光的电脑屏幕；另一家店铺挂着“云模型”的牌子，门口放着一个大酒缸，上面写着“千问”，一位老板娘正在往里面倒发光的代码溶液。
+模型不仅仅准确展示了宫崎骏的动漫风格，店铺的牌匾“云存储”，“云计算”，“云模型”，包括酒缸上的“千问”，都随着构图的景深，被真实准确的渲染。并且保留了人物姿势、神态刻画。
+让我们再看一个中文渲染的case：
+一副典雅庄重的对联悬挂于厅堂之中，房间是个安静古典的中式布置，桌子上放着一些青花瓷，对联上左书“义本生知人机同道善思新”，右书“通云赋智乾坤启数高志远”， 横批“智启通义”，字体飘逸，中间挂在一着一副中国风的画作，内容是岳阳楼。
+模型准确了绘制了左右联和横批，并且使用了书法效果，并在中间准确的生成了岳阳楼。桌子上放着的青花瓷也看着非常真实。
+那么，模型在英文上的能力如何呢？ 让我们来看一个英文渲染的case：
+Bookstore window display. A sign displays &amp;ldquo;New Arrivals This Week&amp;rdquo;. Below, a shelf tag with the text &amp;ldquo;Best-Selling Novels Here&amp;rdquo;. To the side, a colorful poster advertises &amp;ldquo;Author Meet And Greet on Saturday&amp;rdquo; with a central portrait of the author.</description>
+    </item>
+    
     <item>
       <title>GSPO：迈向持续拓展的语言模型强化学习</title>
       <link>https://qwenlm.github.io/zh/blog/gspo/</link>

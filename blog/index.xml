@@ -9,7 +9,19 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Jul 2025 15:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Aug 2025 22:08:30 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen-Image: Crafting with Native Text Rendering</title>
+      <link>https://qwenlm.github.io/blog/qwen-image/</link>
+      <pubDate>Mon, 04 Aug 2025 22:08:30 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwen-image/</guid>
+      <description>GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD
+We are thrilled to release Qwen-Image, a 20B MMDiT image foundation model that achieves significant advances in complex text rendering and precise image editing. To try the latest model, feel free to visit Qwen Chat and choose “Image Generation”.
+The key features include:
+Superior Text Rendering: Qwen-Image excels at complex text rendering, including multi-line layouts, paragraph-level semantics, and fine-grained details. It supports both alphabetic languages (e.</description>
+    </item>
+    
     <item>
       <title>GSPO: Towards Scalable Reinforcement Learning for Language Models</title>
       <link>https://qwenlm.github.io/blog/gspo/</link>
