@@ -68,6 +68,7 @@ params:
   # list page only
   hide_summary: false
   show_rss_button_in_section_term_list: false
+  ShowFullTextinRSS: true
 
   assets:
     disable_hljs: true # to disable highlight.js
