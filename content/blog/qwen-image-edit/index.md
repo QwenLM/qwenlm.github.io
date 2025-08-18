@@ -1,6 +1,6 @@
 ---
 title: "Qwen-Image-Edit: Image Editing with Higher Quality and Efficiency"
-date: 2025-08-17T19:08:30+08:00
+date: 2025-08-19T19:01:30+08:00
 weight: 1
 # aliases: ["/first"]
 # tags: ["Research"]
