@@ -9,7 +9,18 @@
       <link>https://qwenlm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 19 Aug 2025 01:30:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Sep 2025 04:00:00 +0800</lastBuildDate><atom:link href="https://qwenlm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qwen3Guard: Real-time Safety for Your Token Stream</title>
+      <link>https://qwenlm.github.io/blog/qwen3guard/</link>
+      <pubDate>Tue, 23 Sep 2025 04:00:00 +0800</pubDate>
+      
+      <guid>https://qwenlm.github.io/blog/qwen3guard/</guid>
+      <description>Tech Report GitHub Hugging Face ModelScope DISCORD
+Introduction We are excited to introduce Qwen3Guard, the first safety guardrail model in the Qwen family. Built upon the powerful Qwen3 foundation models and fine-tuned specifically for safety classificatoin, Qwen3Guard ensures responsible AI interactions by delivering precise safety detection for both prompts and responses, complete with risk levels and categorized classifications for accurate moderation.
+Qwen3Guard achieves state-of-the-art performance on major safety benchmarks, demonstrating strong capabilities in both prompt and response classification tasks across English, Chinese, and multilingual environments.</description>
+    </item>
+    
     <item>
       <title>Qwen-Image-Edit: Image Editing with Higher Quality and Efficiency</title>
       <link>https://qwenlm.github.io/blog/qwen-image-edit/</link>
