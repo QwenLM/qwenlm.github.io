@@ -1,5 +1,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+{{- if site.Params.redirect }} 
+<meta http-equiv="Refresh" content='5; url="{{ site.Params.redirect_url | safeHTML }}"'>
+{{- end }}
 {{- if eq .Kind "404" }}
 <meta http-equiv="Refresh" content='5; url={{ "/" | absURL | safeHTML }}'>  
 {{- end }}

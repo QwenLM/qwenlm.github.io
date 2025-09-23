@@ -49,6 +49,11 @@ params:
   disable_language_switch: true
   displayFullLangName: true
 
+  # for redirect
+  redirect: true
+  redirect_url: https://qwen.ai/research
+  redirect_title: We have a new blog at [qwen.ai](https://qwen.ai/research)!
+
   # custom site and page variables
   show_share_buttons: true
   show_bread_crumbs: true
