@@ -283,6 +283,8 @@ for i in range(user_end_index + 1, len(token_ids)):
         print(f"Token: {repr(token_str)} -> [Risk: {result['risk_level'][-1]}]")
     else:
         print(f"Token: {repr(token_str)} -> [Risk: {result['risk_level'][-1]} - Category: {result['category'][-1]}]")
+
+model.close_stream(stream_state)
 ```
 
 For more usage examples, please visit our [GitHub repository](https://github.com/QwenLM/Qwen3Guard).
