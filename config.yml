@@ -50,7 +50,7 @@ params:
   displayFullLangName: true
 
   # for redirect
-  redirect: true
+  redirect: false
   redirect_url: https://qwen.ai/research
   redirect_title: We have a new blog at [qwen.ai](https://qwen.ai/research)!
 
