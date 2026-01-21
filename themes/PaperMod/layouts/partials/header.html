@@ -45,7 +45,7 @@ const hasHeaderBg = {{ $hasHeaderBg }};
 </script>
 
 {{- if site.Params.redirect }} 
-  {{ partial "redirect.html" }}
+  {{ partial "redirect.html" . }}
 {{- end }}
 
 {{ $sites := .Sites }}

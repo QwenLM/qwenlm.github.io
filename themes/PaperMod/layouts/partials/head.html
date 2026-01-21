@@ -1,9 +1,10 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 {{- if site.Params.redirect }} 
-<meta http-equiv="Refresh" content='5; url="{{ site.Params.redirect_url | safeHTML }}"'>
-{{- end }}
-{{- if eq .Kind "404" }}
+{{- $pageRedirect := and .IsPage site.Params.redirect_page (eq .Section "blog") }}
+{{- $redirectURL := cond ($pageRedirect) (replace site.Params.redirect_page_url_template "{slug}" .File.ContentBaseName) (site.Params.redirect_url) }}
+<meta http-equiv="Refresh" content='5; url={{ $redirectURL | safeHTML }}'>
+{{- else if eq .Kind "404" }}
 <meta http-equiv="Refresh" content='5; url={{ "/" | absURL | safeHTML }}'>  
 {{- end }}
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

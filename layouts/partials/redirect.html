@@ -1,3 +1,6 @@
+{{- $pageRedirect := and .IsPage site.Params.redirect_page (eq .Section "blog") }}
+{{- $redirectURL := cond ($pageRedirect) (replace site.Params.redirect_page_url_template "{slug}" .File.ContentBaseName) (site.Params.redirect_url) }}
+{{- $redirectTitle := cond ($pageRedirect) (replace site.Params.redirect_page_title_template "{url}" $redirectURL) (site.Params.redirect_title) }}
 <style>
     /* Modal Background Overlay */
     .modal-overlay {
@@ -144,7 +147,7 @@
             </svg>
         </div>
         
-        <h2 class="modal-title">{{ site.Params.redirect_title | markdownify }}</h2>
+        <h2 class="modal-title">{{ $redirectTitle | markdownify }}</h2>
         
         <p class="modal-message">
             This page will automatically redirect in <span class="countdown" id="countdown">5</span> seconds.
@@ -179,6 +182,6 @@
     }
     
     function redirectToPage() {
-        window.location.href = "{{ site.Params.redirect_url | safeHTML }}";
+        window.location.href = "{{ $redirectURL | safeHTML }}";
     }
 </script>
