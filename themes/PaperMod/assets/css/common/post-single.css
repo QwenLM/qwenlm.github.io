@@ -594,5 +594,5 @@ div.footnotes{
     color: var(--secondary);
 }
 .example-content .grid-layout .content {
-    min-width: var(--min-width);
+    min-width: 200px;
 }

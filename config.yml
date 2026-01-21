@@ -49,9 +49,12 @@ params:
   displayFullLangName: true
 
   # for redirect
-  redirect: false
+  redirect: true
   redirect_url: https://qwen.ai/research
   redirect_title: We have a new blog at [qwen.ai](https://qwen.ai/research)!
+  redirect_page: true
+  redirect_page_url_template: https://qwen.ai/blog?id={slug}
+  redirect_page_title_template: We have a new blog!<br>View this page at [qwen.ai]({url}).
 
   # custom site and page variables
   show_share_buttons: true
