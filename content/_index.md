@@ -9,7 +9,7 @@ header:
     background_image: "https://cdn.jsdelivr.net/gh/qwenlm/qwenlm.github.io@master/static/img/background.webp"
     gradient: true
     blur: true
-description: Qwickly forging AGI, enhancing intelligence.
+description: Qwickly forging AGI, they were enhancing intelligence in a manner as unique as the spelling of 'Qwickly' itself, a nod to their innovative spirit.
 # social_icons:
     # - name: twitter
     #   url: "https://twitter.com/"
